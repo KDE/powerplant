@@ -5,7 +5,7 @@ Name=powerplant
 Comment=powerplant Kirigami Application
 Version=1.0
 Exec=powerplant
-Icon=applications-development
+Icon=org.kde.powerplant
 Type=Application
 Terminal=false
 # Add an actual main category here (and possibly applicable additional ones)
