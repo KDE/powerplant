@@ -66,9 +66,9 @@ Kirigami.Page {
                         id: card
                         background: Kirigami.ShadowedRectangle {
                             radius: 5
-                            color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, "#79ab56", 0.15);
+                            color:  Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, healthSlider.healthColor, 0.2);
                             border.color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3);
-                            border.width: 2
+                            border.width: 1
                             shadow.size: 15
                             shadow.xOffset: 5
                             shadow.yOffset: 5
@@ -116,7 +116,7 @@ Kirigami.Page {
                             }
                             Kirigami.ShadowedRectangle {
                                 border.color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3);
-                                border.width: 2
+                                border.width: 1
                                 Kirigami.Theme.colorSet: Kirigami.Theme.View
                                 color: Kirigami.Theme.backgroundColor
                                 radius: 5
@@ -138,6 +138,7 @@ Kirigami.Page {
                                 }
                             }
                             HealthSlider {
+                                id: healthSlider
                                 Layout.fillWidth: true
                                 from:0
                                 to:100
