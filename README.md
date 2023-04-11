@@ -1,0 +1,21 @@
+#  <img src="https://invent.kde.org/mbruchert/powerplant/-/raw/master/logo.png">  PowerPlant
+
+A verry WIP app to keep track of your plant's needs
+
+![](https://i.imgur.com/G76j0Ua.png)
+
+## build instructions
+
+### flatpak builder (with kde sdk)
+```
+flatpak-builder tmp --force-clean --ccache --install --user org.kde.powerplant.json
+```
+### cmake
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+
