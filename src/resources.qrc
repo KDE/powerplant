@@ -10,5 +10,6 @@
         <file alias="components/BottomDrawer.qml">contents/ui/components/BottomDrawer.qml</file>
         <file alias="components/ActionButton.qml">contents/ui/components/ActionButton.qml</file>
         <file>AddPlantSheet.qml</file>
+        <file alias="assets/monstera.svg">contents/assets/monstera.svg</file>
     </qresource>
 </RCC>

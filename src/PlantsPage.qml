@@ -66,7 +66,7 @@ Kirigami.Page {
                         id: card
                         background: Kirigami.ShadowedRectangle {
                             radius: 5
-                            color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, "#b2c936", 0.1);
+                            color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, "#79ab56", 0.15);
                             border.color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3);
                             border.width: 2
                             shadow.size: 15
@@ -81,7 +81,7 @@ Kirigami.Page {
                                     anchors.fill: parent
                                     id: image
                                     fillMode: Image.PreserveAspectFit
-                                    source: "https://cdn.shopify.com/s/files/1/0259/4134/4311/products/epipremnum-aureum-15-productpage_1024x1024.png?v=1672311281"
+                                    source: "qrc:/assets/monstera.svg"
                                     layer.enabled: true
                                     layer.effect: OpacityMask {
                                         maskSource: mask
