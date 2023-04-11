@@ -1,4 +1,4 @@
-#  <img src="https://invent.kde.org/mbruchert/powerplant/-/raw/master/logo.png">  PowerPlant
+#  <img src="https://invent.kde.org/mbruchert/powerplant/-/raw/master/logo.png" height=64 >  PowerPlant
 
 A verry WIP app to keep track of your plant's needs
 
