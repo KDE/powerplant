@@ -8,7 +8,9 @@ add_executable(powerplant
     plantsmodel.cpp
     healthhistorymodel.cpp
     waterhistorymodel.cpp
-    resources.qrc)
+    colorgradientinterpolator.cpp
+    resources.qrc
+)
 
 target_link_libraries(powerplant
     Qt5::Core

@@ -10,6 +10,7 @@
 
 #include "app.h"
 #include "database.h"
+#include "colorgradientinterpolator.h"
 #include "plantsmodel.h"
 #include "version-powerplant.h"
 #include <KAboutData>
@@ -55,6 +56,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonInstance("org.kde.powerplant", 1, 0, "Config", config);
 
     qmlRegisterType<PlantsModel>("org.kde.powerplant", 1, 0, "PlantsModel");
+    qmlRegisterType<ColorGradientInterpolator>("org.kde.powerplant", 1, 0, "ColorInterpolator");
 
     qmlRegisterSingletonType("org.kde.powerplant", 1, 0, "About", [](QQmlEngine *engine, QJSEngine *) -> QJSValue {
         return engine->toScriptValue(KAboutData::applicationData());

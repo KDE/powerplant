@@ -4,29 +4,29 @@ import QtQuick.Layouts 1.15
 import org.kde.kirigami 2.19 as Kirigami
 import QtQuick.Shapes 1.5 as Shapes
 import QtGraphicalEffects 1.0
-
-import "ColorInterpolation"
+import org.kde.powerplant 1.0
 
 Controls.Slider {
     id: control
 
     implicitHeight: 30
     property int weirdNumber: 25
-    property string healthColor: colorInterpolation.getColorAt(
-                                     control.value / 100)
-    ColorInterpolation {
+    property string healthColor: colorInterpolation.color
+
+    ColorInterpolator {
         id: colorInterpolation
-        stops: [
-            InterpolationStop {
-                position: gradientStop1.position
+        progress: control.value / 100
+        gradientStops: [
+            {
+                position: gradientStop1.position,
                 color: gradientStop1.color
             },
-            InterpolationStop {
-                position: gradientStop2.position
+            {
+                position: gradientStop2.position,
                 color: gradientStop2.color
             },
-            InterpolationStop {
-                position: gradientStop3.position
+            {
+                position: gradientStop3.position,
                 color: gradientStop3.color
             }
         ]
