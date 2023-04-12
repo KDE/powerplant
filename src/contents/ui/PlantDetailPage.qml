@@ -256,7 +256,7 @@ Kirigami.ScrollablePage {
                                 Controls.Button {
                                     text: i18n("Add")
                                     icon.name: "list-add"
-                                    onClicked: root.healthEvents.addHealthEvent(healthSlider.value)
+                                    onClicked: healthEvents.addHealthEvent(healthSlider.value)
                                 }
                             }
                         }
@@ -304,7 +304,7 @@ Kirigami.ScrollablePage {
 //                running: false
 //                triggeredOnStart: false
 //                onTriggered: {
-//                    root.healthEvents.addHealthEvent(healthSlider.value)
+//                    healthEvents.addHealthEvent(healthSlider.value)
 //                }
 //            }
             Item {
