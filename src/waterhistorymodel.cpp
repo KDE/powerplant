@@ -6,10 +6,22 @@
 #include <QCoroFuture>
 #include <QDateTime>
 
-WaterHistoryModel::WaterHistoryModel(const int plantId, QObject *parent)
+WaterHistoryModel::WaterHistoryModel(QObject *parent)
     : QAbstractListModel(parent)
-    , m_plantId(plantId)
 {
+}
+
+DB::Plant::Id WaterHistoryModel::plantId() const
+{
+    return m_plantId;
+}
+
+void WaterHistoryModel::setPlantId(const DB::Plant::Id plantId)
+{
+    if (plantId == m_plantId) {
+        return;
+    }
+    m_plantId = plantId;
     auto future = Database::instance().waterEvents(plantId);
 
     QCoro::connect(std::move(future), this, [this](auto &&waterEvents) {
@@ -17,6 +29,7 @@ WaterHistoryModel::WaterHistoryModel(const int plantId, QObject *parent)
         m_data = waterEvents;
         endResetModel();
     });
+    Q_EMIT plantIdChanged();
 }
 
 int WaterHistoryModel::rowCount(const QModelIndex &) const
@@ -27,12 +40,13 @@ int WaterHistoryModel::rowCount(const QModelIndex &) const
 QHash<int, QByteArray> WaterHistoryModel::roleNames() const
 {
     return {
-        {Role::WaterEventRole, "waterEvent"}
+        {WaterEventRole, "waterEvent"}
     };
 }
 
 QVariant WaterHistoryModel::data(const QModelIndex &index, int role) const
 {
+    Q_UNUSED(role)
     Q_ASSERT(checkIndex(index, QAbstractItemModel::CheckIndexOption::IndexIsValid));
 
     return QDateTime::fromSecsSinceEpoch(m_data.at(index.row()).value);
@@ -45,5 +59,4 @@ void WaterHistoryModel::waterPlant()
     beginInsertRows({}, m_data.size(), m_data.size());
     m_data.emplace_back(now);
     endInsertRows();
-
 }

@@ -3,11 +3,15 @@
 #include <tuple>
 #include <threadeddatabase.h>
 
+namespace DB
+{
+
 struct Plant
 {
+    using Id = int;
     using ColumnTypes = std::tuple<int, QString, QString, QString, int, QString, int, int, int, int, int>;
 
-    int plant_id;
+    Plant::Id plant_id;
     QString name;
     QString species;
     QString img_url;
@@ -28,6 +32,8 @@ struct HealthEvent
     int health;
 };
 
+}
+
 class Database : public QObject
 {
     Q_OBJECT
@@ -35,10 +41,10 @@ public:
     Database();
 
     void addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth, const int lastWatered, const int healthDate, const int health);
-    QFuture<std::vector<Plant>> plants();
-    QFuture<std::optional<Plant>> plant(int plant_id);
+    QFuture<std::vector<DB::Plant>> plants();
+    QFuture<std::optional<DB::Plant>> plant(int plant_id);
     QFuture<std::vector<SingleValue<int>>> waterEvents(int plantId);
-    QFuture<std::vector<HealthEvent>> healthEvents(int plantId);
+    QFuture<std::vector<DB::HealthEvent>> healthEvents(int plantId);
     void waterPlant(const int plantId, const int waterDate);
     void addHealthEvent(const int plantId, const int healthDate, const int health);
     QFuture<std::optional<SingleValue<int>>> getLastHealthDate(const int plantId);

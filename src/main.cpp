@@ -10,8 +10,11 @@
 
 #include "app.h"
 #include "database.h"
+#include "planteditor.h"
 #include "colorgradientinterpolator.h"
 #include "plantsmodel.h"
+#include "waterhistorymodel.h"
+#include "healthhistorymodel.h"
 #include "version-powerplant.h"
 #include <KAboutData>
 #include <KLocalizedContext>
@@ -55,6 +58,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     qmlRegisterSingletonInstance("org.kde.powerplant", 1, 0, "Config", config);
 
+    qmlRegisterType<WaterHistoryModel>("org.kde.powerplant", 1, 0, "WaterHistoryModel");
+    qmlRegisterType<HealthHistoryModel>("org.kde.powerplant", 1, 0, "HealthHistoryModel");
+    qmlRegisterType<Plant>("org.kde.powerplant", 1, 0, "Plant");
+    qmlRegisterType<PlantEditor>("org.kde.powerplant", 1, 0, "PlantEditor");
     qmlRegisterType<PlantsModel>("org.kde.powerplant", 1, 0, "PlantsModel");
     qmlRegisterType<ColorGradientInterpolator>("org.kde.powerplant", 1, 0, "ColorInterpolator");
 

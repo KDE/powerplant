@@ -2,11 +2,11 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "plantsmodel.h"
-#include "healthhistorymodel.h"
-#include "waterhistorymodel.h"
 #include <QCoroTask>
 #include <QCoroFuture>
 #include <QDateTime>
+
+using namespace DB;
 
 PlantsModel::PlantsModel(QObject *parent)
     : QAbstractListModel(parent)
@@ -38,8 +38,6 @@ QHash<int, QByteArray> PlantsModel::roleNames() const
         {Role::LastWatered, "lastWatered"},
         {Role::WantsToBeWateredIn, "wantsToBeWateredIn"},
         {Role::CurrentHealth, "currentHealth"},
-        {Role::WaterEvents, "waterEvents"},
-        {Role::HealthEvents, "healthEvents"}
     };
 }
 
@@ -72,10 +70,6 @@ QVariant PlantsModel::data(const QModelIndex &index, int role) const
             return QDate::currentDate().daysTo(QDateTime::fromSecsSinceEpoch(plant.last_watered).date().addDays(plant.water_intervall));
         case Role::CurrentHealth:
             return plant.current_health;
-        case Role::WaterEvents:
-            return QVariant::fromValue(new WaterHistoryModel(plant.plant_id));
-        case Role::HealthEvents:
-            return QVariant::fromValue(new HealthHistoryModel(plant.plant_id));
     };
 
     Q_UNREACHABLE();
