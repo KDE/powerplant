@@ -15,5 +15,6 @@
         <file alias="components/TextIconBox.qml">contents/ui/components/TextIconBox.qml</file>
         <file alias="assets/aloe_vera.svg">contents/assets/aloe_vera.svg</file>
         <file alias="assets/green_lilly.svg">contents/assets/green_lilly.svg</file>
+        <file alias="assets/euphorbia_trigona.svg">contents/assets/euphorbia_trigona.svg</file>
     </qresource>
 </RCC>
