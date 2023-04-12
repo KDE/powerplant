@@ -8,7 +8,6 @@
 #include <QUrl>
 #include <QtQml>
 
-#include "about.h"
 #include "app.h"
 #include "database.h"
 #include "plantsmodel.h"
@@ -26,6 +25,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication app(argc, argv);
+        KLocalizedString::setApplicationDomain("powerplant");
+
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
     QCoreApplication::setApplicationName(QStringLiteral("powerplant"));
 
@@ -43,9 +44,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
                          // Copyright Statement.
                          i18n("(c) 2023"));
     aboutData.addAuthor(i18nc("@info:credit", "Mathis"),
-                        i18nc("@info:credit", "Author Role"),
-                        QStringLiteral("mbb@kaidan.im"),
-                        QStringLiteral("https://yourwebsite.com"));
+                        i18nc("@info:credit", "Author"),
+                        QStringLiteral("mbb@kaidan.im"));
     KAboutData::setApplicationData(aboutData);
 
     QQmlApplicationEngine engine;
@@ -54,10 +54,12 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     qmlRegisterSingletonInstance("org.kde.powerplant", 1, 0, "Config", config);
 
-    AboutType about;
-    qmlRegisterSingletonInstance("org.kde.powerplant", 1, 0, "AboutType", &about);
-
     qmlRegisterType<PlantsModel>("org.kde.powerplant", 1, 0, "PlantsModel");
+
+    qmlRegisterSingletonType("org.kde.powerplant", 1, 0, "About", [](QQmlEngine *engine, QJSEngine *) -> QJSValue {
+        return engine->toScriptValue(KAboutData::applicationData());
+    });
+
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));

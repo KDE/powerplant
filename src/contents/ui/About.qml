@@ -2,11 +2,9 @@
 // SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
 
 import QtQuick 2.15
-import QtQuick.Controls 2.15 as Controls
-import QtQuick.Layouts 1.15
-import org.kde.kirigami 2.19 as Kirigami
 import org.kde.powerplant 1.0
+import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 
-Kirigami.AboutPage {
-    aboutData: AboutType.aboutData
+MobileForm.AboutPage {
+    aboutData: About
 }
