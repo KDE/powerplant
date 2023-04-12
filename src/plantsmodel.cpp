@@ -115,3 +115,7 @@ void PlantsModel::editPlant(const DB::Plant::Id plantId, const QString &name, co
     emit dataChanged(idx, idx);
 }
 
+void PlantsModel::deletePlant(const DB::Plant::Id plantId)
+{
+    Database::instance().deletePlant(plantId);
+}
