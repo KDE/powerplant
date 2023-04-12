@@ -10,7 +10,7 @@
         <file alias="assets/monstera.svg">contents/assets/monstera.svg</file>
         <file alias="PlantsPage.qml">contents/ui/PlantsPage.qml</file>
         <file alias="HealthSlider.qml">contents/ui/HealthSlider.qml</file>
-        <file alias="AddPlantSheet.qml">contents/ui/AddPlantSheet.qml</file>
+        <file alias="PlantEditorPage.qml">contents/ui/PlantEditorPage.qml</file>
         <file alias="PlantDetailPage.qml">contents/ui/PlantDetailPage.qml</file>
         <file alias="components/TextIconBox.qml">contents/ui/components/TextIconBox.qml</file>
         <file alias="assets/aloe_vera.svg">contents/assets/aloe_vera.svg</file>

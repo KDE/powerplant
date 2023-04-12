@@ -2,11 +2,11 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "plantsmodel.h"
-#include "healthhistorymodel.h"
-#include "waterhistorymodel.h"
 #include <QCoroTask>
 #include <QCoroFuture>
 #include <QDateTime>
+
+using namespace DB;
 
 PlantsModel::PlantsModel(QObject *parent)
     : QAbstractListModel(parent)
@@ -38,8 +38,6 @@ QHash<int, QByteArray> PlantsModel::roleNames() const
         {Role::LastWatered, "lastWatered"},
         {Role::WantsToBeWateredIn, "wantsToBeWateredIn"},
         {Role::CurrentHealth, "currentHealth"},
-        {Role::WaterEvents, "waterEvents"},
-        {Role::HealthEvents, "healthEvents"}
     };
 }
 
@@ -72,10 +70,6 @@ QVariant PlantsModel::data(const QModelIndex &index, int role) const
             return QDate::currentDate().daysTo(QDateTime::fromSecsSinceEpoch(plant.last_watered).date().addDays(plant.water_intervall));
         case Role::CurrentHealth:
             return plant.current_health;
-        case Role::WaterEvents:
-            return QVariant::fromValue(new WaterHistoryModel(plant.plant_id));
-        case Role::HealthEvents:
-            return QVariant::fromValue(new HealthHistoryModel(plant.plant_id));
     };
 
     Q_UNREACHABLE();
@@ -84,9 +78,40 @@ QVariant PlantsModel::data(const QModelIndex &index, int role) const
 void PlantsModel::addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth, const int health)
 {
     int now = QDateTime::currentDateTime().toSecsSinceEpoch();
-    Database::instance().addPlant(name, species, imgUrl, waterInterval, location, dateOfBirth, now, now, health);
-    beginInsertRows({}, m_data.size(), m_data.size());
-    m_data.push_back(Plant{(m_data.empty()? 1 :m_data.back().plant_id+1), name, species, imgUrl, waterInterval, location, dateOfBirth, 1, now, now, health});
-    endInsertRows();
+    auto future = Database::instance().addPlant(name, species, imgUrl, waterInterval, location, dateOfBirth, now, now, health);
+
+    QCoro::connect(std::move(future), this, [&](auto &&result) {
+        beginInsertRows({}, m_data.size(), m_data.size());
+        m_data.push_back(Plant{result, name, species, imgUrl, waterInterval, location, dateOfBirth, 1, now, now, health});
+        endInsertRows();
+    });
+}
+
+void PlantsModel::editPlant(const DB::Plant::Id plantId, const QString &name, const QString &species, const QString &imgUrl, const int waterIntervall, const QString location, const int dateOfBirth)
+{
+    const int row = [&]() {
+        const auto it = std::find_if(m_data.cbegin(), m_data.cend(), [plantId](const auto &plant) {
+            return plantId == plant.plant_id;
+        });
+
+        Q_ASSERT(it != m_data.cend());
+
+        return it - m_data.cbegin();
+    }();
+
+    int now = QDateTime::currentDateTime().toSecsSinceEpoch();
+    Database::instance().editPlant(plantId, name, species, imgUrl, waterIntervall, location, dateOfBirth);
+
+    const auto idx = index(row, 0);
+
+    auto &plant = m_data[row];
+    plant.name = name;
+    plant.species = species;
+    plant.img_url = imgUrl;
+    plant.water_intervall = waterIntervall;
+    plant.location = location;
+    plant.date_of_birth = dateOfBirth;
+
+    emit dataChanged(idx, idx);
 }
 

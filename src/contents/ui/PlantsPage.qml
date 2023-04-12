@@ -17,24 +17,31 @@ Kirigami.Page {
     Layout.fillWidth: true
 
     title: i18n("Plants")
-    mainAction: Kirigami.Action {
+    actions.main: Kirigami.Action {
         icon.name: "help-about-symbolic"
         onTriggered: pageStack.pushDialogLayer("qrc:/About.qml")
-
-
     }
-    AddPlantSheet {
-        id: addSheet
-        plantsModel: plantsModel
+
+    Component {
+        id: addPlantComponent
+
+        PlantEditorPage {
+            plantsModel: grid.model
+            mode: PlantEditor.Creator
+        }
     }
+
     ActionButton {
         parent: root.overlay
         x: root.width - width - margin
         y: root.height - height - pageStack.globalToolBar.preferredHeight - margin
         singleAction: Kirigami.Action {
-            text: i18n("add Note")
+            text: i18nc("@action:button", "Add Plant")
             icon.name: "list-add"
-            onTriggered: addSheet.open()
+            onTriggered: applicationWindow().pageStack.pushDialogLayer(addPlantComponent, {}, {
+                width: Kirigami.Units.gridUnit * 25,
+                height: Kirigami.Units.gridUnit * 35,
+            })
         }
     }
     ColumnLayout {
@@ -65,21 +72,23 @@ Kirigami.Page {
 
                 delegate: ColumnLayout {
                     id: plantItem
+
+                    required property string plantId
                     required property string imgUrl
                     required property string name
                     required property string species
                     required property string wantsToBeWateredIn
                     required property int currentHealth
-                    required property var model
-
 
                     width: grid.cellWidth
+
                     Kirigami.Card {
                         id: card
 
-                        onClicked: {
-                            pageStack.push("qrc:/PlantDetailPage.qml", {model: plantItem.model})
-                        }
+                        onClicked: pageStack.push("qrc:/PlantDetailPage.qml", {
+                            plantId: plantItem.plantId,
+                            plantsModel: plantsModel,
+                        })
 
                         background: Kirigami.ShadowedRectangle {
                             radius: 5

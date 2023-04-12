@@ -5,15 +5,52 @@ import org.kde.kirigami 2.19 as Kirigami
 import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 import QtGraphicalEffects 1.15
 import org.kde.quickcharts 1.0 as Charts
+import org.kde.powerplant 1.0
 
 import "components"
 
 Kirigami.ScrollablePage {
     id: root
-    property var model
+
+    required property var plantsModel
+    required property int plantId
     property bool wideScreen: applicationWindow().width >= 800
-    property var waterEvents: root.model.waterEvents
-    property var healthEvents: root.model.healthEvents
+
+    Plant {
+        id: plant
+        plantId: root.plantId
+    }
+
+    WaterHistoryModel {
+        id: waterEvents
+        plantId: root.plantId
+    }
+
+    HealthHistoryModel {
+        id: healthEvents
+        plantId: root.plantId
+    }
+
+    Component {
+        id: editPlantComponent
+
+        PlantEditorPage {
+            mode: PlantEditor.Editor
+            plantsModel: root.plantsModel
+            plantId: root.plantId
+        }
+    }
+
+    actions.contextualActions: Kirigami.Action {
+        icon.name: "document-edit"
+        text: i18nc("@action:button", "Edit")
+        onTriggered: {
+            applicationWindow().pageStack.pushDialogLayer(editPlantComponent, {}, {
+                width: Kirigami.Units.gridUnit * 25,
+                height: Kirigami.Units.gridUnit * 35,
+            })
+        }
+    }
 
     leftPadding: 0
     rightPadding: 0
@@ -72,10 +109,12 @@ Kirigami.ScrollablePage {
                     anchors.fill: parent
                     id: image
                     fillMode: Image.PreserveAspectFit
-                    source: root.model.imgUrl
-                    layer.enabled: true
-                    layer.effect: OpacityMask {
-                        maskSource: mask
+                    source: plant.imgUrl
+                    layer {
+                        enabled: true
+                        effect: OpacityMask {
+                            maskSource: mask
+                        }
                     }
                 }
                 Rectangle {
@@ -95,12 +134,12 @@ Kirigami.ScrollablePage {
                 }
             }
             Kirigami.Heading {
-                text: root.model.name
+                text: plant.name
                 type: Kirigami.Heading.Type.Primary
                 Layout.alignment: Qt.AlignHCenter
             }
             Controls.Label {
-                text: root.model.species
+                text: plant.species
                 color: Kirigami.Theme.disabledTextColor
                 Layout.alignment: Qt.AlignHCenter
             }
@@ -119,17 +158,17 @@ Kirigami.ScrollablePage {
                 Layout.alignment: Qt.AlignHCenter
                 Layout.maximumWidth: Kirigami.Units.gridUnit * 30
                 TextIconBox {
-                    label.text: root.model.location
+                    label.text: plant.location
                     icon.source: "mark-location"
                     Layout.fillWidth: true
                 }
                 TextIconBox {
-                    label.text: "Age of Plant"
+                    label.text: i18n("Age of Plant")
                     icon.source: "chronometer"
                     Layout.fillWidth: true
                 }
                 TextIconBox {
-                    label.text: "Parent"
+                    label.text: i18n("Parent")
                     icon.source: "view-list-tree"
                     Layout.fillWidth: true
                 }
@@ -154,11 +193,11 @@ Kirigami.ScrollablePage {
                             }
                             Controls.Label {
                                 Layout.fillWidth: true
-                                text: if (root.model.wantsToBeWateredIn > 1) {
-                                          i18n("has to be watered in %1 days", root.model.wantsToBeWateredIn)
-                                      } else if (root.model.wantsToBeWateredIn == 1) {
+                                text: if (plant.wantsToBeWateredIn > 1) {
+                                          i18n("has to be watered in %1 days", plant.wantsToBeWateredIn)
+                                      } else if (plant.wantsToBeWateredIn == 1) {
                                           i18n("has to be watered tomorrow")
-                                      } else if (root.model.wantsToBeWateredIn == 0) {
+                                      } else if (plant.wantsToBeWateredIn == 0) {
                                           i18n("needs to be watered today!")
                                       }
                             }
@@ -166,7 +205,6 @@ Kirigami.ScrollablePage {
                                 text: i18n("Watered")
                                 icon.name: "answer-correct"
                                 onClicked: waterEvents.waterPlant()
-
                             }
                         }
                     }
@@ -208,16 +246,17 @@ Kirigami.ScrollablePage {
                                     Layout.fillWidth: true
                                     Layout.alignment: Qt.AlignHCenter
                                     Layout.maximumWidth: 200
-                                    value: root.model.currentHealth
+                                    value: plant.currentHealth
                                     from: 0
                                     to: 100
                                 }
+
                                 Item {Layout.fillWidth: true}
+
                                 Controls.Button {
                                     text: i18n("Add")
                                     icon.name: "list-add"
                                     onClicked: root.healthEvents.addHealthEvent(healthSlider.value)
-
                                 }
                             }
                         }
@@ -232,6 +271,7 @@ Kirigami.ScrollablePage {
                             Controls.Label {
                                 text: i18n("Health History")
                             }
+
                             Charts.LineChart {
                                 height: 60
                                 Layout.topMargin: 10
@@ -249,10 +289,9 @@ Kirigami.ScrollablePage {
                                 smooth: true
 
                                 valueSources: Charts.ModelSource {
-                                    model: root.healthEvents
+                                    model: healthEvents
                                     roleName: "health"
                                 }
-
                             }
                         }
                     }

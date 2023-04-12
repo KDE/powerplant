@@ -6,16 +6,29 @@
 #include <QCoroFuture>
 #include <QDateTime>
 
-HealthHistoryModel::HealthHistoryModel(const int plantId, QObject *parent)
+HealthHistoryModel::HealthHistoryModel(QObject *parent)
     : QAbstractListModel(parent)
-    , m_plantId(plantId)
 {
+}
+
+DB::Plant::Id HealthHistoryModel::plantId() const
+{
+    return m_plantId;
+}
+
+void HealthHistoryModel::setPlantId(const DB::Plant::Id plantId)
+{
+    if (plantId == m_plantId) {
+        return;
+    }
+    m_plantId = plantId;
     auto future = Database::instance().healthEvents(plantId);
     QCoro::connect(std::move(future), this, [this](auto &&healthEvents) {
         beginResetModel();
         m_data = healthEvents;
         endResetModel();
     });
+    Q_EMIT plantIdChanged();
 }
 
 int HealthHistoryModel::rowCount(const QModelIndex &) const
@@ -53,5 +66,4 @@ void HealthHistoryModel::addHealthEvent(const int health)
     beginInsertRows({}, m_data.size(), m_data.size());
     m_data.emplace_back(now, health);
     endInsertRows();
-
 }
