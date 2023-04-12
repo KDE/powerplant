@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "planteditor.h"
+#include "database.h"
 #include <QCoroTask>
 #include <QCoroFuture>
 
@@ -19,9 +20,31 @@ void Plant::setPlantId(const DB::Plant::Id plantId)
     if (m_plantId == plantId) {
         return;
     }
-    m_plantId = plantId;
+    if (m_plantId >= 0) {
+        disconnect(&Database::instance(), &Database::plantChanged, this, nullptr);
+    }
 
-    auto future = Database::instance().plant(plantId);
+    m_plantId = plantId;
+    refresh();
+
+    if (m_plantId >= 0) {
+        connect(&Database::instance(), &Database::plantChanged, this, [this](DB::Plant::Id plantId) {
+            if (m_plantId == plantId) {
+                refresh();
+            }
+        });
+    }
+
+    Q_EMIT plantIdChanged();
+}
+
+void Plant::refresh()
+{
+    if (m_plantId == -1) {
+        return;
+    }
+
+    auto future = Database::instance().plant(m_plantId);
 
     QCoro::connect(std::move(future), this, [this](auto &&plant) {
         if (!plant.has_value()) {
@@ -52,9 +75,8 @@ void Plant::setPlantId(const DB::Plant::Id plantId)
         m_currentHealth = plant->current_health;
         Q_EMIT currentHealthChanged();
     });
-
-    Q_EMIT plantIdChanged();
 }
+
 int Plant::wantsToBeWateredIn() const
 {
     return QDate::currentDate().daysTo(m_lastWatered.addDays(m_waterIntervall));
@@ -98,6 +120,16 @@ void PlantEditor::save()
             m_plant->m_location,
             0,
             m_plant->m_currentHealth
+        );
+    } else {
+        m_plantsModel->editPlant(
+            m_plant->m_plantId,
+            m_plant->m_name,
+            m_plant->m_species,
+            m_plant->m_imgUrl.toString(),
+            m_plant->m_waterIntervall,
+            m_plant->m_location,
+            m_plant->m_dateOfBirth
         );
     }
 }

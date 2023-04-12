@@ -12,6 +12,7 @@ import "components"
 Kirigami.ScrollablePage {
     id: root
 
+    required property var plantsModel
     required property int plantId
     property bool wideScreen: applicationWindow().width >= 800
 
@@ -35,6 +36,7 @@ Kirigami.ScrollablePage {
 
         PlantEditorPage {
             mode: PlantEditor.Editor
+            plantsModel: root.plantsModel
             plantId: root.plantId
         }
     }
@@ -42,10 +44,12 @@ Kirigami.ScrollablePage {
     actions.contextualActions: Kirigami.Action {
         icon.name: "document-edit"
         text: i18nc("@action:button", "Edit")
-        onTriggered: applicationWindow().pageStack.pushDialogLayer(editPlantComponent, {}, {
+        onTriggered: {
+            applicationWindow().pageStack.pushDialogLayer(editPlantComponent, {}, {
                 width: Kirigami.Units.gridUnit * 25,
                 height: Kirigami.Units.gridUnit * 35,
             })
+        }
     }
 
     leftPadding: 0

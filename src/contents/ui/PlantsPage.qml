@@ -26,6 +26,7 @@ Kirigami.Page {
         id: addPlantComponent
 
         PlantEditorPage {
+            plantsModel: grid.model
             mode: PlantEditor.Creator
         }
     }
@@ -86,6 +87,7 @@ Kirigami.Page {
 
                         onClicked: pageStack.push("qrc:/PlantDetailPage.qml", {
                             plantId: plantItem.plantId,
+                            plantsModel: plantsModel,
                         })
 
                         background: Kirigami.ShadowedRectangle {

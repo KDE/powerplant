@@ -78,9 +78,40 @@ QVariant PlantsModel::data(const QModelIndex &index, int role) const
 void PlantsModel::addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth, const int health)
 {
     int now = QDateTime::currentDateTime().toSecsSinceEpoch();
-    Database::instance().addPlant(name, species, imgUrl, waterInterval, location, dateOfBirth, now, now, health);
-    beginInsertRows({}, m_data.size(), m_data.size());
-    m_data.push_back(Plant{(m_data.empty()? 1 :m_data.back().plant_id+1), name, species, imgUrl, waterInterval, location, dateOfBirth, 1, now, now, health});
-    endInsertRows();
+    auto future = Database::instance().addPlant(name, species, imgUrl, waterInterval, location, dateOfBirth, now, now, health);
+
+    QCoro::connect(std::move(future), this, [&](auto &&result) {
+        beginInsertRows({}, m_data.size(), m_data.size());
+        m_data.push_back(Plant{result, name, species, imgUrl, waterInterval, location, dateOfBirth, 1, now, now, health});
+        endInsertRows();
+    });
+}
+
+void PlantsModel::editPlant(const DB::Plant::Id plantId, const QString &name, const QString &species, const QString &imgUrl, const int waterIntervall, const QString location, const int dateOfBirth)
+{
+    const int row = [&]() {
+        const auto it = std::find_if(m_data.cbegin(), m_data.cend(), [plantId](const auto &plant) {
+            return plantId == plant.plant_id;
+        });
+
+        Q_ASSERT(it != m_data.cend());
+
+        return it - m_data.cbegin();
+    }();
+
+    int now = QDateTime::currentDateTime().toSecsSinceEpoch();
+    Database::instance().editPlant(plantId, name, species, imgUrl, waterIntervall, location, dateOfBirth);
+
+    const auto idx = index(row, 0);
+
+    auto &plant = m_data[row];
+    plant.name = name;
+    plant.species = species;
+    plant.img_url = imgUrl;
+    plant.water_intervall = waterIntervall;
+    plant.location = location;
+    plant.date_of_birth = dateOfBirth;
+
+    emit dataChanged(idx, idx);
 }
 

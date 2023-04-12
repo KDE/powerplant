@@ -2,6 +2,7 @@
 
 #include <tuple>
 #include <threadeddatabase.h>
+#include <QCoroTask>
 
 namespace DB
 {
@@ -40,7 +41,8 @@ class Database : public QObject
 public:
     Database();
 
-    void addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth, const int lastWatered, const int healthDate, const int health);
+    QCoro::Task<DB::Plant::Id> addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterIntervall, const QString location, const int dateOfBirth, const int lastWatered, const int healthDate, const int health);
+    void editPlant(const DB::Plant::Id plantId, const QString &name, const QString &species, const QString &imgUrl, const int waterIntervall, const QString location, const int dateOfBirth);
     QFuture<std::vector<DB::Plant>> plants();
     QFuture<std::optional<DB::Plant>> plant(int plant_id);
     QFuture<std::vector<SingleValue<int>>> waterEvents(int plantId);
@@ -50,6 +52,9 @@ public:
     QFuture<std::optional<SingleValue<int>>> getLastHealthDate(const int plantId);
 //    void replaceLastHealthEvent(const int plantId, const int waterDate, const int health);
     static Database & instance();
+
+Q_SIGNALS:
+    void plantChanged(const DB::Plant::Id plantId);
 
 
 private:

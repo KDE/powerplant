@@ -11,14 +11,14 @@ import org.kde.powerplant 1.0
 Kirigami.ScrollablePage {
     id: root
 
-    property PlantsModel plantsModel
+    required property PlantsModel plantsModel
     property int waterInterval: 2
-    property int mode: PlantEditor.Editor
+    required property int mode
     property int plantId: -1
 
     readonly property PlantEditor plantEditor: PlantEditor {
         plantId: root.plantId
-        mode: root.plantId
+        mode: root.mode
         plantsModel: root.plantsModel
     }
 
@@ -131,11 +131,14 @@ Kirigami.ScrollablePage {
                     }
                 }
 
-                MobileForm.FormDelegateSeparator {}
+                MobileForm.FormDelegateSeparator {
+                    visible: root.mode === PlantEditor.Creator
+                }
 
                 MobileForm.AbstractFormDelegate {
                     id: health
-                    background: Item {}
+                    visible: root.mode === PlantEditor.Creator
+                    background: null
                     contentItem: ColumnLayout {
                         Controls.Label {
                             text: i18n("How healthy is your plant at the moment?")

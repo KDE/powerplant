@@ -33,7 +33,7 @@ class Plant : public QObject
     Q_PROPERTY(QString location MEMBER m_location NOTIFY locationChanged)
 
     /// This property holds the date of birth of this plant
-    Q_PROPERTY(QString dateOfBirth MEMBER m_dateOfBirth NOTIFY dateOfBirthChanged)
+    Q_PROPERTY(int dateOfBirth MEMBER m_dateOfBirth NOTIFY dateOfBirthChanged)
 
     /// This property holds the time when this plant was last watered
     Q_PROPERTY(QDate lastWatered MEMBER m_lastWatered NOTIFY lastWateredChanged)
@@ -49,6 +49,7 @@ public:
 
     DB::Plant::Id plantId() const;
     void setPlantId(const DB::Plant::Id plantId);
+
     int wantsToBeWateredIn() const;
 
 Q_SIGNALS:
@@ -63,12 +64,14 @@ Q_SIGNALS:
     void currentHealthChanged();
 
 private:
+    void refresh();
+
     DB::Plant::Id m_plantId;
     QString m_name;
     QString m_species;
     QUrl m_imgUrl;
     QString m_location;
-    QString m_dateOfBirth;
+    int m_dateOfBirth;
     QDate m_lastWatered;
     int m_waterIntervall;
     int m_currentHealth;
@@ -80,10 +83,10 @@ class PlantEditor : public QObject
 {
     Q_OBJECT
 
-    Q_PROPERTY(Mode mode MEMBER m_mode NOTIFY modeChanged)
+    Q_PROPERTY(Mode mode MEMBER m_mode NOTIFY modeChanged REQUIRED)
     Q_PROPERTY(int plantId READ plantId WRITE setPlantId NOTIFY plantIdChanged)
     Q_PROPERTY(Plant *plant READ plant CONSTANT)
-    Q_PROPERTY(PlantsModel *plantsModel MEMBER m_plantsModel NOTIFY plantsModelChanged)
+    Q_PROPERTY(PlantsModel *plantsModel MEMBER m_plantsModel NOTIFY plantsModelChanged REQUIRED)
 
 public:
     enum Mode {

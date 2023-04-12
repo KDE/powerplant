@@ -30,12 +30,22 @@ Database::Database()
     m_database->runMigrations(":/contents/migrations/");
 }
 
-void Database::addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth, const int lastWatered, const int healthDate, const int health)
+QCoro::Task<DB::Plant::Id> Database::addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth, const int lastWatered, const int healthDate, const int health)
 {
-    auto future = m_database->getResult<SingleValue<int>>("insert into plants (name, species, img_url, water_intervall, location, date_of_birth) values (?, ?, ?, ?, ?, ?) returning plant_id", name, species, imgUrl, waterInterval, location, dateOfBirth);
-    QCoro::connect(std::move(future), this, [=, this](auto id) {
-        m_database->execute("insert into water_history (plant_id, water_date) values (?, ?)", id.value().value, lastWatered);
-        m_database->execute("insert into health_history (plant_id, health_date, health) values (?, ?, ?)", id.value().value, healthDate, health);
+    auto id = co_await m_database->getResult<SingleValue<int>>("insert into plants (name, species, img_url, water_intervall, location, date_of_birth) values (?, ?, ?, ?, ?, ?) returning plant_id", name, species, imgUrl, waterInterval, location, dateOfBirth);
+
+    m_database->execute("insert into water_history (plant_id, water_date) values (?, ?)", id.value().value, lastWatered);
+    m_database->execute("insert into health_history (plant_id, health_date, health) values (?, ?, ?)", id.value().value, healthDate, health);
+
+    co_return id.value().value;
+}
+
+void Database::editPlant(const DB::Plant::Id plantId, const QString &name, const QString &species, const QString &imgUrl, const int waterIntervall, const QString location, const int dateOfBirth)
+{
+
+    auto future = m_database->getResult<SingleValue<int>>("update plants SET name = ?, species = ?, img_url = ?, water_intervall = ?, location = ?, date_of_birth = ? where plant_id = ?", name, species, imgUrl, waterIntervall, location, dateOfBirth, plantId);
+    QCoro::connect(std::move(future), this, [=, this](auto) {
+        Q_EMIT plantChanged(plantId);
     });
 }
 
