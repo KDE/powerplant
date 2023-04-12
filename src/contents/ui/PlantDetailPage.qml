@@ -56,7 +56,7 @@ Kirigami.ScrollablePage {
         icon.name: "delete"
         text: i18nc("@action:button", "Delete")
         onTriggered: {
-            plant.deletePlant()
+            root.plantsModel.deletePlant(root.plantId)
             }
         }
 
