@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
+// SPDX-License-Identifier: LGPL-2.0-or-later
+
 #include "plantsmodel.h"
 #include "healthhistorymodel.h"
 #include "waterhistorymodel.h"
@@ -5,7 +8,8 @@
 #include <QCoroFuture>
 #include <QDateTime>
 
-PlantsModel::PlantsModel()
+PlantsModel::PlantsModel(QObject *parent)
+    : QAbstractListModel(parent)
 {
     auto future = Database::instance().plants();
 
@@ -36,15 +40,15 @@ QHash<int, QByteArray> PlantsModel::roleNames() const
         {Role::CurrentHealth, "currentHealth"},
         {Role::WaterEvents, "waterEvents"},
         {Role::HealthEvents, "healthEvents"}
-
-
     };
 }
 
 QVariant PlantsModel::data(const QModelIndex &index, int role) const
 {
-    int i = index.row();
-    auto plant = m_data.at(i);
+    Q_ASSERT(checkIndex(index, QAbstractItemModel::CheckIndexOption::IndexIsValid));
+
+    const auto plant = m_data.at(index.row());
+
     static std::unordered_map<int,std::vector<QDateTime>> waterEvents;
 
     switch(role){

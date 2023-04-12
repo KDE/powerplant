@@ -8,6 +8,11 @@
 #include <QCoroTask>
 #include <QCoroFuture>
 
+HealthEvent::HealthEvent(int _health_date, int _health)
+    : health_date(_health_date)
+    , health(_health)
+{}
+
 Database::Database()
 {
     const auto databaseDirectory = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
