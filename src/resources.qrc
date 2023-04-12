@@ -13,5 +13,9 @@
         <file alias="AddPlantSheet.qml">contents/ui/AddPlantSheet.qml</file>
         <file alias="ColorInterpolation/InterpolationStop.qml">contents/ui/ColorInterpolation/InterpolationStop.qml</file>
         <file alias="ColorInterpolation/ColorInterpolation.qml">contents/ui/ColorInterpolation/ColorInterpolation.qml</file>
+        <file alias="PlantDetailPage.qml">contents/ui/PlantDetailPage.qml</file>
+        <file alias="components/TextIconBox.qml">contents/ui/components/TextIconBox.qml</file>
+        <file alias="assets/aloe_vera.svg">contents/assets/aloe_vera.svg</file>
+        <file alias="assets/green_lilly.svg">contents/assets/green_lilly.svg</file>
     </qresource>
 </RCC>

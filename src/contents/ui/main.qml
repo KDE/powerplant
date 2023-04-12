@@ -17,5 +17,8 @@ Kirigami.ApplicationWindow {
 
     pageStack.initialPage: "qrc:/PlantsPage.qml"
 
+    pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.ShowBackButton
+    pageStack.popHiddenPages:true
+    pageStack.columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
 
 }

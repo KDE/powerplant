@@ -4,7 +4,7 @@
 #include <ThreadedDatabase>
 #include <QDir>
 #include <QStringBuilder>
-
+#include <QDateTime>
 #include <QCoroTask>
 #include <QCoroFuture>
 
@@ -56,6 +56,37 @@ QFuture<std::optional<Plant>> Database::plant(int plant_id)
 {
     return m_database->getResult<Plant>("select * from plants where plant_id = ?", plant_id);
 }
+
+QFuture<std::vector<SingleValue<int>>> Database::waterEvents(int plantId)
+{
+    return m_database->getResults<SingleValue<int>>("select water_date from water_history where plant_id = ?", plantId);
+}
+
+QFuture<std::vector<HealthEvent>> Database::healthEvents(int plantId)
+{
+    return m_database->getResults<HealthEvent>("select health_date, health from health_history where plant_id = ?", plantId);
+}
+
+void Database::waterPlant(const int plantId, const int waterDate)
+{
+    m_database->execute("insert into water_history (plant_id, water_date) values (?, ?)", plantId, waterDate);
+}
+
+void Database::addHealthEvent(const int plantId, const int waterDate, const int health)
+{
+    m_database->execute("insert into health_history (plant_id, health_date, health) values (?, ?, ?)", plantId, waterDate, health);
+}
+
+QFuture<std::optional<SingleValue<int>>> Database::getLastHealthDate(const int plantId)
+{
+    return m_database->getResult<SingleValue<int>>("select health_date from health_history where plant_id = ? order by desc limit 1", plantId);
+
+}
+
+//void Database::replaceLastHealthEvent(const int plantId, const int waterDate, const int health)
+//{
+//    m_database->execute("insert into health_history (plant_id, health_date, health) values (?, ?, ?)", plantId, waterDate, health);
+//}
 
 Database &Database::instance()
 {

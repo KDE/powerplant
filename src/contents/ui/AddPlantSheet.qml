@@ -9,7 +9,7 @@ import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 import org.kde.powerplant 1.0
 
 Kirigami.OverlaySheet {
-    id: removeDialog
+    id: root
     property PlantsModel plantsModel
     property int waterInterval : 2
     Kirigami.Theme.colorSet: Kirigami.Theme.Window
@@ -26,7 +26,11 @@ Kirigami.OverlaySheet {
             Layout.fillWidth: true
             contentItem: ColumnLayout {
                 spacing: 0
-
+                MobileForm.FormTextFieldDelegate {
+                    id: imgUrl
+                    label: i18n("Image Url")
+                }
+                MobileForm.FormDelegateSeparator {}
                 MobileForm.FormTextFieldDelegate {
                     id: name
                     label: i18n("Name")
@@ -36,6 +40,11 @@ Kirigami.OverlaySheet {
                 MobileForm.FormTextFieldDelegate {
                     id: species
                     label: i18n("Species")
+                }
+                MobileForm.FormDelegateSeparator {}
+                MobileForm.FormTextFieldDelegate {
+                    id: location
+                    label: i18n("Room")
                 }
                 MobileForm.FormDelegateSeparator {}
 
@@ -132,7 +141,10 @@ Kirigami.OverlaySheet {
         Controls.Button {
             text: i18n("Add")
             icon.name: "list-add"
-            onClicked: plantsModel.addPlant(name.text, species.text, "", waterInterval, "", 0, healthSlider.value)
+            onClicked: {
+                plantsModel.addPlant(name.text, species.text, imgUrl.text, waterInterval, location.text, 0, healthSlider.value)
+                root.close()
+            }
         }
     }
 }

@@ -2,7 +2,7 @@
 
 A verry WIP app to keep track of your plant's needs
 
-![](https://i.imgur.com/NR9ZNAl.png)
+![](https://i.imgur.com/d2rAxUF.png)
 
 ## build instructions
 

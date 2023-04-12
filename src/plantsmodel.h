@@ -19,7 +19,9 @@ public:
         DateOfBirth,
         LastWatered,
         WantsToBeWateredIn,
-        CurrentHealth
+        CurrentHealth,
+        WaterEvents,
+        HealthEvents
     };
     QHash<int, QByteArray> roleNames()const override;
     QVariant data(const QModelIndex& index, int role) const override;

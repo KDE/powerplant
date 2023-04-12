@@ -7,6 +7,8 @@ add_executable(powerplant
     app.cpp
     database.cpp
     plantsmodel.cpp
+    healthhistorymodel.cpp
+    waterhistorymodel.cpp
     resources.qrc)
 
 target_link_libraries(powerplant

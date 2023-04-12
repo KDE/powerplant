@@ -11,7 +11,9 @@ import "components"
 
 Kirigami.Page {
     id: root
-
+    rightPadding: 0
+//    leftPadding:0
+    bottomPadding:0
     Layout.fillWidth: true
 
     title: i18n("Plants")
@@ -22,7 +24,7 @@ Kirigami.Page {
     ActionButton {
         parent: root.overlay
         x: root.width - width - margin
-        y: root.height - height - pageStack.globalToolBar.preferredHeight  - margin
+        y: root.height - height - pageStack.globalToolBar.preferredHeight - margin
         singleAction: Kirigami.Action {
             text: i18n("add Note")
             icon.name: "list-add"
@@ -49,39 +51,52 @@ Kirigami.Page {
                 clip: true
                 id: grid
 
-                model: PlantsModel {id: plantsModel}
+                model: PlantsModel {
+                    id: plantsModel
+                }
                 cellWidth: grid.width / (Math.floor(grid.width / 230))
                 cellHeight: 310
 
                 delegate: ColumnLayout {
                     id: plantItem
+                    required property string imgUrl
                     required property string name
                     required property string species
                     required property string wantsToBeWateredIn
                     required property int currentHealth
+                    required property var model
 
 
                     width: grid.cellWidth
                     Kirigami.Card {
                         id: card
+
+                        onClicked: {
+                            pageStack.push("qrc:/PlantDetailPage.qml", {model: plantItem.model})
+                        }
+
                         background: Kirigami.ShadowedRectangle {
                             radius: 5
-                            color:  Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, healthSlider.healthColor, 0.2);
-                            border.color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3);
+                            color: Kirigami.ColorUtils.tintWithAlpha(
+                                       Kirigami.Theme.backgroundColor,
+                                       healthSlider.healthColor, 0.2)
+                            border.color: Kirigami.ColorUtils.linearInterpolation(
+                                              Kirigami.Theme.backgroundColor,
+                                              Kirigami.Theme.textColor, 0.3)
                             border.width: 1
                             shadow.size: 15
                             shadow.xOffset: 5
                             shadow.yOffset: 5
                             shadow.color: Qt.rgba(0, 0, 0, 0.1)
-                            Item{
+                            Item {
                                 y: 2
-                                height: parent.height -80
+                                height: parent.height - 80
                                 width: parent.width
                                 Image {
                                     anchors.fill: parent
                                     id: image
                                     fillMode: Image.PreserveAspectFit
-                                    source: "qrc:/assets/monstera.svg"
+                                    source: imgUrl
                                     layer.enabled: true
                                     layer.effect: OpacityMask {
                                         maskSource: mask
@@ -92,9 +107,15 @@ Kirigami.Page {
                                     anchors.fill: parent
                                     visible: false
                                     gradient: Gradient {
-                                            GradientStop { position: 0.5; color: "white" }
-                                            GradientStop { position: 0.75; color: "transparent" }
+                                        GradientStop {
+                                            position: 0.5
+                                            color: "white"
                                         }
+                                        GradientStop {
+                                            position: 0.75
+                                            color: "transparent"
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -104,8 +125,9 @@ Kirigami.Page {
                         implicitHeight: grid.cellHeight - 2 * Layout.margins
                         contentItem: ColumnLayout {
 
-
-                            Item {height: 120}
+                            Item {
+                                height: 120
+                            }
                             Kirigami.Heading {
                                 text: name
                                 type: Kirigami.Heading.Type.Primary
@@ -114,38 +136,31 @@ Kirigami.Page {
                                 text: species
                                 color: Kirigami.Theme.disabledTextColor
                             }
-                            Kirigami.ShadowedRectangle {
-                                border.color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3);
-                                border.width: 1
-                                Kirigami.Theme.colorSet: Kirigami.Theme.View
-                                color: Kirigami.Theme.backgroundColor
-                                radius: 5
-                                height: waterInLayout.implicitHeight + Kirigami.Units.mediumSpacing
+                            TextIconBox {
                                 Layout.fillWidth: true
-                                RowLayout {
-                                    id: waterInLayout
-                                    anchors.fill: parent
-                                    Kirigami.Icon {
-                                        isMask: true
-                                        color: "#64ace1"
-                                        source: "raindrop"
-                                        implicitHeight: Kirigami.Units.gridUnit * 1.5
+                                label.text: if (wantsToBeWateredIn > 1) {
+                                    i18n("in %1 days",
+                                             wantsToBeWateredIn)
+                                    } else if (wantsToBeWateredIn == 1) {
+                                        i18n("tomorrow")
+                                    } else if (wantsToBeWateredIn == 0) {
+                                        i18n("needs to be watered")
                                     }
-                                    Controls.Label {
-                                        text: i18n("in %1 days", wantsToBeWateredIn)
-                                        color: Kirigami.Theme.disabledTextColor
-                                    }
-                                }
+                                icon.source: "raindrop"
+                                icon.color: "#64ace1"
+
                             }
                             HealthSlider {
                                 id: healthSlider
                                 Layout.fillWidth: true
-                                from:0
-                                to:100
+                                from: 0
+                                to: 100
                                 value: currentHealth
                                 enabled: false
                             }
-                            Item {height:20}
+                            Item {
+                                height: 20
+                            }
                         }
                     }
                 }
