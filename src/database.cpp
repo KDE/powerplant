@@ -49,6 +49,14 @@ void Database::editPlant(const DB::Plant::Id plantId, const QString &name, const
     });
 }
 
+void Database::deletePlant(const DB::Plant::Id plantId)
+{
+
+    auto future = m_database->getResult<SingleValue<int>>("delete from plants where plant_id = ?", plantId);
+    QCoro::connect(std::move(future), this, [=, this](auto) {
+        Q_EMIT plantChanged(plantId);
+    });
+}
 QFuture<std::vector<Plant>> Database::plants()
 {
     return m_database->getResults<Plant>(R"(
