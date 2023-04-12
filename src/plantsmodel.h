@@ -1,5 +1,8 @@
-#ifndef PLANTSMODEL_H
-#define PLANTSMODEL_H
+// SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
+// SPDX-License-Identifier: LGPL-2.0-or-later
+
+#pragma once
+
 #include "database.h"
 #include <QAbstractListModel>
 
@@ -7,7 +10,8 @@ class PlantsModel: public QAbstractListModel
 {
     Q_OBJECT;
 public:
-    PlantsModel();
+    explicit PlantsModel(QObject *parent = nullptr);
+
     int rowCount(const QModelIndex&)const override;
     enum Role {
         PlantID,
@@ -30,5 +34,3 @@ public:
 private:
     std::vector<Plant> m_data;
 };
-
-#endif // PLANTSMODEL_H

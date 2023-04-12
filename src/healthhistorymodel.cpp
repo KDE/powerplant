@@ -1,12 +1,16 @@
+// SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
+// SPDX-License-Identifier: LGPL-2.0-or-later
+
 #include "healthhistorymodel.h"
 #include <QCoroTask>
 #include <QCoroFuture>
 #include <QDateTime>
 
-HealthHistoryModel::HealthHistoryModel(int plantId)
+HealthHistoryModel::HealthHistoryModel(const int plantId, QObject *parent)
+    : QAbstractListModel(parent)
+    , m_plantId(plantId)
 {
     auto future = Database::instance().healthEvents(plantId);
-    plant_Id = plantId;
     QCoro::connect(std::move(future), this, [this](auto &&healthEvents) {
         beginResetModel();
         m_data = healthEvents;
@@ -22,33 +26,32 @@ int HealthHistoryModel::rowCount(const QModelIndex &) const
 QHash<int, QByteArray> HealthHistoryModel::roleNames() const
 {
     return {
-        {Role::HealthDate, "healthDate"},
-        {Role::Health, "health"}
-
+        {Role::HealthDateRole, "healthDate"},
+        {Role::HealthRole, "health"}
     };
 }
 
 QVariant HealthHistoryModel::data(const QModelIndex &index, int role) const
 {
-    int i = index.row();
-    auto event = m_data.at(i);
-    switch(role){
-        case Role::HealthDate:
+    Q_ASSERT(checkIndex(index, QAbstractItemModel::CheckIndexOption::IndexIsValid));
+
+    const auto event = m_data.at(index.row());
+    switch (role){
+        case Role::HealthDateRole:
             return QDateTime::fromSecsSinceEpoch(event.health_date);
-        case Role::Health:
+        case Role::HealthRole:
             return event.health;
     };
 
     Q_UNREACHABLE();
-
 }
 
 void HealthHistoryModel::addHealthEvent(const int health)
 {
-    int now = QDateTime::currentDateTime().toSecsSinceEpoch();
-    Database::instance().addHealthEvent(plant_Id, now, health);
+    const int now = QDateTime::currentDateTime().toSecsSinceEpoch();
+    Database::instance().addHealthEvent(m_plantId, now, health);
     beginInsertRows({}, m_data.size(), m_data.size());
-    m_data.push_back(HealthEvent { now, health });
+    m_data.emplace_back(now, health);
     endInsertRows();
 
 }

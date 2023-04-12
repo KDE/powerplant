@@ -23,6 +23,7 @@ struct Plant
 struct HealthEvent
 {
     using ColumnTypes = std::tuple<int, int>;
+    explicit HealthEvent(int health_date, int health);
     int health_date;
     int health;
 };
