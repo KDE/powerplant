@@ -17,5 +17,6 @@
         <file alias="assets/green_lilly.svg">contents/assets/green_lilly.svg</file>
         <file alias="assets/euphorbia_trigona.svg">contents/assets/euphorbia_trigona.svg</file>
         <file alias="assets/avocado.svg">contents/assets/avocado.svg</file>
+        <file alias="assets/epipremnum_aureum.svg">contents/assets/epipremnum_aureum.svg</file>
     </qresource>
 </RCC>
