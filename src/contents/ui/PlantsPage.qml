@@ -17,6 +17,12 @@ Kirigami.Page {
     Layout.fillWidth: true
 
     title: i18n("Plants")
+    mainAction: Kirigami.Action {
+        icon.name: "help-about-symbolic"
+        onTriggered: pageStack.pushDialogLayer("qrc:/About.qml")
+
+
+    }
     AddPlantSheet {
         id: addSheet
         plantsModel: plantsModel

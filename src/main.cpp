@@ -32,18 +32,18 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     KAboutData aboutData(
                          // The program name used internally.
-                         QStringLiteral("powerplant"),
+                         QStringLiteral("PowerPlant"),
                          // A displayable program name string.
-                         i18nc("@title", "powerplant"),
+                         i18nc("@title", "PowerPlant"),
                          // The program version string.
                          QStringLiteral(POWERPLANT_VERSION_STRING),
                          // Short description of what the app does.
-                         i18n("Application Description"),
+                         i18n("A small app to track your plants"),
                          // The license this code is released under.
                          KAboutLicense::GPL,
                          // Copyright Statement.
                          i18n("(c) 2023"));
-    aboutData.addAuthor(i18nc("@info:credit", "Mathis"),
+    aboutData.addAuthor(i18nc("@info:credit", "Mathis Brüchert"),
                         i18nc("@info:credit", "Author"),
                         QStringLiteral("mbb@kaidan.im"));
     KAboutData::setApplicationData(aboutData);
