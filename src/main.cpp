@@ -11,6 +11,7 @@
 #include "about.h"
 #include "app.h"
 #include "database.h"
+#include "colorgradientinterpolator.h"
 #include "plantsmodel.h"
 #include "version-powerplant.h"
 #include <KAboutData>
@@ -58,6 +59,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonInstance("org.kde.powerplant", 1, 0, "AboutType", &about);
 
     qmlRegisterType<PlantsModel>("org.kde.powerplant", 1, 0, "PlantsModel");
+    qmlRegisterType<ColorGradientInterpolator>("org.kde.powerplant", 1, 0, "ColorInterpolator");
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
