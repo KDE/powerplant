@@ -16,6 +16,9 @@ A verry WIP app to keep track of your plant's needs
 
 `qrc:/assets/avocado.svg`
 
+`qrc:/assets/assets/epipremnum_aureum.svg`
+
+
 
 
 ## build instructions
