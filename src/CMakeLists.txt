@@ -3,7 +3,6 @@
 
 add_executable(powerplant
     main.cpp
-    about.cpp
     app.cpp
     database.cpp
     plantsmodel.cpp
