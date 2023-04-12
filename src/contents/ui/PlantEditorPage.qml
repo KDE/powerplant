@@ -27,8 +27,7 @@ Kirigami.ScrollablePage {
     leftPadding: 0
     rightPadding: 0
 
-    //    standardButtons: Kirigami.Dialog.Yes | Kirigami.Dialog.Cancel
-    title: i18n("Add Plant")
+    title: mode === PlantEditor.Creator ? i18n("Add Plant") : i18n("Edit %1", plantEditor.plant.name)
 
     ColumnLayout {
         MobileForm.FormCard {
@@ -173,7 +172,7 @@ Kirigami.ScrollablePage {
 
             Controls.Button {
                 text: plantEditor.mode === PlantEditor.Editor ? i18n("Edit") : i18n("Add")
-                icon.name: "list-add"
+                icon.name:  plantEditor.mode === PlantEditor.Editor ? "document-edit" : "list-add"
                 onClicked: {
                     plantEditor.save();
                     root.closeDialog()

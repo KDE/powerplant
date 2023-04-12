@@ -304,7 +304,7 @@ Kirigami.ScrollablePage {
 //                running: false
 //                triggeredOnStart: false
 //                onTriggered: {
-//                    root.healthEvents.addHealthEvent(healthSlider.value)
+//                    healthEvents.addHealthEvent(healthSlider.value)
 //                }
 //            }
             Item {
