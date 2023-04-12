@@ -12,6 +12,12 @@ A verry WIP app to keep track of your plant's needs
 
 `qrc:/assets/green_lilly.svg`
 
+`qrc:/assets/euphorbia_trigona.svg`
+
+`qrc:/assets/avocado.svg`
+
+
+
 ## build instructions
 
 ### flatpak builder (with kde sdk)
