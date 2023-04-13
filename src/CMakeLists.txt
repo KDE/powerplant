@@ -9,6 +9,7 @@ add_executable(powerplant
     healthhistorymodel.cpp
     waterhistorymodel.cpp
     colorgradientinterpolator.cpp
+    plantimagemodel.cpp
     planteditor.cpp
     resources.qrc
 )

@@ -11,6 +11,7 @@
 #include "app.h"
 #include "database.h"
 #include "planteditor.h"
+#include "plantimagemodel.h"
 #include "colorgradientinterpolator.h"
 #include "plantsmodel.h"
 #include "waterhistorymodel.h"
@@ -63,6 +64,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterType<Plant>("org.kde.powerplant", 1, 0, "Plant");
     qmlRegisterType<PlantEditor>("org.kde.powerplant", 1, 0, "PlantEditor");
     qmlRegisterType<PlantsModel>("org.kde.powerplant", 1, 0, "PlantsModel");
+    qmlRegisterType<PlantImageModel>("org.kde.powerplant", 1, 0, "PlantImageModel");
     qmlRegisterType<ColorGradientInterpolator>("org.kde.powerplant", 1, 0, "ColorInterpolator");
 
     qmlRegisterSingletonType("org.kde.powerplant", 1, 0, "About", [](QQmlEngine *engine, QJSEngine *) -> QJSValue {
