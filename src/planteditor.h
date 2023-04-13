@@ -73,8 +73,8 @@ private:
     QString m_location;
     int m_dateOfBirth;
     QDate m_lastWatered;
-    int m_waterIntervall;
-    int m_currentHealth;
+    int m_waterIntervall = 2;
+    int m_currentHealth = 50;
 
     friend class PlantEditor;
 };

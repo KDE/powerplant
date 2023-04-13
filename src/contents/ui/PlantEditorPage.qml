@@ -148,8 +148,8 @@ Kirigami.ScrollablePage {
                             Layout.fillWidth: true
                             Layout.alignment: Qt.AlignHCenter
                             Layout.maximumWidth: 200
-                            from:0
-                            to:100
+                            from: 0
+                            to: 100
                             onValueChanged: plantEditor.plant.currentHealth = value
                         }
                     }

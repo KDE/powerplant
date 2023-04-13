@@ -77,10 +77,10 @@ QVariant PlantsModel::data(const QModelIndex &index, int role) const
 
 void PlantsModel::addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth, const int health)
 {
-    int now = QDateTime::currentDateTime().toSecsSinceEpoch();
+    const int now = QDateTime::currentDateTime().toSecsSinceEpoch();
     auto future = Database::instance().addPlant(name, species, imgUrl, waterInterval, location, dateOfBirth, now, now, health);
 
-    QCoro::connect(std::move(future), this, [&](auto &&result) {
+    QCoro::connect(std::move(future), this, [=, this](auto &&result) {
         beginInsertRows({}, m_data.size(), m_data.size());
         m_data.push_back(Plant{result, name, species, imgUrl, waterInterval, location, dateOfBirth, 1, now, now, health});
         endInsertRows();
@@ -99,7 +99,6 @@ void PlantsModel::editPlant(const DB::Plant::Id plantId, const QString &name, co
         return it - m_data.cbegin();
     }();
 
-    int now = QDateTime::currentDateTime().toSecsSinceEpoch();
     Database::instance().editPlant(plantId, name, species, imgUrl, waterIntervall, location, dateOfBirth);
 
     const auto idx = index(row, 0);
