@@ -18,6 +18,28 @@ PlantsModel::PlantsModel(QObject *parent)
         m_data = plants;
         endResetModel();
     });
+
+    connect(&Database::instance(), &Database::plantChanged, this, [this](DB::Plant::Id plantId) {
+        const auto it = std::find_if(m_data.cbegin(), m_data.cend(), [plantId](const auto &plant) {
+            return plantId == plant.plant_id;
+        });
+
+        if (it == m_data.cend()) {
+            return;
+        }
+
+        const int row = it - m_data.cbegin();
+
+        auto future = Database::instance().plant(plantId);
+
+        QCoro::connect(std::move(future), this, [this, row](auto &&plant) {
+            if (plant) {
+                m_data[row] = plant.value();
+                const auto idx = index(row, 0);
+                Q_EMIT dataChanged(idx, idx);
+            }
+        });
+    });
 }
 
 int PlantsModel::rowCount(const QModelIndex &) const
