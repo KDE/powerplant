@@ -74,10 +74,9 @@ QVariant PlantImageModel::data(const QModelIndex& index, int role) const
 
     const int row = m_customImage.isEmpty() ? index.row() : index.row() - 1;
 
-    const auto url = row == -1 ? m_customImage : m_urls.at(row);
     switch (role){
     case UrlRole:
-        return "qrc:/assets/" + url;
+         return row == -1 ? m_customImage : "qrc:/assets/" + m_urls.at(row);
     };
 
     Q_UNREACHABLE();
