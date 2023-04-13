@@ -115,7 +115,19 @@ void PlantsModel::editPlant(const DB::Plant::Id plantId, const QString &name, co
     emit dataChanged(idx, idx);
 }
 
-void PlantsModel::deletePlant(const DB::Plant::Id plantId)
+void PlantsModel::deletePlant(const int plantId)
 {
+    const int row = [&]() {
+        const auto it = std::find_if(m_data.cbegin(), m_data.cend(), [plantId](const auto &plant) {
+            return plantId == plant.plant_id;
+        });
+
+        Q_ASSERT(it != m_data.cend());
+
+        return it - m_data.cbegin();
+    }();
+
+    beginRemoveRows({}, row, row);
     Database::instance().deletePlant(plantId);
+    endRemoveRows();
 }
