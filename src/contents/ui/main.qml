@@ -10,8 +10,6 @@ import org.kde.powerplant 1.0
 Kirigami.ApplicationWindow {
     id: root
 
-    title: i18n("powerplant")
-
     minimumWidth: Kirigami.Units.gridUnit * 20
     minimumHeight: Kirigami.Units.gridUnit * 20
 
