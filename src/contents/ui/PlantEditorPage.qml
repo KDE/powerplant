@@ -8,6 +8,8 @@ import org.kde.kirigami 2.19 as Kirigami
 import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 import QtGraphicalEffects 1.0
 import Qt.labs.platform 1.1
+import org.kde.kirigamiaddons.dateandtime 0.1 as KirigamiDateTime
+
 import "components"
 
 import org.kde.powerplant 1.0
@@ -267,7 +269,30 @@ Kirigami.ScrollablePage {
                         }
                     }
                 }
+
+                MobileForm.FormDelegateSeparator {
+                }
+
+                MobileForm.AbstractFormDelegate{
+                    background: Item{}
+                    contentItem: ColumnLayout{
+                        Controls.Label {
+                            text: i18n("Birthday")
+                            Layout.fillWidth: true
+                        }
+
+                        KirigamiDateTime.DateInput {
+                            id: birthday
+//                            selectedDate: plantEditor.plant.dateOfBirth
+                            onSelectedDateChanged: {
+                                console.log(selectedDate)
+                                plantEditor.plant.dateOfBirth = selectedDate
+                            }
+                        }
+                    }
+                }
             }
+
         }
 
         Controls.Label {

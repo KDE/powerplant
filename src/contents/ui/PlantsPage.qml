@@ -95,6 +95,7 @@ Kirigami.ScrollablePage {
             required property string species
             required property string wantsToBeWateredIn
             required property int currentHealth
+            required property var dateOfBirth
 
             width: grid.cellWidth
 

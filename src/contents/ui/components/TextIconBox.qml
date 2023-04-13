@@ -29,7 +29,9 @@ Kirigami.ShadowedRectangle {
         }
         Controls.Label {
             id: label
-
+            Layout.rightMargin: Kirigami.Units.smallSpacing
+            Layout.fillWidth: true
+            elide: Qt.ElideRight
             color: Kirigami.Theme.disabledTextColor
         }
     }

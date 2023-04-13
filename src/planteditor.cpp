@@ -66,7 +66,7 @@ void Plant::refresh()
         m_location = plant->location;
         Q_EMIT locationChanged();
 
-        m_dateOfBirth = plant->date_of_birth;
+        m_dateOfBirth = QDateTime::fromSecsSinceEpoch(plant->date_of_birth).date();
         Q_EMIT dateOfBirthChanged();
 
         m_lastWatered = QDateTime::fromSecsSinceEpoch(plant->last_watered).date();
@@ -118,7 +118,7 @@ void PlantEditor::save()
             m_plant->m_imgUrl.toString(),
             m_plant->m_waterIntervall,
             m_plant->m_location,
-            0,
+            m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch(),
             m_plant->m_currentHealth
         );
     } else {
@@ -129,7 +129,7 @@ void PlantEditor::save()
             m_plant->m_imgUrl.toString(),
             m_plant->m_waterIntervall,
             m_plant->m_location,
-            m_plant->m_dateOfBirth
+            m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch()
         );
     }
 }

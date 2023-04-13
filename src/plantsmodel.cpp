@@ -85,7 +85,7 @@ QVariant PlantsModel::data(const QModelIndex &index, int role) const
         case Role::Location:
             return plant.location;
         case Role::DateOfBirth:
-            return plant.date_of_birth;
+            return QDateTime::fromSecsSinceEpoch(plant.date_of_birth).date();
         case Role::LastWatered:
             return QDateTime::fromSecsSinceEpoch(plant.last_watered).date();
         case Role::WantsToBeWateredIn:

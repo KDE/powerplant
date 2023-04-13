@@ -173,7 +173,7 @@ Kirigami.ScrollablePage {
                     Layout.fillWidth: true
                 }
                 TextIconBox {
-                    label.text: i18n("Age of Plant")
+                    label.text: plant.dateOfBirth
                     icon.source: "chronometer"
                     Layout.fillWidth: true
                 }
