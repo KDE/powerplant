@@ -43,23 +43,23 @@ Kirigami.ScrollablePage {
 
     actions.contextualActions: [
         Kirigami.Action {
-        icon.name: "document-edit"
-        text: i18nc("@action:button", "Edit")
-        onTriggered: {
-            applicationWindow().pageStack.pushDialogLayer(editPlantComponent, {}, {
-                width: Kirigami.Units.gridUnit * 25,
-                height: Kirigami.Units.gridUnit * 35,
+            icon.name: "document-edit"
+            text: i18nc("@action:button", "Edit")
+            onTriggered: {
+                applicationWindow().pageStack.pushDialogLayer(editPlantComponent, {}, {
+                    width: Kirigami.Units.gridUnit * 25,
+                    height: Kirigami.Units.gridUnit * 35,
                 })
             }
         },
         Kirigami.Action {
-        icon.name: "delete"
-        text: i18nc("@action:button", "Delete")
-        onTriggered: {
-            plant.deletePlant()
+            icon.name: "delete"
+            text: i18nc("@action:button", "Delete")
+            onTriggered: {
+                plantsModel.deletePlant(plant.plantId);
+                applicationWindow().pageStack.pop();
             }
         }
-
     ]
 
     leftPadding: 0
