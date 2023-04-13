@@ -111,11 +111,13 @@ QFuture<std::vector<HealthEvent>> Database::healthEvents(int plantId)
 void Database::waterPlant(const int plantId, const int waterDate)
 {
     m_database->execute("insert into water_history (plant_id, water_date) values (?, ?)", plantId, waterDate);
+    Q_EMIT plantChanged(plantId);
 }
 
 void Database::addHealthEvent(const int plantId, const int waterDate, const int health)
 {
     m_database->execute("insert into health_history (plant_id, health_date, health) values (?, ?, ?)", plantId, waterDate, health);
+    Q_EMIT plantChanged(plantId);
 }
 
 QFuture<std::optional<SingleValue<int>>> Database::getLastHealthDate(const int plantId)
