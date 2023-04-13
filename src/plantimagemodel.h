@@ -30,6 +30,6 @@ Q_SIGNALS:
     void customImageChanged();
 
 private:
-    QVector<QString> m_urls;
+    QStringList m_urls;
     QString m_customImage;
 };

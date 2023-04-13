@@ -2,19 +2,15 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "plantimagemodel.h"
+
 #include <QDebug>
+#include <QDir>
 
 PlantImageModel::PlantImageModel(QObject *parent)
     : QAbstractListModel(parent)
 {
-    m_urls = {
-        QStringLiteral("qrc:/assets/monstera.svg"),
-        QStringLiteral("qrc:/assets/aloe_vera.svg"),
-        QStringLiteral("qrc:/assets/green_lilly.svg"),
-        QStringLiteral("qrc:/assets/euphorbia_trigona.svg"),
-        QStringLiteral("qrc:/assets/avocado.svg"),
-        QStringLiteral("qrc:/assets/epipremnum_aureum.svg"),
-    };
+    QDir assets(":/assets/");
+    m_urls = assets.entryList();
 }
 
 int PlantImageModel::rowCount(const QModelIndex &parent) const
@@ -81,7 +77,7 @@ QVariant PlantImageModel::data(const QModelIndex& index, int role) const
     const auto url = row == -1 ? m_customImage : m_urls.at(row);
     switch (role){
     case UrlRole:
-        return url;
+        return "qrc:/assets/" + url;
     };
 
     Q_UNREACHABLE();
