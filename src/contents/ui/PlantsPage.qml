@@ -39,14 +39,12 @@ Kirigami.ScrollablePage {
         parent: root.overlay
         x: root.width - width - margin
         y: root.height - height - pageStack.globalToolBar.preferredHeight - margin
-        singleAction: Kirigami.Action {
-            text: i18nc("@action:button", "Add Plant")
-            icon.name: "list-add"
-            onTriggered: applicationWindow().pageStack.pushDialogLayer(addPlantComponent, {}, {
-                width: Kirigami.Units.gridUnit * 25,
-                height: Kirigami.Units.gridUnit * 35,
-            })
-        }
+        text: i18nc("@action:button", "Add Plant")
+        icon.name: "list-add"
+        onClicked: applicationWindow().pageStack.pushDialogLayer(addPlantComponent, {}, {
+            width: Kirigami.Units.gridUnit * 25,
+            height: Kirigami.Units.gridUnit * 35,
+        })
     }
 
     GridView {
