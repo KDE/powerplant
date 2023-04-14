@@ -50,7 +50,7 @@ Kirigami.ScrollablePage {
     GridView {
         id: grid
 
-        cellWidth: grid.width / (Math.floor(grid.width / 230))
+        cellWidth: applicationWindow().width < 500 ?  grid.width / (Math.floor(grid.width / 160)) : grid.width / (Math.floor(grid.width / 230))
         cellHeight: 310
 
         header: ColumnLayout {
