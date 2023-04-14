@@ -209,6 +209,8 @@ Kirigami.ScrollablePage {
                                           i18n("has to be watered tomorrow")
                                       } else if (plant.wantsToBeWateredIn == 0) {
                                           i18n("needs to be watered today!")
+                                      } else if (plant.wantsToBeWateredIn < 0) {
+                                          i18n("should have been watered already!")
                                       }
                             }
                             Controls.Button {

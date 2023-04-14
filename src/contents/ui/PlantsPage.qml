@@ -1,7 +1,7 @@
+
 // SPDX-FileCopyrightText: 2023 2023 Mathis Brüchert <mbb@kaidan.im>
 // SPDX-FileCopyrightText: 2023 Carl Schwan <carl@carlschwan.eu>
 // SPDX-License-Identifier: GPL-2.0-or-later
-
 import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
@@ -16,8 +16,8 @@ import "components"
 Kirigami.ScrollablePage {
     id: root
     rightPadding: 0
-//    leftPadding:0
-    bottomPadding:0
+    //    leftPadding:0
+    bottomPadding: 0
     Layout.fillWidth: true
 
     title: i18n("Plants")
@@ -41,16 +41,20 @@ Kirigami.ScrollablePage {
         y: root.height - height - pageStack.globalToolBar.preferredHeight - margin
         text: i18nc("@action:button", "Add Plant")
         icon.name: "list-add"
-        onClicked: applicationWindow().pageStack.pushDialogLayer(addPlantComponent, {}, {
-            width: Kirigami.Units.gridUnit * 25,
-            height: Kirigami.Units.gridUnit * 35,
-        })
+        onClicked: applicationWindow().pageStack.pushDialogLayer(
+                       addPlantComponent, {}, {
+                           "width": Kirigami.Units.gridUnit * 25,
+                           "height": Kirigami.Units.gridUnit * 35
+                       })
     }
 
     GridView {
         id: grid
 
-        cellWidth: applicationWindow().width < 500 ?  grid.width / (Math.floor(grid.width / 160)) : grid.width / (Math.floor(grid.width / 230))
+        cellWidth: applicationWindow(
+                       ).width < 500 ? grid.width / (Math.floor(
+                                                         grid.width / 160)) : grid.width
+                                       / (Math.floor(grid.width / 230))
         cellHeight: 310
 
         header: ColumnLayout {
@@ -107,9 +111,9 @@ Kirigami.ScrollablePage {
                 id: card
 
                 onClicked: pageStack.push("qrc:/PlantDetailPage.qml", {
-                    plantId: plantItem.plantId,
-                    plantsModel: plantsModel,
-                })
+                                              "plantId": plantItem.plantId,
+                                              "plantsModel": plantsModel
+                                          })
 
                 background: Kirigami.ShadowedRectangle {
                     radius: 5
@@ -119,7 +123,8 @@ Kirigami.ScrollablePage {
 
                     border {
                         color: Kirigami.ColorUtils.linearInterpolation(
-                            Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
+                                   Kirigami.Theme.backgroundColor,
+                                   Kirigami.Theme.textColor, 0.3)
                         width: 1
                     }
 
@@ -181,23 +186,30 @@ Kirigami.ScrollablePage {
 
                     TextIconBox {
                         Layout.fillWidth: true
-                        label.text: if (wantsToBeWateredIn > 1) {
-                            i18n("in %1 days", wantsToBeWateredIn)
-                        } else if (wantsToBeWateredIn == 1) {
-                            i18n("tomorrow")
-                        } else if (wantsToBeWateredIn == 0) {
-                            i18n("needs to be watered")
+                        label {
+                            text: if (wantsToBeWateredIn > 1) {
+                                      i18n("in %1 days", wantsToBeWateredIn)
+                                  } else if (wantsToBeWateredIn == 1) {
+                                      i18n("tomorrow")
+                                  } else if (wantsToBeWateredIn == 0) {
+                                      i18n("water today!")
+                                  } else if (wantsToBeWateredIn < 0) {
+                                      i18n("watering overdue!")
+                                  }
+                            font.bold: wantsToBeWateredIn <= 0
                         }
                         icon {
                             source: "raindrop"
                             color: "#64ace1"
                         }
-                        action.icon.name: "answer-correct"
-                        action.onClicked: {
-                            console.log(plantId)
-                            waterEvents.waterPlant()
+                        action {
+                            icon.name: "answer-correct"
+                            onClicked: {
+                                console.log(plantId)
+                                waterEvents.waterPlant()
+                            }
+                            visible: wantsToBeWateredIn <= 0
                         }
-                        action.visible: wantsToBeWateredIn == 0
                     }
 
                     HealthSlider {
