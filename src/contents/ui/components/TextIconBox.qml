@@ -9,6 +9,8 @@ import org.kde.powerplant 1.0
 Kirigami.ShadowedRectangle {
     property alias icon: icon
     property alias label: label
+    property alias action: action
+
     Kirigami.Theme.colorSet: Kirigami.Theme.View
     Kirigami.Theme.inherit: false
 
@@ -33,6 +35,13 @@ Kirigami.ShadowedRectangle {
             Layout.fillWidth: true
             elide: Qt.ElideRight
             color: Kirigami.Theme.disabledTextColor
+        }
+        Controls.ToolButton {
+            id: action
+            implicitHeight: Kirigami.Units.gridUnit * 1.5
+            Layout.rightMargin: 3
+            Layout.margins: 0
+            visible: false
         }
     }
 }

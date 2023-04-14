@@ -89,14 +89,18 @@ Kirigami.ScrollablePage {
         delegate: ColumnLayout {
             id: plantItem
 
-            required property string plantId
             required property string imgUrl
             required property string name
             required property string species
             required property string wantsToBeWateredIn
             required property int currentHealth
             required property var dateOfBirth
+            required property int plantId
 
+            WaterHistoryModel {
+                id: waterEvents
+                plantId: plantItem.plantId
+            }
             width: grid.cellWidth
 
             Kirigami.Card {
@@ -188,6 +192,12 @@ Kirigami.ScrollablePage {
                             source: "raindrop"
                             color: "#64ace1"
                         }
+                        action.icon.name: "answer-correct"
+                        action.onClicked: {
+                            console.log(plantId)
+                            waterEvents.waterPlant()
+                        }
+                        action.visible: wantsToBeWateredIn == 0
                     }
 
                     HealthSlider {
