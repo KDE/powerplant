@@ -8,6 +8,7 @@ import org.kde.powerplant 1.0
 
 Controls.Slider {
     id: control
+    focusPolicy: Qt.TabFocus
 
     implicitHeight: 30
     property int weirdNumber: 25
@@ -16,20 +17,16 @@ Controls.Slider {
     ColorInterpolator {
         id: colorInterpolation
         progress: control.value / 100
-        gradientStops: [
-            {
-                position: gradientStop1.position,
-                color: gradientStop1.color
-            },
-            {
-                position: gradientStop2.position,
-                color: gradientStop2.color
-            },
-            {
-                position: gradientStop3.position,
-                color: gradientStop3.color
-            }
-        ]
+        gradientStops: [{
+                "position": gradientStop1.position,
+                "color": gradientStop1.color
+            }, {
+                "position": gradientStop2.position,
+                "color": gradientStop2.color
+            }, {
+                "position": gradientStop3.position,
+                "color": gradientStop3.color
+            }]
     }
     background: Rectangle {
         id: background
@@ -89,9 +86,11 @@ Controls.Slider {
             width: 10
             radius: 5
             color: healthColor
-            border.color: Kirigami.ColorUtils.linearInterpolation(
-                              Kirigami.Theme.backgroundColor,
-                              Kirigami.Theme.textColor, 0.3)
+            border.color: control.hovered
+                          || control.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.ColorUtils.linearInterpolation(
+                                                       Kirigami.Theme.backgroundColor,
+                                                       Kirigami.Theme.textColor,
+                                                       0.3)
             border.width: 1
             x: -4.5
             y: -5
@@ -104,9 +103,11 @@ Controls.Slider {
         antialiasing: true
         Shapes.ShapePath {
             strokeWidth: 1
-            strokeColor: Kirigami.ColorUtils.linearInterpolation(
-                             Kirigami.Theme.backgroundColor,
-                             Kirigami.Theme.textColor, 0.3)
+            strokeColor: control.hovered
+                         || control.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.ColorUtils.linearInterpolation(
+                                                      Kirigami.Theme.backgroundColor,
+                                                      Kirigami.Theme.textColor,
+                                                      0.3)
             fillGradient: Shapes.LinearGradient {
                 x1: 0
                 y1: 0
@@ -119,8 +120,9 @@ Controls.Slider {
                 GradientStop {
                     position: 1
                     color: Kirigami.ColorUtils.linearInterpolation(
-                               Kirigami.Theme.backgroundColor,
-                               Kirigami.Theme.textColor, 0.3)
+                                                        Kirigami.Theme.backgroundColor,
+                                                        Kirigami.Theme.textColor,
+                                                        0.3)
                 }
             }
             PathSvg {
