@@ -20,5 +20,7 @@
         <file alias="assets/epipremnum_aureum.svg">contents/assets/epipremnum_aureum.svg</file>
         <file alias="assets/sansevieria.svg">contents/assets/sansevieria.svg</file>
         <file alias="assets/schlumbergera.svg">contents/assets/schlumbergera.svg</file>
+        <file alias="assets/echinocactus.svg">contents/assets/echinocactus.svg</file>
+        <file alias="assets/crassula_ovata.svg">contents/assets/crassula_ovata.svg</file>
     </qresource>
 </RCC>
