@@ -173,7 +173,7 @@ Kirigami.ScrollablePage {
                     Layout.fillWidth: true
                 }
                 TextIconBox {
-                    label.text: plant.dateOfBirth
+                    label.text: Qt.formatDate(plant.dateOfBirth)
                     icon.source: "chronometer"
                     Layout.fillWidth: true
                 }
