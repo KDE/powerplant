@@ -118,10 +118,18 @@ Kirigami.ScrollablePage {
                                     visible: imageDelegate.ListView.isCurrentItem
 
                                     gradient: Gradient {
-                                        GradientStop { position: 0.0; color: Kirigami.ColorUtils.tintWithAlpha(
-                                                                                 Kirigami.Theme.backgroundColor,
-                                                                                 healthSlider.healthColor, 0.5)}
-                                        GradientStop { position: 0.5; color: Kirigami.Theme.backgroundColor }
+                                        GradientStop {
+                                            position: 0.0
+                                            color: Kirigami.ColorUtils.tintWithAlpha(
+                                                Kirigami.Theme.backgroundColor,
+                                                healthSlider.healthColor,
+                                                0.5
+                                            )
+                                        }
+                                        GradientStop {
+                                            position: 0.5
+                                            color: Kirigami.Theme.backgroundColor
+                                        }
                                     }
                                 }
 
@@ -193,47 +201,54 @@ Kirigami.ScrollablePage {
                         Controls.ButtonGroup {
                             id: buttonGroup
                         }
+
                         RowLayout {
                             id: row
 
                             Layout.fillHeight: true
                             Layout.fillWidth: true
+                            spacing: Kirigami.Units.smallSpacing
 
                             Controls.Button {
                                 text: i18n("2 days")
                                 checkable: true
-                                Layout.fillWidth: true
                                 Controls.ButtonGroup.group: buttonGroup
+                                Layout.fillWidth: true
                                 onClicked: plantEditor.plant.waterIntervall = 2
                             }
 
                             Controls.Button {
                                 text: i18n("5 days")
                                 checkable: true
-                                Layout.fillWidth: true
                                 Controls.ButtonGroup.group: buttonGroup
+                                Layout.fillWidth: true
                                 onClicked: plantEditor.plant.waterIntervall = 5
                             }
 
                             Controls.Button {
                                 text: i18n("weekly")
                                 checkable: true
-                                Layout.fillWidth: true
                                 Controls.ButtonGroup.group: buttonGroup
+                                Layout.fillWidth: true
                                 onClicked: plantEditor.plant.waterIntervall = 7
                             }
 
                             Controls.Button {
+                                id: buttonWeeks
                                 text: i18n("2 weeks")
                                 checkable: true
-                                Layout.fillWidth: true
                                 Controls.ButtonGroup.group: buttonGroup
+                                Layout.fillWidth: true
                                 onClicked: plantEditor.plant.waterIntervall = 14
-
                             }
+                        }
+
+                        RowLayout {
+                            Layout.fillWidth: true
+                            Layout.fillHeight: true
 
                             Controls.Label {
-                                text: i18n("custom:")
+                                text: i18n("Custom:")
                             }
 
                             Controls.SpinBox {
