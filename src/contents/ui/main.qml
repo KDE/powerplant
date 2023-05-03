@@ -13,10 +13,19 @@ Kirigami.ApplicationWindow {
     minimumWidth: Kirigami.Units.gridUnit * 20
     minimumHeight: Kirigami.Units.gridUnit * 20
 
-    pageStack.initialPage: "qrc:/PlantsPage.qml"
+    pageStack {
+        initialPage: "qrc:/PlantsPage.qml"
+        popHiddenPages:true
+        columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
 
-    pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.ShowBackButton
-    pageStack.popHiddenPages:true
-    pageStack.columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
-
+        globalToolBar {
+            style: Kirigami.ApplicationHeaderStyle.ToolBar
+            showNavigationButtons: if (applicationWindow().pageStack.currentIndex > 0
+                || applicationWindow().pageStack.currentIndex > 0) {
+                Kirigami.ApplicationHeaderStyle.ShowBackButton
+            } else {
+                0
+            }
+        }
+    }
 }
