@@ -15,18 +15,19 @@ add_executable(powerplant
 )
 
 target_link_libraries(powerplant
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Qml
-    Qt5::Quick
-    Qt5::QuickControls2
-    Qt5::Svg
-    KF5::I18n
-    KF5::CoreAddons
-    KF5::ConfigCore
-    KF5::ConfigGui
-    FutureSQL5::FutureSQL
-    QCoro5::Core)
+    Qt::Core
+    Qt::Gui
+    Qt::Qml
+    Qt::Quick
+    Qt::QuickControls2
+    Qt::Svg
+    Qt::Widgets
+    KF${QT_MAJOR_VERSION}::I18n
+    KF${QT_MAJOR_VERSION}::CoreAddons
+    KF${QT_MAJOR_VERSION}::ConfigCore
+    KF${QT_MAJOR_VERSION}::ConfigGui
+    FutureSQL${QT_MAJOR_VERSION}::FutureSQL
+    QCoro${QT_MAJOR_VERSION}::Core)
 
 if (ANDROID)
     kirigami_package_breeze_icons(ICONS
