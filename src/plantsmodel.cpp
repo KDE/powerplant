@@ -5,6 +5,7 @@
 #include <QCoroTask>
 #include <QCoroFuture>
 #include <QDateTime>
+#include <unordered_map>
 
 using namespace DB;
 

@@ -57,6 +57,6 @@ void WaterHistoryModel::waterPlant()
     const int now = QDateTime::currentDateTime().toSecsSinceEpoch();
     Database::instance().waterPlant(m_plantId, now);
     beginInsertRows({}, m_data.size(), m_data.size());
-    m_data.emplace_back(now);
+    m_data.emplace_back(SingleValue<int>{now});
     endInsertRows();
 }
