@@ -5,7 +5,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
 import org.kde.kirigami 2.19 as Kirigami
-import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
+import org.kde.kirigamiaddons.formcard 1.0 as FormCard
 import QtGraphicalEffects 1.0
 import Qt.labs.platform 1.1
 import org.kde.kirigamiaddons.dateandtime 0.1 as KirigamiDateTime
@@ -14,7 +14,7 @@ import "components"
 
 import org.kde.powerplant 1.0
 
-Kirigami.ScrollablePage {
+FormCard.FormCardPage {
     id: root
 
     required property PlantsModel plantsModel
@@ -28,292 +28,271 @@ Kirigami.ScrollablePage {
         plantsModel: root.plantsModel
     }
 
-    Kirigami.Theme.colorSet: Kirigami.Theme.Window
-    Kirigami.Theme.inherit: false
-    leftPadding: 0
-    rightPadding: 0
-
     title: mode === PlantEditor.Creator ? i18n("Add Plant") : i18n("Edit %1", plantEditor.plant.name)
 
-    ColumnLayout {
-        MobileForm.FormCard {
-            Layout.topMargin: 20
-            Layout.fillWidth: true
+    FormCard.FormCard {
+        FormCard.AbstractFormDelegate {
+            background: null
             contentItem: ColumnLayout {
-                spacing: 0
+                clip: true
+                Controls.Label {
+                    text: i18n("Image:")
+                }
 
-                MobileForm.AbstractFormDelegate {
-                    background: null
-                    contentItem: ColumnLayout {
-                        clip: true
-                        Controls.Label {
-                            text: i18n("Image:")
-                        }
+                ListView {
+                    id: imageView
 
-                        ListView {
-                            id: imageView
+                    Layout.preferredHeight: Kirigami.Units.gridUnit * 10
+                    Layout.fillWidth: true
+                    onCurrentIndexChanged: if (currentIndex >= 0) {
+                        plantEditor.plant.imgUrl = currentItem.url
+                    }
+                    currentIndex: -1
 
-                            Layout.preferredHeight: Kirigami.Units.gridUnit * 10
-                            Layout.fillWidth: true
-                            onCurrentIndexChanged: if (currentIndex >= 0) {
-                                plantEditor.plant.imgUrl = currentItem.url
-                            }
-                            currentIndex: -1
-
-                            Connections {
-                                target: plantEditor.plant
-                                function onImgUrlChanged() {
-                                    plantImageModel.customImage = plantEditor.plant.imgUrl;
-                                    imageView.currentIndex = plantImageModel.urlToIndex(plantEditor.plant.imgUrl);
-                                }
-                            }
-
-                            orientation: ListView.Horizontal
-
-                            header: Item {
-                                width: 120
-                                height: ListView.view.height
-
-                                ActionButton {
-                                    anchors.centerIn: parent
-                                    icon.name: "list-add"
-                                    text: i18n("Use custom image")
-                                    onClicked: fileDialog.open()
-                                }
-
-                                FileDialog {
-                                    id: fileDialog
-                                    title: i18n("Please choose a file")
-                                    folder: StandardPaths.writableLocation(StandardPaths.PicturesLocation)
-                                    onAccepted: {
-                                        plantImageModel.customImage = file;
-
-                                        // Hack force refresh
-                                        imageView.currentIndex = -1;
-                                        imageView.currentIndex = 0;
-                                    }
-
-                                    nameFilters: [i18nc("Name filter for image files", "Image files (*.png *.jpg* *.webp)")]
-                                }
-                            }
-
-                            model: PlantImageModel {
-                                id: plantImageModel
-                            }
-
-                            delegate: Controls.ItemDelegate {
-                                id: imageDelegate
-
-                                required property string index
-                                required property string url
-
-                                y: 2
-
-                                height: ListView.view.height
-                                width: ListView.view.height
-
-                                onClicked: imageView.currentIndex = index
-
-                                background: RadialGradient {
-                                    visible: imageDelegate.ListView.isCurrentItem
-
-                                    gradient: Gradient {
-                                        GradientStop {
-                                            position: 0.0
-                                            color: Kirigami.ColorUtils.tintWithAlpha(
-                                                Kirigami.Theme.backgroundColor,
-                                                healthSlider.healthColor,
-                                                0.5
-                                            )
-                                        }
-                                        GradientStop {
-                                            position: 0.5
-                                            color: Kirigami.Theme.backgroundColor
-                                        }
-                                    }
-                                }
-
-                                Image {
-                                    id: image
-                                    anchors.fill: parent
-                                    fillMode: Image.PreserveAspectFit
-                                    source: parent.url
-                                    layer {
-                                        enabled: true
-                                        effect: OpacityMask {
-                                            maskSource: mask
-                                        }
-                                    }
-                                }
-                                Rectangle {
-                                    id: mask
-                                    anchors.fill: parent
-                                    visible: false
-                                    gradient: Gradient {
-                                        GradientStop {
-                                            position: 0.5
-                                            color: "white"
-                                        }
-                                        GradientStop {
-                                            position: 0.75
-                                            color: "transparent"
-                                        }
-                                    }
-                                }
-                            }
+                    Connections {
+                        target: plantEditor.plant
+                        function onImgUrlChanged() {
+                            plantImageModel.customImage = plantEditor.plant.imgUrl;
+                            imageView.currentIndex = plantImageModel.urlToIndex(plantEditor.plant.imgUrl);
                         }
                     }
-                }
 
-                MobileForm.FormDelegateSeparator {}
+                    orientation: ListView.Horizontal
 
-                MobileForm.FormTextFieldDelegate {
-                    label: i18n("Name")
-                    text: plantEditor.plant.name
-                    onTextChanged: plantEditor.plant.name = text
-                }
+                    header: Item {
+                        width: 120
+                        height: ListView.view.height
 
-                MobileForm.FormDelegateSeparator {}
-
-                MobileForm.FormTextFieldDelegate {
-                    label: i18n("Species")
-                    text: plantEditor.plant.species
-                    onTextChanged: plantEditor.plant.species = text
-                }
-
-                MobileForm.FormDelegateSeparator {}
-
-                MobileForm.FormTextFieldDelegate {
-                    label: i18n("Room")
-                    text: plantEditor.plant.location
-                    onTextChanged: plantEditor.plant.location = text
-                }
-
-                MobileForm.FormDelegateSeparator {}
-
-                MobileForm.AbstractFormDelegate {
-                    id: interval
-                    background: null
-                    contentItem: ColumnLayout {
-                        Controls.Label {
-                            text: i18n("How often does the plant need Watering?")
-                        }
-                        Controls.ButtonGroup {
-                            id: buttonGroup
+                        ActionButton {
+                            anchors.centerIn: parent
+                            icon.name: "list-add"
+                            text: i18n("Use custom image")
+                            onClicked: fileDialog.open()
                         }
 
-                        RowLayout {
-                            id: row
+                        FileDialog {
+                            id: fileDialog
+                            title: i18n("Please choose a file")
+                            folder: StandardPaths.writableLocation(StandardPaths.PicturesLocation)
+                            onAccepted: {
+                                plantImageModel.customImage = file;
 
-                            Layout.fillHeight: true
-                            Layout.fillWidth: true
-                            spacing: Kirigami.Units.smallSpacing
-
-                            Controls.Button {
-                                text: i18n("2 days")
-                                checkable: true
-                                Controls.ButtonGroup.group: buttonGroup
-                                Layout.fillWidth: true
-                                onClicked: plantEditor.plant.waterIntervall = 2
+                                // Hack force refresh
+                                imageView.currentIndex = -1;
+                                imageView.currentIndex = 0;
                             }
 
-                            Controls.Button {
-                                text: i18n("5 days")
-                                checkable: true
-                                Controls.ButtonGroup.group: buttonGroup
-                                Layout.fillWidth: true
-                                onClicked: plantEditor.plant.waterIntervall = 5
-                            }
-
-                            Controls.Button {
-                                text: i18n("weekly")
-                                checkable: true
-                                Controls.ButtonGroup.group: buttonGroup
-                                Layout.fillWidth: true
-                                onClicked: plantEditor.plant.waterIntervall = 7
-                            }
-
-                            Controls.Button {
-                                id: buttonWeeks
-                                text: i18n("2 weeks")
-                                checkable: true
-                                Controls.ButtonGroup.group: buttonGroup
-                                Layout.fillWidth: true
-                                onClicked: plantEditor.plant.waterIntervall = 14
-                            }
-                        }
-
-                        RowLayout {
-                            Layout.fillWidth: true
-                            Layout.fillHeight: true
-
-                            Controls.Label {
-                                text: i18n("Custom:")
-                            }
-
-                            Controls.SpinBox {
-                                onValueChanged: plantEditor.plant.waterIntervall = value
-                                value: plantEditor.plant.waterIntervall
-                                Layout.fillWidth: true
-                            }
+                            nameFilters: [i18nc("Name filter for image files", "Image files (*.png *.jpg* *.webp)")]
                         }
                     }
-                }
 
-                MobileForm.FormDelegateSeparator {
-                    visible: root.mode === PlantEditor.Creator
-                }
-
-                MobileForm.AbstractFormDelegate {
-                    id: health
-                    visible: root.mode === PlantEditor.Creator
-                    background: null
-                    contentItem: ColumnLayout {
-                        Controls.Label {
-                            text: i18n("How healthy is your plant at the moment?")
-                        }
-
-                        HealthSlider {
-                            id: healthSlider
-                            Layout.fillWidth: true
-                            Layout.alignment: Qt.AlignHCenter
-                            Layout.maximumWidth: 200
-                            from: 0
-                            to: 100
-                            onValueChanged: plantEditor.plant.currentHealth = value
-                        }
+                    model: PlantImageModel {
+                        id: plantImageModel
                     }
-                }
 
-                MobileForm.FormDelegateSeparator {
-                }
+                    delegate: Controls.ItemDelegate {
+                        id: imageDelegate
 
-                MobileForm.AbstractFormDelegate{
-                    background: Item{}
-                    contentItem: ColumnLayout{
-                        Controls.Label {
-                            text: i18n("Birthday")
-                            Layout.fillWidth: true
+                        required property string index
+                        required property string url
+
+                        y: 2
+
+                        height: ListView.view.height
+                        width: ListView.view.height
+
+                        onClicked: imageView.currentIndex = index
+
+                        background: RadialGradient {
+                            visible: imageDelegate.ListView.isCurrentItem
+
+                            gradient: Gradient {
+                                GradientStop {
+                                    position: 0.0
+                                    color: Kirigami.ColorUtils.tintWithAlpha(
+                                        Kirigami.Theme.backgroundColor,
+                                        healthSlider.healthColor,
+                                        0.5
+                                    )
+                                }
+                                GradientStop {
+                                    position: 0.5
+                                    color: Kirigami.Theme.backgroundColor
+                                }
+                            }
                         }
 
-                        KirigamiDateTime.DateInput {
-                            id: birthday
-//                            selectedDate: plantEditor.plant.dateOfBirth
-                            onSelectedDateChanged: {
-                                console.log(selectedDate)
-                                plantEditor.plant.dateOfBirth = selectedDate
+                        Image {
+                            id: image
+                            anchors.fill: parent
+                            fillMode: Image.PreserveAspectFit
+                            source: parent.url
+                            layer {
+                                enabled: true
+                                effect: OpacityMask {
+                                    maskSource: mask
+                                }
+                            }
+                        }
+                        Rectangle {
+                            id: mask
+                            anchors.fill: parent
+                            visible: false
+                            gradient: Gradient {
+                                GradientStop {
+                                    position: 0.5
+                                    color: "white"
+                                }
+                                GradientStop {
+                                    position: 0.75
+                                    color: "transparent"
+                                }
                             }
                         }
                     }
                 }
             }
-
         }
 
-        Controls.Label {
-            Layout.fillWidth: true
-            Layout.margins: Kirigami.Units.largeSpacing
-            wrapMode: Text.WordWrap
+        FormCard.FormDelegateSeparator {}
+
+        FormCard.FormTextFieldDelegate {
+            label: i18n("Name")
+            text: plantEditor.plant.name
+            onTextChanged: plantEditor.plant.name = text
+        }
+
+        FormCard.FormDelegateSeparator {}
+
+        FormCard.FormTextFieldDelegate {
+            label: i18n("Species")
+            text: plantEditor.plant.species
+            onTextChanged: plantEditor.plant.species = text
+        }
+
+        FormCard.FormDelegateSeparator {}
+
+        FormCard.FormTextFieldDelegate {
+            label: i18n("Room")
+            text: plantEditor.plant.location
+            onTextChanged: plantEditor.plant.location = text
+        }
+
+        FormCard.FormDelegateSeparator {}
+
+        FormCard.AbstractFormDelegate {
+            id: interval
+            background: null
+            contentItem: ColumnLayout {
+                Controls.Label {
+                    text: i18n("How often does the plant need Watering?")
+                }
+                Controls.ButtonGroup {
+                    id: buttonGroup
+                }
+
+                RowLayout {
+                    id: row
+
+                    Layout.fillHeight: true
+                    Layout.fillWidth: true
+                    spacing: Kirigami.Units.smallSpacing
+
+                    Controls.Button {
+                        text: i18n("2 days")
+                        checkable: true
+                        Controls.ButtonGroup.group: buttonGroup
+                        Layout.fillWidth: true
+                        onClicked: plantEditor.plant.waterIntervall = 2
+                    }
+
+                    Controls.Button {
+                        text: i18n("5 days")
+                        checkable: true
+                        Controls.ButtonGroup.group: buttonGroup
+                        Layout.fillWidth: true
+                        onClicked: plantEditor.plant.waterIntervall = 5
+                    }
+
+                    Controls.Button {
+                        text: i18n("weekly")
+                        checkable: true
+                        Controls.ButtonGroup.group: buttonGroup
+                        Layout.fillWidth: true
+                        onClicked: plantEditor.plant.waterIntervall = 7
+                    }
+
+                    Controls.Button {
+                        id: buttonWeeks
+                        text: i18n("2 weeks")
+                        checkable: true
+                        Controls.ButtonGroup.group: buttonGroup
+                        Layout.fillWidth: true
+                        onClicked: plantEditor.plant.waterIntervall = 14
+                    }
+                }
+
+                RowLayout {
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+
+                    Controls.Label {
+                        text: i18n("Custom:")
+                    }
+
+                    Controls.SpinBox {
+                        onValueChanged: plantEditor.plant.waterIntervall = value
+                        value: plantEditor.plant.waterIntervall
+                        Layout.fillWidth: true
+                    }
+                }
+            }
+        }
+
+        FormCard.FormDelegateSeparator {
+            visible: root.mode === PlantEditor.Creator
+        }
+
+        FormCard.AbstractFormDelegate {
+            id: health
+            visible: root.mode === PlantEditor.Creator
+            background: null
+            contentItem: ColumnLayout {
+                Controls.Label {
+                    text: i18n("How healthy is your plant at the moment?")
+                }
+
+                HealthSlider {
+                    id: healthSlider
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignHCenter
+                    Layout.maximumWidth: 200
+                    from: 0
+                    to: 100
+                    onValueChanged: plantEditor.plant.currentHealth = value
+                }
+            }
+        }
+
+        FormCard.FormDelegateSeparator {}
+
+        FormCard.AbstractFormDelegate{
+            background: null
+            contentItem: ColumnLayout{
+                Controls.Label {
+                    text: i18n("Birthday")
+                    Layout.fillWidth: true
+                }
+
+                KirigamiDateTime.DateInput {
+                    id: birthday
+//                  selectedDate: plantEditor.plant.dateOfBirth
+                    onSelectedDateChanged: {
+                        console.log(selectedDate)
+                        plantEditor.plant.dateOfBirth = selectedDate
+                    }
+                }
+            }
         }
     }
 

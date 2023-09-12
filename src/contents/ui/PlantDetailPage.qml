@@ -6,7 +6,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
 import org.kde.kirigami 2.19 as Kirigami
-import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
+import org.kde.kirigamiaddons.formcard 1.0 as FormCard
 import QtGraphicalEffects 1.15
 import org.kde.quickcharts 1.0 as Charts
 import org.kde.powerplant 1.0
@@ -108,8 +108,9 @@ Kirigami.ScrollablePage {
 
         anchors.fill: parent
         columns: 2
+
         ColumnLayout {
-            Layout.maximumWidth: wideScreen? 400: applicationWindow().width
+            Layout.maximumWidth: wideScreen ? 400: applicationWindow().width
             Layout.fillHeight: true
             Layout.fillWidth: true
             Item {
@@ -161,14 +162,19 @@ Kirigami.ScrollablePage {
                 Layout.fillHeight: true
             }
         }
+
         ColumnLayout {
-            spacing: Kirigami.Units.largeSpacing
+            spacing: 0
 
             Layout.fillHeight: true
             Layout.fillWidth: true
+
+            Layout.maximumWidth: wideScreen ? 400: applicationWindow().width
+
             RowLayout {
                 spacing: Kirigami.Units.largeSpacing
 
+                Layout.topMargin: Kirigami.Units.gridUnit
                 Layout.alignment: Qt.AlignHCenter
                 Layout.maximumWidth: Kirigami.Units.gridUnit * 30
                 TextIconBox {
@@ -187,127 +193,130 @@ Kirigami.ScrollablePage {
                     Layout.fillWidth: true
                 }
             }
-            MobileForm.FormCard {
-                Layout.fillWidth: true
-                contentItem: ColumnLayout {
-                    spacing: 0
-                    MobileForm.FormCardHeader {
-                        title: i18n("Water")
-                    }
-                    MobileForm.AbstractFormDelegate {
-                        id: name
-                        background: Item {}
-                        contentItem: RowLayout {
-                            Kirigami.Icon {
-                                id: icon
-                                source: "raindrop"
-                                color: "#64ace1"
-                                isMask: true
-                                implicitHeight: Kirigami.Units.gridUnit * 1.5
-                            }
-                            Controls.Label {
-                                Layout.fillWidth: true
-                                text: if (plant.wantsToBeWateredIn > 1) {
-                                          i18n("has to be watered in %1 days", plant.wantsToBeWateredIn)
-                                      } else if (plant.wantsToBeWateredIn == 1) {
-                                          i18n("has to be watered tomorrow")
-                                      } else if (plant.wantsToBeWateredIn == 0) {
-                                          i18n("needs to be watered today!")
-                                      } else if (plant.wantsToBeWateredIn < 0) {
-                                          i18n("should have been watered already!")
-                                      }
-                            }
-                            Controls.Button {
-                                text: i18n("Watered")
-                                icon.name: "answer-correct"
-                                onClicked: waterEvents.waterPlant()
-                            }
-                        }
-                    }
-//                    MobileForm.FormDelegateSeparator {}
 
-//                    Repeater {
-//                        model: waterEvents
-//                        delegate: MobileForm.AbstractFormDelegate {
-//                            required property date modelData
-//                            background: Item {}
-//                            contentItem: ColumnLayout {
-//                                Controls.Label {
-
-//                                    text: modelData
-//                                }
-//                            }
-//                        }
-//                    }
-                }
+            FormCard.FormHeader {
+                title: i18n("Water")
             }
-            MobileForm.FormCard {
-                Layout.fillWidth: true
-                contentItem: ColumnLayout {
-                    spacing: 0
-                    MobileForm.FormCardHeader {
-                        title: i18n("Health")
+
+            FormCard.FormCard {
+                FormCard.AbstractFormDelegate {
+                    id: name
+                    background: null
+                    contentItem: RowLayout {
+                        Kirigami.Icon {
+                            id: icon
+                            source: "raindrop"
+                            color: "#64ace1"
+                            isMask: true
+                            implicitHeight: Kirigami.Units.gridUnit * 1.5
+                        }
+                        Controls.Label {
+                            Layout.fillWidth: true
+                            text: if (plant.wantsToBeWateredIn > 1) {
+                                      i18n("has to be watered in %1 days", plant.wantsToBeWateredIn)
+                                  } else if (plant.wantsToBeWateredIn == 1) {
+                                      i18n("has to be watered tomorrow")
+                                  } else if (plant.wantsToBeWateredIn == 0) {
+                                      i18n("needs to be watered today!")
+                                  } else if (plant.wantsToBeWateredIn < 0) {
+                                      i18n("should have been watered already!")
+                                  }
+                        }
+                        Controls.Button {
+                            text: i18n("Watered")
+                            icon.name: "answer-correct"
+                            onClicked: waterEvents.waterPlant()
+                        }
                     }
-                    MobileForm.AbstractFormDelegate {
-                        id: health
-                        background: Item {}
+                }
 
-                        contentItem: ColumnLayout {
-                            Controls.Label {
-                                text: i18n("How healthy is your plant today?")
+//              FormCard.FormDelegateSeparator {}
+
+//              Repeater {
+//                  model: waterEvents
+//                  delegate: FormCard.AbstractFormDelegate {
+//                      required property date modelData
+//                      background: null
+//                      contentItem: ColumnLayout {
+//                          Controls.Label {
+//                              text: modelData
+//                          }
+//                      }
+//                  }
+//              }
+            }
+
+            FormCard.FormHeader {
+                title: i18n("Health")
+            }
+
+            FormCard.FormCard {
+                FormCard.AbstractFormDelegate {
+                    id: health
+
+                    background: null
+                    text: i18n("How healthy is your plant today?")
+
+                    contentItem: ColumnLayout {
+                        Controls.Label {
+                            text: health.text
+                        }
+                        RowLayout {
+                            HealthSlider {
+                                id: healthSlider
+                                Layout.fillWidth: true
+                                Layout.alignment: Qt.AlignHCenter
+                                Layout.maximumWidth: 200
+                                value: plant.currentHealth
+                                from: 0
+                                to: 100
                             }
-                            RowLayout {
-                                HealthSlider {
-                                    id: healthSlider
-                                    Layout.fillWidth: true
-                                    Layout.alignment: Qt.AlignHCenter
-                                    Layout.maximumWidth: 200
-                                    value: plant.currentHealth
-                                    from: 0
-                                    to: 100
-                                }
 
-                                Item {Layout.fillWidth: true}
+                            Item {
+                                Layout.fillWidth: true
+                            }
 
-                                Controls.Button {
-                                    text: i18n("Add")
-                                    icon.name: "list-add"
-                                    onClicked: healthEvents.addHealthEvent(healthSlider.value)
-                                }
+                            Controls.Button {
+                                text: i18n("Add")
+                                icon.name: "list-add"
+                                onClicked: healthEvents.addHealthEvent(healthSlider.value)
                             }
                         }
                     }
-                    MobileForm.FormDelegateSeparator {}
+                }
 
-                    MobileForm.AbstractFormDelegate {
-                        id: healthHistory
-                        background: Item {}
+                FormCard.FormDelegateSeparator {}
 
-                        contentItem: ColumnLayout {
-                            Controls.Label {
-                                text: i18n("Health History")
+                FormCard.AbstractFormDelegate {
+                    id: healthHistory
+
+                    text: i18n("Health History")
+
+                    background: null
+                    contentItem: ColumnLayout {
+                        Controls.Label {
+                            text: healthHistory.text
+                        }
+
+                        Charts.LineChart {
+                            height: 60
+                            Layout.topMargin: 10
+                            Layout.bottomMargin: 10
+                            clip: false
+                            Layout.fillWidth: true
+                            colorSource: Charts.SingleValueSource {
+                                value: "#b4e479"
                             }
+                            nameSource: Charts.SingleValueSource {
+                                value: health
+                            }
+                            fillOpacity: 0.3
 
-                            Charts.LineChart {
-                                height: 60
-                                Layout.topMargin: 10
-                                Layout.bottomMargin: 10
-                                clip: false
-                                Layout.fillWidth: true
-                                colorSource: Charts.SingleValueSource {
-                                    value: "#b4e479"
-                                }
-                                nameSource: Charts.SingleValueSource {
-                                    value: health
-                                }
-                                fillOpacity: 0.3
+                            smooth: true
 
-                                smooth: true
-
-                                valueSources: Charts.ModelSource {
-                                    model: healthEvents
-                                    roleName: "health"
-                                }
+                            valueSources: Charts.ModelSource {
+                                model: healthEvents
+                                roleName: "health"
                             }
                         }
                     }
