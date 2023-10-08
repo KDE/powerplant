@@ -5,7 +5,9 @@
 #include <QCoroTask>
 #include <QCoroFuture>
 #include <QDateTime>
+
 #include <unordered_map>
+#include <algorithm>
 
 using namespace DB;
 
@@ -18,6 +20,7 @@ PlantsModel::PlantsModel(QObject *parent)
         beginResetModel();
         m_data = plants;
         endResetModel();
+        Q_EMIT summaryChanged();
     });
 
     connect(&Database::instance(), &Database::plantChanged, this, [this](DB::Plant::Id plantId) {
@@ -38,6 +41,7 @@ PlantsModel::PlantsModel(QObject *parent)
                 m_data[row] = plant.value();
                 const auto idx = index(row, 0);
                 Q_EMIT dataChanged(idx, idx);
+                Q_EMIT summaryChanged();
             }
         });
     });
@@ -154,4 +158,19 @@ void PlantsModel::deletePlant(const int plantId)
     beginRemoveRows({}, row, row);
     Database::instance().deletePlant(plantId);
     endRemoveRows();
+}
+
+PlantsModel::Summary PlantsModel::summary() const
+{
+    auto needsWatering = [](const Plant &plant) {
+        auto lastWatered = QDateTime::fromSecsSinceEpoch(plant.last_watered).date();
+        auto daysTillWatering = QDate::currentDate().daysTo(lastWatered.addDays(plant.water_intervall));
+        return daysTillWatering <= 0;
+    };
+
+    if (std::any_of(m_data.begin(), m_data.end(), needsWatering)) {
+        return Summary::SomeNeedWater;
+    }
+
+    return Summary::NothingToDo;
 }

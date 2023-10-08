@@ -74,7 +74,15 @@ Kirigami.ScrollablePage {
             }
 
             Controls.Label {
-                text: i18n("Some of your plants need attention")
+                text: {
+                    switch (plantsModel.summary) {
+                    case PlantsModel.SomeNeedWater:
+                        return i18n("Some of your plants need attention");
+                    case PlantsModel.NothingToDo:
+                        return i18n("No plants need water right now");
+                    }
+                }
+
                 wrapMode: Text.WordWrap
                 font.pixelSize: 20
 

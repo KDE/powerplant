@@ -8,8 +8,17 @@
 
 class PlantsModel: public QAbstractListModel
 {
-    Q_OBJECT;
+    Q_OBJECT
+
+    Q_PROPERTY(Summary summary READ summary NOTIFY summaryChanged)
+
 public:
+    enum Summary {
+        NothingToDo,
+        SomeNeedWater
+    };
+    Q_ENUM(Summary);
+
     explicit PlantsModel(QObject *parent = nullptr);
 
     int rowCount(const QModelIndex&)const override;
@@ -30,6 +39,9 @@ public:
     Q_INVOKABLE void addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth, const int health);
     Q_INVOKABLE void editPlant(const DB::Plant::Id plantId, const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth);
     Q_INVOKABLE void deletePlant(const int plantId);
+
+    Summary summary() const;
+    Q_SIGNAL void summaryChanged();
 
 private:
     std::vector<DB::Plant> m_data;
