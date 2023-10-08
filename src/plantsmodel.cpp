@@ -149,6 +149,8 @@ void PlantsModel::deletePlant(const int plantId)
         return it - m_data.cbegin();
     }();
 
+    m_data.erase(m_data.begin() + row);
+
     beginRemoveRows({}, row, row);
     Database::instance().deletePlant(plantId);
     endRemoveRows();
