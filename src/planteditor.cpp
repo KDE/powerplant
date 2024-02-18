@@ -57,7 +57,7 @@ void Plant::refresh()
         m_species = plant->species;
         Q_EMIT speciesChanged();
 
-        m_imgUrl = plant->img_url;
+        m_imgUrl = QUrl(plant->img_url);
         Q_EMIT imgUrlChanged();
 
         m_waterIntervall = plant->water_intervall;

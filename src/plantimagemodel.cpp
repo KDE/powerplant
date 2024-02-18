@@ -6,10 +6,12 @@
 #include <QDebug>
 #include <QDir>
 
+using namespace Qt::Literals::StringLiterals;
+
 PlantImageModel::PlantImageModel(QObject *parent)
     : QAbstractListModel(parent)
 {
-    QDir assets(":/assets/");
+    QDir assets(u":/assets/"_s);
     m_urls = assets.entryList();
 }
 
@@ -76,8 +78,8 @@ QVariant PlantImageModel::data(const QModelIndex& index, int role) const
 
     switch (role){
     case UrlRole:
-         return row == -1 ? m_customImage : "qrc:/assets/" + m_urls.at(row);
+         return row == -1 ? m_customImage : u"qrc:/assets/"_s + m_urls.at(row);
     };
 
-    Q_UNREACHABLE();
+    return {};
 }

@@ -5,10 +5,9 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
 import org.kde.kirigami 2.19 as Kirigami
-import org.kde.kirigamiaddons.formcard 1.0 as FormCard
-import QtGraphicalEffects 1.0
+import org.kde.kirigamiaddons.formcard as FormCard
+import Qt5Compat.GraphicalEffects
 import Qt.labs.platform 1.1
-import org.kde.kirigamiaddons.dateandtime 0.1 as KirigamiDateTime
 
 import "components"
 
@@ -273,26 +272,18 @@ FormCard.FormCardPage {
                 }
             }
         }
+    }
 
-        FormCard.FormDelegateSeparator {}
+    FormCard.FormHeader {
+        title: i18n("Birthday")
+    }
 
-        FormCard.AbstractFormDelegate{
-            background: null
-            contentItem: ColumnLayout{
-                Controls.Label {
-                    text: i18n("Birthday")
-                    Layout.fillWidth: true
-                }
-
-                KirigamiDateTime.DateInput {
-                    id: birthday
-//                  selectedDate: plantEditor.plant.dateOfBirth
-                    onSelectedDateChanged: {
-                        console.log(selectedDate)
-                        plantEditor.plant.dateOfBirth = selectedDate
-                    }
-                }
-            }
+    FormCard.FormCard {
+        FormCard.FormDateTimeDelegate {
+            dateTimeDisplay: FormCard.FormDateTimeDelegate.DateTimeDisplay.Date
+            initialValue: plantEditor.plant.dateOfBirth
+            onValueChanged: plantEditor.plant.dateOfBirth = value
+            popupParent: root
         }
     }
 

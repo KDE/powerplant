@@ -10,8 +10,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FeatureSummary)
 
-set(QT_MIN_VERSION 5.15)
-set(KF_MIN_VERSION 5.83)
+set(QT_MIN_VERSION 6.6)
+set(KF_MIN_VERSION 6.0)
 
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 
@@ -31,10 +31,10 @@ ecm_setup_version(${PROJECT_VERSION}
 
 kde_enable_exceptions()
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg Widgets)
-find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 CoreAddons Config I18n)
-find_package(FutureSQL${QT_MAJOR_VERSION} REQUIRED)
-find_package(QCoro${QT_MAJOR_VERSION} REQUIRED COMPONENTS Core)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg Widgets)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami CoreAddons Config I18n)
+find_package(FutureSQL6 REQUIRED)
+find_package(QCoro6 REQUIRED COMPONENTS Core)
 
 if (ANDROID)
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)

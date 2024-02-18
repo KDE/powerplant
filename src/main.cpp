@@ -28,9 +28,8 @@
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-    QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication app(argc, argv);
-        KLocalizedString::setApplicationDomain("powerplant");
+    KLocalizedString::setApplicationDomain("powerplant");
 
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
     QCoreApplication::setApplicationName(QStringLiteral("powerplant"));

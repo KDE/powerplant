@@ -6,8 +6,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
 import org.kde.kirigami 2.19 as Kirigami
-import QtGraphicalEffects 1.0
-
+import Qt5Compat.GraphicalEffects
 import org.kde.powerplant 1.0
 
 import "components"
@@ -20,7 +19,7 @@ Kirigami.ScrollablePage {
     Layout.fillWidth: true
 
     title: i18n("Plants")
-    actions.main: Kirigami.Action {
+    actions: Kirigami.Action {
         icon.name: "help-about-symbolic"
         onTriggered: pageStack.pushDialogLayer("qrc:/About.qml")
     }

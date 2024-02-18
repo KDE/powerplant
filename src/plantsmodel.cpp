@@ -138,7 +138,7 @@ void PlantsModel::editPlant(const DB::Plant::Id plantId, const QString &name, co
     plant.location = location;
     plant.date_of_birth = dateOfBirth;
 
-    emit dataChanged(idx, idx);
+    Q_EMIT dataChanged(idx, idx);
 }
 
 void PlantsModel::deletePlant(const int plantId)

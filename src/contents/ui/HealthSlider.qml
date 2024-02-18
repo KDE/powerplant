@@ -3,7 +3,7 @@ import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
 import org.kde.kirigami 2.19 as Kirigami
 import QtQuick.Shapes 1.5 as Shapes
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects
 import org.kde.powerplant 1.0
 
 Controls.Slider {

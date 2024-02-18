@@ -22,12 +22,12 @@ target_link_libraries(powerplant
     Qt::QuickControls2
     Qt::Svg
     Qt::Widgets
-    KF${QT_MAJOR_VERSION}::I18n
-    KF${QT_MAJOR_VERSION}::CoreAddons
-    KF${QT_MAJOR_VERSION}::ConfigCore
-    KF${QT_MAJOR_VERSION}::ConfigGui
-    FutureSQL${QT_MAJOR_VERSION}::FutureSQL
-    QCoro${QT_MAJOR_VERSION}::Core)
+    KF6::I18n
+    KF6::CoreAddons
+    KF6::ConfigCore
+    KF6::ConfigGui
+    FutureSQL6::FutureSQL
+    QCoro6::Core)
 
 if (ANDROID)
     kirigami_package_breeze_icons(ICONS

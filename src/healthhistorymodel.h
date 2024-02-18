@@ -8,7 +8,7 @@
 
 class HealthHistoryModel: public QAbstractListModel
 {
-    Q_OBJECT;
+    Q_OBJECT
     Q_PROPERTY(int plantId READ plantId WRITE setPlantId NOTIFY plantIdChanged)
 
     enum Role {
