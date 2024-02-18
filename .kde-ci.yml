@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 Dependencies:
-  - 'on': [ 'Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6', 'Android/Qt6' ]
+  - 'on': [ 'Linux', 'FreeBSD', 'Windows', 'Android' ]
     'require':
       'frameworks/extra-cmake-modules': '@latest-kf6'
       'frameworks/ki18n': '@latest-kf6'
@@ -10,25 +10,10 @@ Dependencies:
       'frameworks/kcoreaddons': '@latest-kf6'
       'frameworks/kconfig': '@latest-kf6'
       'libraries/kirigami-addons': '@latest-kf6'
-      'libraries/futuresql': '@latest'
 
-  - 'on': [ 'Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6' ]
+  - 'on': [ 'Linux', 'FreeBSD', 'Windows' ]
     'require':
       'frameworks/qqc2-desktop-style': '@latest-kf6'
-
-  - 'on': [ 'Linux/Qt5', 'FreeBSD/Qt5', 'Windows/Qt5', 'Android/Qt5' ]
-    'require':
-      'frameworks/extra-cmake-modules': '@stable'
-      'frameworks/ki18n': '@stable'
-      'frameworks/kirigami': '@stable'
-      'frameworks/kcoreaddons': '@stable'
-      'frameworks/kconfig': '@stable'
-      'libraries/kirigami-addons': '@latest'
-      'libraries/futuresql': '@latest'
-
-  - 'on': [ 'Linux/Qt5', 'FreeBSD/Qt5', 'Windows/Qt5' ]
-    'require':
-      'frameworks/qqc2-desktop-style': '@stable'
 
 Options:
   require-passing-tests-on: [ '@all' ]
