@@ -113,7 +113,7 @@ Kirigami.ScrollablePage {
             }
             width: grid.cellWidth
 
-            Kirigami.Card {
+            Kirigami.AbstractCard {
                 id: card
 
                 onClicked: pageStack.push("qrc:/PlantDetailPage.qml", {
@@ -176,7 +176,7 @@ Kirigami.ScrollablePage {
                 }
                 Layout.alignment: Qt.AlignHCenter
                 Layout.margins: 10
-                padding: 0
+                padding: Kirigami.Units.mediumSpacing
                 implicitHeight: grid.cellHeight - 2 * Layout.margins
                 contentItem: ColumnLayout {
                     Kirigami.Heading {
