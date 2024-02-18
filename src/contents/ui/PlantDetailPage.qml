@@ -103,6 +103,7 @@ Kirigami.ScrollablePage {
             Layout.fillWidth: true
         }
     }
+
     GridLayout {
         flow: wideScreen ? GridLayout.LeftToRight : GridLayout.TopToBottom
 
@@ -110,7 +111,7 @@ Kirigami.ScrollablePage {
         columns: 2
 
         ColumnLayout {
-            Layout.maximumWidth: wideScreen ? 400: applicationWindow().width
+            Layout.maximumWidth: wideScreen ? applicationWindow().width / 2 - Kirigami.Units.gridUnit * 3 : applicationWindow().width
             Layout.fillHeight: true
             Layout.fillWidth: true
             Item {
@@ -169,7 +170,7 @@ Kirigami.ScrollablePage {
             Layout.fillHeight: true
             Layout.fillWidth: true
 
-            Layout.maximumWidth: wideScreen ? 400: applicationWindow().width
+            Layout.maximumWidth: applicationWindow().width / (wideScreen ? 2 : 1)
 
             RowLayout {
                 spacing: Kirigami.Units.largeSpacing
