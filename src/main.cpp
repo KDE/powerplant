@@ -7,6 +7,7 @@
 #include <QQmlApplicationEngine>
 #include <QUrl>
 #include <QtQml>
+#include <QIcon>
 
 #include "app.h"
 #include "database.h"
@@ -51,6 +52,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
                         i18nc("@info:credit", "Author"),
                         QStringLiteral("mbb@kaidan.im"));
     KAboutData::setApplicationData(aboutData);
+
+    QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.powerplant")));
 
     QQmlApplicationEngine engine;
 
