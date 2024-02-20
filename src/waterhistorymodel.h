@@ -3,12 +3,15 @@
 
 #pragma once
 
-#include "database.h"
 #include <QAbstractListModel>
+#include <QtQml>
+
+#include "database.h"
 
 class WaterHistoryModel: public QAbstractListModel
 {
     Q_OBJECT
+    QML_ELEMENT
     Q_PROPERTY(int plantId READ plantId WRITE setPlantId NOTIFY plantIdChanged)
 
     enum Role {

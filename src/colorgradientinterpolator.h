@@ -6,10 +6,12 @@
 #include <QObject>
 #include <QColor>
 #include <QVariantAnimation>
+#include <QtQml>
 
 class ColorGradientInterpolator : public QObject
 {
     Q_OBJECT
+    QML_NAMED_ELEMENT(ColorInterpolator)
     Q_PROPERTY(QColor color READ color NOTIFY colorChanged)
     Q_PROPERTY(double progress READ progress WRITE setProgress NOTIFY progressChanged)
     Q_PROPERTY(QVariantList gradientStops READ gradientStops WRITE setGradientStops NOTIFY gradientStopsChanged)

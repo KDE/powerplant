@@ -59,20 +59,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     auto config = powerplantConfig::self();
 
-    qmlRegisterSingletonInstance("org.kde.powerplant", 1, 0, "Config", config);
-
-    qmlRegisterType<WaterHistoryModel>("org.kde.powerplant", 1, 0, "WaterHistoryModel");
-    qmlRegisterType<HealthHistoryModel>("org.kde.powerplant", 1, 0, "HealthHistoryModel");
-    qmlRegisterType<Plant>("org.kde.powerplant", 1, 0, "Plant");
-    qmlRegisterType<PlantEditor>("org.kde.powerplant", 1, 0, "PlantEditor");
-    qmlRegisterType<PlantsModel>("org.kde.powerplant", 1, 0, "PlantsModel");
-    qmlRegisterType<PlantImageModel>("org.kde.powerplant", 1, 0, "PlantImageModel");
-    qmlRegisterType<ColorGradientInterpolator>("org.kde.powerplant", 1, 0, "ColorInterpolator");
-
-    qmlRegisterSingletonType("org.kde.powerplant", 1, 0, "About", [](QQmlEngine *engine, QJSEngine *) -> QJSValue {
-        return engine->toScriptValue(KAboutData::applicationData());
-    });
-
+    qmlRegisterSingletonInstance("org.kde.powerplant.private", 1, 0, "Config", config);
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));

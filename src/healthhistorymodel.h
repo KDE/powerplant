@@ -4,11 +4,13 @@
 #pragma once
 
 #include <QAbstractListModel>
+#include <QtQml>
 #include "database.h"
 
 class HealthHistoryModel: public QAbstractListModel
 {
     Q_OBJECT
+    QML_ELEMENT
     Q_PROPERTY(int plantId READ plantId WRITE setPlantId NOTIFY plantIdChanged)
 
     enum Role {

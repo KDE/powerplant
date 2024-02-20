@@ -5,11 +5,12 @@
 
 #include "database.h"
 #include <QAbstractListModel>
+#include <QtQml>
 
 class PlantsModel: public QAbstractListModel
 {
     Q_OBJECT
-
+    QML_ELEMENT
     Q_PROPERTY(Summary summary READ summary NOTIFY summaryChanged)
 
 public:

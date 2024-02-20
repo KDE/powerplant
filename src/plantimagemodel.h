@@ -4,10 +4,12 @@
 #pragma once
 
 #include <QAbstractListModel>
+#include <QtQml>
 
 class PlantImageModel : public QAbstractListModel
 {
     Q_OBJECT
+    QML_ELEMENT
     Q_PROPERTY(QString customImage READ customImage WRITE setCustomImage NOTIFY customImageChanged)
 
 public:

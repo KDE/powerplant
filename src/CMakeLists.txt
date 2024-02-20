@@ -1,8 +1,22 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
 
-add_executable(powerplant
-    main.cpp
+qt_add_qml_module(powerplant_static
+    STATIC
+    URI org.kde.powerplant
+    VERSION 1.0
+)
+
+ecm_qt_declare_logging_category(powerplant_static
+    HEADER powerplant_debug.h
+    IDENTIFIER POWERPLANT_LOG
+    CATEGORY_NAME org.kde.powerplant
+    DESCRIPTION "powerplant"
+    DEFAULT_SEVERITY Warning
+    EXPORT POWERPLANT
+)
+
+target_sources(powerplant_static PUBLIC
     app.cpp
     database.cpp
     plantsmodel.cpp
@@ -14,7 +28,7 @@ add_executable(powerplant
     resources.qrc
 )
 
-target_link_libraries(powerplant
+target_link_libraries(powerplant_static PUBLIC
     Qt::Core
     Qt::Gui
     Qt::Qml
@@ -38,5 +52,9 @@ if (ANDROID)
     )
 endif()
 
-kconfig_add_kcfg_files(powerplant GENERATE_MOC powerplantconfig.kcfgc)
+kconfig_add_kcfg_files(powerplant_static GENERATE_MOC powerplantconfig.kcfgc)
+
+## Excutable
+add_executable(powerplant main.cpp)
+target_link_libraries(powerplant PRIVATE powerplant_static powerplant_staticplugin)
 install(TARGETS powerplant ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

@@ -30,6 +30,8 @@ FormCard.FormCardPage {
     title: mode === PlantEditor.Creator ? i18n("Add Plant") : i18n("Edit %1", plantEditor.plant.name)
 
     FormCard.FormCard {
+        Layout.topMargin: Kirigami.Units.gridUnit
+
         FormCard.AbstractFormDelegate {
             background: null
             contentItem: ColumnLayout {

@@ -6,6 +6,8 @@
 #include <QObject>
 #include <QUrl>
 #include <QDateTime>
+#include <QtQml>
+
 #include "database.h"
 #include "plantsmodel.h"
 
@@ -13,6 +15,7 @@
 class Plant : public QObject
 {
     Q_OBJECT
+    QML_ELEMENT
 
     /// This property holds the database id of the plant
     Q_PROPERTY(int plantId READ plantId WRITE setPlantId NOTIFY plantIdChanged)
@@ -82,6 +85,7 @@ private:
 class PlantEditor : public QObject
 {
     Q_OBJECT
+    QML_ELEMENT
 
     Q_PROPERTY(Mode mode MEMBER m_mode NOTIFY modeChanged REQUIRED)
     Q_PROPERTY(int plantId READ plantId WRITE setPlantId NOTIFY plantIdChanged)
