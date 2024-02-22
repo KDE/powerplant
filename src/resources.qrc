@@ -1,18 +1,8 @@
 <RCC>
     <qresource prefix="/">
-        <file alias="main.qml">contents/ui/main.qml</file>
-        <file alias="About.qml">contents/ui/About.qml</file>
         <file>contents/migrations/2023-04-10-140702_init/up.sql</file>
         <file>contents/migrations/2023-04-10-140702_init/down.sql</file>
-        <file alias="components/DoubleActionButton.qml">contents/ui/components/DoubleActionButton.qml</file>
-        <file alias="components/BottomDrawer.qml">contents/ui/components/BottomDrawer.qml</file>
-        <file alias="components/ActionButton.qml">contents/ui/components/ActionButton.qml</file>
         <file alias="assets/monstera.svg">contents/assets/monstera.svg</file>
-        <file alias="PlantsPage.qml">contents/ui/PlantsPage.qml</file>
-        <file alias="HealthSlider.qml">contents/ui/HealthSlider.qml</file>
-        <file alias="PlantEditorPage.qml">contents/ui/PlantEditorPage.qml</file>
-        <file alias="PlantDetailPage.qml">contents/ui/PlantDetailPage.qml</file>
-        <file alias="components/TextIconBox.qml">contents/ui/components/TextIconBox.qml</file>
         <file alias="assets/aloe_vera.svg">contents/assets/aloe_vera.svg</file>
         <file alias="assets/green_lilly.svg">contents/assets/green_lilly.svg</file>
         <file alias="assets/euphorbia_trigona.svg">contents/assets/euphorbia_trigona.svg</file>

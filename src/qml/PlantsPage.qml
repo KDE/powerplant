@@ -6,10 +6,9 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
 import org.kde.kirigami 2.19 as Kirigami
+import org.kde.kirigamiaddons.components as Components
 import Qt5Compat.GraphicalEffects
 import org.kde.powerplant 1.0
-
-import "components"
 
 Kirigami.ScrollablePage {
     id: root
@@ -21,7 +20,7 @@ Kirigami.ScrollablePage {
     title: i18n("Plants")
     actions: Kirigami.Action {
         icon.name: "help-about-symbolic"
-        onTriggered: pageStack.pushDialogLayer("qrc:/About.qml")
+        onTriggered: pageStack.pushDialogLayer(Qt.createComponent('org.kde.powerplant', 'About'))
     }
 
     Component {
@@ -33,17 +32,24 @@ Kirigami.ScrollablePage {
         }
     }
 
-    ActionButton {
+    Components.FloatingButton {
         parent: root.overlay
+
+        anchors {
+            right: parent.right
+            rightMargin: Kirigami.Units.largeSpacing
+            bottom: parent.bottom
+            bottomMargin: Kirigami.Units.largeSpacing
+        }
+
         x: root.width - width - margin
         y: root.height - height - pageStack.globalToolBar.preferredHeight - margin
         text: i18nc("@action:button", "Add Plant")
         icon.name: "list-add"
-        onClicked: applicationWindow().pageStack.pushDialogLayer(
-                       addPlantComponent, {}, {
-                           "width": Kirigami.Units.gridUnit * 25,
-                           "height": Kirigami.Units.gridUnit * 35
-                       })
+        onClicked: applicationWindow().pageStack.pushDialogLayer(addPlantComponent, {}, {
+           width: Kirigami.Units.gridUnit * 25,
+           height: Kirigami.Units.gridUnit * 35
+        })
     }
 
     GridView {
@@ -116,7 +122,7 @@ Kirigami.ScrollablePage {
             Kirigami.AbstractCard {
                 id: card
 
-                onClicked: pageStack.push("qrc:/PlantDetailPage.qml", {
+                onClicked: pageStack.push(Qt.createComponent('org.kde.powerplant', 'PlantDetailPage.qml'), {
                                               "plantId": plantItem.plantId,
                                               "plantsModel": plantsModel
                                           })

@@ -27,6 +27,8 @@
 
 #include "powerplantconfig.h"
 
+using namespace Qt::Literals::StringLiterals;
+
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
@@ -62,7 +64,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonInstance("org.kde.powerplant.private", 1, 0, "Config", config);
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
+    engine.loadFromModule(u"org.kde.powerplant"_s, u"Main"_s);
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

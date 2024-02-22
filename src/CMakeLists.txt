@@ -5,6 +5,14 @@ qt_add_qml_module(powerplant_static
     STATIC
     URI org.kde.powerplant
     VERSION 1.0
+    QML_FILES
+        qml/Main.qml
+        qml/About.qml
+        qml/PlantsPage.qml
+        qml/HealthSlider.qml
+        qml/PlantEditorPage.qml
+        qml/PlantDetailPage.qml
+        qml/components/TextIconBox.qml
 )
 
 ecm_qt_declare_logging_category(powerplant_static
