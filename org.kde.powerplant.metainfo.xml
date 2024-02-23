@@ -6,13 +6,41 @@
 <component type="desktop-application">
   <id>org.kde.powerplant</id>
   <name>PowerPlant</name>
+  <name xml:lang="ca">PowerPlant</name>
+  <name xml:lang="es">PowerPlant</name>
+  <name xml:lang="eu">PowerPlant</name>
+  <name xml:lang="nl">PowerPlant</name>
+  <name xml:lang="tr">PowerPlant</name>
+  <name xml:lang="uk">PowerPlant</name>
+  <name xml:lang="x-test">xxPowerPlantxx</name>
   <summary>A small app helping you to keep your plants alive</summary>
+  <summary xml:lang="ca">Una aplicació petita que us ajudarà a mantenir les plantes vives</summary>
+  <summary xml:lang="es">Pequeña aplicación que le ayuda a mantener vivas sus plantas</summary>
+  <summary xml:lang="eu">Zure landareak bizirik mantentzen laguntzeko aplikazio txiki bat</summary>
+  <summary xml:lang="nl">Een kleine toepassing om u te helpen uw planten in leven te houden</summary>
+  <summary xml:lang="tr">Bitkilerinizi canlı tutmaya yardımcı olan bir uygulama</summary>
+  <summary xml:lang="uk">Невеличка програма, яка допоможе вам підтримувати життєздатність ваших рослин</summary>
+  <summary xml:lang="x-test">xxA small app helping you to keep your plants alivexx</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
   <developer_name>KDE Community</developer_name>
+  <developer_name xml:lang="ca">La comunitat KDE</developer_name>
+  <developer_name xml:lang="es">La comunidad KDE</developer_name>
+  <developer_name xml:lang="eu">KDE Komunitatea</developer_name>
+  <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
+  <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
+  <developer_name xml:lang="uk">Спільнота KDE</developer_name>
+  <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <launchable type="desktop-id">org.kde.powerplant.desktop</launchable>
   <description>
     <p>PowerPlant lets you track when your plants have to be watered and how their health develops over time.</p>
+    <p xml:lang="ca">PowerPlant permet fer un seguiment de quan cal regar les plantes i com es desenvolupa la seva salut amb el temps.</p>
+    <p xml:lang="es">PowerPlant le permite hacer un seguimiento de cuándo debe regar sus plantas y cómo evoluciona su salud a lo largo del tiempo.</p>
+    <p xml:lang="eu">«PowerPlant»ek zure landareak noiz ureztatu behar diren eta haien osasuna denboran zehar nola garatzen den jarraipena egiteko aukera ematen dizu.</p>
+    <p xml:lang="nl">PowerPlant laat u volgen wanneer uw planten water moeten hebben en hoe hun gezondheid zich in de tijd ontwikkelt.</p>
+    <p xml:lang="tr">PowerPlant, bitkilerinizin ne zaman sulanması gerektiğini ve onların sağlık durumunu izler.</p>
+    <p xml:lang="uk">PowerPlant допоможе вам стежити за вчасним поливанням ваших рослин та їхнім розвитком.</p>
+    <p xml:lang="x-test">xxPowerPlant lets you track when your plants have to be watered and how their health develops over time.xx</p>
   </description>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
