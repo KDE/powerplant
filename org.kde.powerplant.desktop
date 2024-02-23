@@ -2,7 +2,21 @@
 # SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
 [Desktop Entry]
 Name=powerplant
+Name[ca]=powerplant
+Name[es]=powerplant
+Name[eu]=powerplant
+Name[nl]=powerplant
+Name[tr]=PowerPlant
+Name[uk]=powerplant
+Name[x-test]=xxpowerplantxx
 Comment=powerplant Kirigami Application
+Comment[ca]=Aplicació de Kirigami «powerplant»
+Comment[es]=Aplicación Kirigami powerplant
+Comment[eu]=powerplant Kirigami aplikazioa
+Comment[nl]=Kirigami-toepassing Powerplant
+Comment[tr]=PowerPlant Kirigami Uygulaması
+Comment[uk]=Програма powerplant на основі Kirigami
+Comment[x-test]=xxpowerplant Kirigami Applicationxx
 Version=1.0
 Exec=powerplant
 Icon=org.kde.powerplant
