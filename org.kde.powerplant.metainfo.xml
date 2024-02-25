@@ -9,46 +9,62 @@
   <name xml:lang="ca">PowerPlant</name>
   <name xml:lang="es">PowerPlant</name>
   <name xml:lang="eu">PowerPlant</name>
+  <name xml:lang="fr">PowerPlant</name>
   <name xml:lang="ka">PowerPlant</name>
+  <name xml:lang="ko">PowerPlant</name>
   <name xml:lang="nl">PowerPlant</name>
+  <name xml:lang="pl">PowerPlant</name>
   <name xml:lang="sl">PowerPlant</name>
   <name xml:lang="tr">PowerPlant</name>
   <name xml:lang="uk">PowerPlant</name>
   <name xml:lang="x-test">xxPowerPlantxx</name>
+  <name xml:lang="zh-TW">PowerPlant 植哉追蹤</name>
   <summary>A small app helping you to keep your plants alive</summary>
   <summary xml:lang="ca">Una aplicació petita que us ajudarà a mantenir les plantes vives</summary>
   <summary xml:lang="es">Pequeña aplicación que le ayuda a mantener vivas sus plantas</summary>
   <summary xml:lang="eu">Zure landareak bizirik mantentzen laguntzeko aplikazio txiki bat</summary>
+  <summary xml:lang="fr">Une petite application vous aidant à maintenir vos plantes en vie</summary>
   <summary xml:lang="ka">პატარა აპი, რომელიც თქვენი მცენარეების ცოცხლად დატოვებაში დაგეხმარებათ</summary>
+  <summary xml:lang="ko">식물이 활기를 유지할 수 있도록 도와 주는 앱</summary>
   <summary xml:lang="nl">Een kleine toepassing om u te helpen uw planten in leven te houden</summary>
+  <summary xml:lang="pl">Mała aplikacja do utrzymywania twoich roślin przy życiu</summary>
   <summary xml:lang="sl">Majhna aplikacija, ki vam pomaga ohranjati vaše rastline pri življenju</summary>
   <summary xml:lang="tr">Bitkilerinizi canlı tutmaya yardımcı olan bir uygulama</summary>
   <summary xml:lang="uk">Невеличка програма, яка допоможе вам підтримувати життєздатність ваших рослин</summary>
   <summary xml:lang="x-test">xxA small app helping you to keep your plants alivexx</summary>
+  <summary xml:lang="zh-TW">一個幫您維持植哉生命的小程式</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="es">La comunidad KDE</developer_name>
   <developer_name xml:lang="eu">KDE Komunitatea</developer_name>
+  <developer_name xml:lang="fr">Communauté de KDE</developer_name>
   <developer_name xml:lang="ka">KDE-ის საზოგადოება</developer_name>
+  <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
+  <developer_name xml:lang="pl">Społeczność KDE</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
   <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
+  <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <launchable type="desktop-id">org.kde.powerplant.desktop</launchable>
   <description>
     <p>PowerPlant lets you track when your plants have to be watered and how their health develops over time.</p>
     <p xml:lang="ca">PowerPlant permet fer un seguiment de quan cal regar les plantes i com es desenvolupa la seva salut amb el temps.</p>
     <p xml:lang="es">PowerPlant le permite hacer un seguimiento de cuándo debe regar sus plantas y cómo evoluciona su salud a lo largo del tiempo.</p>
     <p xml:lang="eu">«PowerPlant»ek zure landareak noiz ureztatu behar diren eta haien osasuna denboran zehar nola garatzen den jarraipena egiteko aukera ematen dizu.</p>
+    <p xml:lang="fr">L'application PowerPlant vous permet de déterminer si vos plantes doivent être arrosées et de voir comment leur santé se développe avec le temps.</p>
     <p xml:lang="ka">PowerPlant საშუალებას გაძლევთ, თვალყური ადევნოთ, როდის დაუსხით წყალი თქვენს მცენარეებს და როგორ ვითარდებიან დროის განმავლობაში.</p>
+    <p xml:lang="ko">PowerPlant는 식물에 물을 줄 시간을 추적하고 식물의 상태를 점검할 수 있습니다.</p>
     <p xml:lang="nl">PowerPlant laat u volgen wanneer uw planten water moeten hebben en hoe hun gezondheid zich in de tijd ontwikkelt.</p>
+    <p xml:lang="pl">PowerPlant przypomina o tym kiedy twoje rośliny potrzebują podlania i jak zdrowo rozwijają się na przestrzeni czasu.</p>
     <p xml:lang="sl">PowerPlant vam omogoča spremljati, kdaj je treba vaše rastline zaliti in kako se njihovo zdravje sčasoma razvija.</p>
     <p xml:lang="tr">PowerPlant, bitkilerinizin ne zaman sulanması gerektiğini ve onların sağlık durumunu izler.</p>
     <p xml:lang="uk">PowerPlant допоможе вам стежити за вчасним поливанням ваших рослин та їхнім розвитком.</p>
     <p xml:lang="x-test">xxPowerPlant lets you track when your plants have to be watered and how their health develops over time.xx</p>
+    <p xml:lang="zh-TW">《PowerPlant 植哉追蹤》讓您追蹤您的植哉什麼時候需要澆水，以及它們的健康狀況如何發展。</p>
   </description>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
