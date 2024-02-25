@@ -82,7 +82,7 @@ FormCard.FormCardPage {
                                 imageView.currentIndex = 0;
                             }
 
-                            nameFilters: [i18nc("Name filter for image files", "Image files (*.png *.jpg* *.webp)")]
+                            nameFilters: [i18nc("Name filter for image files", "Image files (*.png *.jpg *.webp)")]
                         }
                     }
 
