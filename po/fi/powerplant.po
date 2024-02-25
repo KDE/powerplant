@@ -1,29 +1,31 @@
-# SPDX-FileCopyrightText: 2024 Matjaž Jeran <matjaz.jeran@amis.net>
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the powerplant package.
+# Tommi Nieminen <translator@legisign.org>, 2024.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-23 00:40+0000\n"
-"PO-Revision-Date: 2024-02-24 08:29+0100\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
-"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
-"Language: sl\n"
+"PO-Revision-Date: 2024-02-23 19:51+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Matjaž Jeran"
+msgstr "Tommi Nieminen"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "matjaz.jeran@amis.net"
+msgstr "translator@legisign.org"
 
 #: main.cpp:44
 #, kde-format
@@ -34,12 +36,12 @@ msgstr "PowerPlant"
 #: main.cpp:48
 #, kde-format
 msgid "A small app to track your plants"
-msgstr "Majhna aplikacija za sledenje vašim rastlinam"
+msgstr "Pieni kasvien seurantasovellus"
 
 #: main.cpp:52
 #, kde-format
 msgid "(c) 2023"
-msgstr "(c) 2023"
+msgstr "© 2023"
 
 #: main.cpp:53
 #, kde-format
@@ -51,216 +53,208 @@ msgstr "Mathis Brüchert"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
-msgstr "Avtor"
+msgstr "Tekijä"
 
 #: qml/PlantDetailPage.qml:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Edit"
-msgstr "Uredi"
+msgstr "Muokkaa"
 
 #: qml/PlantDetailPage.qml:61
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
-msgstr "Izbriši"
+msgstr "Poista"
 
 #: qml/PlantDetailPage.qml:72 qml/PlantsPage.qml:20
 #, kde-format
 msgid "Plants"
-msgstr "Rastline"
+msgstr "Kasvit"
 
 #: qml/PlantDetailPage.qml:192
 #, kde-format
 msgid "Parent"
-msgstr "Starš"
+msgstr ""
 
 #: qml/PlantDetailPage.qml:199
 #, kde-format
 msgid "Water"
-msgstr "Voda"
+msgstr "Vesi"
 
 #: qml/PlantDetailPage.qml:217
 #, kde-format
 msgid "has to be watered in %1 days"
-msgstr "jo je treba zaliti v %1 dneh"
+msgstr "täytyy kastella %1 päivässä"
 
 #: qml/PlantDetailPage.qml:219
 #, kde-format
 msgid "has to be watered tomorrow"
-msgstr "jo je treba zaliti jutri"
+msgstr "täytyy kastella huomenna"
 
 #: qml/PlantDetailPage.qml:221
 #, kde-format
 msgid "needs to be watered today!"
-msgstr "jo je treba zaliti danes!"
+msgstr "täytyy kastella tänään!"
 
 #: qml/PlantDetailPage.qml:223
 #, kde-format
 msgid "should have been watered already!"
-msgstr "bi jo bilo že treba zaliti!"
+msgstr "olisi jo pitänyt kastella!"
 
 #: qml/PlantDetailPage.qml:227
 #, kde-format
 msgid "Watered"
-msgstr "Zalita"
+msgstr "Kasteltu"
 
 #: qml/PlantDetailPage.qml:251
 #, kde-format
 msgid "Health"
-msgstr "Zdravje"
+msgstr "Terveys"
 
 #: qml/PlantDetailPage.qml:259
 #, kde-format
 msgid "How healthy is your plant today?"
-msgstr "Kako zdrava je vaša rastlina danes?"
+msgstr "Kuinka terve kasvisi on tänään?"
 
 #: qml/PlantDetailPage.qml:281 qml/PlantEditorPage.qml:298
 #, kde-format
 msgid "Add"
-msgstr "Dodaj"
+msgstr "Lisää"
 
 #: qml/PlantDetailPage.qml:294
 #, kde-format
 msgid "Health History"
-msgstr "Zdravstvena zgodovina"
+msgstr "Terveyshistoria"
 
 #: qml/PlantEditorPage.qml:29
 #, kde-format
 msgid "Add Plant"
-msgstr "Dodaj rastlino"
+msgstr "Lisää kasvi"
 
 #: qml/PlantEditorPage.qml:29
 #, kde-format
 msgid "Edit %1"
-msgstr "Uredi %1"
+msgstr "Muokkaa: %1"
 
 #: qml/PlantEditorPage.qml:39
 #, kde-format
 msgid "Image:"
-msgstr "Slika:"
+msgstr "Kuva:"
 
 #: qml/PlantEditorPage.qml:69
 #, kde-format
 msgid "Use custom image"
-msgstr "Uporabite sliko po meri"
+msgstr "Käytä mukautettua kuvaa"
 
 #: qml/PlantEditorPage.qml:75
 #, kde-format
 msgid "Please choose a file"
-msgstr "Prosimo izberite datoteko"
+msgstr "Valitse tiedosto"
 
 #: qml/PlantEditorPage.qml:85
 #, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg* *.webp)"
-msgstr "Slikovne datoteke (*.png *.jpg* *.webp)"
+msgstr "Kuvatiedostot (*.png *.jpg *.webp)"
 
 #: qml/PlantEditorPage.qml:160
 #, kde-format
 msgid "Name"
-msgstr "Ime"
+msgstr "Nimi"
 
 #: qml/PlantEditorPage.qml:168
 #, kde-format
 msgid "Species"
-msgstr "Vrsta"
+msgstr "Laji"
 
 #: qml/PlantEditorPage.qml:176
 #, kde-format
 msgid "Room"
-msgstr "Soba"
+msgstr "Huone"
 
 #: qml/PlantEditorPage.qml:188
 #, kde-format
 msgid "How often does the plant need Watering?"
-msgstr "Kako pogosto rastlina potrebuje zalivanje?"
+msgstr "Kuinka usein kasvi on kasteltava?"
 
 #: qml/PlantEditorPage.qml:202
 #, kde-format
 msgid "2 days"
-msgstr "2 dni"
+msgstr "2 päivän välein"
 
 #: qml/PlantEditorPage.qml:210
 #, kde-format
 msgid "5 days"
-msgstr "5 dni"
+msgstr "5 päivän välein"
 
 #: qml/PlantEditorPage.qml:218
 #, kde-format
 msgid "weekly"
-msgstr "tedensko"
+msgstr "viikoittain"
 
 #: qml/PlantEditorPage.qml:227
 #, kde-format
 msgid "2 weeks"
-msgstr "na 2 tedna"
+msgstr "2 viikon välein"
 
 #: qml/PlantEditorPage.qml:240
 #, kde-format
 msgid "Custom:"
-msgstr "Po meri:"
+msgstr "Mukautettu:"
 
 #: qml/PlantEditorPage.qml:262
 #, kde-format
 msgid "How healthy is your plant at the moment?"
-msgstr "Kako zdrava je vaša rastlina v tem trenutku?"
+msgstr "Kuinka terve kasvi on nyt?"
 
 #: qml/PlantEditorPage.qml:279
 #, kde-format
 msgid "Birthday"
-msgstr "Rojstni dan"
+msgstr "Syntymäpäivä"
 
 #: qml/PlantEditorPage.qml:298
 #, kde-format
 msgid "Edit"
-msgstr "Uredi"
+msgstr "Muokkaa"
 
 #: qml/PlantsPage.qml:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
-msgstr "Dodaj rastlino"
+msgstr "Lisää kasvi"
 
 #: qml/PlantsPage.qml:69
 #, kde-format
 msgid "Good Morning!"
-msgstr "Dobro jutro!"
+msgstr "Huomenta!"
 
 #: qml/PlantsPage.qml:85
 #, kde-format
 msgid "Some of your plants need attention"
-msgstr "Nekatere vaše rastline potrebujejo pozornost"
+msgstr "Jotkin kasvit kaipaavat huomiota"
 
 #: qml/PlantsPage.qml:87
 #, kde-format
 msgid "No plants need water right now"
-msgstr "Nobena rastlina trenutno ne potrebuje vode"
+msgstr "Yhtäkään kasvia ei nyt tarvitse kastella"
 
 #: qml/PlantsPage.qml:203
 #, kde-format
 msgid "in %1 days"
-msgstr "čez %1 dni"
+msgstr "%1 päivässä"
 
 #: qml/PlantsPage.qml:205
 #, kde-format
 msgid "tomorrow"
-msgstr "jutri"
+msgstr "huomenna"
 
 #: qml/PlantsPage.qml:207
 #, kde-format
 msgid "water today!"
-msgstr "zaliti danes!"
+msgstr "kastele tänään!"
 
 #: qml/PlantsPage.qml:209
 #, kde-format
 msgid "watering overdue!"
-msgstr "zalivanje zamuja!"
-
-#~ msgctxt "qml/PlantEditorPage.qml:298"
-#~ msgid "Edit"
-#~ msgstr "Uredi"
-
-#~ msgctxt "qml/PlantsPage.qml:47"
-#~ msgid "Add Plant"
-#~ msgstr "Dodaj rastlino"
+msgstr "kastelu myöhässä!"
