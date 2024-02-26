@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-23 00:40+0000\n"
+"POT-Creation-Date: 2024-02-26 00:40+0000\n"
 "PO-Revision-Date: 2024-02-23 05:32+0100\n"
 "Last-Translator: KDE Francophone <kde-francophone@kde.org>\n"
 "Language-Team: KDE Francophone <kde-francophone@kde.org>\n"
@@ -151,7 +151,7 @@ msgstr ""
 #: qml/PlantEditorPage.qml:85
 #, kde-format
 msgctxt "Name filter for image files"
-msgid "Image files (*.png *.jpg* *.webp)"
+msgid "Image files (*.png *.jpg *.webp)"
 msgstr ""
 
 #: qml/PlantEditorPage.qml:160

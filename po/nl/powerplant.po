@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-23 00:40+0000\n"
+"POT-Creation-Date: 2024-02-26 00:40+0000\n"
 "PO-Revision-Date: 2024-02-22 12:06+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -153,9 +153,11 @@ msgid "Please choose a file"
 msgstr "Kies een bestand"
 
 #: qml/PlantEditorPage.qml:85
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Name filter for image files"
+#| msgid "Image files (*.png *.jpg* *.webp)"
 msgctxt "Name filter for image files"
-msgid "Image files (*.png *.jpg* *.webp)"
+msgid "Image files (*.png *.jpg *.webp)"
 msgstr "Afbeeldingsbestanden (*.png *.jpg* *.webp)"
 
 #: qml/PlantEditorPage.qml:160

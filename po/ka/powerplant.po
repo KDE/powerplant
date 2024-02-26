@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-23 00:40+0000\n"
+"POT-Creation-Date: 2024-02-26 00:40+0000\n"
 "PO-Revision-Date: 2024-02-23 04:52+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -154,9 +154,11 @@ msgid "Please choose a file"
 msgstr "გთხოვთ, აირჩიოთ ფაილი"
 
 #: qml/PlantEditorPage.qml:85
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Name filter for image files"
+#| msgid "Image files (*.png *.jpg* *.webp)"
 msgctxt "Name filter for image files"
-msgid "Image files (*.png *.jpg* *.webp)"
+msgid "Image files (*.png *.jpg *.webp)"
 msgstr "გამოსახულების ფაილები (*.png *.jpg* *.webp)"
 
 #: qml/PlantEditorPage.qml:160
