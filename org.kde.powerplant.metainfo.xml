@@ -7,6 +7,7 @@
   <id>org.kde.powerplant</id>
   <name>PowerPlant</name>
   <name xml:lang="ca">PowerPlant</name>
+  <name xml:lang="eo">PowerPlant</name>
   <name xml:lang="es">PowerPlant</name>
   <name xml:lang="eu">PowerPlant</name>
   <name xml:lang="fr">PowerPlant</name>
@@ -21,6 +22,7 @@
   <name xml:lang="zh-TW">PowerPlant 植哉追蹤</name>
   <summary>A small app helping you to keep your plants alive</summary>
   <summary xml:lang="ca">Una aplicació petita que us ajudarà a mantenir les plantes vives</summary>
+  <summary xml:lang="eo">Apeto kiu helpas vin vivteni viajn plantojn</summary>
   <summary xml:lang="es">Pequeña aplicación que le ayuda a mantener vivas sus plantas</summary>
   <summary xml:lang="eu">Zure landareak bizirik mantentzen laguntzeko aplikazio txiki bat</summary>
   <summary xml:lang="fr">Une petite application vous aidant à maintenir vos plantes en vie</summary>
@@ -37,6 +39,7 @@
   <project_license>GPL-2.0-or-later</project_license>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
+  <developer_name xml:lang="eo">Komunumo de KDE</developer_name>
   <developer_name xml:lang="es">La comunidad KDE</developer_name>
   <developer_name xml:lang="eu">KDE Komunitatea</developer_name>
   <developer_name xml:lang="fr">Communauté de KDE</developer_name>
@@ -53,6 +56,7 @@
   <description>
     <p>PowerPlant lets you track when your plants have to be watered and how their health develops over time.</p>
     <p xml:lang="ca">PowerPlant permet fer un seguiment de quan cal regar les plantes i com es desenvolupa la seva salut amb el temps.</p>
+    <p xml:lang="eo">PowerPlant permesas vin spuri kiam viaj plantoj devas esti akvumataj kaj kiel ilia sano evoluas laŭlonge de la tempo</p>
     <p xml:lang="es">PowerPlant le permite hacer un seguimiento de cuándo debe regar sus plantas y cómo evoluciona su salud a lo largo del tiempo.</p>
     <p xml:lang="eu">«PowerPlant»ek zure landareak noiz ureztatu behar diren eta haien osasuna denboran zehar nola garatzen den jarraipena egiteko aukera ematen dizu.</p>
     <p xml:lang="fr">L'application PowerPlant vous permet de déterminer si vos plantes doivent être arrosées et de voir comment leur santé se développe avec le temps.</p>
