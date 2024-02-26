@@ -3,6 +3,7 @@
 [Desktop Entry]
 Name=powerplant
 Name[ca]=powerplant
+Name[eo]=powerplant
 Name[es]=powerplant
 Name[eu]=powerplant
 Name[fr]=powerplant
@@ -17,6 +18,7 @@ Name[x-test]=xxpowerplantxx
 Name[zh_TW]=PowerPlant 植哉追蹤
 Comment=powerplant Kirigami Application
 Comment[ca]=Aplicació de Kirigami «powerplant»
+Comment[eo]=powerplant Kirigami-Aplikaĵo
 Comment[es]=Aplicación Kirigami powerplant
 Comment[eu]=powerplant Kirigami aplikazioa
 Comment[fr]=Application PowerPlant sous Kirigami
