@@ -1,7 +1,7 @@
 # Translation for powerplant.po to Euskara/Basque (eu).
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the powerplant package.
-# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+# SPDX-FileCopyrightText: 2024 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
 # SPDX-FileCopyrightText: 2024 Iñigo Salvador Azurmendi <xalba@ni.eus>
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-26 00:40+0000\n"
-"PO-Revision-Date: 2024-02-22 22:37+0100\n"
+"PO-Revision-Date: 2024-02-27 00:17+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -156,12 +156,10 @@ msgid "Please choose a file"
 msgstr "Mesedez, aukeratu fitxategi bat"
 
 #: qml/PlantEditorPage.qml:85
-#, fuzzy, kde-format
-#| msgctxt "Name filter for image files"
-#| msgid "Image files (*.png *.jpg* *.webp)"
+#, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
-msgstr "Irudi fitxategiak (*.png *.jpg* *.webp)"
+msgstr "Irudi fitxategiak (*.png, *.jpg, *.webp)"
 
 #: qml/PlantEditorPage.qml:160
 #, kde-format

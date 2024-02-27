@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-26 00:40+0000\n"
-"PO-Revision-Date: 2024-02-24 08:29+0100\n"
+"PO-Revision-Date: 2024-02-26 06:47+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -151,12 +151,10 @@ msgid "Please choose a file"
 msgstr "Prosimo izberite datoteko"
 
 #: qml/PlantEditorPage.qml:85
-#, fuzzy, kde-format
-#| msgctxt "Name filter for image files"
-#| msgid "Image files (*.png *.jpg* *.webp)"
+#, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
-msgstr "Slikovne datoteke (*.png *.jpg* *.webp)"
+msgstr "Datoteke slik (*.png *.jpg* *.webp)"
 
 #: qml/PlantEditorPage.qml:160
 #, kde-format

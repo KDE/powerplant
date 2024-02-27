@@ -1,17 +1,19 @@
 #
+# SPDX-FileCopyrightText: 2024 Xavier Besnard <xavier.besnard@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-26 00:40+0000\n"
-"PO-Revision-Date: 2024-02-23 05:32+0100\n"
-"Last-Translator: KDE Francophone <kde-francophone@kde.org>\n"
-"Language-Team: KDE Francophone <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2024-02-25 12:34+0100\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
+"Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -49,7 +51,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
-msgstr ""
+msgstr "Auteur"
 
 #: qml/PlantDetailPage.qml:51
 #, kde-format
@@ -76,7 +78,7 @@ msgstr ""
 #: qml/PlantDetailPage.qml:199
 #, kde-format
 msgid "Water"
-msgstr ""
+msgstr "Eau"
 
 #: qml/PlantDetailPage.qml:217
 #, kde-format
@@ -157,7 +159,7 @@ msgstr ""
 #: qml/PlantEditorPage.qml:160
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: qml/PlantEditorPage.qml:168
 #, kde-format
@@ -167,7 +169,7 @@ msgstr ""
 #: qml/PlantEditorPage.qml:176
 #, kde-format
 msgid "Room"
-msgstr ""
+msgstr "Salon"
 
 #: qml/PlantEditorPage.qml:188
 #, kde-format
@@ -212,7 +214,7 @@ msgstr ""
 #: qml/PlantEditorPage.qml:298
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Modifier"
 
 #: qml/PlantsPage.qml:47
 #, kde-format

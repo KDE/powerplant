@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-26 00:40+0000\n"
-"PO-Revision-Date: 2024-02-25 07:30+0100\n"
+"PO-Revision-Date: 2024-02-26 21:16+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo.org>\n"
 "Language: eo\n"
@@ -154,12 +154,10 @@ msgid "Please choose a file"
 msgstr "Bonvolu elekti dosieron"
 
 #: qml/PlantEditorPage.qml:85
-#, fuzzy, kde-format
-#| msgctxt "Name filter for image files"
-#| msgid "Image files (*.png *.jpg* *.webp)"
+#, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
-msgstr "Bilddosieroj (*.png *.jpg* *.webp)"
+msgstr "Bilddosieroj (*.png *.jpg *.webp)"
 
 #: qml/PlantEditorPage.qml:160
 #, kde-format
