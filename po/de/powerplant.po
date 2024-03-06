@@ -1,0 +1,261 @@
+# German translations for powerplant package
+# German translation for powerplant.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the powerplant package.
+# Automatically generated, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: powerplant\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-02-26 00:40+0000\n"
+"PO-Revision-Date: 2024-02-26 08:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: main.cpp:44
+#, kde-format
+msgctxt "@title"
+msgid "PowerPlant"
+msgstr ""
+
+#: main.cpp:48
+#, kde-format
+msgid "A small app to track your plants"
+msgstr ""
+
+#: main.cpp:52
+#, kde-format
+msgid "(c) 2023"
+msgstr ""
+
+#: main.cpp:53
+#, kde-format
+msgctxt "@info:credit"
+msgid "Mathis Brüchert"
+msgstr ""
+
+#: main.cpp:54
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:51
+#, kde-format
+msgctxt "@action:button"
+msgid "Edit"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:61
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:72 qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:192
+#, kde-format
+msgid "Parent"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:199
+#, kde-format
+msgid "Water"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:217
+#, kde-format
+msgid "has to be watered in %1 days"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:219
+#, kde-format
+msgid "has to be watered tomorrow"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:221
+#, kde-format
+msgid "needs to be watered today!"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:223
+#, kde-format
+msgid "should have been watered already!"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:227
+#, kde-format
+msgid "Watered"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:251
+#, kde-format
+msgid "Health"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:259
+#, kde-format
+msgid "How healthy is your plant today?"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:281 qml/PlantEditorPage.qml:298
+#, kde-format
+msgid "Add"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:294
+#, kde-format
+msgid "Health History"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:29
+#, kde-format
+msgid "Add Plant"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:29
+#, kde-format
+msgid "Edit %1"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:39
+#, kde-format
+msgid "Image:"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:69
+#, kde-format
+msgid "Use custom image"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:75
+#, kde-format
+msgid "Please choose a file"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:85
+#, kde-format
+msgctxt "Name filter for image files"
+msgid "Image files (*.png *.jpg *.webp)"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:160
+#, kde-format
+msgid "Name"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:168
+#, kde-format
+msgid "Species"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:176
+#, kde-format
+msgid "Room"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:188
+#, kde-format
+msgid "How often does the plant need Watering?"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:202
+#, kde-format
+msgid "2 days"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:210
+#, kde-format
+msgid "5 days"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:218
+#, kde-format
+msgid "weekly"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:227
+#, kde-format
+msgid "2 weeks"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:240
+#, kde-format
+msgid "Custom:"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:262
+#, kde-format
+msgid "How healthy is your plant at the moment?"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:279
+#, kde-format
+msgid "Birthday"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:298
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: qml/PlantsPage.qml:47
+#, kde-format
+msgctxt "@action:button"
+msgid "Add Plant"
+msgstr ""
+
+#: qml/PlantsPage.qml:69
+#, kde-format
+msgid "Good Morning!"
+msgstr ""
+
+#: qml/PlantsPage.qml:85
+#, kde-format
+msgid "Some of your plants need attention"
+msgstr ""
+
+#: qml/PlantsPage.qml:87
+#, kde-format
+msgid "No plants need water right now"
+msgstr ""
+
+#: qml/PlantsPage.qml:203
+#, kde-format
+msgid "in %1 days"
+msgstr ""
+
+#: qml/PlantsPage.qml:205
+#, kde-format
+msgid "tomorrow"
+msgstr ""
+
+#: qml/PlantsPage.qml:207
+#, kde-format
+msgid "water today!"
+msgstr ""
+
+#: qml/PlantsPage.qml:209
+#, kde-format
+msgid "watering overdue!"
+msgstr ""
