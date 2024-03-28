@@ -6,6 +6,7 @@
 <component type="desktop-application">
   <id>org.kde.powerplant</id>
   <name>PowerPlant</name>
+  <name xml:lang="ast">PowerPlant</name>
   <name xml:lang="ca">PowerPlant</name>
   <name xml:lang="ca-valencia">PowerPlant</name>
   <name xml:lang="cs">PowerPlant</name>
