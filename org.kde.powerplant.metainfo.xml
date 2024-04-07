@@ -14,6 +14,7 @@
   <name xml:lang="es">PowerPlant</name>
   <name xml:lang="eu">PowerPlant</name>
   <name xml:lang="fr">PowerPlant</name>
+  <name xml:lang="he">PowerPlant</name>
   <name xml:lang="hu">PowerPlant</name>
   <name xml:lang="ia">PowerPlant (Energia per Plantas)</name>
   <name xml:lang="it">PowerPlant</name>
@@ -35,6 +36,7 @@
   <summary xml:lang="es">Pequeña aplicación que le ayuda a mantener vivas sus plantas</summary>
   <summary xml:lang="eu">Zure landareak bizirik mantentzen laguntzeko aplikazio txiki bat</summary>
   <summary xml:lang="fr">Une petite application vous aidant à maintenir vos plantes en vie</summary>
+  <summary xml:lang="he">יישום קטן שמנסה לסייע לך לשמור על העציצים שלך בחיים</summary>
   <summary xml:lang="hu">Egy kis alkalmazás, amely segít életben tartani a növényeit</summary>
   <summary xml:lang="ia">Un parve app per adjutar te a tener tu  plantas vive</summary>
   <summary xml:lang="it">Un piccolo programma che ti aiuta a mantenere vive le tue piante</summary>
@@ -59,6 +61,7 @@
   <developer_name xml:lang="es">La comunidad KDE</developer_name>
   <developer_name xml:lang="eu">KDE Komunitatea</developer_name>
   <developer_name xml:lang="fr">Communauté de KDE</developer_name>
+  <developer_name xml:lang="he">קהילת KDE</developer_name>
   <developer_name xml:lang="hu">A KDE Közösség</developer_name>
   <developer_name xml:lang="ia">Communitate de KDE</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
@@ -82,6 +85,7 @@
     <p xml:lang="es">PowerPlant le permite hacer un seguimiento de cuándo debe regar sus plantas y cómo evoluciona su salud a lo largo del tiempo.</p>
     <p xml:lang="eu">«PowerPlant»ek zure landareak noiz ureztatu behar diren eta haien osasuna denboran zehar nola garatzen den jarraipena egiteko aukera ematen dizu.</p>
     <p xml:lang="fr">L'application PowerPlant vous permet de déterminer si vos plantes doivent être arrosées et de voir comment leur santé se développe avec le temps.</p>
+    <p xml:lang="he">PowerPlant מאפשר לך לעקוב אחר זמני ההשקיה ואיך הבריאות שלהם מתפתחת לאורך הזמן.</p>
     <p xml:lang="hu">A PowerPlant segítségével nyomon követheti, hogy mikor kell öntözni a növényeit, és hogyan alakul az egészségi állapotuk az idő múlásával.</p>
     <p xml:lang="ia">PowerPlant te permitte traciar quando tu plantas debe esser molliate e  como lor sanitate se disveloppa in le tempore.  </p>
     <p xml:lang="it">PowerPlant ti permette di tener traccia di quando devono essere innaffiate le tue piante, e della loro salute nel tempo.</p>
