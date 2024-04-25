@@ -14,7 +14,7 @@ Kirigami.ApplicationWindow {
     minimumHeight: Kirigami.Units.gridUnit * 20
 
     pageStack {
-        initialPage: "qrc:/PlantsPage.qml"
+        initialPage: Qt.resolvedUrl("PlantsPage.qml")
         popHiddenPages:true
         columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
 
