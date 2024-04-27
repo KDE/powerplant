@@ -130,4 +130,5 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+  <url type="homepage">https://apps.kde.org/powerplant</url>
 </component>
