@@ -10,6 +10,7 @@
   <name xml:lang="ca">PowerPlant</name>
   <name xml:lang="ca-valencia">PowerPlant</name>
   <name xml:lang="cs">PowerPlant</name>
+  <name xml:lang="en-GB">PowerPlant</name>
   <name xml:lang="eo">PowerPlant</name>
   <name xml:lang="es">PowerPlant</name>
   <name xml:lang="eu">PowerPlant</name>
@@ -32,6 +33,7 @@
   <summary>A small app helping you to keep your plants alive</summary>
   <summary xml:lang="ca">Una aplicació petita que us ajudarà a mantenir les plantes vives</summary>
   <summary xml:lang="ca-valencia">Una aplicació xicoteta que vos ajudarà a mantindre les plantes vives</summary>
+  <summary xml:lang="en-GB">A small app helping you to keep your plants alive</summary>
   <summary xml:lang="eo">Apeto kiu helpas vin vivteni viajn plantojn</summary>
   <summary xml:lang="es">Pequeña aplicación que le ayuda a mantener vivas sus plantas</summary>
   <summary xml:lang="eu">Zure landareak bizirik mantentzen laguntzeko aplikazio txiki bat</summary>
@@ -57,6 +59,7 @@
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
+  <developer_name xml:lang="en-GB">KDE Community</developer_name>
   <developer_name xml:lang="eo">Komunumo de KDE</developer_name>
   <developer_name xml:lang="es">La comunidad KDE</developer_name>
   <developer_name xml:lang="eu">KDE Komunitatea</developer_name>
@@ -81,6 +84,7 @@
     <p>PowerPlant lets you track when your plants have to be watered and how their health develops over time.</p>
     <p xml:lang="ca">PowerPlant permet fer un seguiment de quan cal regar les plantes i com es desenvolupa la seva salut amb el temps.</p>
     <p xml:lang="ca-valencia">PowerPlant permet fer un seguiment de quan cal regar les plantes i com es desenvolupa la seua salut amb el temps.</p>
+    <p xml:lang="en-GB">PowerPlant lets you track when your plants have to be watered and how their health develops over time.</p>
     <p xml:lang="eo">PowerPlant permesas vin spuri kiam viaj plantoj devas esti akvumataj kaj kiel ilia sano evoluas laŭlonge de la tempo</p>
     <p xml:lang="es">PowerPlant le permite hacer un seguimiento de cuándo debe regar sus plantas y cómo evoluciona su salud a lo largo del tiempo.</p>
     <p xml:lang="eu">«PowerPlant»ek zure landareak noiz ureztatu behar diren eta haien osasuna denboran zehar nola garatzen den jarraipena egiteko aukera ematen dizu.</p>
