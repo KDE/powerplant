@@ -1,15 +1,12 @@
-# Copyright (C) 2024 This file is copyright:
-# This file is distributed under the same license as the powerplant package.
-#
 # SPDX-FileCopyrightText: 2024 Antikruk <nashtlumach@gmail.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: powerplant\n"
+"Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-26 00:40+0000\n"
-"PO-Revision-Date: 2024-05-19 23:08+0300\n"
+"PO-Revision-Date: 2024-05-23 18:10\n"
 "Last-Translator: Antikruk <nashtlumach@gmail.com>\n"
-"Language-Team: Belarusian <kde-i18n-doc@kde.org>\n"
+"Language-Team: Belarusian\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,245 +15,251 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
 "X-Generator: Lokalize 24.02.2\n"
+"X-Crowdin-Project: fc57ad16a28d02dea100ceb1c60de14e\n"
+"X-Crowdin-Project-ID: 136\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: /[antikruk.KDE] main/KDE6/be/messages/powerplant/powerplant."
+"po\n"
+"X-Crowdin-File-ID: 17908\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Antikruk"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "nashtlumach@gmail.com"
 
 #: main.cpp:44
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
-msgstr ""
+msgstr "PowerPlant"
 
 #: main.cpp:48
 #, kde-format
 msgid "A small app to track your plants"
-msgstr ""
+msgstr "Невялічкая праграма для сачэння за вашымі раслінамі"
 
 #: main.cpp:52
 #, kde-format
 msgid "(c) 2023"
-msgstr ""
+msgstr "(c) 2023"
 
 #: main.cpp:53
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
-msgstr ""
+msgstr "Mathis Brüchert"
 
 #: main.cpp:54
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
-msgstr ""
+msgstr "Аўтар"
 
 #: qml/PlantDetailPage.qml:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Edit"
-msgstr ""
+msgstr "Рэдагаваць"
 
 #: qml/PlantDetailPage.qml:61
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
-msgstr ""
+msgstr "Выдаліць"
 
 #: qml/PlantDetailPage.qml:72 qml/PlantsPage.qml:20
 #, kde-format
 msgid "Plants"
-msgstr ""
+msgstr "Расліны"
 
 #: qml/PlantDetailPage.qml:192
 #, kde-format
 msgid "Parent"
-msgstr ""
+msgstr "Продак"
 
 #: qml/PlantDetailPage.qml:199
 #, kde-format
 msgid "Water"
-msgstr ""
+msgstr "Вада"
 
 #: qml/PlantDetailPage.qml:217
 #, kde-format
 msgid "has to be watered in %1 days"
-msgstr ""
+msgstr "трэба паліць праз %1 дзень(ён)"
 
 #: qml/PlantDetailPage.qml:219
 #, kde-format
 msgid "has to be watered tomorrow"
-msgstr ""
+msgstr "трэба паліць заўтра"
 
 #: qml/PlantDetailPage.qml:221
 #, kde-format
 msgid "needs to be watered today!"
-msgstr ""
+msgstr "трэба паліць сёння!"
 
 #: qml/PlantDetailPage.qml:223
 #, kde-format
 msgid "should have been watered already!"
-msgstr ""
+msgstr "ужо трэба было паліць!"
 
 #: qml/PlantDetailPage.qml:227
 #, kde-format
 msgid "Watered"
-msgstr ""
+msgstr "Паліта"
 
 #: qml/PlantDetailPage.qml:251
 #, kde-format
 msgid "Health"
-msgstr ""
+msgstr "Здароўе"
 
 #: qml/PlantDetailPage.qml:259
 #, kde-format
 msgid "How healthy is your plant today?"
-msgstr ""
+msgstr "Наколькі здаровая ваша расліна сёння?"
 
 #: qml/PlantDetailPage.qml:281 qml/PlantEditorPage.qml:298
 #, kde-format
 msgid "Add"
-msgstr ""
+msgstr "Дадаць"
 
 #: qml/PlantDetailPage.qml:294
 #, kde-format
 msgid "Health History"
-msgstr ""
+msgstr "Гісторыя здароўя"
 
 #: qml/PlantEditorPage.qml:29
 #, kde-format
 msgid "Add Plant"
-msgstr ""
+msgstr "Дадаць расліну"
 
 #: qml/PlantEditorPage.qml:29
 #, kde-format
 msgid "Edit %1"
-msgstr ""
+msgstr "Рэдагаваць %1"
 
 #: qml/PlantEditorPage.qml:39
 #, kde-format
 msgid "Image:"
-msgstr ""
+msgstr "Выява:"
 
 #: qml/PlantEditorPage.qml:69
 #, kde-format
 msgid "Use custom image"
-msgstr ""
+msgstr "Выкарыстоўваць адвольную выяву"
 
 #: qml/PlantEditorPage.qml:75
 #, kde-format
 msgid "Please choose a file"
-msgstr ""
+msgstr "Абярыце файл"
 
 #: qml/PlantEditorPage.qml:85
 #, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
-msgstr ""
+msgstr "Файлы выяў (*.png *.jpg *.webp)"
 
 #: qml/PlantEditorPage.qml:160
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "Назва"
 
 #: qml/PlantEditorPage.qml:168
 #, kde-format
 msgid "Species"
-msgstr ""
+msgstr "Віды"
 
 #: qml/PlantEditorPage.qml:176
 #, kde-format
 msgid "Room"
-msgstr ""
+msgstr "Пакой"
 
 #: qml/PlantEditorPage.qml:188
 #, kde-format
 msgid "How often does the plant need Watering?"
-msgstr ""
+msgstr "Як часта трэба паліваць расліну?"
 
 #: qml/PlantEditorPage.qml:202
 #, kde-format
 msgid "2 days"
-msgstr ""
+msgstr "2 дні"
 
 #: qml/PlantEditorPage.qml:210
 #, kde-format
 msgid "5 days"
-msgstr ""
+msgstr "5 дзён"
 
 #: qml/PlantEditorPage.qml:218
 #, kde-format
 msgid "weekly"
-msgstr ""
+msgstr "штотыдзень"
 
 #: qml/PlantEditorPage.qml:227
 #, kde-format
 msgid "2 weeks"
-msgstr ""
+msgstr "2 тыдні"
 
 #: qml/PlantEditorPage.qml:240
 #, kde-format
 msgid "Custom:"
-msgstr ""
+msgstr "Адвольна:"
 
 #: qml/PlantEditorPage.qml:262
 #, kde-format
 msgid "How healthy is your plant at the moment?"
-msgstr ""
+msgstr "Наколькі здаровая ваша расліна цяпер?"
 
 #: qml/PlantEditorPage.qml:279
 #, kde-format
 msgid "Birthday"
-msgstr ""
+msgstr "Дата нараджэння"
 
 #: qml/PlantEditorPage.qml:298
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Рэдагаваць"
 
 #: qml/PlantsPage.qml:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
-msgstr ""
+msgstr "Дадаць расліну"
 
 #: qml/PlantsPage.qml:69
 #, kde-format
 msgid "Good Morning!"
-msgstr ""
+msgstr "Добрай раніцы!"
 
 #: qml/PlantsPage.qml:85
 #, kde-format
 msgid "Some of your plants need attention"
-msgstr ""
+msgstr "На некаторыя з вашых раслін трэба звярнуць увагу"
 
 #: qml/PlantsPage.qml:87
 #, kde-format
 msgid "No plants need water right now"
-msgstr ""
+msgstr "Зараз ніякім раслінам не патрэбна вада"
 
 #: qml/PlantsPage.qml:203
 #, kde-format
 msgid "in %1 days"
-msgstr ""
+msgstr "праз %1 дзень(дзён)"
 
 #: qml/PlantsPage.qml:205
 #, kde-format
 msgid "tomorrow"
-msgstr ""
+msgstr "заўтра"
 
 #: qml/PlantsPage.qml:207
 #, kde-format
 msgid "water today!"
-msgstr ""
+msgstr "паліў сёння!"
 
 #: qml/PlantsPage.qml:209
 #, kde-format
 msgid "watering overdue!"
-msgstr ""
+msgstr "паліў пратэрмінаваны!"
