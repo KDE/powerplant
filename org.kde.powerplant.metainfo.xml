@@ -7,6 +7,7 @@
   <id>org.kde.powerplant</id>
   <name>PowerPlant</name>
   <name xml:lang="ast">PowerPlant</name>
+  <name xml:lang="be">PowerPlant</name>
   <name xml:lang="ca">PowerPlant</name>
   <name xml:lang="ca-valencia">PowerPlant</name>
   <name xml:lang="cs">PowerPlant</name>
@@ -31,6 +32,7 @@
   <name xml:lang="x-test">xxPowerPlantxx</name>
   <name xml:lang="zh-TW">PowerPlant 植哉追蹤</name>
   <summary>A small app helping you to keep your plants alive</summary>
+  <summary xml:lang="be">Невялічкая праграма, якая дапамагае сачыць за вашымі раслінамі</summary>
   <summary xml:lang="ca">Una aplicació petita que us ajudarà a mantenir les plantes vives</summary>
   <summary xml:lang="ca-valencia">Una aplicació xicoteta que vos ajudarà a mantindre les plantes vives</summary>
   <summary xml:lang="en-GB">A small app helping you to keep your plants alive</summary>
@@ -56,6 +58,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
   <developer_name>KDE Community</developer_name>
+  <developer_name xml:lang="be">Супольнасць KDE</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
@@ -82,6 +85,7 @@
   <launchable type="desktop-id">org.kde.powerplant.desktop</launchable>
   <description>
     <p>PowerPlant lets you track when your plants have to be watered and how their health develops over time.</p>
+    <p xml:lang="be">PowerPlant дае магчымасць сачыць за часам паліву вашых раслін і іх здароўем.</p>
     <p xml:lang="ca">PowerPlant permet fer un seguiment de quan cal regar les plantes i com es desenvolupa la seva salut amb el temps.</p>
     <p xml:lang="ca-valencia">PowerPlant permet fer un seguiment de quan cal regar les plantes i com es desenvolupa la seua salut amb el temps.</p>
     <p xml:lang="en-GB">PowerPlant lets you track when your plants have to be watered and how their health develops over time.</p>
