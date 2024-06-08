@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-26 00:40+0000\n"
-"PO-Revision-Date: 2024-02-23 19:51+0200\n"
+"PO-Revision-Date: 2024-04-08 17:17+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -75,7 +75,7 @@ msgstr "Kasvit"
 #: qml/PlantDetailPage.qml:192
 #, kde-format
 msgid "Parent"
-msgstr ""
+msgstr "Emo"
 
 #: qml/PlantDetailPage.qml:199
 #, kde-format
@@ -153,9 +153,7 @@ msgid "Please choose a file"
 msgstr "Valitse tiedosto"
 
 #: qml/PlantEditorPage.qml:85
-#, fuzzy, kde-format
-#| msgctxt "Name filter for image files"
-#| msgid "Image files (*.png *.jpg* *.webp)"
+#, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
 msgstr "Kuvatiedostot (*.png *.jpg *.webp)"
