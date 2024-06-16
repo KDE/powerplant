@@ -23,6 +23,7 @@
   <name xml:lang="it">PowerPlant</name>
   <name xml:lang="ka">PowerPlant</name>
   <name xml:lang="ko">PowerPlant</name>
+  <name xml:lang="lv">PowerPlant</name>
   <name xml:lang="nl">PowerPlant</name>
   <name xml:lang="pl">PowerPlant</name>
   <name xml:lang="pt-BR">PowerPlant</name>
@@ -48,6 +49,7 @@
   <summary xml:lang="it">Un piccolo programma che ti aiuta a mantenere vive le tue piante</summary>
   <summary xml:lang="ka">პატარა აპი, რომელიც თქვენი მცენარეების ცოცხლად დატოვებაში დაგეხმარებათ</summary>
   <summary xml:lang="ko">식물이 활기를 유지할 수 있도록 도와 주는 앱</summary>
+  <summary xml:lang="lv">Neliela programma, kas palīdz turēt augus dzīvus</summary>
   <summary xml:lang="nl">Een kleine toepassing om u te helpen uw planten in leven te houden</summary>
   <summary xml:lang="pl">Mała aplikacja do utrzymywania twoich roślin przy życiu</summary>
   <summary xml:lang="pt-BR">Um pequeno aplicativo que ajuda você a manter suas plantas vivas</summary>
@@ -76,6 +78,7 @@
   <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="ka">KDE-ის საზოგადოება</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
+  <developer_name xml:lang="lv">KDE kopiena</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="pl">Społeczność KDE</developer_name>
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
@@ -103,6 +106,7 @@
     <p xml:lang="it">PowerPlant ti permette di tener traccia di quando devono essere innaffiate le tue piante, e della loro salute nel tempo.</p>
     <p xml:lang="ka">PowerPlant საშუალებას გაძლევთ, თვალყური ადევნოთ, როდის დაუსხით წყალი თქვენს მცენარეებს და როგორ ვითარდებიან დროის განმავლობაში.</p>
     <p xml:lang="ko">PowerPlant는 식물에 물을 줄 시간을 추적하고 식물의 상태를 점검할 수 있습니다.</p>
+    <p xml:lang="lv">„PowerPlant“ ļauj sekot, kad augi ir jālaista un kā mainās to veselība.</p>
     <p xml:lang="nl">PowerPlant laat u volgen wanneer uw planten water moeten hebben en hoe hun gezondheid zich in de tijd ontwikkelt.</p>
     <p xml:lang="pl">PowerPlant przypomina o tym kiedy twoje rośliny potrzebują podlania i jak zdrowo rozwijają się na przestrzeni czasu.</p>
     <p xml:lang="pt-BR">O PowerPlant permite monitorar quando suas plantas precisam ser regadas e como a saúde delas se desenvolve ao longo do tempo.</p>
