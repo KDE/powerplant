@@ -1,0 +1,260 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the powerplant package.
+#
+# SPDX-FileCopyrightText: 2024 Stefan Asserhäll <stefan.asserhall@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: powerplant\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-02-26 00:40+0000\n"
+"PO-Revision-Date: 2024-06-21 15:32+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stefan Asserhäll"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "stefan.asserhall@gmail.com"
+
+#: main.cpp:44
+#, kde-format
+msgctxt "@title"
+msgid "PowerPlant"
+msgstr "Planteffekt"
+
+#: main.cpp:48
+#, kde-format
+msgid "A small app to track your plants"
+msgstr "Ett litet program för att hålla reda på plantor"
+
+#: main.cpp:52
+#, kde-format
+msgid "(c) 2023"
+msgstr "© 2023"
+
+#: main.cpp:53
+#, kde-format
+msgctxt "@info:credit"
+msgid "Mathis Brüchert"
+msgstr "Mathis Brüchert"
+
+#: main.cpp:54
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "Upphovsman"
+
+#: qml/PlantDetailPage.qml:51
+#, kde-format
+msgctxt "@action:button"
+msgid "Edit"
+msgstr "Redigera"
+
+#: qml/PlantDetailPage.qml:61
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Ta bort"
+
+#: qml/PlantDetailPage.qml:72 qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Plantor"
+
+#: qml/PlantDetailPage.qml:192
+#, kde-format
+msgid "Parent"
+msgstr "Ursprung"
+
+#: qml/PlantDetailPage.qml:199
+#, kde-format
+msgid "Water"
+msgstr "Vatten"
+
+#: qml/PlantDetailPage.qml:217
+#, kde-format
+msgid "has to be watered in %1 days"
+msgstr "måste vattnas efter %1 dagar"
+
+#: qml/PlantDetailPage.qml:219
+#, kde-format
+msgid "has to be watered tomorrow"
+msgstr "måste vattnas imorgon"
+
+#: qml/PlantDetailPage.qml:221
+#, kde-format
+msgid "needs to be watered today!"
+msgstr "måste vattnas idag!"
+
+#: qml/PlantDetailPage.qml:223
+#, kde-format
+msgid "should have been watered already!"
+msgstr "skulle redan ha vattnats!"
+
+#: qml/PlantDetailPage.qml:227
+#, kde-format
+msgid "Watered"
+msgstr "Vattnad"
+
+#: qml/PlantDetailPage.qml:251
+#, kde-format
+msgid "Health"
+msgstr "Hälsa"
+
+#: qml/PlantDetailPage.qml:259
+#, kde-format
+msgid "How healthy is your plant today?"
+msgstr "Hur hälsosamma är dina plantor idag?"
+
+#: qml/PlantDetailPage.qml:281 qml/PlantEditorPage.qml:298
+#, kde-format
+msgid "Add"
+msgstr "Lägg till"
+
+#: qml/PlantDetailPage.qml:294
+#, kde-format
+msgid "Health History"
+msgstr "Hälsohistorik"
+
+#: qml/PlantEditorPage.qml:29
+#, kde-format
+msgid "Add Plant"
+msgstr "Lägg till planta"
+
+#: qml/PlantEditorPage.qml:29
+#, kde-format
+msgid "Edit %1"
+msgstr "Redigera %1"
+
+#: qml/PlantEditorPage.qml:39
+#, kde-format
+msgid "Image:"
+msgstr "Bild:"
+
+#: qml/PlantEditorPage.qml:69
+#, kde-format
+msgid "Use custom image"
+msgstr "Använd egen bild"
+
+#: qml/PlantEditorPage.qml:75
+#, kde-format
+msgid "Please choose a file"
+msgstr "Välj en fil"
+
+#: qml/PlantEditorPage.qml:85
+#, kde-format
+msgctxt "Name filter for image files"
+msgid "Image files (*.png *.jpg *.webp)"
+msgstr "Bildfiler (*.png *.jpg *.webp)"
+
+#: qml/PlantEditorPage.qml:160
+#, kde-format
+msgid "Name"
+msgstr "Namn"
+
+#: qml/PlantEditorPage.qml:168
+#, kde-format
+msgid "Species"
+msgstr "Art"
+
+#: qml/PlantEditorPage.qml:176
+#, kde-format
+msgid "Room"
+msgstr "Rum"
+
+#: qml/PlantEditorPage.qml:188
+#, kde-format
+msgid "How often does the plant need Watering?"
+msgstr "Hur ofta måste plantan vattnas?"
+
+#: qml/PlantEditorPage.qml:202
+#, kde-format
+msgid "2 days"
+msgstr "2 dagar"
+
+#: qml/PlantEditorPage.qml:210
+#, kde-format
+msgid "5 days"
+msgstr "5 dagar"
+
+#: qml/PlantEditorPage.qml:218
+#, kde-format
+msgid "weekly"
+msgstr "veckovis"
+
+#: qml/PlantEditorPage.qml:227
+#, kde-format
+msgid "2 weeks"
+msgstr "2 veckor"
+
+#: qml/PlantEditorPage.qml:240
+#, kde-format
+msgid "Custom:"
+msgstr "Egen:"
+
+#: qml/PlantEditorPage.qml:262
+#, kde-format
+msgid "How healthy is your plant at the moment?"
+msgstr "Hur hälsosamma är dina plantor just nu?"
+
+#: qml/PlantEditorPage.qml:279
+#, kde-format
+msgid "Birthday"
+msgstr "Planteringsdag"
+
+#: qml/PlantEditorPage.qml:298
+#, kde-format
+msgid "Edit"
+msgstr "Redigera"
+
+#: qml/PlantsPage.qml:47
+#, kde-format
+msgctxt "@action:button"
+msgid "Add Plant"
+msgstr "Lägg till planta"
+
+#: qml/PlantsPage.qml:69
+#, kde-format
+msgid "Good Morning!"
+msgstr "God morgon!"
+
+#: qml/PlantsPage.qml:85
+#, kde-format
+msgid "Some of your plants need attention"
+msgstr "Några av dina plantor behöver uppmärksamhet"
+
+#: qml/PlantsPage.qml:87
+#, kde-format
+msgid "No plants need water right now"
+msgstr "Inga plantor behövs vattnas just nu"
+
+#: qml/PlantsPage.qml:203
+#, kde-format
+msgid "in %1 days"
+msgstr "om %1 dagar"
+
+#: qml/PlantsPage.qml:205
+#, kde-format
+msgid "tomorrow"
+msgstr "imorgon"
+
+#: qml/PlantsPage.qml:207
+#, kde-format
+msgid "water today!"
+msgstr "vattna idag!"
+
+#: qml/PlantsPage.qml:209
+#, kde-format
+msgid "watering overdue!"
+msgstr "vattning försenad!"
