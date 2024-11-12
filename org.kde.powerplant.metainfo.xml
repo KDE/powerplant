@@ -29,6 +29,7 @@
   <name xml:lang="pl">PowerPlant</name>
   <name xml:lang="pt-BR">PowerPlant</name>
   <name xml:lang="ro">PowerPlant</name>
+  <name xml:lang="sk">PowerPlant</name>
   <name xml:lang="sl">PowerPlant</name>
   <name xml:lang="sv">Planteffekt</name>
   <name xml:lang="tr">PowerPlant</name>
@@ -88,6 +89,7 @@
   <developer_name xml:lang="pl">Społeczność KDE</developer_name>
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
   <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
+  <developer_name xml:lang="sk">KDE komunita</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
