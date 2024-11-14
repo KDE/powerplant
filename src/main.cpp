@@ -9,7 +9,6 @@
 #include <QtQml>
 #include <QIcon>
 
-#include "app.h"
 #include "database.h"
 #include "planteditor.h"
 #include "plantimagemodel.h"

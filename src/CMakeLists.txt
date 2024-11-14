@@ -25,7 +25,6 @@ ecm_qt_declare_logging_category(powerplant_static
 )
 
 target_sources(powerplant_static PRIVATE
-    app.cpp
     database.cpp
     plantsmodel.cpp
     healthhistorymodel.cpp
