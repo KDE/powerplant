@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-26 00:40+0000\n"
+"POT-Creation-Date: 2024-11-16 00:43+0000\n"
 "PO-Revision-Date: 2024-03-06 14:51+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
@@ -25,29 +25,29 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xavier.besnard@kde.org"
 
-#: main.cpp:44
+#: main.cpp:43
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
 msgstr "PowerPlant"
 
-#: main.cpp:48
+#: main.cpp:47
 #, kde-format
 msgid "A small app to track your plants"
 msgstr "Une petite application pour prendre soin de vos plantes"
 
-#: main.cpp:52
+#: main.cpp:51
 #, kde-format
 msgid "(c) 2023"
 msgstr "(c) 2023"
 
-#: main.cpp:53
+#: main.cpp:52
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:54
+#: main.cpp:53
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
