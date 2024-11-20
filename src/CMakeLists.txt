@@ -31,7 +31,6 @@ target_sources(powerplant_static PRIVATE
     colorgradientinterpolator.cpp
     plantimagemodel.cpp
     planteditor.cpp
-    resources.qrc
 )
 
 target_link_libraries(powerplant_static PUBLIC
@@ -61,6 +60,6 @@ endif()
 kconfig_add_kcfg_files(powerplant_static GENERATE_MOC powerplantconfig.kcfgc)
 
 ## Excutable
-add_executable(powerplant main.cpp)
+add_executable(powerplant main.cpp resources.qrc)
 target_link_libraries(powerplant PRIVATE powerplant_static powerplant_staticplugin)
 install(TARGETS powerplant ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
