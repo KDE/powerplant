@@ -284,7 +284,6 @@ FormCard.FormCardPage {
             dateTimeDisplay: FormCard.FormDateTimeDelegate.DateTimeDisplay.Date
             initialValue: plantEditor.plant.dateOfBirth
             onValueChanged: plantEditor.plant.dateOfBirth = value
-            popupParent: root
         }
     }
 
