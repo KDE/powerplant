@@ -122,7 +122,7 @@ Kirigami.ScrollablePage {
             Kirigami.AbstractCard {
                 id: card
 
-                onClicked: pageStack.push(Qt.createComponent('org.kde.powerplant', 'PlantDetailPage.qml'), {
+                onClicked: pageStack.push(Qt.createComponent('org.kde.powerplant', 'PlantDetailPage'), {
                                               "plantId": plantItem.plantId,
                                               "plantsModel": plantsModel
                                           })
