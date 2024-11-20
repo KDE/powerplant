@@ -37,13 +37,11 @@ Kirigami.ScrollablePage {
 
         anchors {
             right: parent.right
-            rightMargin: Kirigami.Units.largeSpacing
+            rightMargin: Kirigami.Units.largeSpacing + (root.contentItem.Controls.ScrollBar && root.contentItem.Controls.ScrollBar.vertical.visible ? root.contentItem.Controls.ScrollBar.vertical.width : 0)
             bottom: parent.bottom
             bottomMargin: Kirigami.Units.largeSpacing
         }
 
-        x: root.width - width - margin
-        y: root.height - height - pageStack.globalToolBar.preferredHeight - margin
         text: i18nc("@action:button", "Add Plant")
         icon.name: "list-add"
         onClicked: applicationWindow().pageStack.pushDialogLayer(addPlantComponent, {}, {
