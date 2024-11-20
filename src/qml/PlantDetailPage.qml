@@ -69,12 +69,11 @@ Kirigami.ScrollablePage {
     leftPadding: 0
     rightPadding: 0
 
-    title: i18n("Plants")
+    title: plant.name
     background: GridLayout {
         columnSpacing: 0
         rowSpacing: 0
         flow: wideScreen ? GridLayout.LeftToRight : GridLayout.TopToBottom
-        anchors.fill: parent
         columns: 2
         Rectangle{
 //            Layout.maximumWidth: 400
@@ -83,7 +82,7 @@ Kirigami.ScrollablePage {
             Layout.fillHeight: true
             Layout.fillWidth: true
             Item {
-                height: wideScreen? width*1.3: width
+                height: parent.height
                 width: parent.width
                 anchors.centerIn:parent
                 RadialGradient {
