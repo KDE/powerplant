@@ -7,7 +7,6 @@ qt_add_qml_module(powerplant_static
     VERSION 1.0
     QML_FILES
         qml/Main.qml
-        qml/About.qml
         qml/PlantsPage.qml
         qml/HealthSlider.qml
         qml/PlantEditorPage.qml

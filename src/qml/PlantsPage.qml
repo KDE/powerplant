@@ -20,7 +20,7 @@ Kirigami.ScrollablePage {
     title: i18n("Plants")
     actions: Kirigami.Action {
         icon.name: "help-about-symbolic"
-        onTriggered: pageStack.pushDialogLayer(Qt.createComponent('org.kde.powerplant', 'About'))
+        onTriggered: pageStack.pushDialogLayer(Qt.createComponent('org.kde.kirigamiaddons.formcard', 'AboutPage'))
     }
 
     Component {
