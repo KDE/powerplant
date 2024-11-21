@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-16 00:43+0000\n"
+"POT-Creation-Date: 2024-11-21 00:44+0000\n"
 "PO-Revision-Date: 2024-02-27 22:48+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -69,62 +69,57 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr "Borrar"
 
-#: qml/PlantDetailPage.qml:72 qml/PlantsPage.qml:20
-#, kde-format
-msgid "Plants"
-msgstr "Plantas"
-
-#: qml/PlantDetailPage.qml:192
+#: qml/PlantDetailPage.qml:191
 #, kde-format
 msgid "Parent"
 msgstr "Padre"
 
-#: qml/PlantDetailPage.qml:199
+#: qml/PlantDetailPage.qml:198
 #, kde-format
 msgid "Water"
 msgstr "Agua"
 
-#: qml/PlantDetailPage.qml:217
+#: qml/PlantDetailPage.qml:216
 #, kde-format
 msgid "has to be watered in %1 days"
 msgstr "se tiene que regar en %1 días"
 
-#: qml/PlantDetailPage.qml:219
+#: qml/PlantDetailPage.qml:218
 #, kde-format
 msgid "has to be watered tomorrow"
 msgstr "se tiene que regar mañana"
 
-#: qml/PlantDetailPage.qml:221
+#: qml/PlantDetailPage.qml:220
 #, kde-format
 msgid "needs to be watered today!"
 msgstr "se tiene que regar hoy"
 
-#: qml/PlantDetailPage.qml:223
+#: qml/PlantDetailPage.qml:222
 #, kde-format
 msgid "should have been watered already!"
 msgstr "se tendría que haber regado ya"
 
-#: qml/PlantDetailPage.qml:227
+#: qml/PlantDetailPage.qml:226
 #, kde-format
 msgid "Watered"
 msgstr "Regada"
 
-#: qml/PlantDetailPage.qml:251
+#: qml/PlantDetailPage.qml:250
 #, kde-format
 msgid "Health"
 msgstr "Salud"
 
-#: qml/PlantDetailPage.qml:259
+#: qml/PlantDetailPage.qml:258
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "¿Cómo está de salud su planta hoy?"
 
-#: qml/PlantDetailPage.qml:281 qml/PlantEditorPage.qml:298
+#: qml/PlantDetailPage.qml:280 qml/PlantEditorPage.qml:297
 #, kde-format
 msgid "Add"
 msgstr "Añadir"
 
-#: qml/PlantDetailPage.qml:294
+#: qml/PlantDetailPage.qml:293
 #, kde-format
 msgid "Health History"
 msgstr "Historial de salud"
@@ -215,48 +210,53 @@ msgstr "¿Cuánta salud tiene su planta en este momento?"
 msgid "Birthday"
 msgstr "Nacimiento"
 
-#: qml/PlantEditorPage.qml:298
+#: qml/PlantEditorPage.qml:297
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
 
-#: qml/PlantsPage.qml:47
+#: qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Plantas"
+
+#: qml/PlantsPage.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "Añadir planta"
 
-#: qml/PlantsPage.qml:69
+#: qml/PlantsPage.qml:67
 #, kde-format
 msgid "Good Morning!"
 msgstr "¡Buenos días!"
 
-#: qml/PlantsPage.qml:85
+#: qml/PlantsPage.qml:83
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "Algunas de sus plantas necesitan atención"
 
-#: qml/PlantsPage.qml:87
+#: qml/PlantsPage.qml:85
 #, kde-format
 msgid "No plants need water right now"
 msgstr "Ninguna planta necesita agua en este momento"
 
-#: qml/PlantsPage.qml:203
+#: qml/PlantsPage.qml:201
 #, kde-format
 msgid "in %1 days"
 msgstr "en %1 días"
 
-#: qml/PlantsPage.qml:205
+#: qml/PlantsPage.qml:203
 #, kde-format
 msgid "tomorrow"
 msgstr "mañana"
 
-#: qml/PlantsPage.qml:207
+#: qml/PlantsPage.qml:205
 #, kde-format
 msgid "water today!"
 msgstr "regar hoy"
 
-#: qml/PlantsPage.qml:209
+#: qml/PlantsPage.qml:207
 #, kde-format
 msgid "watering overdue!"
 msgstr "riego atrasado"

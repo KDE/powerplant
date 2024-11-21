@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-16 00:43+0000\n"
+"POT-Creation-Date: 2024-11-21 00:44+0000\n"
 "PO-Revision-Date: 2024-02-27 00:17+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -70,62 +70,57 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr "Ezabatu"
 
-#: qml/PlantDetailPage.qml:72 qml/PlantsPage.qml:20
-#, kde-format
-msgid "Plants"
-msgstr "Landareak"
-
-#: qml/PlantDetailPage.qml:192
+#: qml/PlantDetailPage.qml:191
 #, kde-format
 msgid "Parent"
 msgstr "Gurasoa"
 
-#: qml/PlantDetailPage.qml:199
+#: qml/PlantDetailPage.qml:198
 #, kde-format
 msgid "Water"
 msgstr "Ura"
 
-#: qml/PlantDetailPage.qml:217
+#: qml/PlantDetailPage.qml:216
 #, kde-format
 msgid "has to be watered in %1 days"
 msgstr "%1 egun barru ureztatu behar da"
 
-#: qml/PlantDetailPage.qml:219
+#: qml/PlantDetailPage.qml:218
 #, kde-format
 msgid "has to be watered tomorrow"
 msgstr "bihar ureztatu behar da"
 
-#: qml/PlantDetailPage.qml:221
+#: qml/PlantDetailPage.qml:220
 #, kde-format
 msgid "needs to be watered today!"
 msgstr "gaur ureztatu behar da!"
 
-#: qml/PlantDetailPage.qml:223
+#: qml/PlantDetailPage.qml:222
 #, kde-format
 msgid "should have been watered already!"
 msgstr "dagoeneko ureztatuta behar zuen!"
 
-#: qml/PlantDetailPage.qml:227
+#: qml/PlantDetailPage.qml:226
 #, kde-format
 msgid "Watered"
 msgstr "Ureztatuta"
 
-#: qml/PlantDetailPage.qml:251
+#: qml/PlantDetailPage.qml:250
 #, kde-format
 msgid "Health"
 msgstr "Osasuna"
 
-#: qml/PlantDetailPage.qml:259
+#: qml/PlantDetailPage.qml:258
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "Nolako osasuntsu dago gaur zure landarea?"
 
-#: qml/PlantDetailPage.qml:281 qml/PlantEditorPage.qml:298
+#: qml/PlantDetailPage.qml:280 qml/PlantEditorPage.qml:297
 #, kde-format
 msgid "Add"
 msgstr "Gehitu"
 
-#: qml/PlantDetailPage.qml:294
+#: qml/PlantDetailPage.qml:293
 #, kde-format
 msgid "Health History"
 msgstr "Osasun-historia"
@@ -216,48 +211,53 @@ msgstr "Nolako osasuntsu dago une honetan zure landarea?"
 msgid "Birthday"
 msgstr "Jaioteguna"
 
-#: qml/PlantEditorPage.qml:298
+#: qml/PlantEditorPage.qml:297
 #, kde-format
 msgid "Edit"
 msgstr "Editatu"
 
-#: qml/PlantsPage.qml:47
+#: qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Landareak"
+
+#: qml/PlantsPage.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "Gehitu landarea"
 
-#: qml/PlantsPage.qml:69
+#: qml/PlantsPage.qml:67
 #, kde-format
 msgid "Good Morning!"
 msgstr "Egun on!"
 
-#: qml/PlantsPage.qml:85
+#: qml/PlantsPage.qml:83
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "Zure landareetako batzuk zure arreta behar dute"
 
-#: qml/PlantsPage.qml:87
+#: qml/PlantsPage.qml:85
 #, kde-format
 msgid "No plants need water right now"
 msgstr "Oraintxe bertan ez dago ureztatzea behar duen landarerik"
 
-#: qml/PlantsPage.qml:203
+#: qml/PlantsPage.qml:201
 #, kde-format
 msgid "in %1 days"
 msgstr "%1 egun barru"
 
-#: qml/PlantsPage.qml:205
+#: qml/PlantsPage.qml:203
 #, kde-format
 msgid "tomorrow"
 msgstr "bihar"
 
-#: qml/PlantsPage.qml:207
+#: qml/PlantsPage.qml:205
 #, kde-format
 msgid "water today!"
 msgstr "gaur ureztatu!"
 
-#: qml/PlantsPage.qml:209
+#: qml/PlantsPage.qml:207
 #, kde-format
 msgid "watering overdue!"
 msgstr "ureztatzea atzeratu da!"

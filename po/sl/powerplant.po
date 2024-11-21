@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-16 00:43+0000\n"
+"POT-Creation-Date: 2024-11-21 00:44+0000\n"
 "PO-Revision-Date: 2024-02-26 06:47+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -65,62 +65,57 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr "Izbriši"
 
-#: qml/PlantDetailPage.qml:72 qml/PlantsPage.qml:20
-#, kde-format
-msgid "Plants"
-msgstr "Rastline"
-
-#: qml/PlantDetailPage.qml:192
+#: qml/PlantDetailPage.qml:191
 #, kde-format
 msgid "Parent"
 msgstr "Starš"
 
-#: qml/PlantDetailPage.qml:199
+#: qml/PlantDetailPage.qml:198
 #, kde-format
 msgid "Water"
 msgstr "Voda"
 
-#: qml/PlantDetailPage.qml:217
+#: qml/PlantDetailPage.qml:216
 #, kde-format
 msgid "has to be watered in %1 days"
 msgstr "jo je treba zaliti v %1 dneh"
 
-#: qml/PlantDetailPage.qml:219
+#: qml/PlantDetailPage.qml:218
 #, kde-format
 msgid "has to be watered tomorrow"
 msgstr "jo je treba zaliti jutri"
 
-#: qml/PlantDetailPage.qml:221
+#: qml/PlantDetailPage.qml:220
 #, kde-format
 msgid "needs to be watered today!"
 msgstr "jo je treba zaliti danes!"
 
-#: qml/PlantDetailPage.qml:223
+#: qml/PlantDetailPage.qml:222
 #, kde-format
 msgid "should have been watered already!"
 msgstr "bi jo bilo že treba zaliti!"
 
-#: qml/PlantDetailPage.qml:227
+#: qml/PlantDetailPage.qml:226
 #, kde-format
 msgid "Watered"
 msgstr "Zalita"
 
-#: qml/PlantDetailPage.qml:251
+#: qml/PlantDetailPage.qml:250
 #, kde-format
 msgid "Health"
 msgstr "Zdravje"
 
-#: qml/PlantDetailPage.qml:259
+#: qml/PlantDetailPage.qml:258
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "Kako zdrava je vaša rastlina danes?"
 
-#: qml/PlantDetailPage.qml:281 qml/PlantEditorPage.qml:298
+#: qml/PlantDetailPage.qml:280 qml/PlantEditorPage.qml:297
 #, kde-format
 msgid "Add"
 msgstr "Dodaj"
 
-#: qml/PlantDetailPage.qml:294
+#: qml/PlantDetailPage.qml:293
 #, kde-format
 msgid "Health History"
 msgstr "Zdravstvena zgodovina"
@@ -211,48 +206,53 @@ msgstr "Kako zdrava je vaša rastlina v tem trenutku?"
 msgid "Birthday"
 msgstr "Rojstni dan"
 
-#: qml/PlantEditorPage.qml:298
+#: qml/PlantEditorPage.qml:297
 #, kde-format
 msgid "Edit"
 msgstr "Uredi"
 
-#: qml/PlantsPage.qml:47
+#: qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Rastline"
+
+#: qml/PlantsPage.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "Dodaj rastlino"
 
-#: qml/PlantsPage.qml:69
+#: qml/PlantsPage.qml:67
 #, kde-format
 msgid "Good Morning!"
 msgstr "Dobro jutro!"
 
-#: qml/PlantsPage.qml:85
+#: qml/PlantsPage.qml:83
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "Nekatere vaše rastline potrebujejo pozornost"
 
-#: qml/PlantsPage.qml:87
+#: qml/PlantsPage.qml:85
 #, kde-format
 msgid "No plants need water right now"
 msgstr "Nobena rastlina trenutno ne potrebuje vode"
 
-#: qml/PlantsPage.qml:203
+#: qml/PlantsPage.qml:201
 #, kde-format
 msgid "in %1 days"
 msgstr "čez %1 dni"
 
-#: qml/PlantsPage.qml:205
+#: qml/PlantsPage.qml:203
 #, kde-format
 msgid "tomorrow"
 msgstr "jutri"
 
-#: qml/PlantsPage.qml:207
+#: qml/PlantsPage.qml:205
 #, kde-format
 msgid "water today!"
 msgstr "zaliti danes!"
 
-#: qml/PlantsPage.qml:209
+#: qml/PlantsPage.qml:207
 #, kde-format
 msgid "watering overdue!"
 msgstr "zalivanje zamuja!"
