@@ -1,8 +1,9 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
 
-qt_add_qml_module(powerplant_static
-    STATIC
+add_library(powerplant_static STATIC)
+ecm_add_qml_module(powerplant_static
+    GENERATE_PLUGIN_SOURCE
     URI org.kde.powerplant
     VERSION 1.0
     QML_FILES
