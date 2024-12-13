@@ -20,6 +20,7 @@
 #include <KAboutData>
 #include <KLocalizedContext>
 #include <KLocalizedString>
+#include <KLocalizedQmlContext>
 
 #include <QCoro/QCoroTask>
 #include <QCoro/QCoroFuture>
@@ -62,7 +63,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     qmlRegisterSingletonInstance("org.kde.powerplant.private", 1, 0, "Config", config);
 
-    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    KLocalization::setupLocalizedContext(&engine);
     engine.loadFromModule(u"org.kde.powerplant"_s, u"Main"_s);
 
     if (engine.rootObjects().isEmpty()) {
