@@ -48,7 +48,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
                          // The license this code is released under.
                          KAboutLicense::GPL,
                          // Copyright Statement.
-                         i18n("(c) 2023"));
+                         i18n("© 2023-2024 Mathis Brüchert"));
     aboutData.addAuthor(i18nc("@info:credit", "Mathis Brüchert"),
                         i18nc("@info:credit", "Author"),
                         QStringLiteral("mbb@kaidan.im"));
