@@ -4,28 +4,16 @@
 */
 
 #include <QApplication>
-#include <QQmlApplicationEngine>
-#include <QUrl>
 #include <QtQml>
 #include <QIcon>
 
-#include "database.h"
-#include "planteditor.h"
-#include "plantimagemodel.h"
-#include "colorgradientinterpolator.h"
-#include "plantsmodel.h"
-#include "waterhistorymodel.h"
-#include "healthhistorymodel.h"
 #include "version-powerplant.h"
 #include <KAboutData>
 #include <KLocalizedContext>
 #include <KLocalizedString>
 #include <KLocalizedQmlContext>
 
-#include <QCoro/QCoroTask>
 #include <QCoro/QCoroFuture>
-
-#include "powerplantconfig.h"
 
 using namespace Qt::Literals::StringLiterals;
 
@@ -59,11 +47,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    auto config = powerplantConfig::self();
-
-    qmlRegisterSingletonInstance("org.kde.powerplant.private", 1, 0, "Config", config);
-
-    KLocalization::setupLocalizedContext(&engine);
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.loadFromModule(u"org.kde.powerplant"_s, u"Main"_s);
 
     if (engine.rootObjects().isEmpty()) {
