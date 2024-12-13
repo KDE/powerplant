@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 // SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
 
-import QtQuick 2.15
-import QtQuick.Controls 2.15 as Controls
-import QtQuick.Layouts 1.15
-import org.kde.kirigami 2.19 as Kirigami
+import QtQuick
+import QtQuick.Controls as Controls
+import QtQuick.Layouts
+import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.kirigamiaddons.components as Components
 import Qt5Compat.GraphicalEffects
-import Qt.labs.platform 1.1
+import Qt.labs.platform
 
-import org.kde.powerplant 1.0
+import org.kde.powerplant
 
 FormCard.FormCardPage {
     id: root

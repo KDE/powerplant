@@ -1,9 +1,9 @@
 
-import QtQuick 2.15
-import QtQuick.Controls 2.15 as Controls
-import org.kde.kirigami 2.20 as Kirigami
-import QtQuick.Layouts 1.15
-import org.kde.powerplant 1.0
+import QtQuick
+import QtQuick.Controls as Controls
+import org.kde.kirigami as Kirigami
+import QtQuick.Layouts
+import org.kde.powerplant
 
 
 Kirigami.ShadowedRectangle {
