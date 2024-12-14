@@ -70,38 +70,38 @@ Kirigami.ScrollablePage {
     rightPadding: 0
 
     title: plant.name
-    background: GridLayout {
-        columnSpacing: 0
-        rowSpacing: 0
-        flow: wideScreen ? GridLayout.LeftToRight : GridLayout.TopToBottom
-        columns: 2
-        Rectangle{
-//            Layout.maximumWidth: 400
+//     background: GridLayout {
+//         columnSpacing: 0
+//         rowSpacing: 0
+//         flow: wideScreen ? GridLayout.LeftToRight : GridLayout.TopToBottom
+//         columns: 2
+//         Rectangle{
+// //            Layout.maximumWidth: 400
 
-            color: Kirigami.Theme.backgroundColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-            Item {
-                height: parent.height
-                width: parent.width
-                anchors.centerIn:parent
-                RadialGradient {
-                    anchors.fill: parent
-                    gradient: Gradient {
-                        GradientStop { position: 0.0; color: Kirigami.ColorUtils.tintWithAlpha(
-                                                                 Kirigami.Theme.backgroundColor,
-                                                                 healthSlider.healthColor, 0.5)}
-                        GradientStop { position: 0.5; color: Kirigami.Theme.backgroundColor }
-                    }
-                }
-            }
-        }
-        Rectangle{
-            color: Kirigami.Theme.backgroundColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-    }
+//             color: Kirigami.Theme.backgroundColor
+//             Layout.fillHeight: true
+//             Layout.fillWidth: true
+//             Item {
+//                 height: parent.height
+//                 width: parent.width
+//                 anchors.centerIn:parent
+//                 RadialGradient {
+//                     anchors.fill: parent
+//                     gradient: Gradient {
+//                         GradientStop { position: 0.0; color: Kirigami.ColorUtils.tintWithAlpha(
+//                                            Icon                      Kirigami.Theme.backgroundColor,
+//                                                                  healthSlider.healthColor, 0.5)}
+//                         GradientStop { position: 0.5; color: Kirigami.Theme.backgroundColor }
+//                     }
+//                 }
+//             }
+//         }
+//         Rectangle{
+//             color: Kirigami.Theme.backgroundColor
+//             Layout.fillHeight: true
+//             Layout.fillWidth: true
+//         }
+//     }
 
     GridLayout {
         flow: wideScreen ? GridLayout.LeftToRight : GridLayout.TopToBottom
@@ -110,6 +110,8 @@ Kirigami.ScrollablePage {
         columns: 2
 
         ColumnLayout {
+            id: columnlayout
+
             Layout.maximumWidth: wideScreen ? applicationWindow().width / 2 - Kirigami.Units.gridUnit * 3 : applicationWindow().width
             Layout.fillHeight: true
             Layout.fillWidth: true
@@ -118,9 +120,29 @@ Kirigami.ScrollablePage {
             }
 
             Item {
+
                 height: 300
                 Layout.fillWidth: true
+                Rectangle{
+                    anchors.centerIn: image
+
+                    height: 300
+                    width: height
+                    color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor,healthSlider.healthColor, 0.3)
+                    radius: 50
+                    rotation: 45
+                }
+                Rectangle{
+                    anchors.centerIn: image
+
+                    height: 300
+                    width: height
+                    color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor,healthSlider.healthColor, 0.3)
+                    radius: 50
+                    rotation: 0
+                }
                 Image {
+
                     anchors.fill: parent
                     id: image
                     fillMode: Image.PreserveAspectFit
@@ -142,22 +164,30 @@ Kirigami.ScrollablePage {
                             color: "white"
                         }
                         GradientStop {
-                            position: 1
+                            position: 0.8
                             color: "transparent"
                         }
                     }
                 }
+                ColumnLayout {
+                    width: columnlayout.width
+                    anchors.bottom: parent.bottom
+                    Kirigami.Heading {
+                        text: plant.name
+                        type: Kirigami.Heading.Type.Primary
+                        Layout.alignment: Qt.AlignHCenter
+                    }
+                    Controls.Label {
+                        text: plant.species
+                        color: Kirigami.Theme.disabledTextColor
+                        Layout.alignment: Qt.AlignHCenter
+
+
+
+                    }
+                }
             }
-            Kirigami.Heading {
-                text: plant.name
-                type: Kirigami.Heading.Type.Primary
-                Layout.alignment: Qt.AlignHCenter
-            }
-            Controls.Label {
-                text: plant.species
-                color: Kirigami.Theme.disabledTextColor
-                Layout.alignment: Qt.AlignHCenter
-            }
+
             Item {
                 Layout.fillHeight: true
             }
@@ -179,19 +209,19 @@ Kirigami.ScrollablePage {
                 Layout.maximumWidth: Kirigami.Units.gridUnit * 30
                 TextIconBox {
                     label.text: plant.location
-                    icon.source: "mark-location"
+                    icon.source: "go-home-symbolic"
                     Layout.fillWidth: true
                 }
                 TextIconBox {
                     label.text: Qt.formatDate(plant.dateOfBirth)
-                    icon.source: "chronometer"
+                    icon.source: "view-calendar-birthday"
                     Layout.fillWidth: true
                 }
-                TextIconBox {
-                    label.text: i18n("Parent")
-                    icon.source: "view-list-tree"
-                    Layout.fillWidth: true
-                }
+                // TextIconBox {
+                //     label.text: i18n("Parent")
+                //     icon.source: "view-list-tree"
+                //     Layout.fillWidth: true
+                // }
             }
 
             FormCard.FormHeader {

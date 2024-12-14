@@ -196,6 +196,7 @@ Kirigami.ScrollablePage {
 
                     TextIconBox {
                         Layout.fillWidth: true
+                        showShadow: false
                         label {
                             text: if (wantsToBeWateredIn > 1) {
                                       i18n("in %1 days", wantsToBeWateredIn)

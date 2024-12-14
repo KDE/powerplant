@@ -10,17 +10,41 @@ Kirigami.ShadowedRectangle {
     property alias icon: icon
     property alias label: label
     property alias action: action
+    property bool showShadow: true
 
     Kirigami.Theme.colorSet: Kirigami.Theme.View
     Kirigami.Theme.inherit: false
 
-    border.color: Kirigami.ColorUtils.linearInterpolation(
-                      Kirigami.Theme.backgroundColor,
-                      Kirigami.Theme.textColor, 0.3)
-    border.width: 1
+    readonly property real borderWidth: 1
+    readonly property bool isDarkColor: {
+        const temp = Qt.darker(Kirigami.Theme.backgroundColor, 1);
+        return temp.a > 0 && getDarkness(Kirigami.Theme.backgroundColor) >= 0.4;
+    }
+
+    function getDarkness(background: color): real {
+        // Thanks to Gojir4 from the Qt forum
+        // https://forum.qt.io/topic/106362/best-way-to-set-text-color-for-maximum-contrast-on-background-color/
+        var temp = Qt.darker(background, 1);
+        var a = 1 - ( 0.299 * temp.r + 0.587 * temp.g + 0.114 * temp.b);
+        return a;
+    }
+
+    border {
+        color: showShadow? (isDarkColor ? Qt.darker(Kirigami.Theme.backgroundColor, 1.2) : Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.15)) : Kirigami.ColorUtils.linearInterpolation(
+                               Kirigami.Theme.backgroundColor,
+                               Kirigami.Theme.textColor, 0.3)
+        width: borderWidth
+    }
+
+    radius: Kirigami.Units.cornerRadius
     color: Kirigami.Theme.backgroundColor
-    radius: 5
+
     height: waterInLayout.implicitHeight + Kirigami.Units.mediumSpacing
+    shadow {
+        size: showShadow ? (isDarkColor ? Kirigami.Units.smallSpacing : Kirigami.Units.largeSpacing) : 0
+        color: Qt.alpha(Kirigami.Theme.textColor, 0.10)
+    }
+
     RowLayout {
         id: waterInLayout
         anchors.fill: parent
