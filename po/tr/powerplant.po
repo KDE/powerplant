@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-21 00:44+0000\n"
+"POT-Creation-Date: 2024-12-14 01:00+0000\n"
 "PO-Revision-Date: 2024-09-23 15:20+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -27,29 +27,31 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "emir_sari@icloud.com"
 
-#: main.cpp:43
+#: main.cpp:32
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
 msgstr "PowerPlant"
 
-#: main.cpp:47
+#: main.cpp:36
 #, kde-format
 msgid "A small app to track your plants"
 msgstr "Bitkilerinizi izlemek için bir uygulama"
 
-#: main.cpp:51
-#, kde-format
-msgid "(c) 2023"
-msgstr "© 2023"
+#: main.cpp:40
+#, fuzzy, kde-format
+#| msgctxt "@info:credit"
+#| msgid "Mathis Brüchert"
+msgid "© 2023-2024 Mathis Brüchert"
+msgstr "Mathis Brüchert"
 
-#: main.cpp:52
+#: main.cpp:41
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:53
+#: main.cpp:42
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
@@ -258,3 +260,6 @@ msgstr "bugün sula!"
 #, kde-format
 msgid "watering overdue!"
 msgstr "sulanması gerek!"
+
+#~ msgid "(c) 2023"
+#~ msgstr "© 2023"
