@@ -29,6 +29,7 @@
   <name xml:lang="pl">PowerPlant</name>
   <name xml:lang="pt-BR">PowerPlant</name>
   <name xml:lang="ro">PowerPlant</name>
+  <name xml:lang="sa">पावरप्लांट</name>
   <name xml:lang="sk">PowerPlant</name>
   <name xml:lang="sl">PowerPlant</name>
   <name xml:lang="sv">Planteffekt</name>
@@ -58,6 +59,7 @@
   <summary xml:lang="pl">Mała aplikacja do utrzymywania twoich roślin przy życiu</summary>
   <summary xml:lang="pt-BR">Um pequeno aplicativo que ajuda você a manter suas plantas vivas</summary>
   <summary xml:lang="ro">Mică aplicație ce vă ajută să țineți plantele în viață</summary>
+  <summary xml:lang="sa">भवतः वनस्पतयः जीविताः स्थापयितुं भवतः सहायतां कुर्वन् एकः लघुः एप्</summary>
   <summary xml:lang="sl">Majhna aplikacija, ki vam pomaga ohranjati vaše rastline pri življenju</summary>
   <summary xml:lang="sv">Ett litet program som hjälper dig hålla liv i plantor</summary>
   <summary xml:lang="tr">Bitki İzleme Uygulaması</summary>
@@ -89,6 +91,7 @@
   <developer_name xml:lang="pl">Społeczność KDE</developer_name>
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
   <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
+  <developer_name xml:lang="sa">केडीई समुदाय</developer_name>
   <developer_name xml:lang="sk">KDE komunita</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
@@ -120,6 +123,7 @@
     <p xml:lang="pl">PowerPlant przypomina o tym kiedy twoje rośliny potrzebują podlania i jak zdrowo rozwijają się na przestrzeni czasu.</p>
     <p xml:lang="pt-BR">O PowerPlant permite monitorar quando suas plantas precisam ser regadas e como a saúde delas se desenvolve ao longo do tempo.</p>
     <p xml:lang="ro">PowerPlant vă permite să înregistrați când trebuiesc udate plantele și dezvoltarea acestora în timp.</p>
+    <p xml:lang="sa">PowerPlant इत्यनेन भवन्तः कदा भवतः वनस्पतयः जलं दातव्याः, कालान्तरे तेषां स्वास्थ्यस्य विकासः कथं भवति इति निरीक्षणं कर्तुं शक्नोति।</p>
     <p xml:lang="sl">PowerPlant vam omogoča spremljati, kdaj je treba vaše rastline zaliti in kako se njihovo zdravje sčasoma razvija.</p>
     <p xml:lang="sv">Planteffekt låter dig hålla reda på när plantor måste vattnas och hur deras hälsa utvecklas med tiden.</p>
     <p xml:lang="tr">PowerPlant, bitkilerinizin ne zaman sulanması gerektiğini ve onların sağlık durumunu izler.</p>
