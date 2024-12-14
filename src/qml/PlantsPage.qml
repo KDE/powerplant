@@ -107,9 +107,11 @@ Kirigami.ScrollablePage {
             required property string name
             required property string species
             required property string wantsToBeWateredIn
+            required property string wantsToBeFertilizedIn
             required property int currentHealth
             required property var dateOfBirth
             required property int plantId
+
 
             WaterHistoryModel {
                 id: waterEvents
@@ -181,7 +183,7 @@ Kirigami.ScrollablePage {
                 Layout.alignment: Qt.AlignHCenter
                 Layout.margins: 10
                 padding: Kirigami.Units.mediumSpacing
-                implicitHeight: grid.cellHeight - 2 * Layout.margins
+                implicitHeight: grid.cellHeight - 2 * Layout.margins +40
                 contentItem: ColumnLayout {
                     Kirigami.Heading {
                         text: name
@@ -222,6 +224,35 @@ Kirigami.ScrollablePage {
                             visible: wantsToBeWateredIn <= 0
                         }
                     }
+                    TextIconBox {
+                        Layout.fillWidth: true
+                        showShadow: false
+                        label {
+                            text: if (wantsToBeFertilizedIn > 1) {
+                                      i18n("in %1 days", wantsToBeFertilizedIn)
+                                  } else if (wantsToBeFertilizedIn == 1) {
+                                      i18n("tomorrow")
+                                  } else if (wantsToBeFertilizedIn == 0) {
+                                      i18n("fertilize today!")
+                                  } else if (wantsToBeFertilizedIn < 0) {
+                                      i18n("fertilizing overdue!")
+                                  }
+                            font.bold: wantsToBeFertilizedIn <= 0
+                        }
+                        icon {
+                            source: "raindrop"
+                            color: "yellow"
+                        }
+                        action {
+                            icon.name: "answer-correct"
+                            onClicked: {
+                                console.log(plantId)
+                                waterEvents.waterPlant()
+                            }
+                            visible: wantsToBeFertilizedIn <= 0
+                        }
+                    }
+
 
                     HealthSlider {
                         id: healthSlider

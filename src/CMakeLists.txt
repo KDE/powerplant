@@ -1,7 +1,8 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
 
-add_library(powerplant_static STATIC)
+add_library(powerplant_static STATIC
+    fertilizerhistorymodel.cpp)
 ecm_add_qml_module(powerplant_static
     GENERATE_PLUGIN_SOURCE
     URI org.kde.powerplant
@@ -12,6 +13,8 @@ ecm_add_qml_module(powerplant_static
         qml/HealthSlider.qml
         qml/PlantEditorPage.qml
         qml/PlantDetailPage.qml
+        qml/NavigationBar.qml
+        qml/TaskPage.qml
         qml/components/TextIconBox.qml
 )
 
@@ -29,6 +32,7 @@ target_sources(powerplant_static PRIVATE
     plantsmodel.cpp
     healthhistorymodel.cpp
     waterhistorymodel.cpp
+    fertilizerhistorymodel.cpp
     colorgradientinterpolator.cpp
     plantimagemodel.cpp
     planteditor.cpp

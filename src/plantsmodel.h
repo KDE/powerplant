@@ -29,16 +29,21 @@ public:
         Species,
         ImgUrl,
         WaterInterval,
+        FertilizerInterval,
         Location,
         DateOfBirth,
         LastWatered,
         WantsToBeWateredIn,
+        LastFertilized,
+        WantsToBeFertilizedIn,
         CurrentHealth,
     };
+    Q_ENUM(Role);
+
     QHash<int, QByteArray> roleNames()const override;
     QVariant data(const QModelIndex& index, int role) const override;
-    Q_INVOKABLE void addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth, const int health);
-    Q_INVOKABLE void editPlant(const DB::Plant::Id plantId, const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const QString location, const int dateOfBirth);
+    Q_INVOKABLE void addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const int fertilizerInterval, const QString location, const int dateOfBirth, const int health);
+    Q_INVOKABLE void editPlant(const DB::Plant::Id plantId, const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const int fertilizerInterval,  const QString location, const int dateOfBirth);
     Q_INVOKABLE void deletePlant(const int plantId);
 
     Summary summary() const;

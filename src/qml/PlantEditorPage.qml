@@ -17,6 +17,8 @@ FormCard.FormCardPage {
 
     required property PlantsModel plantsModel
     property int waterInterval: 2
+    property int fertilizerInterval: 14
+
     required property int mode
     property int plantId: -1
 
@@ -181,7 +183,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.AbstractFormDelegate {
-            id: interval
+            id: waterIntervalDelegate
             background: null
             contentItem: ColumnLayout {
                 Controls.Label {
@@ -203,7 +205,7 @@ FormCard.FormCardPage {
                         checkable: true
                         Controls.ButtonGroup.group: buttonGroup
                         Layout.fillWidth: true
-                        onClicked: plantEditor.plant.waterIntervall = 2
+                        onClicked: plantEditor.plant.waterInterval = 2
                     }
 
                     Controls.Button {
@@ -211,7 +213,7 @@ FormCard.FormCardPage {
                         checkable: true
                         Controls.ButtonGroup.group: buttonGroup
                         Layout.fillWidth: true
-                        onClicked: plantEditor.plant.waterIntervall = 5
+                        onClicked: plantEditor.plant.waterInterval = 5
                     }
 
                     Controls.Button {
@@ -219,7 +221,7 @@ FormCard.FormCardPage {
                         checkable: true
                         Controls.ButtonGroup.group: buttonGroup
                         Layout.fillWidth: true
-                        onClicked: plantEditor.plant.waterIntervall = 7
+                        onClicked: plantEditor.plant.waterInterval = 7
                     }
 
                     Controls.Button {
@@ -228,7 +230,7 @@ FormCard.FormCardPage {
                         checkable: true
                         Controls.ButtonGroup.group: buttonGroup
                         Layout.fillWidth: true
-                        onClicked: plantEditor.plant.waterIntervall = 14
+                        onClicked: plantEditor.plant.waterInterval = 14
                     }
                 }
 
@@ -241,8 +243,80 @@ FormCard.FormCardPage {
                     }
 
                     Controls.SpinBox {
-                        onValueChanged: plantEditor.plant.waterIntervall = value
-                        value: plantEditor.plant.waterIntervall
+                        onValueChanged: plantEditor.plant.waterInterval = value
+                        value: plantEditor.plant.waterInterval
+                        Layout.fillWidth: true
+                    }
+                }
+            }
+        }
+
+        FormCard.FormDelegateSeparator {
+            visible: root.mode === PlantEditor.Creator
+        }
+        FormCard.AbstractFormDelegate {
+            id: fertilizerIntervalDelegate
+            background: null
+            contentItem: ColumnLayout {
+                Controls.Label {
+                    text: i18n("How often does the plant need Fertilizing?")
+                }
+                Controls.ButtonGroup {
+                    id: fertilizerButtonGroup
+                }
+
+                RowLayout {
+                    id: fertilizeRow
+
+                    Layout.fillHeight: true
+                    Layout.fillWidth: true
+                    spacing: Kirigami.Units.smallSpacing
+
+                    Controls.Button {
+                        text: i18n("2 days")
+                        checkable: true
+                        Controls.ButtonGroup.group: fertilizerButtonGroup
+                        Layout.fillWidth: true
+                        onClicked: plantEditor.plant.fertilizerInterval = 2
+                    }
+
+                    Controls.Button {
+                        text: i18n("5 days")
+                        checkable: true
+                        Controls.ButtonGroup.group: fertilizerButtonGroup
+                        Layout.fillWidth: true
+                        onClicked: plantEditor.plant.fertilizerInterval = 5
+                    }
+
+                    Controls.Button {
+                        text: i18n("weekly")
+                        checkable: true
+                        Controls.ButtonGroup.group: fertilizerButtonGroup
+                        Layout.fillWidth: true
+                        onClicked: plantEditor.plant.fertilizerInterval = 7
+                    }
+
+                    Controls.Button {
+                        id: fertilizerButtonWeeks
+                        text: i18n("2 weeks")
+                        checkable: true
+                        Controls.ButtonGroup.group: fertilizerButtonGroup
+                        Layout.fillWidth: true
+                        onClicked: plantEditor.plant.fertilizerInterval = 14
+                    }
+                }
+
+                RowLayout {
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+
+                    Controls.Label {
+                        text: i18n("Custom:")
+                    }
+
+                    Controls.SpinBox {
+                        onValueChanged: plantEditor.plant.fertilizerInterval = value
+                        value: plantEditor.plant.fertilizerInterval
                         Layout.fillWidth: true
                     }
                 }

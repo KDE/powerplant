@@ -29,6 +29,9 @@ Kirigami.ApplicationWindow {
             }
         }
     }
+    footer: NavigationBar {
+           id: navigationbar
+       }
 
     KConfig.WindowStateSaver {
         configGroupName: "Main"

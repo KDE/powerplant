@@ -30,7 +30,10 @@ class Plant : public QObject
     Q_PROPERTY(QUrl imgUrl MEMBER m_imgUrl NOTIFY imgUrlChanged)
 
     /// This property holds the intervall in which this plant should be watered
-    Q_PROPERTY(int waterIntervall MEMBER m_waterIntervall NOTIFY waterIntervallChanged)
+    Q_PROPERTY(int waterInterval MEMBER m_waterInterval NOTIFY waterIntervalChanged)
+
+    /// This property holds the intervall in which this plant should be fertilized
+    Q_PROPERTY(int fertilizerInterval MEMBER m_fertilizerInterval NOTIFY fertilizerIntervalChanged)
 
     /// This property holds the interval in which this plant should be watered
     Q_PROPERTY(QString location MEMBER m_location NOTIFY locationChanged)
@@ -41,8 +44,15 @@ class Plant : public QObject
     /// This property holds the time when this plant was last watered
     Q_PROPERTY(QDate lastWatered MEMBER m_lastWatered NOTIFY lastWateredChanged)
 
+    /// This property holds the time when this plant was last watered
+    Q_PROPERTY(QDate lastFertilized MEMBER m_lastFertilized NOTIFY lastFertilizedChanged)
+
     /// This property holds the time when this plant want to be watered next
     Q_PROPERTY(int wantsToBeWateredIn READ wantsToBeWateredIn NOTIFY lastWateredChanged)
+
+    /// This property holds the time when this plant want to be watered next
+    Q_PROPERTY(int wantsToBeFertilizedIn READ wantsToBeFertilizedIn NOTIFY lastFertilizedChanged)
+
 
     /// This property holds the time when this plant want to be watered next
     Q_PROPERTY(int currentHealth MEMBER m_currentHealth NOTIFY currentHealthChanged)
@@ -54,16 +64,20 @@ public:
     void setPlantId(const DB::Plant::Id plantId);
 
     int wantsToBeWateredIn() const;
+    int wantsToBeFertilizedIn() const;
+
 
 Q_SIGNALS:
     void plantIdChanged();
     void locationChanged();
-    void waterIntervallChanged();
+    void waterIntervalChanged();
+    void fertilizerIntervalChanged();
     void nameChanged();
     void speciesChanged();
     void imgUrlChanged();
     void dateOfBirthChanged();
     void lastWateredChanged();
+    void lastFertilizedChanged();
     void currentHealthChanged();
 
 private:
@@ -76,7 +90,9 @@ private:
     QString m_location;
     QDate m_dateOfBirth;
     QDate m_lastWatered;
-    int m_waterIntervall = 2;
+    QDate m_lastFertilized;
+    int m_waterInterval = 2;
+    int m_fertilizerInterval = 2;
     int m_currentHealth = 50;
 
     friend class PlantEditor;

@@ -2,6 +2,8 @@
     <qresource prefix="/">
         <file>contents/migrations/2023-04-10-140702_init/up.sql</file>
         <file>contents/migrations/2023-04-10-140702_init/down.sql</file>
+        <file>contents/migrations/2024-12-14-154417_fertilize-history/up.sql</file>
+        <file>contents/migrations/2024-12-14-154417_fertilize-history/down.sql</file>
         <file alias="assets/monstera.svg">contents/assets/monstera.svg</file>
         <file alias="assets/aloe_vera.svg">contents/assets/aloe_vera.svg</file>
         <file alias="assets/green_lilly.svg">contents/assets/green_lilly.svg</file>

@@ -30,6 +30,11 @@ Kirigami.ScrollablePage {
         plantId: root.plantId
     }
 
+    FertilizerHistoryModel {
+        id: fertilizerEvents
+        plantId: root.plantId
+    }
+
     HealthHistoryModel {
         id: healthEvents
         plantId: root.plantId
@@ -259,22 +264,42 @@ Kirigami.ScrollablePage {
                         }
                     }
                 }
-
-//              FormCard.FormDelegateSeparator {}
-
-//              Repeater {
-//                  model: waterEvents
-//                  delegate: FormCard.AbstractFormDelegate {
-//                      required property date modelData
-//                      background: null
-//                      contentItem: ColumnLayout {
-//                          Controls.Label {
-//                              text: modelData
-//                          }
-//                      }
-//                  }
-//              }
             }
+            FormCard.FormHeader {
+                title: i18n("Fertilizer")
+            }
+
+                FormCard.FormCard {
+                    FormCard.AbstractFormDelegate {
+                        background: null
+                        contentItem: RowLayout {
+                            Kirigami.Icon {
+                                source: "raindrop"
+                                color: "yellow"
+                                isMask: true
+                                implicitHeight: Kirigami.Units.gridUnit * 1.5
+                            }
+                            Controls.Label {
+                                Layout.fillWidth: true
+                                text: if (plant.wantsToBeFertilizedIn > 1) {
+                                          i18n("has to be fertilized in %1 days", plant.wantsToBeFertilizedIn)
+                                      } else if (plant.wantsToBeFertilizedIn == 1) {
+                                          i18n("has to be fertilized tomorrow")
+                                      } else if (plant.wantsToBeFertilizedIn == 0) {
+                                          i18n("needs to be fertilized today!")
+                                      } else if (plant.wantsToBeFertilizedIn < 0) {
+                                          i18n("should have been fertilized already!")
+                                      }
+                            }
+                    Controls.Button {
+                        text: i18n("Fertilized")
+                        icon.name: "answer-correct"
+                        onClicked: fertilizerEvents.fertilizePlant()
+                    }
+                }
+            }
+            }
+
 
             FormCard.FormHeader {
                 title: i18n("Health")

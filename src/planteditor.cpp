@@ -60,8 +60,11 @@ void Plant::refresh()
         m_imgUrl = QUrl(plant->img_url);
         Q_EMIT imgUrlChanged();
 
-        m_waterIntervall = plant->water_intervall;
-        Q_EMIT waterIntervallChanged();
+        m_waterInterval = plant->water_interval;
+        Q_EMIT waterIntervalChanged();
+
+        m_fertilizerInterval = plant->fertilizer_interval;
+        Q_EMIT fertilizerIntervalChanged();
 
         m_location = plant->location;
         Q_EMIT locationChanged();
@@ -72,6 +75,9 @@ void Plant::refresh()
         m_lastWatered = QDateTime::fromSecsSinceEpoch(plant->last_watered).date();
         Q_EMIT lastWateredChanged();
 
+        m_lastFertilized = QDateTime::fromSecsSinceEpoch(plant->last_fertilized).date();
+        Q_EMIT lastFertilizedChanged();
+
         m_currentHealth = plant->current_health;
         Q_EMIT currentHealthChanged();
     });
@@ -79,7 +85,12 @@ void Plant::refresh()
 
 int Plant::wantsToBeWateredIn() const
 {
-    return QDate::currentDate().daysTo(m_lastWatered.addDays(m_waterIntervall));
+    return QDate::currentDate().daysTo(m_lastWatered.addDays(m_waterInterval));
+}
+
+int Plant::wantsToBeFertilizedIn() const
+{
+    return QDate::currentDate().daysTo(m_lastFertilized.addDays(m_fertilizerInterval));
 }
 
 PlantEditor::PlantEditor(QObject *parent)
@@ -116,7 +127,8 @@ void PlantEditor::save()
             m_plant->m_name,
             m_plant->m_species,
             m_plant->m_imgUrl.toString(),
-            m_plant->m_waterIntervall,
+            m_plant->m_waterInterval,
+            m_plant->m_fertilizerInterval,
             m_plant->m_location,
             m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch(),
             m_plant->m_currentHealth
@@ -127,7 +139,8 @@ void PlantEditor::save()
             m_plant->m_name,
             m_plant->m_species,
             m_plant->m_imgUrl.toString(),
-            m_plant->m_waterIntervall,
+            m_plant->m_waterInterval,
+            m_plant->m_fertilizerInterval,
             m_plant->m_location,
             m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch()
         );
