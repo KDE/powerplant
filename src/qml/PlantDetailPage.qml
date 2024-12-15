@@ -216,9 +216,11 @@ Kirigami.ScrollablePage {
                     label.text: plant.location
                     icon.source: "go-home-symbolic"
                     Layout.fillWidth: true
+                    visible: label.text.length > 0
                 }
                 TextIconBox {
                     label.text: Qt.formatDate(plant.dateOfBirth)
+                    visible: label.text.length > 0
                     icon.source: "view-calendar-birthday"
                     Layout.fillWidth: true
                 }

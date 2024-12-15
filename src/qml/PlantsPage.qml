@@ -194,6 +194,7 @@ Kirigami.ScrollablePage {
                     Controls.Label {
                         text: species
                         color: Kirigami.Theme.disabledTextColor
+                        visible: text.length > 0
                     }
 
                     TextIconBox {
