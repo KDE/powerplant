@@ -100,7 +100,7 @@ QVariant PlantsModel::data(const QModelIndex &index, int role) const
         case Role::LastWatered:
             return QDateTime::fromSecsSinceEpoch(plant.last_watered).date();
         case Role::WantsToBeWateredIn:
-            return QDate::currentDate().daysTo(QDateTime::fromSecsSinceEpoch(plant.last_watered).date().addDays(plant.water_interval));
+            return std::max(qint64(0), QDate::currentDate().daysTo(QDateTime::fromSecsSinceEpoch(plant.last_watered).date().addDays(plant.water_interval)));
         case Role::LastFertilized:
             return QDateTime::fromSecsSinceEpoch(plant.last_fertilized).date();
         case Role::WantsToBeFertilizedIn:

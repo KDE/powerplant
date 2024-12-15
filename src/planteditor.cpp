@@ -5,6 +5,7 @@
 #include "database.h"
 #include <QCoroTask>
 #include <QCoroFuture>
+#include <algorithm>
 
 Plant::Plant(QObject *parent)
     : QObject(parent)
@@ -85,7 +86,7 @@ void Plant::refresh()
 
 int Plant::wantsToBeWateredIn() const
 {
-    return QDate::currentDate().daysTo(m_lastWatered.addDays(m_waterInterval));
+    return std::max(qint64(0), QDate::currentDate().daysTo(m_lastWatered.addDays(m_waterInterval)));
 }
 
 int Plant::wantsToBeFertilizedIn() const
