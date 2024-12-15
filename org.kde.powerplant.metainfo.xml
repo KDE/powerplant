@@ -79,4 +79,25 @@
   </description>
   <content_rating type="oars-1.1"/>
   <url type="homepage">https://apps.kde.org/powerplant</url>
+  <url type="vcs-browser">https://invent.kde.org/utilities/powerplant</url>
+  <url type="donation">https://kde.org/community/donations/?app=powerplant</url>
+  <url type="contribute">https://community.kde.org/Get_Involved/</url>
+  <branding>
+    <color type="primary" scheme_preference="light">#F1F9E4</color>
+    <color type="primary" scheme_preference="dark">#3C4532</color>
+  </branding>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/powerplant/powerplant.png</image>
+      <caption>Main view with the list of plants.</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/powerplant/powerplant-detail.png</image>
+      <caption>Details of a plant.</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/powerplant/powerplant-task.png</image>
+      <caption>Raw list of tasks.</caption>
+    </screenshot>
+  </screenshots>
 </component>
