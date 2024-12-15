@@ -17,19 +17,20 @@ Kirigami.ScrollablePage {
     ListView {
         // model:
         model: KSortFilterProxyModel {
-                   id: filterModel
-                   property int sortOrder: Qt.AscendingOrder
-                   sortRole: PlantsModel.WantsToBeWateredIn
-                   sourceModel:PlantsModel {
-                        id: plantsModel
+           id: filterModel
 
-                        onModelReset:{
-                            console.warn("hey")
-                            filterModel.sort(0, filterModel.sortOrder)
-                        }
-                    }
-                   Component.onCompleted: filterModel.sort(0, filterModel.sortOrder)
-               }
+           property int sortOrder: Qt.AscendingOrder
+
+           sortRole: PlantsModel.WantsToBeWateredIn
+           sourceModel: PlantsModel {
+                id: plantsModel
+
+                onModelReset: {
+                    filterModel.sort(0, filterModel.sortOrder)
+                }
+            }
+           Component.onCompleted: filterModel.sort(0, filterModel.sortOrder)
+       }
 
 
         delegate: ColumnLayout {
@@ -77,24 +78,25 @@ Kirigami.ScrollablePage {
                             }
                         }
 
-                        ColumnLayout{
+                        ColumnLayout {
                             Layout.fillWidth: true
                             Layout.fillHeight: true
+
                             Kirigami.Heading {
                                 text: taskDelegate.name
                                 type: Kirigami.Heading.Type.Primary
-                                Layout.bottomMargin: - Kirigami.Units.smallSpacing
-
-
+                                Layout.bottomMargin: -Kirigami.Units.smallSpacing
                             }
+
                             Controls.Label {
                                 text: taskDelegate.location
                                 color: Kirigami.Theme.disabledTextColor
                                 Layout.bottomMargin: Kirigami.Units.smallSpacing
+                                visible: text.length > 0
                             }
-                            Rectangle{
-                                color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor,"#64ace1", 0.3)
 
+                            Rectangle {
+                                color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor,"#64ace1", 0.3)
 
                                 radius: height/2
                                 height: actionLabel.height + Kirigami.Units.smallSpacing
@@ -103,21 +105,19 @@ Kirigami.ScrollablePage {
                                 Controls.Label {
                                     id: actionLabel
                                     anchors.centerIn: parent
-                                    text: i18n("water")
+                                    text: i18nc("@action", "Water")
                                 }
-
                             }
-
                         }
-
                     }
                 }
             }
         }
+
         section {
             property: "wantsToBeWateredIn"
             delegate: FormCard.FormHeader {
-                title: i18n("in %1 days",section)
+                title: section === '0' ? i18n("Now") : i18n("In %1 days", section)
                 width: root.width
 
             }
