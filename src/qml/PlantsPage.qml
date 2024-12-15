@@ -57,7 +57,7 @@ Kirigami.ScrollablePage {
                        ).width < 500 ? grid.width / (Math.floor(
                                                          grid.width / 160)) : grid.width
                                        / (Math.floor(grid.width / 230))
-        cellHeight: 310
+        cellHeight: 350
 
         header: ColumnLayout {
             spacing: 0
@@ -181,9 +181,9 @@ Kirigami.ScrollablePage {
                     }
                 }
                 Layout.alignment: Qt.AlignHCenter
-                Layout.margins: 10
+                Layout.margins: Kirigami.Units.largeSpacing
                 padding: Kirigami.Units.mediumSpacing
-                implicitHeight: grid.cellHeight - 2 * Layout.margins +40
+                implicitHeight: grid.cellHeight - 2 * Layout.margins
                 contentItem: ColumnLayout {
                     Kirigami.Heading {
                         text: name
