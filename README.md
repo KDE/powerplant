@@ -1,9 +1,13 @@
-#  <img src="https://invent.kde.org/mbruchert/powerplant/-/raw/master/logo.png" height=64 >  PowerPlant
+<!--
+SPDX-FileCopyrightText: none
+SPDX-License-Identifier: CC0-1.0
+-->
 
-A very WIP app to keep track of your plant's needs
+# <img src="https://invent.kde.org/utilities/powerplant/-/raw/master/logo.png" height=64 >  PowerPlant
+
+An app to keep track of your plant's needs
 
 ![](https://i.imgur.com/17qanPl.png)
-
 
 ## Build Instructions
 

@@ -1,4 +1,8 @@
 <RCC>
+<!--
+SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
+SPDX-License-Identifier: LGPL-2.0-or-later
+-->
     <qresource prefix="/">
         <file>contents/migrations/2023-04-10-140702_init/up.sql</file>
         <file>contents/migrations/2023-04-10-140702_init/down.sql</file>

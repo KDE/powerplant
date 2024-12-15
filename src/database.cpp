@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
+// SPDX-License-Identifier: LGPL-2.0-or-later
+
 #include "database.h"
 
 #include <QStandardPaths>

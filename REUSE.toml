@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: none
+# SPDX-License-Identifier: CC0-1.0
+
+version = 1
+SPDX-PackageName = "Powerplant"
+SPDX-PackageSupplier = "Mathis Brüchert <mbb@kaidan.im>"
+
+[[annotations]]
+path = ["src/contents/migrations/**/*.sql", "src/contents/assets/*.svg", "src/contents/diesel.toml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Mathis Brüchert <mbb@kaidan.im>"
+SPDX-License-Identifier = "LGPL-2.0-or-later"
+
+[[annotations]]
+path = ["logo.png", "android/res/drawable/splash.xml", "android/res/drawable/logo.png", "org.kde.powerplant.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Mathis Brüchert <mbb@kaidan.im>"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ".flatpak-manifest.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Mathis Brüchert <mbb@kaidan.im>"
+SPDX-License-Identifier = "BSD-2-Clause"

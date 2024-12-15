@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
+// SPDX-License-Identifier: LGPL-2.0-or-later
 
 import QtQuick
 import QtQuick.Controls as Controls
