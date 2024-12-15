@@ -185,16 +185,22 @@ Kirigami.ScrollablePage {
                 padding: Kirigami.Units.mediumSpacing
                 implicitHeight: grid.cellHeight - 2 * Layout.margins
                 contentItem: ColumnLayout {
+                    spacing: Kirigami.Units.smallSpacing
+
+                    Item {
+                        Layout.fillHeight: true
+                    }
+
                     Kirigami.Heading {
                         text: name
                         type: Kirigami.Heading.Type.Primary
-                        Layout.topMargin: 120
                     }
 
                     Controls.Label {
                         text: species
                         color: Kirigami.Theme.disabledTextColor
                         visible: text.length > 0
+                        Layout.topMargin: -Kirigami.Units.smallSpacing
                     }
 
                     TextIconBox {
