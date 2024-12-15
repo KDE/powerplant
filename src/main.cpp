@@ -12,6 +12,7 @@
 #include <KLocalizedContext>
 #include <KLocalizedString>
 #include <KLocalizedQmlContext>
+#include <KCrash>
 
 #include <QCoro/QCoroFuture>
 
@@ -42,6 +43,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
                         i18nc("@info:credit", "Author"),
                         QStringLiteral("mbb@kaidan.im"));
     KAboutData::setApplicationData(aboutData);
+
+    KCrash::initialize();
 
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.powerplant")));
 

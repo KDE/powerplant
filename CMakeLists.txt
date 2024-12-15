@@ -34,7 +34,7 @@ ecm_setup_version(${PROJECT_VERSION}
 kde_enable_exceptions()
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg Widgets)
-find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami CoreAddons Config I18n)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami CoreAddons Config I18n Crash)
 find_package(FutureSQL6 REQUIRED)
 find_package(QCoro6 REQUIRED COMPONENTS Core)
 

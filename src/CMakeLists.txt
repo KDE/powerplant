@@ -67,5 +67,5 @@ kconfig_target_kcfg_file(powerplant_static FILE powerplantconfig.kcfg CLASS_NAME
 
 ## Excutable
 add_executable(powerplant main.cpp resources.qrc)
-target_link_libraries(powerplant PRIVATE powerplant_static powerplant_staticplugin)
+target_link_libraries(powerplant PRIVATE powerplant_static powerplant_staticplugin KF6::Crash)
 install(TARGETS powerplant ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
