@@ -13,11 +13,11 @@ Kirigami.NavigationTabBar {
 
     visible: pageStack.layers.depth < 2
     actions: [
-
         Kirigami.Action {
             text: i18n("Plants")
             icon.name: "battery-profile-powersave"
             onTriggered: pageStack.replace(Qt.resolvedUrl("PlantsPage.qml"))
+            Component.onCompleted: trigger();
 
         },
         Kirigami.Action {

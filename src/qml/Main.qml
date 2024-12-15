@@ -15,7 +15,6 @@ Kirigami.ApplicationWindow {
     minimumHeight: Kirigami.Units.gridUnit * 20
 
     pageStack {
-        initialPage: Qt.resolvedUrl("PlantsPage.qml")
         popHiddenPages:true
         columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
 
@@ -30,8 +29,8 @@ Kirigami.ApplicationWindow {
         }
     }
     footer: NavigationBar {
-           id: navigationbar
-       }
+        id: navigationbar
+    }
 
     KConfig.WindowStateSaver {
         configGroupName: "Main"
