@@ -250,14 +250,14 @@ Kirigami.ScrollablePage {
                         Controls.Label {
                             Layout.fillWidth: true
                             text: if (plant.wantsToBeWateredIn > 1) {
-                                      i18n("has to be watered in %1 days", plant.wantsToBeWateredIn)
-                                  } else if (plant.wantsToBeWateredIn == 1) {
-                                      i18n("has to be watered tomorrow")
-                                  } else if (plant.wantsToBeWateredIn == 0) {
-                                      i18n("needs to be watered today!")
-                                  } else if (plant.wantsToBeWateredIn < 0) {
-                                      i18n("should have been watered already!")
-                                  }
+                                return i18ncp("@info", "Has to be watered in %1 day", "Has to be watered in %1 days", plant.wantsToBeWateredIn)
+                            } else if (plant.wantsToBeWateredIn == 1) {
+                                return i18nc("@info", "Has to be watered tomorrow");
+                            } else if (plant.wantsToBeWateredIn == 0) {
+                                return i18nc("Needs to be watered today!");
+                            } else if (plant.wantsToBeWateredIn < 0) {
+                                return i18nc("Should have been watered already!");
+                            }
                         }
                         Controls.Button {
                             text: i18n("Watered")
@@ -267,39 +267,41 @@ Kirigami.ScrollablePage {
                     }
                 }
             }
+
             FormCard.FormHeader {
                 title: i18n("Fertilizer")
             }
 
-                FormCard.FormCard {
-                    FormCard.AbstractFormDelegate {
-                        background: null
-                        contentItem: RowLayout {
-                            Kirigami.Icon {
-                                source: "raindrop"
-                                color: "yellow"
-                                isMask: true
-                                implicitHeight: Kirigami.Units.gridUnit * 1.5
+            FormCard.FormCard {
+                FormCard.AbstractFormDelegate {
+                    background: null
+                    contentItem: RowLayout {
+                        Kirigami.Icon {
+                            source: "raindrop"
+                            color: "yellow"
+                            isMask: true
+                            implicitHeight: Kirigami.Units.gridUnit * 1.5
+                        }
+                        Controls.Label {
+                            Layout.fillWidth: true
+                            text: if (plant.wantsToBeFertilizedIn > 1) {
+                                return i18ncp("@info", "Has to be fertilized in %1 day", "Has to be fertilized in %1 days", plant.wantsToBeFertilizedIn);
+                            } else if (plant.wantsToBeFertilizedIn == 1) {
+                                return i18nc("@info", "Has to be fertilized tomorrow");
+                            } else if (plant.wantsToBeFertilizedIn == 0) {
+                                return i18nc("@info", "Needs to be fertilized today!")
+                            } else if (plant.wantsToBeFertilizedIn < 0) {
+                                return i18nc("@info", "Should have been fertilized already!")
                             }
-                            Controls.Label {
-                                Layout.fillWidth: true
-                                text: if (plant.wantsToBeFertilizedIn > 1) {
-                                          i18n("has to be fertilized in %1 days", plant.wantsToBeFertilizedIn)
-                                      } else if (plant.wantsToBeFertilizedIn == 1) {
-                                          i18n("has to be fertilized tomorrow")
-                                      } else if (plant.wantsToBeFertilizedIn == 0) {
-                                          i18n("needs to be fertilized today!")
-                                      } else if (plant.wantsToBeFertilizedIn < 0) {
-                                          i18n("should have been fertilized already!")
-                                      }
-                            }
-                    Controls.Button {
-                        text: i18n("Fertilized")
-                        icon.name: "answer-correct"
-                        onClicked: fertilizerEvents.fertilizePlant()
+                        }
+
+                        Controls.Button {
+                            text: i18n("Fertilized")
+                            icon.name: "answer-correct"
+                            onClicked: fertilizerEvents.fertilizePlant()
+                        }
                     }
                 }
-            }
             }
 
 

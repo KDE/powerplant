@@ -15,23 +15,23 @@ Kirigami.ScrollablePage {
     Kirigami.Theme.colorSet: Kirigami.Theme.Window
 
     ListView {
-        // model:
         model: KSortFilterProxyModel {
-           id: filterModel
+            id: filterModel
 
-           property int sortOrder: Qt.AscendingOrder
+            readonly property int sortOrder: Qt.AscendingOrder
 
-           sortRole: PlantsModel.WantsToBeWateredIn
-           sourceModel: PlantsModel {
+            filterRole: PlantsModel.WantsToBeWateredIn
+            sortRole: PlantsModel.WantsToBeWateredIn
+            sourceModel: PlantsModel {
                 id: plantsModel
 
                 onModelReset: {
                     filterModel.sort(0, filterModel.sortOrder)
                 }
             }
-           Component.onCompleted: filterModel.sort(0, filterModel.sortOrder)
-       }
 
+            Component.onCompleted: filterModel.sort(0, filterModel.sortOrder)
+        }
 
         delegate: ColumnLayout {
             id: taskDelegate
@@ -117,11 +117,9 @@ Kirigami.ScrollablePage {
         section {
             property: "wantsToBeWateredIn"
             delegate: FormCard.FormHeader {
-                title: section === '0' ? i18n("Now") : i18n("In %1 days", section)
+                title: section === '-1' ? i18nc("@info", "Already watered") : (section === '0' ? i18n("Now") : i18n("In %1 days", section))
                 width: root.width
-
             }
         }
-
     }
 }

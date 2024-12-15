@@ -86,12 +86,12 @@ void Plant::refresh()
 
 int Plant::wantsToBeWateredIn() const
 {
-    return std::max(qint64(0), QDate::currentDate().daysTo(m_lastWatered.addDays(m_waterInterval)));
+    return std::max(qint64(-1), QDate::currentDate().daysTo(m_lastWatered.addDays(m_waterInterval)));
 }
 
 int Plant::wantsToBeFertilizedIn() const
 {
-    return QDate::currentDate().daysTo(m_lastFertilized.addDays(m_fertilizerInterval));
+    return std::max(qint64(-1), QDate::currentDate().daysTo(m_lastFertilized.addDays(m_fertilizerInterval)));
 }
 
 PlantEditor::PlantEditor(QObject *parent)
