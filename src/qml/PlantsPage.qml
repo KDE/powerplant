@@ -208,14 +208,14 @@ Kirigami.ScrollablePage {
                         showShadow: false
                         label {
                             text: if (wantsToBeWateredIn > 1) {
-                                      i18n("in %1 days", wantsToBeWateredIn)
-                                  } else if (wantsToBeWateredIn == 1) {
-                                      i18n("tomorrow")
-                                  } else if (wantsToBeWateredIn == 0) {
-                                      i18n("water today!")
-                                  } else if (wantsToBeWateredIn < 0) {
-                                      i18n("watering overdue!")
-                                  }
+                                return i18ncp("@info", "In %1 day", "In %1 days", wantsToBeWateredIn)
+                            } else if (wantsToBeWateredIn == 1) {
+                                return i18nc("@info", "Tomorrow")
+                            } else if (wantsToBeWateredIn == 0) {
+                                return i18nc("@info", "Water today!")
+                            } else if (wantsToBeWateredIn < 0) {
+                                return i18nc("@info", "Watering overdue!")
+                            }
                             font.bold: wantsToBeWateredIn <= 0
                         }
                         icon {
@@ -236,14 +236,14 @@ Kirigami.ScrollablePage {
                         showShadow: false
                         label {
                             text: if (wantsToBeFertilizedIn > 1) {
-                                      i18n("in %1 days", wantsToBeFertilizedIn)
-                                  } else if (wantsToBeFertilizedIn == 1) {
-                                      i18n("tomorrow")
-                                  } else if (wantsToBeFertilizedIn == 0) {
-                                      i18n("fertilize today!")
-                                  } else if (wantsToBeFertilizedIn < 0) {
-                                      i18n("fertilizing overdue!")
-                                  }
+                                return i18ncp("@info", "In %1 day", "In %1 days", wantsToBeFertilizedIn);
+                            } else if (wantsToBeFertilizedIn == 1) {
+                                return i18nc("@info", "Tomorrow")
+                            } else if (wantsToBeFertilizedIn == 0) {
+                                return i18nc("@info", "Fertilize today!")
+                            } else if (wantsToBeFertilizedIn < 0) {
+                                return i18nc("@info", "Fertilizing overdue!")
+                            }
                             font.bold: wantsToBeFertilizedIn <= 0
                         }
                         icon {
@@ -269,7 +269,7 @@ Kirigami.ScrollablePage {
                         value: currentHealth
                         enabled: false
 
-                        Layout.bottomMargin: 20
+                        Layout.bottomMargin: Kirigami.Units.gridUnit
                     }
                 }
             }
