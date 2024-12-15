@@ -16,14 +16,24 @@ Kirigami.NavigationTabBar {
         Kirigami.Action {
             text: i18n("Plants")
             icon.name: "battery-profile-powersave"
-            onTriggered: pageStack.replace(Qt.resolvedUrl("PlantsPage.qml"))
+            onTriggered: {
+                while (pageStack.depth > 1) {
+                    pageStack.pop();
+                }
+                pageStack.replace(Qt.resolvedUrl("PlantsPage.qml"))
+            }
             Component.onCompleted: trigger();
 
         },
         Kirigami.Action {
             text: i18n("Tasks")
             icon.name: "view-calendar-tasks"
-            onTriggered: pageStack.replace(Qt.resolvedUrl("TaskPage.qml"))
+            onTriggered: {
+                while (pageStack.depth > 1) {
+                    pageStack.pop();
+                }
+                pageStack.replace(Qt.resolvedUrl("TaskPage.qml"))
+            }
         }
     ]
 }
