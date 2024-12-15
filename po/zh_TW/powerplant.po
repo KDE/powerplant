@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-14 01:00+0000\n"
+"POT-Creation-Date: 2024-12-15 00:44+0000\n"
 "PO-Revision-Date: 2024-02-29 02:47+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -57,168 +57,208 @@ msgctxt "@info:credit"
 msgid "Author"
 msgstr "作者"
 
-#: qml/PlantDetailPage.qml:51
+#: qml/NavigationBar.qml:18 qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "植哉"
+
+#: qml/NavigationBar.qml:24 qml/TaskPage.qml:11
+#, kde-format
+msgid "Tasks"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Edit"
 msgstr "編輯"
 
-#: qml/PlantDetailPage.qml:61
+#: qml/PlantDetailPage.qml:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "刪除"
 
-#: qml/PlantDetailPage.qml:191
-#, kde-format
-msgid "Parent"
-msgstr "親"
-
-#: qml/PlantDetailPage.qml:198
+#: qml/PlantDetailPage.qml:233
 #, kde-format
 msgid "Water"
 msgstr "澆水"
 
-#: qml/PlantDetailPage.qml:216
+#: qml/PlantDetailPage.qml:251
 #, kde-format
 msgid "has to be watered in %1 days"
 msgstr "%1 天內需要澆水"
 
-#: qml/PlantDetailPage.qml:218
+#: qml/PlantDetailPage.qml:253
 #, kde-format
 msgid "has to be watered tomorrow"
 msgstr "明天需要澆水"
 
-#: qml/PlantDetailPage.qml:220
+#: qml/PlantDetailPage.qml:255
 #, kde-format
 msgid "needs to be watered today!"
 msgstr "今天需要澆水！"
 
-#: qml/PlantDetailPage.qml:222
+#: qml/PlantDetailPage.qml:257
 #, kde-format
 msgid "should have been watered already!"
 msgstr "早該澆水了！"
 
-#: qml/PlantDetailPage.qml:226
+#: qml/PlantDetailPage.qml:261
 #, kde-format
 msgid "Watered"
 msgstr "已澆水"
 
-#: qml/PlantDetailPage.qml:250
+#: qml/PlantDetailPage.qml:269
+#, kde-format
+msgid "Fertilizer"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:285
+#, fuzzy, kde-format
+#| msgid "has to be watered in %1 days"
+msgid "has to be fertilized in %1 days"
+msgstr "%1 天內需要澆水"
+
+#: qml/PlantDetailPage.qml:287
+#, fuzzy, kde-format
+#| msgid "has to be watered tomorrow"
+msgid "has to be fertilized tomorrow"
+msgstr "明天需要澆水"
+
+#: qml/PlantDetailPage.qml:289
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgid "needs to be fertilized today!"
+msgstr "今天需要澆水！"
+
+#: qml/PlantDetailPage.qml:291
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgid "should have been fertilized already!"
+msgstr "早該澆水了！"
+
+#: qml/PlantDetailPage.qml:295
+#, kde-format
+msgid "Fertilized"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:305
 #, kde-format
 msgid "Health"
 msgstr "健康狀況"
 
-#: qml/PlantDetailPage.qml:258
+#: qml/PlantDetailPage.qml:313
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "您的植哉今天的健康狀況如何？"
 
-#: qml/PlantDetailPage.qml:280 qml/PlantEditorPage.qml:297
+#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Add"
 msgstr "新增"
 
-#: qml/PlantDetailPage.qml:293
+#: qml/PlantDetailPage.qml:348
 #, kde-format
 msgid "Health History"
 msgstr "健康狀況歷史紀錄"
 
-#: qml/PlantEditorPage.qml:29
+#: qml/PlantEditorPage.qml:31
 #, kde-format
 msgid "Add Plant"
 msgstr "新增植哉"
 
-#: qml/PlantEditorPage.qml:29
+#: qml/PlantEditorPage.qml:31
 #, kde-format
 msgid "Edit %1"
 msgstr "編輯 %1"
 
-#: qml/PlantEditorPage.qml:39
+#: qml/PlantEditorPage.qml:41
 #, kde-format
 msgid "Image:"
 msgstr "圖片："
 
-#: qml/PlantEditorPage.qml:69
+#: qml/PlantEditorPage.qml:71
 #, kde-format
 msgid "Use custom image"
 msgstr "使用自訂圖片"
 
-#: qml/PlantEditorPage.qml:75
+#: qml/PlantEditorPage.qml:77
 #, kde-format
 msgid "Please choose a file"
 msgstr "請選擇檔案"
 
-#: qml/PlantEditorPage.qml:85
+#: qml/PlantEditorPage.qml:87
 #, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
 msgstr "圖片檔 (*.png *.jpg *.webp)"
 
-#: qml/PlantEditorPage.qml:160
+#: qml/PlantEditorPage.qml:162
 #, kde-format
 msgid "Name"
 msgstr "名稱"
 
-#: qml/PlantEditorPage.qml:168
+#: qml/PlantEditorPage.qml:170
 #, kde-format
 msgid "Species"
 msgstr "物種"
 
-#: qml/PlantEditorPage.qml:176
+#: qml/PlantEditorPage.qml:178
 #, kde-format
 msgid "Room"
 msgstr "房間"
 
-#: qml/PlantEditorPage.qml:188
+#: qml/PlantEditorPage.qml:190
 #, kde-format
 msgid "How often does the plant need Watering?"
 msgstr "此植哉需要多常澆水？"
 
-#: qml/PlantEditorPage.qml:202
+#: qml/PlantEditorPage.qml:204 qml/PlantEditorPage.qml:276
 #, kde-format
 msgid "2 days"
 msgstr "2 天"
 
-#: qml/PlantEditorPage.qml:210
+#: qml/PlantEditorPage.qml:212 qml/PlantEditorPage.qml:284
 #, kde-format
 msgid "5 days"
 msgstr "5 天"
 
-#: qml/PlantEditorPage.qml:218
+#: qml/PlantEditorPage.qml:220 qml/PlantEditorPage.qml:292
 #, kde-format
 msgid "weekly"
 msgstr "每週"
 
-#: qml/PlantEditorPage.qml:227
+#: qml/PlantEditorPage.qml:229 qml/PlantEditorPage.qml:301
 #, kde-format
 msgid "2 weeks"
 msgstr "2 週"
 
-#: qml/PlantEditorPage.qml:240
+#: qml/PlantEditorPage.qml:242 qml/PlantEditorPage.qml:314
 #, kde-format
 msgid "Custom:"
 msgstr "自訂："
 
 #: qml/PlantEditorPage.qml:262
+#, fuzzy, kde-format
+#| msgid "How often does the plant need Watering?"
+msgid "How often does the plant need Fertilizing?"
+msgstr "此植哉需要多常澆水？"
+
+#: qml/PlantEditorPage.qml:336
 #, kde-format
 msgid "How healthy is your plant at the moment?"
 msgstr "您的植哉目前的健康狀況如何？"
 
-#: qml/PlantEditorPage.qml:279
+#: qml/PlantEditorPage.qml:353
 #, kde-format
 msgid "Birthday"
 msgstr "生日"
 
-#: qml/PlantEditorPage.qml:297
+#: qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Edit"
 msgstr "編輯"
-
-#: qml/PlantsPage.qml:20
-#, kde-format
-msgid "Plants"
-msgstr "植哉"
 
 #: qml/PlantsPage.qml:45
 #, kde-format
@@ -241,25 +281,46 @@ msgstr "有些植哉需要您的注意"
 msgid "No plants need water right now"
 msgstr "目前沒有需要澆水的植哉"
 
-#: qml/PlantsPage.qml:201
+#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232 qml/TaskPage.qml:120
 #, kde-format
 msgid "in %1 days"
 msgstr "還有 %1 天"
 
-#: qml/PlantsPage.qml:203
+#: qml/PlantsPage.qml:206 qml/PlantsPage.qml:234
 #, kde-format
 msgid "tomorrow"
 msgstr "明天"
 
-#: qml/PlantsPage.qml:205
+#: qml/PlantsPage.qml:208
 #, kde-format
 msgid "water today!"
 msgstr "今天澆水！"
 
-#: qml/PlantsPage.qml:207
+#: qml/PlantsPage.qml:210
 #, kde-format
 msgid "watering overdue!"
 msgstr "澆水逾期！"
+
+#: qml/PlantsPage.qml:236
+#, fuzzy, kde-format
+#| msgid "water today!"
+msgid "fertilize today!"
+msgstr "今天澆水！"
+
+#: qml/PlantsPage.qml:238
+#, fuzzy, kde-format
+#| msgid "watering overdue!"
+msgid "fertilizing overdue!"
+msgstr "澆水逾期！"
+
+#: qml/TaskPage.qml:106
+#, fuzzy, kde-format
+#| msgid "Water"
+msgid "water"
+msgstr "澆水"
+
+#~ msgid "Parent"
+#~ msgstr "親"
 
 #~ msgid "(c) 2023"
 #~ msgstr "(c) 2023"

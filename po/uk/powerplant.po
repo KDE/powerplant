@@ -6,17 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-14 01:00+0000\n"
-"PO-Revision-Date: 2024-02-26 15:21+0200\n"
+"POT-Creation-Date: 2024-12-15 00:44+0000\n"
+"PO-Revision-Date: 2024-12-14 09:17+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -40,11 +40,9 @@ msgid "A small app to track your plants"
 msgstr "Невеличка програма для стеження за вашими рослинами"
 
 #: main.cpp:40
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Mathis Brüchert"
+#, kde-format
 msgid "© 2023-2024 Mathis Brüchert"
-msgstr "Mathis Brüchert"
+msgstr "© Mathis Brüchert, 2023–2024"
 
 #: main.cpp:41
 #, kde-format
@@ -58,168 +56,208 @@ msgctxt "@info:credit"
 msgid "Author"
 msgstr "Автор"
 
-#: qml/PlantDetailPage.qml:51
+#: qml/NavigationBar.qml:18 qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Рослини"
+
+#: qml/NavigationBar.qml:24 qml/TaskPage.qml:11
+#, kde-format
+msgid "Tasks"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Edit"
 msgstr "Змінити"
 
-#: qml/PlantDetailPage.qml:61
+#: qml/PlantDetailPage.qml:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Вилучити"
 
-#: qml/PlantDetailPage.qml:191
-#, kde-format
-msgid "Parent"
-msgstr "Батьківська"
-
-#: qml/PlantDetailPage.qml:198
+#: qml/PlantDetailPage.qml:233
 #, kde-format
 msgid "Water"
 msgstr "Поливання"
 
-#: qml/PlantDetailPage.qml:216
+#: qml/PlantDetailPage.qml:251
 #, kde-format
 msgid "has to be watered in %1 days"
 msgstr "має бути полито за %1 днів"
 
-#: qml/PlantDetailPage.qml:218
+#: qml/PlantDetailPage.qml:253
 #, kde-format
 msgid "has to be watered tomorrow"
 msgstr "має бути полито завтра"
 
-#: qml/PlantDetailPage.qml:220
+#: qml/PlantDetailPage.qml:255
 #, kde-format
 msgid "needs to be watered today!"
 msgstr "має бути полито сьогодні!"
 
-#: qml/PlantDetailPage.qml:222
+#: qml/PlantDetailPage.qml:257
 #, kde-format
 msgid "should have been watered already!"
 msgstr "має бути вже полито!"
 
-#: qml/PlantDetailPage.qml:226
+#: qml/PlantDetailPage.qml:261
 #, kde-format
 msgid "Watered"
 msgstr "Полито"
 
-#: qml/PlantDetailPage.qml:250
+#: qml/PlantDetailPage.qml:269
+#, kde-format
+msgid "Fertilizer"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:285
+#, fuzzy, kde-format
+#| msgid "has to be watered in %1 days"
+msgid "has to be fertilized in %1 days"
+msgstr "має бути полито за %1 днів"
+
+#: qml/PlantDetailPage.qml:287
+#, fuzzy, kde-format
+#| msgid "has to be watered tomorrow"
+msgid "has to be fertilized tomorrow"
+msgstr "має бути полито завтра"
+
+#: qml/PlantDetailPage.qml:289
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgid "needs to be fertilized today!"
+msgstr "має бути полито сьогодні!"
+
+#: qml/PlantDetailPage.qml:291
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgid "should have been fertilized already!"
+msgstr "має бути вже полито!"
+
+#: qml/PlantDetailPage.qml:295
+#, kde-format
+msgid "Fertilized"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:305
 #, kde-format
 msgid "Health"
 msgstr "Здоров'я"
 
-#: qml/PlantDetailPage.qml:258
+#: qml/PlantDetailPage.qml:313
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "Наскільки здоровою є ваша рослина сьогодні?"
 
-#: qml/PlantDetailPage.qml:280 qml/PlantEditorPage.qml:297
+#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Add"
 msgstr "Додати"
 
-#: qml/PlantDetailPage.qml:293
+#: qml/PlantDetailPage.qml:348
 #, kde-format
 msgid "Health History"
 msgstr "Журнал здоров'я"
 
-#: qml/PlantEditorPage.qml:29
+#: qml/PlantEditorPage.qml:31
 #, kde-format
 msgid "Add Plant"
 msgstr "Додати рослину"
 
-#: qml/PlantEditorPage.qml:29
+#: qml/PlantEditorPage.qml:31
 #, kde-format
 msgid "Edit %1"
 msgstr "Змінити %1"
 
-#: qml/PlantEditorPage.qml:39
+#: qml/PlantEditorPage.qml:41
 #, kde-format
 msgid "Image:"
 msgstr "Зображення:"
 
-#: qml/PlantEditorPage.qml:69
+#: qml/PlantEditorPage.qml:71
 #, kde-format
 msgid "Use custom image"
 msgstr "Використовувати нетипове зображення"
 
-#: qml/PlantEditorPage.qml:75
+#: qml/PlantEditorPage.qml:77
 #, kde-format
 msgid "Please choose a file"
 msgstr "Будь ласка, виберіть файл"
 
-#: qml/PlantEditorPage.qml:85
+#: qml/PlantEditorPage.qml:87
 #, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
 msgstr "файли зображень (*.png *.jpg *.webp)"
 
-#: qml/PlantEditorPage.qml:160
+#: qml/PlantEditorPage.qml:162
 #, kde-format
 msgid "Name"
 msgstr "Назва"
 
-#: qml/PlantEditorPage.qml:168
+#: qml/PlantEditorPage.qml:170
 #, kde-format
 msgid "Species"
 msgstr "Вид"
 
-#: qml/PlantEditorPage.qml:176
+#: qml/PlantEditorPage.qml:178
 #, kde-format
 msgid "Room"
 msgstr "Кімната"
 
-#: qml/PlantEditorPage.qml:188
+#: qml/PlantEditorPage.qml:190
 #, kde-format
 msgid "How often does the plant need Watering?"
 msgstr "Наскільки часто рослина потребує поливання?"
 
-#: qml/PlantEditorPage.qml:202
+#: qml/PlantEditorPage.qml:204 qml/PlantEditorPage.qml:276
 #, kde-format
 msgid "2 days"
 msgstr "2 дні"
 
-#: qml/PlantEditorPage.qml:210
+#: qml/PlantEditorPage.qml:212 qml/PlantEditorPage.qml:284
 #, kde-format
 msgid "5 days"
 msgstr "5 днів"
 
-#: qml/PlantEditorPage.qml:218
+#: qml/PlantEditorPage.qml:220 qml/PlantEditorPage.qml:292
 #, kde-format
 msgid "weekly"
 msgstr "щотижня"
 
-#: qml/PlantEditorPage.qml:227
+#: qml/PlantEditorPage.qml:229 qml/PlantEditorPage.qml:301
 #, kde-format
 msgid "2 weeks"
 msgstr "2 тижні"
 
-#: qml/PlantEditorPage.qml:240
+#: qml/PlantEditorPage.qml:242 qml/PlantEditorPage.qml:314
 #, kde-format
 msgid "Custom:"
 msgstr "Нетипове:"
 
 #: qml/PlantEditorPage.qml:262
+#, fuzzy, kde-format
+#| msgid "How often does the plant need Watering?"
+msgid "How often does the plant need Fertilizing?"
+msgstr "Наскільки часто рослина потребує поливання?"
+
+#: qml/PlantEditorPage.qml:336
 #, kde-format
 msgid "How healthy is your plant at the moment?"
 msgstr "Наскільки здоровою є ваша рослина зараз?"
 
-#: qml/PlantEditorPage.qml:279
+#: qml/PlantEditorPage.qml:353
 #, kde-format
 msgid "Birthday"
 msgstr "День народження"
 
-#: qml/PlantEditorPage.qml:297
+#: qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Edit"
 msgstr "Змінити"
-
-#: qml/PlantsPage.qml:20
-#, kde-format
-msgid "Plants"
-msgstr "Рослини"
 
 #: qml/PlantsPage.qml:45
 #, kde-format
@@ -242,25 +280,46 @@ msgstr "Деякі з ваших рослин потребують догляд�
 msgid "No plants need water right now"
 msgstr "Зараз потреби у поливанні жодної з рослин немає"
 
-#: qml/PlantsPage.qml:201
+#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232 qml/TaskPage.qml:120
 #, kde-format
 msgid "in %1 days"
 msgstr "за %1 днів"
 
-#: qml/PlantsPage.qml:203
+#: qml/PlantsPage.qml:206 qml/PlantsPage.qml:234
 #, kde-format
 msgid "tomorrow"
 msgstr "завтра"
 
-#: qml/PlantsPage.qml:205
+#: qml/PlantsPage.qml:208
 #, kde-format
 msgid "water today!"
 msgstr "полийте сьогодні1"
 
-#: qml/PlantsPage.qml:207
+#: qml/PlantsPage.qml:210
 #, kde-format
 msgid "watering overdue!"
 msgstr "прострочено поливання!"
+
+#: qml/PlantsPage.qml:236
+#, fuzzy, kde-format
+#| msgid "water today!"
+msgid "fertilize today!"
+msgstr "полийте сьогодні1"
+
+#: qml/PlantsPage.qml:238
+#, fuzzy, kde-format
+#| msgid "watering overdue!"
+msgid "fertilizing overdue!"
+msgstr "прострочено поливання!"
+
+#: qml/TaskPage.qml:106
+#, fuzzy, kde-format
+#| msgid "Water"
+msgid "water"
+msgstr "Поливання"
+
+#~ msgid "Parent"
+#~ msgstr "Батьківська"
 
 #~ msgid "(c) 2023"
 #~ msgstr "© 2023"

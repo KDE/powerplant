@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-14 01:00+0000\n"
-"PO-Revision-Date: 2024-09-23 15:20+0300\n"
+"POT-Creation-Date: 2024-12-15 00:44+0000\n"
+"PO-Revision-Date: 2024-12-14 18:04+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -39,11 +39,9 @@ msgid "A small app to track your plants"
 msgstr "Bitkilerinizi izlemek için bir uygulama"
 
 #: main.cpp:40
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Mathis Brüchert"
+#, kde-format
 msgid "© 2023-2024 Mathis Brüchert"
-msgstr "Mathis Brüchert"
+msgstr "© 2023–2024 Mathis Brüchert"
 
 #: main.cpp:41
 #, kde-format
@@ -57,168 +55,208 @@ msgctxt "@info:credit"
 msgid "Author"
 msgstr "Yazar"
 
-#: qml/PlantDetailPage.qml:51
+#: qml/NavigationBar.qml:18 qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Bitkiler"
+
+#: qml/NavigationBar.qml:24 qml/TaskPage.qml:11
+#, kde-format
+msgid "Tasks"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Edit"
 msgstr "Düzenle"
 
-#: qml/PlantDetailPage.qml:61
+#: qml/PlantDetailPage.qml:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Sil"
 
-#: qml/PlantDetailPage.qml:191
-#, kde-format
-msgid "Parent"
-msgstr "Üst Öge"
-
-#: qml/PlantDetailPage.qml:198
+#: qml/PlantDetailPage.qml:233
 #, kde-format
 msgid "Water"
 msgstr "Su"
 
-#: qml/PlantDetailPage.qml:216
+#: qml/PlantDetailPage.qml:251
 #, kde-format
 msgid "has to be watered in %1 days"
 msgstr "%1 gün içinde sulanması gerekiyor"
 
-#: qml/PlantDetailPage.qml:218
+#: qml/PlantDetailPage.qml:253
 #, kde-format
 msgid "has to be watered tomorrow"
 msgstr "yarın sulanması gerekiyor"
 
-#: qml/PlantDetailPage.qml:220
+#: qml/PlantDetailPage.qml:255
 #, kde-format
 msgid "needs to be watered today!"
 msgstr "bugün sulanması gerekiyor!"
 
-#: qml/PlantDetailPage.qml:222
+#: qml/PlantDetailPage.qml:257
 #, kde-format
 msgid "should have been watered already!"
 msgstr "şimdiye kadar sulamanız gerekiyordu!"
 
-#: qml/PlantDetailPage.qml:226
+#: qml/PlantDetailPage.qml:261
 #, kde-format
 msgid "Watered"
 msgstr "Sulandı"
 
-#: qml/PlantDetailPage.qml:250
+#: qml/PlantDetailPage.qml:269
+#, kde-format
+msgid "Fertilizer"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:285
+#, fuzzy, kde-format
+#| msgid "has to be watered in %1 days"
+msgid "has to be fertilized in %1 days"
+msgstr "%1 gün içinde sulanması gerekiyor"
+
+#: qml/PlantDetailPage.qml:287
+#, fuzzy, kde-format
+#| msgid "has to be watered tomorrow"
+msgid "has to be fertilized tomorrow"
+msgstr "yarın sulanması gerekiyor"
+
+#: qml/PlantDetailPage.qml:289
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgid "needs to be fertilized today!"
+msgstr "bugün sulanması gerekiyor!"
+
+#: qml/PlantDetailPage.qml:291
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgid "should have been fertilized already!"
+msgstr "şimdiye kadar sulamanız gerekiyordu!"
+
+#: qml/PlantDetailPage.qml:295
+#, kde-format
+msgid "Fertilized"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:305
 #, kde-format
 msgid "Health"
 msgstr "Sağlık"
 
-#: qml/PlantDetailPage.qml:258
+#: qml/PlantDetailPage.qml:313
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "Bugün bitkiniz ne kadar sağlıklı?"
 
-#: qml/PlantDetailPage.qml:280 qml/PlantEditorPage.qml:297
+#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Add"
 msgstr "Ekle"
 
-#: qml/PlantDetailPage.qml:293
+#: qml/PlantDetailPage.qml:348
 #, kde-format
 msgid "Health History"
 msgstr "Sağlık Geçmişi"
 
-#: qml/PlantEditorPage.qml:29
+#: qml/PlantEditorPage.qml:31
 #, kde-format
 msgid "Add Plant"
 msgstr "Bitki Ekle"
 
-#: qml/PlantEditorPage.qml:29
+#: qml/PlantEditorPage.qml:31
 #, kde-format
 msgid "Edit %1"
 msgstr "Düzenle: %1"
 
-#: qml/PlantEditorPage.qml:39
+#: qml/PlantEditorPage.qml:41
 #, kde-format
 msgid "Image:"
 msgstr "Görsel:"
 
-#: qml/PlantEditorPage.qml:69
+#: qml/PlantEditorPage.qml:71
 #, kde-format
 msgid "Use custom image"
 msgstr "Özel görsel kullan"
 
-#: qml/PlantEditorPage.qml:75
+#: qml/PlantEditorPage.qml:77
 #, kde-format
 msgid "Please choose a file"
 msgstr "Lütfen bir dosya seçin"
 
-#: qml/PlantEditorPage.qml:85
+#: qml/PlantEditorPage.qml:87
 #, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
 msgstr "Görsel dosyaları (*.png *.jpg *.webp)"
 
-#: qml/PlantEditorPage.qml:160
+#: qml/PlantEditorPage.qml:162
 #, kde-format
 msgid "Name"
 msgstr "Ad"
 
-#: qml/PlantEditorPage.qml:168
+#: qml/PlantEditorPage.qml:170
 #, kde-format
 msgid "Species"
 msgstr "Tür"
 
-#: qml/PlantEditorPage.qml:176
+#: qml/PlantEditorPage.qml:178
 #, kde-format
 msgid "Room"
 msgstr "Oda"
 
-#: qml/PlantEditorPage.qml:188
+#: qml/PlantEditorPage.qml:190
 #, kde-format
 msgid "How often does the plant need Watering?"
 msgstr "Bitkinin ne sıklıkta sulanması gerekiyor?"
 
-#: qml/PlantEditorPage.qml:202
+#: qml/PlantEditorPage.qml:204 qml/PlantEditorPage.qml:276
 #, kde-format
 msgid "2 days"
 msgstr "2 gün"
 
-#: qml/PlantEditorPage.qml:210
+#: qml/PlantEditorPage.qml:212 qml/PlantEditorPage.qml:284
 #, kde-format
 msgid "5 days"
 msgstr "5 gün"
 
-#: qml/PlantEditorPage.qml:218
+#: qml/PlantEditorPage.qml:220 qml/PlantEditorPage.qml:292
 #, kde-format
 msgid "weekly"
 msgstr "haftada bir"
 
-#: qml/PlantEditorPage.qml:227
+#: qml/PlantEditorPage.qml:229 qml/PlantEditorPage.qml:301
 #, kde-format
 msgid "2 weeks"
 msgstr "2 hafta"
 
-#: qml/PlantEditorPage.qml:240
+#: qml/PlantEditorPage.qml:242 qml/PlantEditorPage.qml:314
 #, kde-format
 msgid "Custom:"
 msgstr "Özel"
 
 #: qml/PlantEditorPage.qml:262
+#, fuzzy, kde-format
+#| msgid "How often does the plant need Watering?"
+msgid "How often does the plant need Fertilizing?"
+msgstr "Bitkinin ne sıklıkta sulanması gerekiyor?"
+
+#: qml/PlantEditorPage.qml:336
 #, kde-format
 msgid "How healthy is your plant at the moment?"
 msgstr "Bitkinizin sağlığı şu anda nasıl?"
 
-#: qml/PlantEditorPage.qml:279
+#: qml/PlantEditorPage.qml:353
 #, kde-format
 msgid "Birthday"
 msgstr "Doğum Günü"
 
-#: qml/PlantEditorPage.qml:297
+#: qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Edit"
 msgstr "Düzenle"
-
-#: qml/PlantsPage.qml:20
-#, kde-format
-msgid "Plants"
-msgstr "Bitkiler"
 
 #: qml/PlantsPage.qml:45
 #, kde-format
@@ -241,25 +279,46 @@ msgstr "Bazı bitkilerinizin bakıma gereksinimi var"
 msgid "No plants need water right now"
 msgstr "Şu anda sulama gerektiren bitki yok"
 
-#: qml/PlantsPage.qml:201
+#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232 qml/TaskPage.qml:120
 #, kde-format
 msgid "in %1 days"
 msgstr "%1 gün içinde"
 
-#: qml/PlantsPage.qml:203
+#: qml/PlantsPage.qml:206 qml/PlantsPage.qml:234
 #, kde-format
 msgid "tomorrow"
 msgstr "yarın"
 
-#: qml/PlantsPage.qml:205
+#: qml/PlantsPage.qml:208
 #, kde-format
 msgid "water today!"
 msgstr "bugün sula!"
 
-#: qml/PlantsPage.qml:207
+#: qml/PlantsPage.qml:210
 #, kde-format
 msgid "watering overdue!"
 msgstr "sulanması gerek!"
+
+#: qml/PlantsPage.qml:236
+#, fuzzy, kde-format
+#| msgid "water today!"
+msgid "fertilize today!"
+msgstr "bugün sula!"
+
+#: qml/PlantsPage.qml:238
+#, fuzzy, kde-format
+#| msgid "watering overdue!"
+msgid "fertilizing overdue!"
+msgstr "sulanması gerek!"
+
+#: qml/TaskPage.qml:106
+#, fuzzy, kde-format
+#| msgid "Water"
+msgid "water"
+msgstr "Su"
+
+#~ msgid "Parent"
+#~ msgstr "Üst Öge"
 
 #~ msgid "(c) 2023"
 #~ msgstr "© 2023"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-14 01:00+0000\n"
+"POT-Creation-Date: 2024-12-15 00:44+0000\n"
 "PO-Revision-Date: 2024-04-08 17:17+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -56,168 +56,208 @@ msgctxt "@info:credit"
 msgid "Author"
 msgstr "Tekijä"
 
-#: qml/PlantDetailPage.qml:51
+#: qml/NavigationBar.qml:18 qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Kasvit"
+
+#: qml/NavigationBar.qml:24 qml/TaskPage.qml:11
+#, kde-format
+msgid "Tasks"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: qml/PlantDetailPage.qml:61
+#: qml/PlantDetailPage.qml:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Poista"
 
-#: qml/PlantDetailPage.qml:191
-#, kde-format
-msgid "Parent"
-msgstr "Emo"
-
-#: qml/PlantDetailPage.qml:198
+#: qml/PlantDetailPage.qml:233
 #, kde-format
 msgid "Water"
 msgstr "Vesi"
 
-#: qml/PlantDetailPage.qml:216
+#: qml/PlantDetailPage.qml:251
 #, kde-format
 msgid "has to be watered in %1 days"
 msgstr "täytyy kastella %1 päivässä"
 
-#: qml/PlantDetailPage.qml:218
+#: qml/PlantDetailPage.qml:253
 #, kde-format
 msgid "has to be watered tomorrow"
 msgstr "täytyy kastella huomenna"
 
-#: qml/PlantDetailPage.qml:220
+#: qml/PlantDetailPage.qml:255
 #, kde-format
 msgid "needs to be watered today!"
 msgstr "täytyy kastella tänään!"
 
-#: qml/PlantDetailPage.qml:222
+#: qml/PlantDetailPage.qml:257
 #, kde-format
 msgid "should have been watered already!"
 msgstr "olisi jo pitänyt kastella!"
 
-#: qml/PlantDetailPage.qml:226
+#: qml/PlantDetailPage.qml:261
 #, kde-format
 msgid "Watered"
 msgstr "Kasteltu"
 
-#: qml/PlantDetailPage.qml:250
+#: qml/PlantDetailPage.qml:269
+#, kde-format
+msgid "Fertilizer"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:285
+#, fuzzy, kde-format
+#| msgid "has to be watered in %1 days"
+msgid "has to be fertilized in %1 days"
+msgstr "täytyy kastella %1 päivässä"
+
+#: qml/PlantDetailPage.qml:287
+#, fuzzy, kde-format
+#| msgid "has to be watered tomorrow"
+msgid "has to be fertilized tomorrow"
+msgstr "täytyy kastella huomenna"
+
+#: qml/PlantDetailPage.qml:289
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgid "needs to be fertilized today!"
+msgstr "täytyy kastella tänään!"
+
+#: qml/PlantDetailPage.qml:291
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgid "should have been fertilized already!"
+msgstr "olisi jo pitänyt kastella!"
+
+#: qml/PlantDetailPage.qml:295
+#, kde-format
+msgid "Fertilized"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:305
 #, kde-format
 msgid "Health"
 msgstr "Terveys"
 
-#: qml/PlantDetailPage.qml:258
+#: qml/PlantDetailPage.qml:313
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "Kuinka terve kasvisi on tänään?"
 
-#: qml/PlantDetailPage.qml:280 qml/PlantEditorPage.qml:297
+#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Add"
 msgstr "Lisää"
 
-#: qml/PlantDetailPage.qml:293
+#: qml/PlantDetailPage.qml:348
 #, kde-format
 msgid "Health History"
 msgstr "Terveyshistoria"
 
-#: qml/PlantEditorPage.qml:29
+#: qml/PlantEditorPage.qml:31
 #, kde-format
 msgid "Add Plant"
 msgstr "Lisää kasvi"
 
-#: qml/PlantEditorPage.qml:29
+#: qml/PlantEditorPage.qml:31
 #, kde-format
 msgid "Edit %1"
 msgstr "Muokkaa: %1"
 
-#: qml/PlantEditorPage.qml:39
+#: qml/PlantEditorPage.qml:41
 #, kde-format
 msgid "Image:"
 msgstr "Kuva:"
 
-#: qml/PlantEditorPage.qml:69
+#: qml/PlantEditorPage.qml:71
 #, kde-format
 msgid "Use custom image"
 msgstr "Käytä mukautettua kuvaa"
 
-#: qml/PlantEditorPage.qml:75
+#: qml/PlantEditorPage.qml:77
 #, kde-format
 msgid "Please choose a file"
 msgstr "Valitse tiedosto"
 
-#: qml/PlantEditorPage.qml:85
+#: qml/PlantEditorPage.qml:87
 #, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
 msgstr "Kuvatiedostot (*.png *.jpg *.webp)"
 
-#: qml/PlantEditorPage.qml:160
+#: qml/PlantEditorPage.qml:162
 #, kde-format
 msgid "Name"
 msgstr "Nimi"
 
-#: qml/PlantEditorPage.qml:168
+#: qml/PlantEditorPage.qml:170
 #, kde-format
 msgid "Species"
 msgstr "Laji"
 
-#: qml/PlantEditorPage.qml:176
+#: qml/PlantEditorPage.qml:178
 #, kde-format
 msgid "Room"
 msgstr "Huone"
 
-#: qml/PlantEditorPage.qml:188
+#: qml/PlantEditorPage.qml:190
 #, kde-format
 msgid "How often does the plant need Watering?"
 msgstr "Kuinka usein kasvi on kasteltava?"
 
-#: qml/PlantEditorPage.qml:202
+#: qml/PlantEditorPage.qml:204 qml/PlantEditorPage.qml:276
 #, kde-format
 msgid "2 days"
 msgstr "2 päivän välein"
 
-#: qml/PlantEditorPage.qml:210
+#: qml/PlantEditorPage.qml:212 qml/PlantEditorPage.qml:284
 #, kde-format
 msgid "5 days"
 msgstr "5 päivän välein"
 
-#: qml/PlantEditorPage.qml:218
+#: qml/PlantEditorPage.qml:220 qml/PlantEditorPage.qml:292
 #, kde-format
 msgid "weekly"
 msgstr "viikoittain"
 
-#: qml/PlantEditorPage.qml:227
+#: qml/PlantEditorPage.qml:229 qml/PlantEditorPage.qml:301
 #, kde-format
 msgid "2 weeks"
 msgstr "2 viikon välein"
 
-#: qml/PlantEditorPage.qml:240
+#: qml/PlantEditorPage.qml:242 qml/PlantEditorPage.qml:314
 #, kde-format
 msgid "Custom:"
 msgstr "Mukautettu:"
 
 #: qml/PlantEditorPage.qml:262
+#, fuzzy, kde-format
+#| msgid "How often does the plant need Watering?"
+msgid "How often does the plant need Fertilizing?"
+msgstr "Kuinka usein kasvi on kasteltava?"
+
+#: qml/PlantEditorPage.qml:336
 #, kde-format
 msgid "How healthy is your plant at the moment?"
 msgstr "Kuinka terve kasvi on nyt?"
 
-#: qml/PlantEditorPage.qml:279
+#: qml/PlantEditorPage.qml:353
 #, kde-format
 msgid "Birthday"
 msgstr "Syntymäpäivä"
 
-#: qml/PlantEditorPage.qml:297
+#: qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Edit"
 msgstr "Muokkaa"
-
-#: qml/PlantsPage.qml:20
-#, kde-format
-msgid "Plants"
-msgstr "Kasvit"
 
 #: qml/PlantsPage.qml:45
 #, kde-format
@@ -240,25 +280,46 @@ msgstr "Jotkin kasvit kaipaavat huomiota"
 msgid "No plants need water right now"
 msgstr "Yhtäkään kasvia ei nyt tarvitse kastella"
 
-#: qml/PlantsPage.qml:201
+#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232 qml/TaskPage.qml:120
 #, kde-format
 msgid "in %1 days"
 msgstr "%1 päivässä"
 
-#: qml/PlantsPage.qml:203
+#: qml/PlantsPage.qml:206 qml/PlantsPage.qml:234
 #, kde-format
 msgid "tomorrow"
 msgstr "huomenna"
 
-#: qml/PlantsPage.qml:205
+#: qml/PlantsPage.qml:208
 #, kde-format
 msgid "water today!"
 msgstr "kastele tänään!"
 
-#: qml/PlantsPage.qml:207
+#: qml/PlantsPage.qml:210
 #, kde-format
 msgid "watering overdue!"
 msgstr "kastelu myöhässä!"
+
+#: qml/PlantsPage.qml:236
+#, fuzzy, kde-format
+#| msgid "water today!"
+msgid "fertilize today!"
+msgstr "kastele tänään!"
+
+#: qml/PlantsPage.qml:238
+#, fuzzy, kde-format
+#| msgid "watering overdue!"
+msgid "fertilizing overdue!"
+msgstr "kastelu myöhässä!"
+
+#: qml/TaskPage.qml:106
+#, fuzzy, kde-format
+#| msgid "Water"
+msgid "water"
+msgstr "Vesi"
+
+#~ msgid "Parent"
+#~ msgstr "Emo"
 
 #~ msgid "(c) 2023"
 #~ msgstr "© 2023"
