@@ -23,12 +23,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QApplication app(argc, argv);
     KLocalizedString::setApplicationDomain("powerplant");
 
-    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
-    QCoreApplication::setApplicationName(QStringLiteral("powerplant"));
-
     KAboutData aboutData(
                          // The program name used internally.
-                         QStringLiteral("PowerPlant"),
+                         QStringLiteral("powerplant"),
                          // A displayable program name string.
                          i18nc("@title", "PowerPlant"),
                          // The program version string.
