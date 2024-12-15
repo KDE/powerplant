@@ -68,37 +68,9 @@
   <summary xml:lang="zh-TW">一個幫您維持植哉生命的小程式</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
-  <developer_name>KDE Community</developer_name>
-  <developer_name xml:lang="be">Супольнасць KDE</developer_name>
-  <developer_name xml:lang="ca">La comunitat KDE</developer_name>
-  <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
-  <developer_name xml:lang="cs">Komunita KDE</developer_name>
-  <developer_name xml:lang="en-GB">KDE Community</developer_name>
-  <developer_name xml:lang="eo">Komunumo de KDE</developer_name>
-  <developer_name xml:lang="es">La comunidad KDE</developer_name>
-  <developer_name xml:lang="eu">KDE Komunitatea</developer_name>
-  <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
-  <developer_name xml:lang="fr">Communauté de KDE</developer_name>
-  <developer_name xml:lang="gl">Comunidade KDE</developer_name>
-  <developer_name xml:lang="he">קהילת KDE</developer_name>
-  <developer_name xml:lang="hu">A KDE Közösség</developer_name>
-  <developer_name xml:lang="ia">Communitate de KDE</developer_name>
-  <developer_name xml:lang="it">Comunità KDE</developer_name>
-  <developer_name xml:lang="ka">KDE-ის საზოგადოება</developer_name>
-  <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
-  <developer_name xml:lang="lv">KDE kopiena</developer_name>
-  <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
-  <developer_name xml:lang="pl">Społeczność KDE</developer_name>
-  <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
-  <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
-  <developer_name xml:lang="sa">केडीई समुदाय</developer_name>
-  <developer_name xml:lang="sk">KDE komunita</developer_name>
-  <developer_name xml:lang="sl">Skupnost KDE</developer_name>
-  <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
-  <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
-  <developer_name xml:lang="uk">Спільнота KDE</developer_name>
-  <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
-  <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
+  <developer id="kde.org">
+    <name translate="no">KDE</name>
+  </developer>
   <launchable type="desktop-id">org.kde.powerplant.desktop</launchable>
   <description>
     <p>PowerPlant lets you track when your plants have to be watered and how their health develops over time.</p>
