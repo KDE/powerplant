@@ -22,12 +22,20 @@ HealthEvent::HealthEvent(int _health_date, int _health)
 Database::Database()
 {
     const auto databaseDirectory = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
-
     // Make sure the database directory exists
     QDir(databaseDirectory).mkpath(QStringLiteral("."));
 
+    QFile file(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + u"/KDE/PowerPlant/plants.sqlite"_s);
+    if (file.exists()) {
+        QFile::remove(databaseDirectory + u"/plants.sqlite"_s);
+        const auto ok = file.rename(databaseDirectory + u"/plants.sqlite"_s);
+        if (!ok) {
+            qWarning() << "Failed copying legacy file location to new location";
+        }
+    }
+
     DatabaseConfiguration config;
-    config.setDatabaseName(databaseDirectory + QDir::separator() + u"plants.sqlite"_s);
+    config.setDatabaseName(databaseDirectory + u"/plants.sqlite"_s);
     config.setType(DatabaseType::SQLite);
 
     m_database = ThreadedDatabase::establishConnection(config);
