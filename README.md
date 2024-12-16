@@ -7,7 +7,7 @@ SPDX-License-Identifier: CC0-1.0
 
 An app to keep track of your plant's needs
 
-![](https://i.imgur.com/17qanPl.png)
+![](https://cdn.kde.org/screenshots/powerplant/powerplant.png)
 
 ## Build Instructions
 
