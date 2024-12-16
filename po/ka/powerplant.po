@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-15 00:44+0000\n"
-"PO-Revision-Date: 2024-02-26 06:47+0100\n"
+"POT-Creation-Date: 2024-12-16 00:49+0000\n"
+"PO-Revision-Date: 2024-12-15 06:08+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -28,45 +28,43 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Temuri.doghonadze@gmail.com"
 
-#: main.cpp:32
+#: main.cpp:33
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
 msgstr "PowerPlant"
 
-#: main.cpp:36
+#: main.cpp:37
 #, kde-format
 msgid "A small app to track your plants"
 msgstr "პატარა აპი მცენარეებისთვის თვალყურის სადევნებლად"
 
-#: main.cpp:40
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Mathis Brüchert"
-msgid "© 2023-2024 Mathis Brüchert"
-msgstr "Mathis Brüchert"
-
 #: main.cpp:41
+#, kde-format
+msgid "© 2023-2024 Mathis Brüchert"
+msgstr "© 2023-2024 Mathis Brüchert"
+
+#: main.cpp:42
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:42
+#: main.cpp:43
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "ავტორი"
 
-#: qml/NavigationBar.qml:18 qml/PlantsPage.qml:20
+#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
 #, kde-format
 msgid "Plants"
 msgstr "მცენარეები"
 
-#: qml/NavigationBar.qml:24 qml/TaskPage.qml:11
+#: qml/NavigationBar.qml:26 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
-msgstr ""
+msgstr "ამოცანები"
 
 #: qml/PlantDetailPage.qml:56
 #, kde-format
@@ -80,86 +78,88 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr "წაშლა"
 
-#: qml/PlantDetailPage.qml:233
+#: qml/PlantDetailPage.qml:235
 #, kde-format
 msgid "Water"
 msgstr "წყალი"
 
-#: qml/PlantDetailPage.qml:251
-#, kde-format
-msgid "has to be watered in %1 days"
-msgstr "წყალი უნდა დაუსხათ %1 დღეში"
-
 #: qml/PlantDetailPage.qml:253
-#, kde-format
-msgid "has to be watered tomorrow"
-msgstr "წყალი ხვალ უნდა დაუსხათ"
+#, fuzzy, kde-format
+#| msgid "has to be watered in %1 days"
+msgctxt "@info"
+msgid "Has to be watered in %1 day"
+msgid_plural "Has to be watered in %1 days"
+msgstr[0] "წყალი უნდა დაუსხათ %1 დღეში"
+msgstr[1] "წყალი უნდა დაუსხათ %1 დღეში"
 
 #: qml/PlantDetailPage.qml:255
-#, kde-format
-msgid "needs to be watered today!"
-msgstr "წყალი დღეს უნდა დაუსხათ!"
+#, fuzzy, kde-format
+#| msgid "has to be watered tomorrow"
+msgctxt "@info"
+msgid "Has to be watered tomorrow"
+msgstr "წყალი ხვალ უნდა დაუსხათ"
 
-#: qml/PlantDetailPage.qml:257
-#, kde-format
-msgid "should have been watered already!"
-msgstr "წყალი უკვე უნდა დაგესხათ!"
-
-#: qml/PlantDetailPage.qml:261
+#: qml/PlantDetailPage.qml:263
 #, kde-format
 msgid "Watered"
 msgstr "წყალი უკვე დაუსხით"
 
-#: qml/PlantDetailPage.qml:269
+#: qml/PlantDetailPage.qml:272
 #, kde-format
 msgid "Fertilizer"
-msgstr ""
+msgstr "სასუქი"
 
-#: qml/PlantDetailPage.qml:285
+#: qml/PlantDetailPage.qml:288
 #, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
-msgid "has to be fertilized in %1 days"
-msgstr "წყალი უნდა დაუსხათ %1 დღეში"
+#| msgid "has to be fertilized in %1 days"
+msgctxt "@info"
+msgid "Has to be fertilized in %1 day"
+msgid_plural "Has to be fertilized in %1 days"
+msgstr[0] "ნიადაგი უნდა გაანაყოფიეროთ %1 დღეში"
+msgstr[1] "ნიადაგი უნდა გაანაყოფიეროთ %1 დღეში"
 
-#: qml/PlantDetailPage.qml:287
+#: qml/PlantDetailPage.qml:290
 #, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
-msgid "has to be fertilized tomorrow"
-msgstr "წყალი ხვალ უნდა დაუსხათ"
+#| msgid "has to be fertilized tomorrow"
+msgctxt "@info"
+msgid "Has to be fertilized tomorrow"
+msgstr "ნიადაგი ხვალ უნდა გაანაყოფიეროთ"
 
-#: qml/PlantDetailPage.qml:289
+#: qml/PlantDetailPage.qml:292
 #, fuzzy, kde-format
-#| msgid "needs to be watered today!"
-msgid "needs to be fertilized today!"
-msgstr "წყალი დღეს უნდა დაუსხათ!"
+#| msgid "needs to be fertilized today!"
+msgctxt "@info"
+msgid "Needs to be fertilized today!"
+msgstr "ნიადაგი დღეს უნდა გაანაყოფიეროთ!"
 
-#: qml/PlantDetailPage.qml:291
+#: qml/PlantDetailPage.qml:294
 #, fuzzy, kde-format
-#| msgid "should have been watered already!"
-msgid "should have been fertilized already!"
-msgstr "წყალი უკვე უნდა დაგესხათ!"
+#| msgid "should have been fertilized already!"
+msgctxt "@info"
+msgid "Should have been fertilized already!"
+msgstr "ნიადაგი უკვე უნდა გაგენაყოფიერებინათ!"
 
-#: qml/PlantDetailPage.qml:295
+#: qml/PlantDetailPage.qml:299
 #, kde-format
 msgid "Fertilized"
-msgstr ""
+msgstr "განაყოფიერებული"
 
-#: qml/PlantDetailPage.qml:305
+#: qml/PlantDetailPage.qml:309
 #, kde-format
 msgid "Health"
 msgstr "ჯანმრთელობა"
 
-#: qml/PlantDetailPage.qml:313
+#: qml/PlantDetailPage.qml:317
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "როგორ გამოიყურება თქვენი მცენარის ჯანმრთელობა დღეს?"
 
-#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:371
+#: qml/PlantDetailPage.qml:339 qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Add"
 msgstr "დამატება"
 
-#: qml/PlantDetailPage.qml:348
+#: qml/PlantDetailPage.qml:352
 #, kde-format
 msgid "Health History"
 msgstr "ჯანმრთელობის ისტორია"
@@ -241,10 +241,9 @@ msgid "Custom:"
 msgstr "ხელით მითითებული:"
 
 #: qml/PlantEditorPage.qml:262
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgid "How often does the plant need Fertilizing?"
-msgstr "რამდენად ხშირად სჭირდება მცენარეს მორწყვა?"
+msgstr "რამდენად ხშირად სჭირდება მცენარეს ნიადაგის განაყოფიერება?"
 
 #: qml/PlantEditorPage.qml:336
 #, kde-format
@@ -282,43 +281,82 @@ msgstr "ზოგიერთ თქვენს მცენარეს ყუ
 msgid "No plants need water right now"
 msgstr "თქვენს მცენარეებს ყურადღება არ სჭირდებათ"
 
-#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232 qml/TaskPage.qml:120
-#, kde-format
-msgid "in %1 days"
-msgstr "%1 დღეში"
+#: qml/PlantsPage.qml:211 qml/PlantsPage.qml:239
+#, fuzzy, kde-format
+#| msgid "in %1 days"
+msgctxt "@info"
+msgid "In %1 day"
+msgid_plural "In %1 days"
+msgstr[0] "%1 დღეში"
+msgstr[1] "%1 დღეში"
 
-#: qml/PlantsPage.qml:206 qml/PlantsPage.qml:234
-#, kde-format
-msgid "tomorrow"
+#: qml/PlantsPage.qml:213 qml/PlantsPage.qml:241
+#, fuzzy, kde-format
+#| msgid "tomorrow"
+msgctxt "@info"
+msgid "Tomorrow"
 msgstr "ხვალ"
 
-#: qml/PlantsPage.qml:208
-#, kde-format
-msgid "water today!"
-msgstr "მორწყეთ დღეს!"
-
-#: qml/PlantsPage.qml:210
-#, kde-format
-msgid "watering overdue!"
-msgstr "მორწყვა დაგავიწყდათ!"
-
-#: qml/PlantsPage.qml:236
+#: qml/PlantsPage.qml:215
 #, fuzzy, kde-format
 #| msgid "water today!"
-msgid "fertilize today!"
+msgctxt "@info"
+msgid "Water today!"
 msgstr "მორწყეთ დღეს!"
 
-#: qml/PlantsPage.qml:238
+#: qml/PlantsPage.qml:217
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
-msgid "fertilizing overdue!"
+msgctxt "@info"
+msgid "Watering overdue!"
 msgstr "მორწყვა დაგავიწყდათ!"
 
-#: qml/TaskPage.qml:106
+#: qml/PlantsPage.qml:243
+#, fuzzy, kde-format
+#| msgid "fertilize today!"
+msgctxt "@info"
+msgid "Fertilize today!"
+msgstr "გაანაყოფიერეთ დღეს!"
+
+#: qml/PlantsPage.qml:245
+#, fuzzy, kde-format
+#| msgid "fertilizing overdue!"
+msgctxt "@info"
+msgid "Fertilizing overdue!"
+msgstr "განაყოფიერება დაგავიწყდათ!"
+
+#: qml/TaskPage.qml:111
 #, fuzzy, kde-format
 #| msgid "Water"
-msgid "water"
+msgctxt "@action"
+msgid "Water"
 msgstr "წყალი"
+
+#: qml/TaskPage.qml:123
+#, kde-format
+msgctxt "@info"
+msgid "Already watered"
+msgstr ""
+
+#: qml/TaskPage.qml:123
+#, kde-format
+msgid "Now"
+msgstr ""
+
+#: qml/TaskPage.qml:123
+#, fuzzy, kde-format
+#| msgid "in %1 days"
+msgid "In %1 days"
+msgstr "%1 დღეში"
+
+#~ msgid "needs to be watered today!"
+#~ msgstr "წყალი დღეს უნდა დაუსხათ!"
+
+#~ msgid "should have been watered already!"
+#~ msgstr "წყალი უკვე უნდა დაგესხათ!"
+
+#~ msgid "water"
+#~ msgstr "წყალი"
 
 #~ msgid "Parent"
 #~ msgstr "მშობელი"

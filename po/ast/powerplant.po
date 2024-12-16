@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-15 00:44+0000\n"
+"POT-Creation-Date: 2024-12-16 00:49+0000\n"
 "PO-Revision-Date: 2024-03-27 23:08+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -27,40 +27,40 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "alministradores@softastur.org"
 
-#: main.cpp:32
+#: main.cpp:33
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
 msgstr ""
 
-#: main.cpp:36
+#: main.cpp:37
 #, kde-format
 msgid "A small app to track your plants"
 msgstr ""
 
-#: main.cpp:40
-#, kde-format
-msgid "© 2023-2024 Mathis Brüchert"
-msgstr ""
-
 #: main.cpp:41
 #, kde-format
-msgctxt "@info:credit"
-msgid "Mathis Brüchert"
+msgid "© 2023-2024 Mathis Brüchert"
 msgstr ""
 
 #: main.cpp:42
 #, kde-format
 msgctxt "@info:credit"
+msgid "Mathis Brüchert"
+msgstr ""
+
+#: main.cpp:43
+#, kde-format
+msgctxt "@info:credit"
 msgid "Author"
 msgstr ""
 
-#: qml/NavigationBar.qml:18 qml/PlantsPage.qml:20
+#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
 #, kde-format
 msgid "Plants"
 msgstr ""
 
-#: qml/NavigationBar.qml:24 qml/TaskPage.qml:11
+#: qml/NavigationBar.qml:26 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
 msgstr ""
@@ -77,82 +77,82 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:233
+#: qml/PlantDetailPage.qml:235
 #, kde-format
 msgid "Water"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:251
-#, kde-format
-msgid "has to be watered in %1 days"
-msgstr ""
-
 #: qml/PlantDetailPage.qml:253
 #, kde-format
-msgid "has to be watered tomorrow"
-msgstr ""
+msgctxt "@info"
+msgid "Has to be watered in %1 day"
+msgid_plural "Has to be watered in %1 days"
+msgstr[0] ""
+msgstr[1] ""
 
 #: qml/PlantDetailPage.qml:255
 #, kde-format
-msgid "needs to be watered today!"
+msgctxt "@info"
+msgid "Has to be watered tomorrow"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:257
-#, kde-format
-msgid "should have been watered already!"
-msgstr ""
-
-#: qml/PlantDetailPage.qml:261
+#: qml/PlantDetailPage.qml:263
 #, kde-format
 msgid "Watered"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:269
+#: qml/PlantDetailPage.qml:272
 #, kde-format
 msgid "Fertilizer"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:285
+#: qml/PlantDetailPage.qml:288
 #, kde-format
-msgid "has to be fertilized in %1 days"
+msgctxt "@info"
+msgid "Has to be fertilized in %1 day"
+msgid_plural "Has to be fertilized in %1 days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: qml/PlantDetailPage.qml:290
+#, kde-format
+msgctxt "@info"
+msgid "Has to be fertilized tomorrow"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:287
+#: qml/PlantDetailPage.qml:292
 #, kde-format
-msgid "has to be fertilized tomorrow"
+msgctxt "@info"
+msgid "Needs to be fertilized today!"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:289
+#: qml/PlantDetailPage.qml:294
 #, kde-format
-msgid "needs to be fertilized today!"
+msgctxt "@info"
+msgid "Should have been fertilized already!"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:291
-#, kde-format
-msgid "should have been fertilized already!"
-msgstr ""
-
-#: qml/PlantDetailPage.qml:295
+#: qml/PlantDetailPage.qml:299
 #, kde-format
 msgid "Fertilized"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:305
+#: qml/PlantDetailPage.qml:309
 #, kde-format
 msgid "Health"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:313
+#: qml/PlantDetailPage.qml:317
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:371
+#: qml/PlantDetailPage.qml:339 qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Add"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:348
+#: qml/PlantDetailPage.qml:352
 #, kde-format
 msgid "Health History"
 msgstr ""
@@ -274,37 +274,62 @@ msgstr ""
 msgid "No plants need water right now"
 msgstr ""
 
-#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232 qml/TaskPage.qml:120
+#: qml/PlantsPage.qml:211 qml/PlantsPage.qml:239
 #, kde-format
-msgid "in %1 days"
+msgctxt "@info"
+msgid "In %1 day"
+msgid_plural "In %1 days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: qml/PlantsPage.qml:213 qml/PlantsPage.qml:241
+#, kde-format
+msgctxt "@info"
+msgid "Tomorrow"
 msgstr ""
 
-#: qml/PlantsPage.qml:206 qml/PlantsPage.qml:234
+#: qml/PlantsPage.qml:215
 #, kde-format
-msgid "tomorrow"
+msgctxt "@info"
+msgid "Water today!"
 msgstr ""
 
-#: qml/PlantsPage.qml:208
+#: qml/PlantsPage.qml:217
 #, kde-format
-msgid "water today!"
+msgctxt "@info"
+msgid "Watering overdue!"
 msgstr ""
 
-#: qml/PlantsPage.qml:210
+#: qml/PlantsPage.qml:243
 #, kde-format
-msgid "watering overdue!"
+msgctxt "@info"
+msgid "Fertilize today!"
 msgstr ""
 
-#: qml/PlantsPage.qml:236
+#: qml/PlantsPage.qml:245
 #, kde-format
-msgid "fertilize today!"
+msgctxt "@info"
+msgid "Fertilizing overdue!"
 msgstr ""
 
-#: qml/PlantsPage.qml:238
+#: qml/TaskPage.qml:111
 #, kde-format
-msgid "fertilizing overdue!"
+msgctxt "@action"
+msgid "Water"
 msgstr ""
 
-#: qml/TaskPage.qml:106
+#: qml/TaskPage.qml:123
 #, kde-format
-msgid "water"
+msgctxt "@info"
+msgid "Already watered"
+msgstr ""
+
+#: qml/TaskPage.qml:123
+#, kde-format
+msgid "Now"
+msgstr ""
+
+#: qml/TaskPage.qml:123
+#, kde-format
+msgid "In %1 days"
 msgstr ""

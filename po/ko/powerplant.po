@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-15 00:44+0000\n"
+"POT-Creation-Date: 2024-12-16 00:49+0000\n"
 "PO-Revision-Date: 2024-08-20 00:49+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -27,42 +27,42 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde@peremen.name"
 
-#: main.cpp:32
+#: main.cpp:33
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
 msgstr "PowerPlant"
 
-#: main.cpp:36
+#: main.cpp:37
 #, kde-format
 msgid "A small app to track your plants"
 msgstr "식물을 추적하는 작은 앱"
 
-#: main.cpp:40
+#: main.cpp:41
 #, fuzzy, kde-format
 #| msgctxt "@info:credit"
 #| msgid "Mathis Brüchert"
 msgid "© 2023-2024 Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:42
+#: main.cpp:43
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "작성자"
 
-#: qml/NavigationBar.qml:18 qml/PlantsPage.qml:20
+#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
 #, kde-format
 msgid "Plants"
 msgstr "식물"
 
-#: qml/NavigationBar.qml:24 qml/TaskPage.qml:11
+#: qml/NavigationBar.qml:26 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
 msgstr ""
@@ -79,86 +79,86 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr "삭제"
 
-#: qml/PlantDetailPage.qml:233
+#: qml/PlantDetailPage.qml:235
 #, kde-format
 msgid "Water"
 msgstr "물"
 
-#: qml/PlantDetailPage.qml:251
-#, kde-format
-msgid "has to be watered in %1 days"
-msgstr "%1일 후 물을 줘야 합니다"
-
 #: qml/PlantDetailPage.qml:253
-#, kde-format
-msgid "has to be watered tomorrow"
-msgstr "내일 물을 줘야 합니다"
+#, fuzzy, kde-format
+#| msgid "has to be watered in %1 days"
+msgctxt "@info"
+msgid "Has to be watered in %1 day"
+msgid_plural "Has to be watered in %1 days"
+msgstr[0] "%1일 후 물을 줘야 합니다"
 
 #: qml/PlantDetailPage.qml:255
-#, kde-format
-msgid "needs to be watered today!"
-msgstr "오늘 물을 줘야 합니다!"
+#, fuzzy, kde-format
+#| msgid "has to be watered tomorrow"
+msgctxt "@info"
+msgid "Has to be watered tomorrow"
+msgstr "내일 물을 줘야 합니다"
 
-#: qml/PlantDetailPage.qml:257
-#, kde-format
-msgid "should have been watered already!"
-msgstr "물을 줄 시간이 지났습니다!"
-
-#: qml/PlantDetailPage.qml:261
+#: qml/PlantDetailPage.qml:263
 #, kde-format
 msgid "Watered"
 msgstr "물을 줌"
 
-#: qml/PlantDetailPage.qml:269
+#: qml/PlantDetailPage.qml:272
 #, kde-format
 msgid "Fertilizer"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:285
+#: qml/PlantDetailPage.qml:288
 #, fuzzy, kde-format
 #| msgid "has to be watered in %1 days"
-msgid "has to be fertilized in %1 days"
-msgstr "%1일 후 물을 줘야 합니다"
+msgctxt "@info"
+msgid "Has to be fertilized in %1 day"
+msgid_plural "Has to be fertilized in %1 days"
+msgstr[0] "%1일 후 물을 줘야 합니다"
 
-#: qml/PlantDetailPage.qml:287
+#: qml/PlantDetailPage.qml:290
 #, fuzzy, kde-format
 #| msgid "has to be watered tomorrow"
-msgid "has to be fertilized tomorrow"
+msgctxt "@info"
+msgid "Has to be fertilized tomorrow"
 msgstr "내일 물을 줘야 합니다"
 
-#: qml/PlantDetailPage.qml:289
+#: qml/PlantDetailPage.qml:292
 #, fuzzy, kde-format
 #| msgid "needs to be watered today!"
-msgid "needs to be fertilized today!"
+msgctxt "@info"
+msgid "Needs to be fertilized today!"
 msgstr "오늘 물을 줘야 합니다!"
 
-#: qml/PlantDetailPage.qml:291
+#: qml/PlantDetailPage.qml:294
 #, fuzzy, kde-format
 #| msgid "should have been watered already!"
-msgid "should have been fertilized already!"
+msgctxt "@info"
+msgid "Should have been fertilized already!"
 msgstr "물을 줄 시간이 지났습니다!"
 
-#: qml/PlantDetailPage.qml:295
+#: qml/PlantDetailPage.qml:299
 #, kde-format
 msgid "Fertilized"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:305
+#: qml/PlantDetailPage.qml:309
 #, kde-format
 msgid "Health"
 msgstr "건강"
 
-#: qml/PlantDetailPage.qml:313
+#: qml/PlantDetailPage.qml:317
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "오늘 내 식물이 얼마나 건강한가요?"
 
-#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:371
+#: qml/PlantDetailPage.qml:339 qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Add"
 msgstr "추가"
 
-#: qml/PlantDetailPage.qml:348
+#: qml/PlantDetailPage.qml:352
 #, kde-format
 msgid "Health History"
 msgstr "건강 기록"
@@ -281,43 +281,83 @@ msgstr "일부 식물에 관리가 필요합니다"
 msgid "No plants need water right now"
 msgstr "물을 줘야 할 식물이 없습니다"
 
-#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232 qml/TaskPage.qml:120
-#, kde-format
-msgid "in %1 days"
-msgstr "%1일 내"
+#: qml/PlantsPage.qml:211 qml/PlantsPage.qml:239
+#, fuzzy, kde-format
+#| msgid "in %1 days"
+msgctxt "@info"
+msgid "In %1 day"
+msgid_plural "In %1 days"
+msgstr[0] "%1일 내"
 
-#: qml/PlantsPage.qml:206 qml/PlantsPage.qml:234
-#, kde-format
-msgid "tomorrow"
+#: qml/PlantsPage.qml:213 qml/PlantsPage.qml:241
+#, fuzzy, kde-format
+#| msgid "tomorrow"
+msgctxt "@info"
+msgid "Tomorrow"
 msgstr "내일"
 
-#: qml/PlantsPage.qml:208
-#, kde-format
-msgid "water today!"
-msgstr "오늘 물을 주세요!"
-
-#: qml/PlantsPage.qml:210
-#, kde-format
-msgid "watering overdue!"
-msgstr "물 줄 시간이 지났습니다!"
-
-#: qml/PlantsPage.qml:236
+#: qml/PlantsPage.qml:215
 #, fuzzy, kde-format
 #| msgid "water today!"
-msgid "fertilize today!"
+msgctxt "@info"
+msgid "Water today!"
 msgstr "오늘 물을 주세요!"
 
-#: qml/PlantsPage.qml:238
+#: qml/PlantsPage.qml:217
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
-msgid "fertilizing overdue!"
+msgctxt "@info"
+msgid "Watering overdue!"
 msgstr "물 줄 시간이 지났습니다!"
 
-#: qml/TaskPage.qml:106
+#: qml/PlantsPage.qml:243
+#, fuzzy, kde-format
+#| msgid "water today!"
+msgctxt "@info"
+msgid "Fertilize today!"
+msgstr "오늘 물을 주세요!"
+
+#: qml/PlantsPage.qml:245
+#, fuzzy, kde-format
+#| msgid "watering overdue!"
+msgctxt "@info"
+msgid "Fertilizing overdue!"
+msgstr "물 줄 시간이 지났습니다!"
+
+#: qml/TaskPage.qml:111
 #, fuzzy, kde-format
 #| msgid "Water"
-msgid "water"
+msgctxt "@action"
+msgid "Water"
 msgstr "물"
+
+#: qml/TaskPage.qml:123
+#, kde-format
+msgctxt "@info"
+msgid "Already watered"
+msgstr ""
+
+#: qml/TaskPage.qml:123
+#, kde-format
+msgid "Now"
+msgstr ""
+
+#: qml/TaskPage.qml:123
+#, fuzzy, kde-format
+#| msgid "in %1 days"
+msgid "In %1 days"
+msgstr "%1일 내"
+
+#~ msgid "needs to be watered today!"
+#~ msgstr "오늘 물을 줘야 합니다!"
+
+#~ msgid "should have been watered already!"
+#~ msgstr "물을 줄 시간이 지났습니다!"
+
+#, fuzzy
+#~| msgid "Water"
+#~ msgid "water"
+#~ msgstr "물"
 
 #~ msgid "Parent"
 #~ msgstr "부모"

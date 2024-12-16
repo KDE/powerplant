@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-15 00:44+0000\n"
-"PO-Revision-Date: 2024-12-14 09:39+0100\n"
+"POT-Creation-Date: 2024-12-16 00:49+0000\n"
+"PO-Revision-Date: 2024-12-15 08:37+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -25,43 +25,43 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
 
-#: main.cpp:32
+#: main.cpp:33
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
 msgstr "PowerPlant"
 
-#: main.cpp:36
+#: main.cpp:37
 #, kde-format
 msgid "A small app to track your plants"
 msgstr "Majhna aplikacija za sledenje vašim rastlinam"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "© 2023-2024 Mathis Brüchert"
 msgstr "© 2023-2024 Mathis Brüchert"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:42
+#: main.cpp:43
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Avtor"
 
-#: qml/NavigationBar.qml:18 qml/PlantsPage.qml:20
+#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
 #, kde-format
 msgid "Plants"
 msgstr "Rastline"
 
-#: qml/NavigationBar.qml:24 qml/TaskPage.qml:11
+#: qml/NavigationBar.qml:26 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
-msgstr ""
+msgstr "Naloge"
 
 #: qml/PlantDetailPage.qml:56
 #, kde-format
@@ -75,86 +75,92 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr "Izbriši"
 
-#: qml/PlantDetailPage.qml:233
+#: qml/PlantDetailPage.qml:235
 #, kde-format
 msgid "Water"
 msgstr "Voda"
 
-#: qml/PlantDetailPage.qml:251
-#, kde-format
-msgid "has to be watered in %1 days"
-msgstr "jo je treba zaliti v %1 dneh"
-
 #: qml/PlantDetailPage.qml:253
-#, kde-format
-msgid "has to be watered tomorrow"
-msgstr "jo je treba zaliti jutri"
+#, fuzzy, kde-format
+#| msgid "has to be watered in %1 days"
+msgctxt "@info"
+msgid "Has to be watered in %1 day"
+msgid_plural "Has to be watered in %1 days"
+msgstr[0] "jo je treba zaliti v %1 dneh"
+msgstr[1] "jo je treba zaliti v %1 dneh"
+msgstr[2] "jo je treba zaliti v %1 dneh"
+msgstr[3] "jo je treba zaliti v %1 dneh"
 
 #: qml/PlantDetailPage.qml:255
-#, kde-format
-msgid "needs to be watered today!"
-msgstr "jo je treba zaliti danes!"
+#, fuzzy, kde-format
+#| msgid "has to be watered tomorrow"
+msgctxt "@info"
+msgid "Has to be watered tomorrow"
+msgstr "jo je treba zaliti jutri"
 
-#: qml/PlantDetailPage.qml:257
-#, kde-format
-msgid "should have been watered already!"
-msgstr "bi jo bilo že treba zaliti!"
-
-#: qml/PlantDetailPage.qml:261
+#: qml/PlantDetailPage.qml:263
 #, kde-format
 msgid "Watered"
 msgstr "Zalita"
 
-#: qml/PlantDetailPage.qml:269
+#: qml/PlantDetailPage.qml:272
 #, kde-format
 msgid "Fertilizer"
-msgstr ""
+msgstr "Gnojilo"
 
-#: qml/PlantDetailPage.qml:285
+#: qml/PlantDetailPage.qml:288
 #, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
-msgid "has to be fertilized in %1 days"
-msgstr "jo je treba zaliti v %1 dneh"
+#| msgid "has to be fertilized in %1 days"
+msgctxt "@info"
+msgid "Has to be fertilized in %1 day"
+msgid_plural "Has to be fertilized in %1 days"
+msgstr[0] "jo je treba pognojiti v %1 dneh"
+msgstr[1] "jo je treba pognojiti v %1 dneh"
+msgstr[2] "jo je treba pognojiti v %1 dneh"
+msgstr[3] "jo je treba pognojiti v %1 dneh"
 
-#: qml/PlantDetailPage.qml:287
+#: qml/PlantDetailPage.qml:290
 #, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
-msgid "has to be fertilized tomorrow"
-msgstr "jo je treba zaliti jutri"
+#| msgid "has to be fertilized tomorrow"
+msgctxt "@info"
+msgid "Has to be fertilized tomorrow"
+msgstr "jo je treba pognojiti jutri"
 
-#: qml/PlantDetailPage.qml:289
+#: qml/PlantDetailPage.qml:292
 #, fuzzy, kde-format
-#| msgid "needs to be watered today!"
-msgid "needs to be fertilized today!"
-msgstr "jo je treba zaliti danes!"
+#| msgid "needs to be fertilized today!"
+msgctxt "@info"
+msgid "Needs to be fertilized today!"
+msgstr "jo je treba pognojiti danes!"
 
-#: qml/PlantDetailPage.qml:291
+#: qml/PlantDetailPage.qml:294
 #, fuzzy, kde-format
-#| msgid "should have been watered already!"
-msgid "should have been fertilized already!"
-msgstr "bi jo bilo že treba zaliti!"
+#| msgid "should have been fertilized already!"
+msgctxt "@info"
+msgid "Should have been fertilized already!"
+msgstr "bi jo bilo že treba pognojiti!"
 
-#: qml/PlantDetailPage.qml:295
+#: qml/PlantDetailPage.qml:299
 #, kde-format
 msgid "Fertilized"
-msgstr ""
+msgstr "Pognojena"
 
-#: qml/PlantDetailPage.qml:305
+#: qml/PlantDetailPage.qml:309
 #, kde-format
 msgid "Health"
 msgstr "Zdravje"
 
-#: qml/PlantDetailPage.qml:313
+#: qml/PlantDetailPage.qml:317
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "Kako zdrava je vaša rastlina danes?"
 
-#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:371
+#: qml/PlantDetailPage.qml:339 qml/PlantEditorPage.qml:371
 #, kde-format
 msgid "Add"
 msgstr "Dodaj"
 
-#: qml/PlantDetailPage.qml:348
+#: qml/PlantDetailPage.qml:352
 #, kde-format
 msgid "Health History"
 msgstr "Zdravstvena zgodovina"
@@ -236,10 +242,9 @@ msgid "Custom:"
 msgstr "Po meri:"
 
 #: qml/PlantEditorPage.qml:262
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgid "How often does the plant need Fertilizing?"
-msgstr "Kako pogosto rastlina potrebuje zalivanje?"
+msgstr "Kako pogosto rastlina potrebuje gnojenje?"
 
 #: qml/PlantEditorPage.qml:336
 #, kde-format
@@ -277,43 +282,84 @@ msgstr "Nekatere vaše rastline potrebujejo pozornost"
 msgid "No plants need water right now"
 msgstr "Nobena rastlina trenutno ne potrebuje vode"
 
-#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232 qml/TaskPage.qml:120
-#, kde-format
-msgid "in %1 days"
-msgstr "čez %1 dni"
+#: qml/PlantsPage.qml:211 qml/PlantsPage.qml:239
+#, fuzzy, kde-format
+#| msgid "in %1 days"
+msgctxt "@info"
+msgid "In %1 day"
+msgid_plural "In %1 days"
+msgstr[0] "čez %1 dni"
+msgstr[1] "čez %1 dni"
+msgstr[2] "čez %1 dni"
+msgstr[3] "čez %1 dni"
 
-#: qml/PlantsPage.qml:206 qml/PlantsPage.qml:234
-#, kde-format
-msgid "tomorrow"
+#: qml/PlantsPage.qml:213 qml/PlantsPage.qml:241
+#, fuzzy, kde-format
+#| msgid "tomorrow"
+msgctxt "@info"
+msgid "Tomorrow"
 msgstr "jutri"
 
-#: qml/PlantsPage.qml:208
-#, kde-format
-msgid "water today!"
-msgstr "zaliti danes!"
-
-#: qml/PlantsPage.qml:210
-#, kde-format
-msgid "watering overdue!"
-msgstr "zalivanje zamuja!"
-
-#: qml/PlantsPage.qml:236
+#: qml/PlantsPage.qml:215
 #, fuzzy, kde-format
 #| msgid "water today!"
-msgid "fertilize today!"
+msgctxt "@info"
+msgid "Water today!"
 msgstr "zaliti danes!"
 
-#: qml/PlantsPage.qml:238
+#: qml/PlantsPage.qml:217
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
-msgid "fertilizing overdue!"
+msgctxt "@info"
+msgid "Watering overdue!"
 msgstr "zalivanje zamuja!"
 
-#: qml/TaskPage.qml:106
+#: qml/PlantsPage.qml:243
+#, fuzzy, kde-format
+#| msgid "fertilize today!"
+msgctxt "@info"
+msgid "Fertilize today!"
+msgstr "pognojiti danes!"
+
+#: qml/PlantsPage.qml:245
+#, fuzzy, kde-format
+#| msgid "fertilizing overdue!"
+msgctxt "@info"
+msgid "Fertilizing overdue!"
+msgstr "gnojenje zamuja!"
+
+#: qml/TaskPage.qml:111
 #, fuzzy, kde-format
 #| msgid "Water"
-msgid "water"
+msgctxt "@action"
+msgid "Water"
 msgstr "Voda"
+
+#: qml/TaskPage.qml:123
+#, kde-format
+msgctxt "@info"
+msgid "Already watered"
+msgstr ""
+
+#: qml/TaskPage.qml:123
+#, kde-format
+msgid "Now"
+msgstr ""
+
+#: qml/TaskPage.qml:123
+#, fuzzy, kde-format
+#| msgid "in %1 days"
+msgid "In %1 days"
+msgstr "čez %1 dni"
+
+#~ msgid "needs to be watered today!"
+#~ msgstr "jo je treba zaliti danes!"
+
+#~ msgid "should have been watered already!"
+#~ msgstr "bi jo bilo že treba zaliti!"
+
+#~ msgid "water"
+#~ msgstr "voda"
 
 #~ msgid "Parent"
 #~ msgstr "Starš"
