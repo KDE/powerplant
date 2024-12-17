@@ -39,6 +39,16 @@
   <name xml:lang="x-test">xxPowerPlantxx</name>
   <name xml:lang="zh-TW">PowerPlant 植哉追蹤</name>
   <summary>Keep your plants alive</summary>
+  <summary xml:lang="ca">Manté vives les vostres plantes</summary>
+  <summary xml:lang="es">Mantenga vivas sus plantas</summary>
+  <summary xml:lang="eu">Zure landareak bizirik mantendu</summary>
+  <summary xml:lang="he">לשמור על הצמחים שלך בחיים</summary>
+  <summary xml:lang="ka">დაიტოვეთ თქვენი მცენარეები ცოცხალი</summary>
+  <summary xml:lang="nl">Houd uw planten in leven</summary>
+  <summary xml:lang="sl">Ohranjujte svoje rastline pri življenju</summary>
+  <summary xml:lang="tr">Bitkilerinizi canlı tutun</summary>
+  <summary xml:lang="uk">Підтримайте ріст ваших рослин</summary>
+  <summary xml:lang="x-test">xxKeep your plants alivexx</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
   <developer id="kde.org">
