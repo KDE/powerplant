@@ -2,8 +2,8 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "fertilizerhistorymodel.h"
-#include <QCoroTask>
 #include <QCoroFuture>
+#include <QCoroTask>
 #include <QDateTime>
 
 FertilizerHistoryModel::FertilizerHistoryModel(QObject *parent)
@@ -39,9 +39,7 @@ int FertilizerHistoryModel::rowCount(const QModelIndex &) const
 
 QHash<int, QByteArray> FertilizerHistoryModel::roleNames() const
 {
-    return {
-        {FertilizerEventRole, "fertilizerEvent"}
-    };
+    return {{FertilizerEventRole, "fertilizerEvent"}};
 }
 
 QVariant FertilizerHistoryModel::data(const QModelIndex &index, int role) const

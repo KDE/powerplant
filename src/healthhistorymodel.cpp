@@ -2,8 +2,8 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "healthhistorymodel.h"
-#include <QCoroTask>
 #include <QCoroFuture>
+#include <QCoroTask>
 #include <QDateTime>
 
 HealthHistoryModel::HealthHistoryModel(QObject *parent)
@@ -38,10 +38,7 @@ int HealthHistoryModel::rowCount(const QModelIndex &) const
 
 QHash<int, QByteArray> HealthHistoryModel::roleNames() const
 {
-    return {
-        {Role::HealthDateRole, "healthDate"},
-        {Role::HealthRole, "health"}
-    };
+    return {{Role::HealthDateRole, "healthDate"}, {Role::HealthRole, "health"}};
 }
 
 QVariant HealthHistoryModel::data(const QModelIndex &index, int role) const
@@ -49,11 +46,11 @@ QVariant HealthHistoryModel::data(const QModelIndex &index, int role) const
     Q_ASSERT(checkIndex(index, QAbstractItemModel::CheckIndexOption::IndexIsValid));
 
     const auto event = m_data.at(index.row());
-    switch (role){
-        case Role::HealthDateRole:
-            return QDateTime::fromSecsSinceEpoch(event.health_date);
-        case Role::HealthRole:
-            return event.health;
+    switch (role) {
+    case Role::HealthDateRole:
+        return QDateTime::fromSecsSinceEpoch(event.health_date);
+    case Role::HealthRole:
+        return event.health;
     };
 
     Q_UNREACHABLE();

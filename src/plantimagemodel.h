@@ -22,9 +22,9 @@ public:
     QString customImage() const;
     void setCustomImage(const QString &customImage);
 
-    int rowCount(const QModelIndex &parent)const override;
-    QHash<int, QByteArray> roleNames()const override;
-    QVariant data(const QModelIndex& index, int role) const override;
+    int rowCount(const QModelIndex &parent) const override;
+    QHash<int, QByteArray> roleNames() const override;
+    QVariant data(const QModelIndex &index, int role) const override;
 
     Q_INVOKABLE int urlToIndex(const QString &url) const;
 

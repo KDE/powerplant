@@ -4,15 +4,15 @@
 */
 
 #include <QApplication>
-#include <QtQml>
 #include <QIcon>
+#include <QtQml>
 
 #include "version-powerplant.h"
 #include <KAboutData>
-#include <KLocalizedContext>
-#include <KLocalizedString>
-#include <KLocalizedQmlContext>
 #include <KCrash>
+#include <KLocalizedContext>
+#include <KLocalizedQmlContext>
+#include <KLocalizedString>
 
 #include <QCoro/QCoroFuture>
 
@@ -24,21 +24,19 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     KLocalizedString::setApplicationDomain("powerplant");
 
     KAboutData aboutData(
-                         // The program name used internally.
-                         QStringLiteral("powerplant"),
-                         // A displayable program name string.
-                         i18nc("@title", "PowerPlant"),
-                         // The program version string.
-                         QStringLiteral(POWERPLANT_VERSION_STRING),
-                         // Short description of what the app does.
-                         i18n("A small app to track your plants"),
-                         // The license this code is released under.
-                         KAboutLicense::GPL,
-                         // Copyright Statement.
-                         i18n("© 2023-2024 Mathis Brüchert"));
-    aboutData.addAuthor(i18nc("@info:credit", "Mathis Brüchert"),
-                        i18nc("@info:credit", "Author"),
-                        QStringLiteral("mbb@kaidan.im"));
+        // The program name used internally.
+        QStringLiteral("powerplant"),
+        // A displayable program name string.
+        i18nc("@title", "PowerPlant"),
+        // The program version string.
+        QStringLiteral(POWERPLANT_VERSION_STRING),
+        // Short description of what the app does.
+        i18n("A small app to track your plants"),
+        // The license this code is released under.
+        KAboutLicense::GPL,
+        // Copyright Statement.
+        i18n("© 2023-2024 Mathis Brüchert"));
+    aboutData.addAuthor(i18nc("@info:credit", "Mathis Brüchert"), i18nc("@info:credit", "Author"), QStringLiteral("mbb@kaidan.im"));
     KAboutData::setApplicationData(aboutData);
 
     KCrash::initialize();

@@ -2,12 +2,12 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "plantsmodel.h"
-#include <QCoroTask>
 #include <QCoroFuture>
+#include <QCoroTask>
 #include <QDateTime>
 
-#include <unordered_map>
 #include <algorithm>
+#include <unordered_map>
 
 using namespace DB;
 
@@ -56,7 +56,7 @@ QHash<int, QByteArray> PlantsModel::roleNames() const
 {
     return {
         {Role::PlantID, "plantId"},
-        {Role::Name, "name" },
+        {Role::Name, "name"},
         {Role::Species, "species"},
         {Role::ImgUrl, "imgUrl"},
         {Role::WaterInterval, "waterInterval"},
@@ -77,54 +77,69 @@ QVariant PlantsModel::data(const QModelIndex &index, int role) const
 
     const auto plant = m_data.at(index.row());
 
-    static std::unordered_map<int,std::vector<QDateTime>> waterEvents;
-    static std::unordered_map<int,std::vector<QDateTime>> fertilizerEvents;
+    static std::unordered_map<int, std::vector<QDateTime>> waterEvents;
+    static std::unordered_map<int, std::vector<QDateTime>> fertilizerEvents;
 
-    switch(role){
-        case Role::PlantID:
-            return plant.plant_id;
-        case Role::Name:
-            return plant.name;
-        case Role::Species:
-            return plant.species;
-        case Role::ImgUrl:
-            return plant.img_url;
-        case Role::WaterInterval:
-            return plant.water_interval;
-        case Role::FertilizerInterval:
-            return plant.fertilizer_interval;
-        case Role::Location:
-            return plant.location;
-        case Role::DateOfBirth:
-            return QDateTime::fromSecsSinceEpoch(plant.date_of_birth).date();
-        case Role::LastWatered:
-            return QDateTime::fromSecsSinceEpoch(plant.last_watered).date();
-        case Role::WantsToBeWateredIn:
-            return std::max(qint64(-1), QDate::currentDate().daysTo(QDateTime::fromSecsSinceEpoch(plant.last_watered).date().addDays(plant.water_interval)));
-        case Role::LastFertilized:
-            return QDateTime::fromSecsSinceEpoch(plant.last_fertilized).date();
-        case Role::WantsToBeFertilizedIn:
-            return std::max(qint64(-1), QDate::currentDate().daysTo(QDateTime::fromSecsSinceEpoch(plant.last_fertilized).date().addDays(plant.fertilizer_interval)));
-        case Role::CurrentHealth:
-            return plant.current_health;
+    switch (role) {
+    case Role::PlantID:
+        return plant.plant_id;
+    case Role::Name:
+        return plant.name;
+    case Role::Species:
+        return plant.species;
+    case Role::ImgUrl:
+        return plant.img_url;
+    case Role::WaterInterval:
+        return plant.water_interval;
+    case Role::FertilizerInterval:
+        return plant.fertilizer_interval;
+    case Role::Location:
+        return plant.location;
+    case Role::DateOfBirth:
+        return QDateTime::fromSecsSinceEpoch(plant.date_of_birth).date();
+    case Role::LastWatered:
+        return QDateTime::fromSecsSinceEpoch(plant.last_watered).date();
+    case Role::WantsToBeWateredIn:
+        return std::max(qint64(-1), QDate::currentDate().daysTo(QDateTime::fromSecsSinceEpoch(plant.last_watered).date().addDays(plant.water_interval)));
+    case Role::LastFertilized:
+        return QDateTime::fromSecsSinceEpoch(plant.last_fertilized).date();
+    case Role::WantsToBeFertilizedIn:
+        return std::max(qint64(-1),
+                        QDate::currentDate().daysTo(QDateTime::fromSecsSinceEpoch(plant.last_fertilized).date().addDays(plant.fertilizer_interval)));
+    case Role::CurrentHealth:
+        return plant.current_health;
     };
 
     Q_UNREACHABLE();
 }
 
-void PlantsModel::addPlant(const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const int fertilizerInterval, const QString location, const int dateOfBirth, const int health)
+void PlantsModel::addPlant(const QString &name,
+                           const QString &species,
+                           const QString &imgUrl,
+                           const int waterInterval,
+                           const int fertilizerInterval,
+                           const QString location,
+                           const int dateOfBirth,
+                           const int health)
 {
     const int now = QDateTime::currentDateTime().toSecsSinceEpoch();
     auto future = Database::instance().addPlant(name, species, imgUrl, waterInterval, fertilizerInterval, location, dateOfBirth, now, now, now, health);
 
     QCoro::connect(std::move(future), this, [=, this](auto &&result) {
         beginInsertRows({}, m_data.size(), m_data.size());
-        m_data.push_back(Plant{result, name, species, imgUrl, waterInterval, fertilizerInterval, location, dateOfBirth, 1, now, now, now,  health});
+        m_data.push_back(Plant{result, name, species, imgUrl, waterInterval, fertilizerInterval, location, dateOfBirth, 1, now, now, now, health});
         endInsertRows();
     });
 }
 
-void PlantsModel::editPlant(const DB::Plant::Id plantId, const QString &name, const QString &species, const QString &imgUrl, const int waterInterval, const int fertilizerInterval, const QString location, const int dateOfBirth)
+void PlantsModel::editPlant(const DB::Plant::Id plantId,
+                            const QString &name,
+                            const QString &species,
+                            const QString &imgUrl,
+                            const int waterInterval,
+                            const int fertilizerInterval,
+                            const QString location,
+                            const int dateOfBirth)
 {
     const int row = [&]() {
         const auto it = std::find_if(m_data.cbegin(), m_data.cend(), [plantId](const auto &plant) {

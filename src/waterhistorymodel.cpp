@@ -2,8 +2,8 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "waterhistorymodel.h"
-#include <QCoroTask>
 #include <QCoroFuture>
+#include <QCoroTask>
 #include <QDateTime>
 
 WaterHistoryModel::WaterHistoryModel(QObject *parent)
@@ -39,9 +39,7 @@ int WaterHistoryModel::rowCount(const QModelIndex &) const
 
 QHash<int, QByteArray> WaterHistoryModel::roleNames() const
 {
-    return {
-        {WaterEventRole, "waterEvent"}
-    };
+    return {{WaterEventRole, "waterEvent"}};
 }
 
 QVariant WaterHistoryModel::data(const QModelIndex &index, int role) const

@@ -3,13 +3,14 @@
 
 #include "planteditor.h"
 #include "database.h"
-#include <QCoroTask>
 #include <QCoroFuture>
+#include <QCoroTask>
 #include <algorithm>
 
 Plant::Plant(QObject *parent)
     : QObject(parent)
-{}
+{
+}
 
 DB::Plant::Id Plant::plantId() const
 {
@@ -97,7 +98,8 @@ int Plant::wantsToBeFertilizedIn() const
 PlantEditor::PlantEditor(QObject *parent)
     : QObject(parent)
     , m_plant(new Plant(this))
-{}
+{
+}
 
 DB::Plant::Id PlantEditor::plantId() const
 {
@@ -124,26 +126,22 @@ Plant *PlantEditor::plant() const
 void PlantEditor::save()
 {
     if (m_mode == Creator) {
-        m_plantsModel->addPlant(
-            m_plant->m_name,
-            m_plant->m_species,
-            m_plant->m_imgUrl.toString(),
-            m_plant->m_waterInterval,
-            m_plant->m_fertilizerInterval,
-            m_plant->m_location,
-            m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch(),
-            m_plant->m_currentHealth
-        );
+        m_plantsModel->addPlant(m_plant->m_name,
+                                m_plant->m_species,
+                                m_plant->m_imgUrl.toString(),
+                                m_plant->m_waterInterval,
+                                m_plant->m_fertilizerInterval,
+                                m_plant->m_location,
+                                m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch(),
+                                m_plant->m_currentHealth);
     } else {
-        m_plantsModel->editPlant(
-            m_plant->m_plantId,
-            m_plant->m_name,
-            m_plant->m_species,
-            m_plant->m_imgUrl.toString(),
-            m_plant->m_waterInterval,
-            m_plant->m_fertilizerInterval,
-            m_plant->m_location,
-            m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch()
-        );
+        m_plantsModel->editPlant(m_plant->m_plantId,
+                                 m_plant->m_name,
+                                 m_plant->m_species,
+                                 m_plant->m_imgUrl.toString(),
+                                 m_plant->m_waterInterval,
+                                 m_plant->m_fertilizerInterval,
+                                 m_plant->m_location,
+                                 m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch());
     }
 }

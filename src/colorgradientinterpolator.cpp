@@ -12,10 +12,8 @@ ColorGradientInterpolator::ColorGradientInterpolator(QObject *parent)
     m_gradient.setEasingCurve(QEasingCurve::Linear);
     m_gradient.setDuration(stepCount);
 
-    connect(this, &ColorGradientInterpolator::progressChanged,
-            this, &ColorGradientInterpolator::colorChanged);
-    connect(this, &ColorGradientInterpolator::gradientStopsChanged,
-            this, &ColorGradientInterpolator::colorChanged);
+    connect(this, &ColorGradientInterpolator::progressChanged, this, &ColorGradientInterpolator::colorChanged);
+    connect(this, &ColorGradientInterpolator::gradientStopsChanged, this, &ColorGradientInterpolator::colorChanged);
 }
 
 QColor ColorGradientInterpolator::color() const
@@ -62,7 +60,7 @@ void ColorGradientInterpolator::setGradientStops(const QVariantList &gradientSto
             qmlWarning(this) << "Invalid color given" << map[QStringLiteral("color")];
         }
 
-        keyValues.append({ position, color });
+        keyValues.append({position, color});
     }
 
     m_gradient.setKeyValues(keyValues);

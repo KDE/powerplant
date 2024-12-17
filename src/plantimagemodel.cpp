@@ -24,7 +24,7 @@ int PlantImageModel::rowCount(const QModelIndex &parent) const
 QHash<int, QByteArray> PlantImageModel::roleNames() const
 {
     return {
-        { UrlRole, "url" },
+        {UrlRole, "url"},
     };
 }
 
@@ -62,7 +62,6 @@ int PlantImageModel::urlToIndex(const QString &url) const
     }
     const auto it = std::find_if(m_urls.cbegin(), m_urls.cend(), [&url](const QString &_url) {
         return _url == url;
-
     });
     if (it == m_urls.cend()) {
         return -1;
@@ -70,15 +69,15 @@ int PlantImageModel::urlToIndex(const QString &url) const
     return it - m_urls.cbegin() + (m_customImage.isEmpty() ? 0 : 1);
 }
 
-QVariant PlantImageModel::data(const QModelIndex& index, int role) const
+QVariant PlantImageModel::data(const QModelIndex &index, int role) const
 {
     Q_ASSERT(checkIndex(index, QAbstractItemModel::CheckIndexOption::IndexIsValid));
 
     const int row = m_customImage.isEmpty() ? index.row() : index.row() - 1;
 
-    switch (role){
+    switch (role) {
     case UrlRole:
-         return row == -1 ? m_customImage : u"qrc:/assets/"_s + m_urls.at(row);
+        return row == -1 ? m_customImage : u"qrc:/assets/"_s + m_urls.at(row);
     };
 
     return {};

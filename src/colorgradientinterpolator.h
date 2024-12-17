@@ -3,8 +3,8 @@
 
 #pragma once
 
-#include <QObject>
 #include <QColor>
+#include <QObject>
 #include <QVariantAnimation>
 #include <QtQml>
 

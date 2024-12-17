@@ -3,9 +3,9 @@
 
 #pragma once
 
+#include <QDateTime>
 #include <QObject>
 #include <QUrl>
-#include <QDateTime>
 #include <QtQml>
 
 #include "database.h"
@@ -53,7 +53,6 @@ class Plant : public QObject
     /// This property holds the time when this plant want to be watered next
     Q_PROPERTY(int wantsToBeFertilizedIn READ wantsToBeFertilizedIn NOTIFY lastFertilizedChanged)
 
-
     /// This property holds the time when this plant want to be watered next
     Q_PROPERTY(int currentHealth MEMBER m_currentHealth NOTIFY currentHealthChanged)
 
@@ -65,7 +64,6 @@ public:
 
     int wantsToBeWateredIn() const;
     int wantsToBeFertilizedIn() const;
-
 
 Q_SIGNALS:
     void plantIdChanged();

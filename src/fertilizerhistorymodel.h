@@ -8,7 +8,7 @@
 
 #include "database.h"
 
-class FertilizerHistoryModel: public QAbstractListModel
+class FertilizerHistoryModel : public QAbstractListModel
 {
     Q_OBJECT
     QML_ELEMENT
@@ -17,15 +17,16 @@ class FertilizerHistoryModel: public QAbstractListModel
     enum Role {
         FertilizerEventRole = Qt::UserRole + 1,
     };
+
 public:
     explicit FertilizerHistoryModel(QObject *parent = nullptr);
 
     DB::Plant::Id plantId() const;
     void setPlantId(const DB::Plant::Id plantId);
 
-    int rowCount(const QModelIndex&)const override;
-    QHash<int, QByteArray> roleNames()const override;
-    QVariant data(const QModelIndex& index, int role) const override;
+    int rowCount(const QModelIndex &) const override;
+    QHash<int, QByteArray> roleNames() const override;
+    QVariant data(const QModelIndex &index, int role) const override;
     Q_INVOKABLE void fertilizePlant();
 
 Q_SIGNALS:
