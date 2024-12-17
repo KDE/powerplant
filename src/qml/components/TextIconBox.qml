@@ -7,7 +7,6 @@ import org.kde.kirigami as Kirigami
 import QtQuick.Layouts
 import org.kde.powerplant
 
-
 Kirigami.ShadowedRectangle {
     property alias icon: icon
     property alias label: label
@@ -27,14 +26,12 @@ Kirigami.ShadowedRectangle {
         // Thanks to Gojir4 from the Qt forum
         // https://forum.qt.io/topic/106362/best-way-to-set-text-color-for-maximum-contrast-on-background-color/
         var temp = Qt.darker(background, 1);
-        var a = 1 - ( 0.299 * temp.r + 0.587 * temp.g + 0.114 * temp.b);
+        var a = 1 - (0.299 * temp.r + 0.587 * temp.g + 0.114 * temp.b);
         return a;
     }
 
     border {
-        color: showShadow? (isDarkColor ? Qt.darker(Kirigami.Theme.backgroundColor, 1.2) : Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.15)) : Kirigami.ColorUtils.linearInterpolation(
-                               Kirigami.Theme.backgroundColor,
-                               Kirigami.Theme.textColor, 0.3)
+        color: showShadow ? (isDarkColor ? Qt.darker(Kirigami.Theme.backgroundColor, 1.2) : Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.15)) : Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
         width: borderWidth
     }
 

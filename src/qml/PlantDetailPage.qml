@@ -57,8 +57,8 @@ Kirigami.ScrollablePage {
             onTriggered: {
                 applicationWindow().pageStack.pushDialogLayer(editPlantComponent, {}, {
                     width: Kirigami.Units.gridUnit * 25,
-                    height: Kirigami.Units.gridUnit * 35,
-                })
+                    height: Kirigami.Units.gridUnit * 35
+                });
             }
         },
         Kirigami.Action {
@@ -75,38 +75,38 @@ Kirigami.ScrollablePage {
     rightPadding: 0
 
     title: plant.name
-//     background: GridLayout {
-//         columnSpacing: 0
-//         rowSpacing: 0
-//         flow: wideScreen ? GridLayout.LeftToRight : GridLayout.TopToBottom
-//         columns: 2
-//         Rectangle{
-// //            Layout.maximumWidth: 400
+    //     background: GridLayout {
+    //         columnSpacing: 0
+    //         rowSpacing: 0
+    //         flow: wideScreen ? GridLayout.LeftToRight : GridLayout.TopToBottom
+    //         columns: 2
+    //         Rectangle{
+    // //            Layout.maximumWidth: 400
 
-//             color: Kirigami.Theme.backgroundColor
-//             Layout.fillHeight: true
-//             Layout.fillWidth: true
-//             Item {
-//                 height: parent.height
-//                 width: parent.width
-//                 anchors.centerIn:parent
-//                 RadialGradient {
-//                     anchors.fill: parent
-//                     gradient: Gradient {
-//                         GradientStop { position: 0.0; color: Kirigami.ColorUtils.tintWithAlpha(
-//                                            Icon                      Kirigami.Theme.backgroundColor,
-//                                                                  healthSlider.healthColor, 0.5)}
-//                         GradientStop { position: 0.5; color: Kirigami.Theme.backgroundColor }
-//                     }
-//                 }
-//             }
-//         }
-//         Rectangle{
-//             color: Kirigami.Theme.backgroundColor
-//             Layout.fillHeight: true
-//             Layout.fillWidth: true
-//         }
-//     }
+    //             color: Kirigami.Theme.backgroundColor
+    //             Layout.fillHeight: true
+    //             Layout.fillWidth: true
+    //             Item {
+    //                 height: parent.height
+    //                 width: parent.width
+    //                 anchors.centerIn:parent
+    //                 RadialGradient {
+    //                     anchors.fill: parent
+    //                     gradient: Gradient {
+    //                         GradientStop { position: 0.0; color: Kirigami.ColorUtils.tintWithAlpha(
+    //                                            Icon                      Kirigami.Theme.backgroundColor,
+    //                                                                  healthSlider.healthColor, 0.5)}
+    //                         GradientStop { position: 0.5; color: Kirigami.Theme.backgroundColor }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         Rectangle{
+    //             color: Kirigami.Theme.backgroundColor
+    //             Layout.fillHeight: true
+    //             Layout.fillWidth: true
+    //         }
+    //     }
 
     GridLayout {
         flow: wideScreen ? GridLayout.LeftToRight : GridLayout.TopToBottom
@@ -128,28 +128,28 @@ Kirigami.ScrollablePage {
 
                 height: 300
                 Layout.fillWidth: true
-                Rectangle{
+                Rectangle {
                     anchors.centerIn: image
 
                     height: 300
                     width: height
-                    color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor,healthSlider.healthColor, 0.3)
+                    color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, healthSlider.healthColor, 0.3)
                     radius: 50
                     rotation: 45
                 }
-                Rectangle{
+                Rectangle {
                     anchors.centerIn: image
 
                     height: 300
                     width: height
-                    color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor,healthSlider.healthColor, 0.3)
+                    color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, healthSlider.healthColor, 0.3)
                     radius: 50
                     rotation: 0
                 }
                 Image {
+                    id: image
 
                     anchors.fill: parent
-                    id: image
                     fillMode: Image.PreserveAspectFit
                     source: plant.imgUrl
                     layer {
@@ -186,9 +186,6 @@ Kirigami.ScrollablePage {
                         text: plant.species
                         color: Kirigami.Theme.disabledTextColor
                         Layout.alignment: Qt.AlignHCenter
-
-
-
                     }
                 }
             }
@@ -250,7 +247,7 @@ Kirigami.ScrollablePage {
                         Controls.Label {
                             Layout.fillWidth: true
                             text: if (plant.wantsToBeWateredIn > 1) {
-                                return i18ncp("@info", "Has to be watered in %1 day", "Has to be watered in %1 days", plant.wantsToBeWateredIn)
+                                return i18ncp("@info", "Has to be watered in %1 day", "Has to be watered in %1 days", plant.wantsToBeWateredIn);
                             } else if (plant.wantsToBeWateredIn == 1) {
                                 return i18nc("@info", "Has to be watered tomorrow");
                             } else if (plant.wantsToBeWateredIn == 0) {
@@ -289,9 +286,9 @@ Kirigami.ScrollablePage {
                             } else if (plant.wantsToBeFertilizedIn == 1) {
                                 return i18nc("@info", "Has to be fertilized tomorrow");
                             } else if (plant.wantsToBeFertilizedIn == 0) {
-                                return i18nc("@info", "Needs to be fertilized today!")
+                                return i18nc("@info", "Needs to be fertilized today!");
                             } else if (plant.wantsToBeFertilizedIn < 0) {
-                                return i18nc("@info", "Should have been fertilized already!")
+                                return i18nc("@info", "Should have been fertilized already!");
                             }
                         }
 
@@ -303,7 +300,6 @@ Kirigami.ScrollablePage {
                     }
                 }
             }
-
 
             FormCard.FormHeader {
                 title: i18n("Health")
@@ -381,16 +377,16 @@ Kirigami.ScrollablePage {
                     }
                 }
             }
-//            Timer{
-//                id: healthTimer
-//                repeat: false
-//                interval: 1000
-//                running: false
-//                triggeredOnStart: false
-//                onTriggered: {
-//                    healthEvents.addHealthEvent(healthSlider.value)
-//                }
-//            }
+            //            Timer{
+            //                id: healthTimer
+            //                repeat: false
+            //                interval: 1000
+            //                running: false
+            //                triggeredOnStart: false
+            //                onTriggered: {
+            //                    healthEvents.addHealthEvent(healthSlider.value)
+            //                }
+            //            }
             Item {
                 Layout.fillHeight: true
             }

@@ -21,16 +21,20 @@ Controls.Slider {
     ColorInterpolator {
         id: colorInterpolation
         progress: control.value / 100
-        gradientStops: [{
+        gradientStops: [
+            {
                 "position": gradientStop1.position,
                 "color": gradientStop1.color
-            }, {
+            },
+            {
                 "position": gradientStop2.position,
                 "color": gradientStop2.color
-            }, {
+            },
+            {
                 "position": gradientStop3.position,
                 "color": gradientStop3.color
-            }]
+            }
+        ]
     }
     background: Rectangle {
         id: background
@@ -41,9 +45,7 @@ Controls.Slider {
         width: control.availableWidth
         height: implicitHeight
         radius: 5
-        border.color: Kirigami.ColorUtils.linearInterpolation(
-                          Kirigami.Theme.backgroundColor,
-                          Kirigami.Theme.textColor, 0.3)
+        border.color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
         border.width: 1
         Rectangle {
             property int margin: 2
@@ -85,21 +87,17 @@ Controls.Slider {
         source: handleShape
     }
     handle: Shapes.Shape {
+        id: handleShape
         Rectangle {
             height: 10
             width: 10
             radius: 5
             color: healthColor
-            border.color: control.hovered
-                          || control.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.ColorUtils.linearInterpolation(
-                                                       Kirigami.Theme.backgroundColor,
-                                                       Kirigami.Theme.textColor,
-                                                       0.3)
+            border.color: control.hovered || control.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
             border.width: 1
             x: -4.5
             y: -5
         }
-        id: handleShape
         x: control.leftPadding + control.visualPosition * (control.availableWidth)
         y: control.topPadding + weirdNumber - height / 2
         implicitWidth: 26
@@ -107,11 +105,7 @@ Controls.Slider {
         antialiasing: true
         Shapes.ShapePath {
             strokeWidth: 1
-            strokeColor: control.hovered
-                         || control.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.ColorUtils.linearInterpolation(
-                                                      Kirigami.Theme.backgroundColor,
-                                                      Kirigami.Theme.textColor,
-                                                      0.3)
+            strokeColor: control.hovered || control.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
             fillGradient: Shapes.LinearGradient {
                 x1: 0
                 y1: 0
@@ -123,10 +117,7 @@ Controls.Slider {
                 }
                 GradientStop {
                     position: 1
-                    color: Kirigami.ColorUtils.linearInterpolation(
-                                                        Kirigami.Theme.backgroundColor,
-                                                        Kirigami.Theme.textColor,
-                                                        0.3)
+                    color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
                 }
             }
             PathSvg {

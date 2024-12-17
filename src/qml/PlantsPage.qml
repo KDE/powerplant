@@ -1,4 +1,3 @@
-
 // SPDX-FileCopyrightText: 2023 2023 Mathis Brüchert <mbb@kaidan.im>
 // SPDX-FileCopyrightText: 2023 Carl Schwan <carl@carlschwan.eu>
 // SPDX-License-Identifier: GPL-2.0-or-later
@@ -45,18 +44,15 @@ Kirigami.ScrollablePage {
         text: i18nc("@action:button", "Add Plant")
         icon.name: "list-add"
         onClicked: applicationWindow().pageStack.pushDialogLayer(addPlantComponent, {}, {
-           width: Kirigami.Units.gridUnit * 25,
-           height: Kirigami.Units.gridUnit * 35
+            width: Kirigami.Units.gridUnit * 25,
+            height: Kirigami.Units.gridUnit * 35
         })
     }
 
     GridView {
         id: grid
 
-        cellWidth: applicationWindow(
-                       ).width < 500 ? grid.width / (Math.floor(
-                                                         grid.width / 160)) : grid.width
-                                       / (Math.floor(grid.width / 230))
+        cellWidth: applicationWindow().width < 500 ? grid.width / (Math.floor(grid.width / 160)) : grid.width / (Math.floor(grid.width / 230))
         cellHeight: 350
 
         header: ColumnLayout {
@@ -112,7 +108,6 @@ Kirigami.ScrollablePage {
             required property var dateOfBirth
             required property int plantId
 
-
             WaterHistoryModel {
                 id: waterEvents
                 plantId: plantItem.plantId
@@ -123,20 +118,16 @@ Kirigami.ScrollablePage {
                 id: card
 
                 onClicked: pageStack.push(Qt.createComponent('org.kde.powerplant', 'PlantDetailPage'), {
-                                              "plantId": plantItem.plantId,
-                                              "plantsModel": plantsModel
-                                          })
+                    "plantId": plantItem.plantId,
+                    "plantsModel": plantsModel
+                })
 
                 background: Kirigami.ShadowedRectangle {
                     radius: 5
-                    color: Kirigami.ColorUtils.tintWithAlpha(
-                               Kirigami.Theme.backgroundColor,
-                               healthSlider.healthColor, 0.2)
+                    color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, healthSlider.healthColor, 0.2)
 
                     border {
-                        color: Kirigami.ColorUtils.linearInterpolation(
-                                   Kirigami.Theme.backgroundColor,
-                                   Kirigami.Theme.textColor, 0.3)
+                        color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
                         width: 1
                     }
 
@@ -152,8 +143,8 @@ Kirigami.ScrollablePage {
                         height: parent.height - 80
                         width: parent.width
                         Image {
-                            anchors.fill: parent
                             id: image
+                            anchors.fill: parent
                             fillMode: Image.PreserveAspectFit
                             source: imgUrl
                             layer {
@@ -208,13 +199,13 @@ Kirigami.ScrollablePage {
                         showShadow: false
                         label {
                             text: if (wantsToBeWateredIn > 1) {
-                                return i18ncp("@info", "In %1 day", "In %1 days", wantsToBeWateredIn)
+                                return i18ncp("@info", "In %1 day", "In %1 days", wantsToBeWateredIn);
                             } else if (wantsToBeWateredIn == 1) {
-                                return i18nc("@info", "Tomorrow")
+                                return i18nc("@info", "Tomorrow");
                             } else if (wantsToBeWateredIn == 0) {
-                                return i18nc("@info", "Water today!")
+                                return i18nc("@info", "Water today!");
                             } else if (wantsToBeWateredIn < 0) {
-                                return i18nc("@info", "Watering overdue!")
+                                return i18nc("@info", "Watering overdue!");
                             }
                             font.bold: wantsToBeWateredIn <= 0
                         }
@@ -225,8 +216,8 @@ Kirigami.ScrollablePage {
                         action {
                             icon.name: "answer-correct"
                             onClicked: {
-                                console.log(plantId)
-                                waterEvents.waterPlant()
+                                console.log(plantId);
+                                waterEvents.waterPlant();
                             }
                             visible: wantsToBeWateredIn <= 0
                         }
@@ -238,11 +229,11 @@ Kirigami.ScrollablePage {
                             text: if (wantsToBeFertilizedIn > 1) {
                                 return i18ncp("@info", "In %1 day", "In %1 days", wantsToBeFertilizedIn);
                             } else if (wantsToBeFertilizedIn == 1) {
-                                return i18nc("@info", "Tomorrow")
+                                return i18nc("@info", "Tomorrow");
                             } else if (wantsToBeFertilizedIn == 0) {
-                                return i18nc("@info", "Fertilize today!")
+                                return i18nc("@info", "Fertilize today!");
                             } else if (wantsToBeFertilizedIn < 0) {
-                                return i18nc("@info", "Fertilizing overdue!")
+                                return i18nc("@info", "Fertilizing overdue!");
                             }
                             font.bold: wantsToBeFertilizedIn <= 0
                         }
@@ -253,13 +244,12 @@ Kirigami.ScrollablePage {
                         action {
                             icon.name: "answer-correct"
                             onClicked: {
-                                console.log(plantId)
-                                waterEvents.waterPlant()
+                                console.log(plantId);
+                                waterEvents.waterPlant();
                             }
                             visible: wantsToBeFertilizedIn <= 0
                         }
                     }
-
 
                     HealthSlider {
                         id: healthSlider

@@ -29,7 +29,7 @@ Kirigami.ScrollablePage {
                 id: plantsModel
 
                 onModelReset: {
-                    filterModel.sort(0, filterModel.sortOrder)
+                    filterModel.sort(0, filterModel.sortOrder);
                 }
             }
 
@@ -55,15 +55,15 @@ Kirigami.ScrollablePage {
                 FormCard.AbstractFormDelegate {
                     height: delegateLayout.height
                     RowLayout {
+                        id: delegateLayout
                         Layout.fillWidth: true
                         Layout.fillHeight: true
-                        id: delegateLayout
-                        Rectangle{
+                        Rectangle {
                             Layout.margins: Kirigami.Units.largeSpacing * 2
-                            radius: height/2
+                            radius: height / 2
                             width: Kirigami.Units.gridUnit * 4
                             height: width
-                            color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor,healthSlider.healthColor, 0.3)
+                            color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, healthSlider.healthColor, 0.3)
                             HealthSlider {
                                 id: healthSlider
                                 visible: false
@@ -99,9 +99,9 @@ Kirigami.ScrollablePage {
                             }
 
                             Rectangle {
-                                color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor,"#64ace1", 0.3)
+                                color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, "#64ace1", 0.3)
 
-                                radius: height/2
+                                radius: height / 2
                                 height: actionLabel.height + Kirigami.Units.smallSpacing
                                 width: actionLabel.width + Kirigami.Units.smallSpacing * 7
 

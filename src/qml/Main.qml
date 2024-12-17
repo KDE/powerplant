@@ -15,16 +15,17 @@ Kirigami.ApplicationWindow {
     minimumHeight: Kirigami.Units.gridUnit * 20
 
     pageStack {
-        popHiddenPages:true
+        popHiddenPages: true
         columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
 
         globalToolBar {
             style: Kirigami.ApplicationHeaderStyle.ToolBar
-            showNavigationButtons: if (applicationWindow().pageStack.currentIndex > 0
-                || applicationWindow().pageStack.currentIndex > 0) {
-                Kirigami.ApplicationHeaderStyle.ShowBackButton
-            } else {
-                0
+            showNavigationButtons: {
+                if (applicationWindow().pageStack.currentIndex > 0 || applicationWindow().pageStack.currentIndex > 0) {
+                    Kirigami.ApplicationHeaderStyle.ShowBackButton;
+                } else {
+                    0;
+                }
             }
         }
     }

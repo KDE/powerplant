@@ -47,7 +47,7 @@ FormCard.FormCardPage {
                     Layout.preferredHeight: Kirigami.Units.gridUnit * 10
                     Layout.fillWidth: true
                     onCurrentIndexChanged: if (currentIndex >= 0) {
-                        plantEditor.plant.imgUrl = currentItem.url
+                        plantEditor.plant.imgUrl = currentItem.url;
                     }
                     currentIndex: -1
 
@@ -111,11 +111,7 @@ FormCard.FormCardPage {
                             gradient: Gradient {
                                 GradientStop {
                                     position: 0.0
-                                    color: Kirigami.ColorUtils.tintWithAlpha(
-                                        Kirigami.Theme.backgroundColor,
-                                        healthSlider.healthColor,
-                                        0.5
-                                    )
+                                    color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, healthSlider.healthColor, 0.5)
                                 }
                                 GradientStop {
                                     position: 0.5
@@ -369,10 +365,10 @@ FormCard.FormCardPage {
 
             Controls.Button {
                 text: plantEditor.mode === PlantEditor.Editor ? i18n("Edit") : i18n("Add")
-                icon.name:  plantEditor.mode === PlantEditor.Editor ? "document-edit" : "list-add"
+                icon.name: plantEditor.mode === PlantEditor.Editor ? "document-edit" : "list-add"
                 onClicked: {
                     plantEditor.save();
-                    root.closeDialog()
+                    root.closeDialog();
                 }
             }
         }

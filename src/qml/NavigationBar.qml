@@ -17,10 +17,9 @@ Kirigami.NavigationTabBar {
                 while (pageStack.depth > 1) {
                     pageStack.pop();
                 }
-                pageStack.replace(Qt.resolvedUrl("PlantsPage.qml"))
+                pageStack.replace(Qt.resolvedUrl("PlantsPage.qml"));
             }
-            Component.onCompleted: trigger();
-
+            Component.onCompleted: trigger()
         },
         Kirigami.Action {
             text: i18n("Tasks")
@@ -29,7 +28,7 @@ Kirigami.NavigationTabBar {
                 while (pageStack.depth > 1) {
                     pageStack.pop();
                 }
-                pageStack.replace(Qt.resolvedUrl("TaskPage.qml"))
+                pageStack.replace(Qt.resolvedUrl("TaskPage.qml"));
             }
         }
     ]
