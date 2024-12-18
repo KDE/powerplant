@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-17 00:43+0000\n"
+"POT-Creation-Date: 2024-12-18 00:44+0000\n"
 "PO-Revision-Date: 2024-03-02 12:44+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -51,18 +51,18 @@ msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:40
+#: main.cpp:39
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Autor"
 
-#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
+#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:19
 #, kde-format
 msgid "Plants"
 msgstr "Rośliny"
 
-#: qml/NavigationBar.qml:26 qml/TaskPage.qml:14
+#: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
 msgstr ""
@@ -79,12 +79,12 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr "Usuń"
 
-#: qml/PlantDetailPage.qml:235
+#: qml/PlantDetailPage.qml:232
 #, kde-format
 msgid "Water"
 msgstr "Woda"
 
-#: qml/PlantDetailPage.qml:253
+#: qml/PlantDetailPage.qml:250
 #, fuzzy, kde-format
 #| msgid "has to be watered in %1 days"
 msgctxt "@info"
@@ -94,24 +94,24 @@ msgstr[0] "musi być podlana za %1 dni"
 msgstr[1] "musi być podlana za %1 dni"
 msgstr[2] "musi być podlana za %1 dni"
 
-#: qml/PlantDetailPage.qml:255
+#: qml/PlantDetailPage.qml:252
 #, fuzzy, kde-format
 #| msgid "has to be watered tomorrow"
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "musi być podlana jutro"
 
-#: qml/PlantDetailPage.qml:263
+#: qml/PlantDetailPage.qml:260
 #, kde-format
 msgid "Watered"
 msgstr "Podlana"
 
-#: qml/PlantDetailPage.qml:272
+#: qml/PlantDetailPage.qml:269
 #, kde-format
 msgid "Fertilizer"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:288
+#: qml/PlantDetailPage.qml:285
 #, fuzzy, kde-format
 #| msgid "has to be watered in %1 days"
 msgctxt "@info"
@@ -121,48 +121,48 @@ msgstr[0] "musi być podlana za %1 dni"
 msgstr[1] "musi być podlana za %1 dni"
 msgstr[2] "musi być podlana za %1 dni"
 
-#: qml/PlantDetailPage.qml:290
+#: qml/PlantDetailPage.qml:287
 #, fuzzy, kde-format
 #| msgid "has to be watered tomorrow"
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
 msgstr "musi być podlana jutro"
 
-#: qml/PlantDetailPage.qml:292
+#: qml/PlantDetailPage.qml:289
 #, fuzzy, kde-format
 #| msgid "needs to be watered today!"
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
 msgstr "musi być podlana dzisiaj!"
 
-#: qml/PlantDetailPage.qml:294
+#: qml/PlantDetailPage.qml:291
 #, fuzzy, kde-format
 #| msgid "should have been watered already!"
 msgctxt "@info"
 msgid "Should have been fertilized already!"
 msgstr "powinna już być podlana!"
 
-#: qml/PlantDetailPage.qml:299
+#: qml/PlantDetailPage.qml:296
 #, kde-format
 msgid "Fertilized"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:309
+#: qml/PlantDetailPage.qml:305
 #, kde-format
 msgid "Health"
 msgstr "Zdrowie"
 
-#: qml/PlantDetailPage.qml:317
+#: qml/PlantDetailPage.qml:313
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "Jak zdrowa jest twoja roślina dzisiaj?"
 
-#: qml/PlantDetailPage.qml:339 qml/PlantEditorPage.qml:371
+#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:367
 #, kde-format
 msgid "Add"
 msgstr "Dodaj"
 
-#: qml/PlantDetailPage.qml:352
+#: qml/PlantDetailPage.qml:348
 #, kde-format
 msgid "Health History"
 msgstr "Historia zdrowia"
@@ -198,94 +198,94 @@ msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
 msgstr "Pliki obrazów (*.png *.jpg *.webp)"
 
-#: qml/PlantEditorPage.qml:162
+#: qml/PlantEditorPage.qml:158
 #, kde-format
 msgid "Name"
 msgstr "Nazwa"
 
-#: qml/PlantEditorPage.qml:170
+#: qml/PlantEditorPage.qml:166
 #, kde-format
 msgid "Species"
 msgstr "Rodzaje"
 
-#: qml/PlantEditorPage.qml:178
+#: qml/PlantEditorPage.qml:174
 #, kde-format
 msgid "Room"
 msgstr "Pokój"
 
-#: qml/PlantEditorPage.qml:190
+#: qml/PlantEditorPage.qml:186
 #, kde-format
 msgid "How often does the plant need Watering?"
 msgstr "Jak często ta roślina powinna być podlewana?"
 
-#: qml/PlantEditorPage.qml:204 qml/PlantEditorPage.qml:276
+#: qml/PlantEditorPage.qml:200 qml/PlantEditorPage.qml:272
 #, kde-format
 msgid "2 days"
 msgstr "2 dni"
 
-#: qml/PlantEditorPage.qml:212 qml/PlantEditorPage.qml:284
+#: qml/PlantEditorPage.qml:208 qml/PlantEditorPage.qml:280
 #, kde-format
 msgid "5 days"
 msgstr "5 dni"
 
-#: qml/PlantEditorPage.qml:220 qml/PlantEditorPage.qml:292
+#: qml/PlantEditorPage.qml:216 qml/PlantEditorPage.qml:288
 #, kde-format
 msgid "weekly"
 msgstr "co tydzień"
 
-#: qml/PlantEditorPage.qml:229 qml/PlantEditorPage.qml:301
+#: qml/PlantEditorPage.qml:225 qml/PlantEditorPage.qml:297
 #, kde-format
 msgid "2 weeks"
 msgstr "2 tygodnie"
 
-#: qml/PlantEditorPage.qml:242 qml/PlantEditorPage.qml:314
+#: qml/PlantEditorPage.qml:238 qml/PlantEditorPage.qml:310
 #, kde-format
 msgid "Custom:"
 msgstr "Własna:"
 
-#: qml/PlantEditorPage.qml:262
+#: qml/PlantEditorPage.qml:258
 #, fuzzy, kde-format
 #| msgid "How often does the plant need Watering?"
 msgid "How often does the plant need Fertilizing?"
 msgstr "Jak często ta roślina powinna być podlewana?"
 
-#: qml/PlantEditorPage.qml:336
+#: qml/PlantEditorPage.qml:332
 #, kde-format
 msgid "How healthy is your plant at the moment?"
 msgstr "Jak zdrowa jest twoja roślina dzisiaj?"
 
-#: qml/PlantEditorPage.qml:353
+#: qml/PlantEditorPage.qml:349
 #, kde-format
 msgid "Birthday"
 msgstr "Urodziny"
 
-#: qml/PlantEditorPage.qml:371
+#: qml/PlantEditorPage.qml:367
 #, kde-format
 msgid "Edit"
 msgstr "Edytuj"
 
-#: qml/PlantsPage.qml:45
+#: qml/PlantsPage.qml:44
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "Dodaj roślinę"
 
-#: qml/PlantsPage.qml:67
+#: qml/PlantsPage.qml:63
 #, kde-format
 msgid "Good Morning!"
 msgstr "Dzień dobry!"
 
-#: qml/PlantsPage.qml:83
+#: qml/PlantsPage.qml:79
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "Niektóre z twoich roślin wymagają teraz uwagi"
 
-#: qml/PlantsPage.qml:85
+#: qml/PlantsPage.qml:81
 #, kde-format
 msgid "No plants need water right now"
 msgstr "Żadna z twoich roślin nie wymaga teraz uwagi"
 
-#: qml/PlantsPage.qml:211 qml/PlantsPage.qml:239
+#: qml/PlantsPage.qml:202 qml/PlantsPage.qml:230
 #, fuzzy, kde-format
 #| msgid "in %1 days"
 msgctxt "@info"
@@ -295,35 +295,35 @@ msgstr[0] "za %1 dni"
 msgstr[1] "za %1 dni"
 msgstr[2] "za %1 dni"
 
-#: qml/PlantsPage.qml:213 qml/PlantsPage.qml:241
+#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232
 #, fuzzy, kde-format
 #| msgid "tomorrow"
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "jutro"
 
-#: qml/PlantsPage.qml:215
+#: qml/PlantsPage.qml:206
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Water today!"
 msgstr "podlej dzisiaj!"
 
-#: qml/PlantsPage.qml:217
+#: qml/PlantsPage.qml:208
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "przegapiono podlanie!"
 
-#: qml/PlantsPage.qml:243
+#: qml/PlantsPage.qml:234
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "podlej dzisiaj!"
 
-#: qml/PlantsPage.qml:245
+#: qml/PlantsPage.qml:236
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-17 00:43+0000\n"
+"POT-Creation-Date: 2024-12-18 00:44+0000\n"
 "PO-Revision-Date: 2024-12-15 22:09+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Sanskrit\n"
@@ -50,18 +50,18 @@ msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "माथिस ब्रुचेर्ट"
 
-#: main.cpp:40
+#: main.cpp:39
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "लेखकः"
 
-#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
+#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:19
 #, kde-format
 msgid "Plants"
 msgstr "औषध्याम्"
 
-#: qml/NavigationBar.qml:26 qml/TaskPage.qml:14
+#: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
 msgstr "कार्याणि"
@@ -78,12 +78,12 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr "लुप्"
 
-#: qml/PlantDetailPage.qml:235
+#: qml/PlantDetailPage.qml:232
 #, kde-format
 msgid "Water"
 msgstr "जलम्‌"
 
-#: qml/PlantDetailPage.qml:253
+#: qml/PlantDetailPage.qml:250
 #, fuzzy, kde-format
 #| msgid "has to be watered in %1 days"
 msgctxt "@info"
@@ -92,24 +92,24 @@ msgid_plural "Has to be watered in %1 days"
 msgstr[0] "%1 दिवसेषु जलं दातव्यम् अस्ति"
 msgstr[1] "%1 दिवसेषु जलं दातव्यम् अस्ति"
 
-#: qml/PlantDetailPage.qml:255
+#: qml/PlantDetailPage.qml:252
 #, fuzzy, kde-format
 #| msgid "has to be watered tomorrow"
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "श्वः जलं दातव्यम् अस्ति"
 
-#: qml/PlantDetailPage.qml:263
+#: qml/PlantDetailPage.qml:260
 #, kde-format
 msgid "Watered"
 msgstr "जलं दत्तम्"
 
-#: qml/PlantDetailPage.qml:272
+#: qml/PlantDetailPage.qml:269
 #, kde-format
 msgid "Fertilizer"
 msgstr "उर्वरकम्"
 
-#: qml/PlantDetailPage.qml:288
+#: qml/PlantDetailPage.qml:285
 #, fuzzy, kde-format
 #| msgid "has to be fertilized in %1 days"
 msgctxt "@info"
@@ -118,48 +118,48 @@ msgid_plural "Has to be fertilized in %1 days"
 msgstr[0] "%1 दिवसेषु निषेचनं कर्तव्यं भवति"
 msgstr[1] "%1 दिवसेषु निषेचनं कर्तव्यं भवति"
 
-#: qml/PlantDetailPage.qml:290
+#: qml/PlantDetailPage.qml:287
 #, fuzzy, kde-format
 #| msgid "has to be fertilized tomorrow"
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
 msgstr "श्वः निषेचनं कर्तव्यम् अस्ति"
 
-#: qml/PlantDetailPage.qml:292
+#: qml/PlantDetailPage.qml:289
 #, fuzzy, kde-format
 #| msgid "needs to be fertilized today!"
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
 msgstr "अद्य निषेचनस्य आवश्यकता अस्ति!"
 
-#: qml/PlantDetailPage.qml:294
+#: qml/PlantDetailPage.qml:291
 #, fuzzy, kde-format
 #| msgid "should have been fertilized already!"
 msgctxt "@info"
 msgid "Should have been fertilized already!"
 msgstr "पूर्वमेव निषेचनं कर्तव्यम् आसीत्!"
 
-#: qml/PlantDetailPage.qml:299
+#: qml/PlantDetailPage.qml:296
 #, kde-format
 msgid "Fertilized"
 msgstr "निषेचित"
 
-#: qml/PlantDetailPage.qml:309
+#: qml/PlantDetailPage.qml:305
 #, kde-format
 msgid "Health"
 msgstr "आरोग्यम्‌"
 
-#: qml/PlantDetailPage.qml:317
+#: qml/PlantDetailPage.qml:313
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "अद्य भवतः पादपः कियत् स्वस्थः अस्ति ?"
 
-#: qml/PlantDetailPage.qml:339 qml/PlantEditorPage.qml:371
+#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:367
 #, kde-format
 msgid "Add"
 msgstr "संयोजयति"
 
-#: qml/PlantDetailPage.qml:352
+#: qml/PlantDetailPage.qml:348
 #, kde-format
 msgid "Health History"
 msgstr "स्वास्थ्य इतिहास"
@@ -195,93 +195,93 @@ msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
 msgstr "चित्रसञ्चिकाः (*.png *.jpg *.webp)"
 
-#: qml/PlantEditorPage.qml:162
+#: qml/PlantEditorPage.qml:158
 #, kde-format
 msgid "Name"
 msgstr "नामः"
 
-#: qml/PlantEditorPage.qml:170
+#: qml/PlantEditorPage.qml:166
 #, kde-format
 msgid "Species"
 msgstr "विजाति"
 
-#: qml/PlantEditorPage.qml:178
+#: qml/PlantEditorPage.qml:174
 #, kde-format
 msgid "Room"
 msgstr "कक्ष"
 
-#: qml/PlantEditorPage.qml:190
+#: qml/PlantEditorPage.qml:186
 #, kde-format
 msgid "How often does the plant need Watering?"
 msgstr "पादपस्य कियत्वारं जलस्य आवश्यकता भवति ?"
 
-#: qml/PlantEditorPage.qml:204 qml/PlantEditorPage.qml:276
+#: qml/PlantEditorPage.qml:200 qml/PlantEditorPage.qml:272
 #, kde-format
 msgid "2 days"
 msgstr "२ दिवसः"
 
-#: qml/PlantEditorPage.qml:212 qml/PlantEditorPage.qml:284
+#: qml/PlantEditorPage.qml:208 qml/PlantEditorPage.qml:280
 #, kde-format
 msgid "5 days"
 msgstr "५ दिवसाः"
 
-#: qml/PlantEditorPage.qml:220 qml/PlantEditorPage.qml:292
+#: qml/PlantEditorPage.qml:216 qml/PlantEditorPage.qml:288
 #, kde-format
 msgid "weekly"
 msgstr "साप्ताहिकम्"
 
-#: qml/PlantEditorPage.qml:229 qml/PlantEditorPage.qml:301
+#: qml/PlantEditorPage.qml:225 qml/PlantEditorPage.qml:297
 #, kde-format
 msgid "2 weeks"
 msgstr "२ सप्ताहाः"
 
-#: qml/PlantEditorPage.qml:242 qml/PlantEditorPage.qml:314
+#: qml/PlantEditorPage.qml:238 qml/PlantEditorPage.qml:310
 #, kde-format
 msgid "Custom:"
 msgstr "आचारः:"
 
-#: qml/PlantEditorPage.qml:262
+#: qml/PlantEditorPage.qml:258
 #, kde-format
 msgid "How often does the plant need Fertilizing?"
 msgstr "पादपस्य कियत्वारं निषेचनस्य आवश्यकता भवति ?"
 
-#: qml/PlantEditorPage.qml:336
+#: qml/PlantEditorPage.qml:332
 #, kde-format
 msgid "How healthy is your plant at the moment?"
 msgstr "भवतः पादपः अस्मिन् क्षणे कियत् स्वस्थः अस्ति ?"
 
-#: qml/PlantEditorPage.qml:353
+#: qml/PlantEditorPage.qml:349
 #, kde-format
 msgid "Birthday"
 msgstr "जन्मदिवस"
 
-#: qml/PlantEditorPage.qml:371
+#: qml/PlantEditorPage.qml:367
 #, kde-format
 msgid "Edit"
 msgstr "सम्पादन"
 
-#: qml/PlantsPage.qml:45
+#: qml/PlantsPage.qml:44
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "वनस्पति योजयतु"
 
-#: qml/PlantsPage.qml:67
+#: qml/PlantsPage.qml:63
 #, kde-format
 msgid "Good Morning!"
 msgstr "सुप्रभातम्‌!"
 
-#: qml/PlantsPage.qml:83
+#: qml/PlantsPage.qml:79
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "भवतः केषाञ्चन वनस्पतयः ध्यानस्य आवश्यकतां अनुभवन्ति"
 
-#: qml/PlantsPage.qml:85
+#: qml/PlantsPage.qml:81
 #, kde-format
 msgid "No plants need water right now"
 msgstr "इदानीं कस्यापि वनस्पतयः जलस्य आवश्यकता नास्ति"
 
-#: qml/PlantsPage.qml:211 qml/PlantsPage.qml:239
+#: qml/PlantsPage.qml:202 qml/PlantsPage.qml:230
 #, fuzzy, kde-format
 #| msgid "in %1 days"
 msgctxt "@info"
@@ -290,35 +290,35 @@ msgid_plural "In %1 days"
 msgstr[0] "%1 दिवसेषु"
 msgstr[1] "%1 दिवसेषु"
 
-#: qml/PlantsPage.qml:213 qml/PlantsPage.qml:241
+#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232
 #, fuzzy, kde-format
 #| msgid "tomorrow"
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "श्वः"
 
-#: qml/PlantsPage.qml:215
+#: qml/PlantsPage.qml:206
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Water today!"
 msgstr "अद्य जलम् !"
 
-#: qml/PlantsPage.qml:217
+#: qml/PlantsPage.qml:208
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "जलं अतिदेयम् !"
 
-#: qml/PlantsPage.qml:243
+#: qml/PlantsPage.qml:234
 #, fuzzy, kde-format
 #| msgid "fertilize today!"
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "अद्य निषेचनं कुर्वन्तु !"
 
-#: qml/PlantsPage.qml:245
+#: qml/PlantsPage.qml:236
 #, fuzzy, kde-format
 #| msgid "fertilizing overdue!"
 msgctxt "@info"
