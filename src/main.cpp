@@ -11,7 +11,6 @@
 #include "version-powerplant.h"
 #include <KAboutData>
 #include <KCrash>
-#include <KLocalizedContext>
 #include <KLocalizedQmlContext>
 #include <KLocalizedString>
 
@@ -46,7 +45,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    KLocalization::setupLocalizedContext(&engine);
     engine.loadFromModule(u"org.kde.powerplant"_s, u"Main"_s);
 
     if (engine.rootObjects().isEmpty()) {
