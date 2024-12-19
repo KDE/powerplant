@@ -16,6 +16,9 @@ ecm_add_qml_module(powerplant_static
         qml/NavigationBar.qml
         qml/TaskPage.qml
         qml/components/TextIconBox.qml
+    DEPENDENCIES
+        QtCore
+        QtQuick
 )
 
 ecm_qt_declare_logging_category(powerplant_static
