@@ -5,7 +5,8 @@
 
 #include <QApplication>
 #include <QIcon>
-#include <QtQml>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
 
 #include "version-powerplant.h"
 #include <KAboutData>
