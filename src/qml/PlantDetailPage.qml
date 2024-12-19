@@ -251,9 +251,9 @@ Kirigami.ScrollablePage {
                             } else if (plant.wantsToBeWateredIn == 1) {
                                 return i18nc("@info", "Has to be watered tomorrow");
                             } else if (plant.wantsToBeWateredIn == 0) {
-                                return i18nc("Needs to be watered today!");
+                                return i18nc("@info", "Needs to be watered today!");
                             } else if (plant.wantsToBeWateredIn < 0) {
-                                return i18nc("Should have been watered already!");
+                                return i18nc("@info", "Should have been watered already!");
                             }
                         }
                         Controls.Button {
