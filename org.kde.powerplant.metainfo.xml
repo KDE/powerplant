@@ -106,6 +106,7 @@
       <caption xml:lang="ca">Vista principal amb la llista de plantes.</caption>
       <caption xml:lang="ca-valencia">Vista principal amb la llista de plantes.</caption>
       <caption xml:lang="es">Vista principal con la lista de plantas.</caption>
+      <caption xml:lang="fr">Vue principale avec la liste des plantes.</caption>
       <caption xml:lang="gl">Vista principal coa lista de plantas.</caption>
       <caption xml:lang="he">תצוגה ראשית עם רשימת הצמחים.</caption>
       <caption xml:lang="ka">ძირითადი ხედი მცენარეთა ჩამონათვალით.</caption>
@@ -121,6 +122,7 @@
       <caption xml:lang="ca">Detalls d'una planta.</caption>
       <caption xml:lang="ca-valencia">Detalls d'una planta.</caption>
       <caption xml:lang="es">Detalles de una planta.</caption>
+      <caption xml:lang="fr">Détails sur une plante.</caption>
       <caption xml:lang="gl">Detalles dunha planta.</caption>
       <caption xml:lang="he">פרטים של צמח.</caption>
       <caption xml:lang="ka">მცენარის დეტალები.</caption>
@@ -136,6 +138,7 @@
       <caption xml:lang="ca">Llista en brut de les tasques.</caption>
       <caption xml:lang="ca-valencia">Llista en brut de les tasques.</caption>
       <caption xml:lang="es">Lista de tareas.</caption>
+      <caption xml:lang="fr">Liste brute des tâches.</caption>
       <caption xml:lang="gl">Lista de tarefas en cru.</caption>
       <caption xml:lang="he">רשימת משימות גולמית.</caption>
       <caption xml:lang="ka">ამოცანების დაუმუშავებელი სია.</caption>
