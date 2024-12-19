@@ -6,7 +6,7 @@
 #include <QDateTime>
 #include <QObject>
 #include <QUrl>
-#include <QtQml>
+#include <qqmlregistration.h>
 
 #include "database.h"
 #include "plantsmodel.h"

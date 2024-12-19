@@ -6,7 +6,7 @@
 #include <QColor>
 #include <QObject>
 #include <QVariantAnimation>
-#include <QtQml>
+#include <qqmlregistration.h>
 
 class ColorGradientInterpolator : public QObject
 {

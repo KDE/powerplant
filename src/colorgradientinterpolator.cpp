@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 
 #include "colorgradientinterpolator.h"
-#include <QtQml>
+#include <QQmlInfo>
 
 constexpr int stepCount = 1000;
 

@@ -5,7 +5,7 @@
 
 #include "database.h"
 #include <QAbstractListModel>
-#include <QtQml>
+#include <qqmlregistration.h>
 
 class PlantsModel : public QAbstractListModel
 {

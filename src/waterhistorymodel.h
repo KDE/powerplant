@@ -4,7 +4,7 @@
 #pragma once
 
 #include <QAbstractListModel>
-#include <QtQml>
+#include <qqmlregistration.h>
 
 #include "database.h"
 
