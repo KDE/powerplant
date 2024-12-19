@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
+// SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "plantsmodel.h"

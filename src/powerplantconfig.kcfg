@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
     http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
 <!--
-SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
+SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 SPDX-License-Identifier: LGPL-2.0-or-later
 -->
     <group name="General">

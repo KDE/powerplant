@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!--
   - SPDX-License-Identifier: BSD-3-Clause
-  - SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
+  - SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="org.kde.powerplant"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   SPDX-License-Identifier: CC0-1.0
-  SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
+  SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
  -->
 <component type="desktop-application">
   <id>org.kde.powerplant</id>

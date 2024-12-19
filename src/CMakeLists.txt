@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# SPDX-FileCopyrightText: 2023 Mathis <mbb@kaidan.im>
+# SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 
 add_library(powerplant_static STATIC
     fertilizerhistorymodel.cpp)
