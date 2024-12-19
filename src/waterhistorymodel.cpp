@@ -52,7 +52,7 @@ QVariant WaterHistoryModel::data(const QModelIndex &index, int role) const
 
 void WaterHistoryModel::waterPlant()
 {
-    const int now = QDateTime::currentDateTime().toSecsSinceEpoch();
+    const int now = QDateTime::currentSecsSinceEpoch();
     Database::instance().waterPlant(m_plantId, now);
     beginInsertRows({}, m_data.size(), m_data.size());
     m_data.emplace_back(SingleValue<int>{now});

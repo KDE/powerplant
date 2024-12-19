@@ -58,7 +58,7 @@ QVariant HealthHistoryModel::data(const QModelIndex &index, int role) const
 
 void HealthHistoryModel::addHealthEvent(const int health)
 {
-    const int now = QDateTime::currentDateTime().toSecsSinceEpoch();
+    const int now = QDateTime::currentSecsSinceEpoch();
     Database::instance().addHealthEvent(m_plantId, now, health);
     beginInsertRows({}, m_data.size(), m_data.size());
     m_data.emplace_back(now, health);

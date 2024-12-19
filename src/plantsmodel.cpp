@@ -122,7 +122,7 @@ void PlantsModel::addPlant(const QString &name,
                            const int dateOfBirth,
                            const int health)
 {
-    const int now = QDateTime::currentDateTime().toSecsSinceEpoch();
+    const int now = QDateTime::currentSecsSinceEpoch();
     auto future = Database::instance().addPlant(name, species, imgUrl, waterInterval, fertilizerInterval, location, dateOfBirth, now, now, now, health);
 
     QCoro::connect(std::move(future), this, [=, this](auto &&result) {

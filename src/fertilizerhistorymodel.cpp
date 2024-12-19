@@ -52,7 +52,7 @@ QVariant FertilizerHistoryModel::data(const QModelIndex &index, int role) const
 
 void FertilizerHistoryModel::fertilizePlant()
 {
-    const int now = QDateTime::currentDateTime().toSecsSinceEpoch();
+    const int now = QDateTime::currentSecsSinceEpoch();
     Database::instance().fertilizePlant(m_plantId, now);
     beginInsertRows({}, m_data.size(), m_data.size());
     m_data.emplace_back(SingleValue<int>{now});
