@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 [Desktop Entry]
-Name=powerplant
+Name=Powerplant
 Name[ast]=powerplant
 Name[be]=powerplant
 Name[ca]=powerplant
@@ -34,7 +34,7 @@ Name[tr]=PowerPlant
 Name[uk]=powerplant
 Name[x-test]=xxpowerplantxx
 Name[zh_TW]=PowerPlant 植哉追蹤
-Comment=powerplant Kirigami Application
+Comment=Keep your plants alive
 Comment[be]=Праграма powerplant Kirigami
 Comment[ca]=Aplicació de Kirigami «powerplant»
 Comment[ca@valencia]=Aplicació de Kirigami «powerplant»
