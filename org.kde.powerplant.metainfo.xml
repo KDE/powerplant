@@ -46,8 +46,10 @@
   <summary xml:lang="fr">Conserver vos plantes en vie</summary>
   <summary xml:lang="gl">Mantén con vida as súas plantas.</summary>
   <summary xml:lang="he">לשמור על הצמחים שלך בחיים</summary>
+  <summary xml:lang="ia">Mantene tu plantas vive</summary>
   <summary xml:lang="ka">დაიტოვეთ თქვენი მცენარეები ცოცხალი</summary>
   <summary xml:lang="nl">Houd uw planten in leven</summary>
+  <summary xml:lang="sa">भवतः वनस्पतयः जीविताः कुर्वन्तु</summary>
   <summary xml:lang="sl">Ohranjujte svoje rastline pri življenju</summary>
   <summary xml:lang="tr">Bitkilerinizi canlı tutun</summary>
   <summary xml:lang="uk">Підтримайте ріст ваших рослин</summary>
@@ -109,8 +111,10 @@
       <caption xml:lang="fr">Vue principale avec la liste des plantes.</caption>
       <caption xml:lang="gl">Vista principal coa lista de plantas.</caption>
       <caption xml:lang="he">תצוגה ראשית עם רשימת הצמחים.</caption>
+      <caption xml:lang="ia">Vista principalcon le lista de plantas.</caption>
       <caption xml:lang="ka">ძირითადი ხედი მცენარეთა ჩამონათვალით.</caption>
       <caption xml:lang="nl">Hoofdweergave met de lijst planten.</caption>
+      <caption xml:lang="sa">वनस्पतयः सूचीसहितं मुख्यदृश्यम्।</caption>
       <caption xml:lang="sl">Glavni pogled s seznamom rastlin.</caption>
       <caption xml:lang="tr">Bitki listesini gösteren ana görünüm</caption>
       <caption xml:lang="uk">Головне вікно зі списком рослин.</caption>
@@ -125,8 +129,10 @@
       <caption xml:lang="fr">Détails sur une plante.</caption>
       <caption xml:lang="gl">Detalles dunha planta.</caption>
       <caption xml:lang="he">פרטים של צמח.</caption>
+      <caption xml:lang="ia">Detalios de un planta.</caption>
       <caption xml:lang="ka">მცენარის დეტალები.</caption>
       <caption xml:lang="nl">Details van een plant.</caption>
+      <caption xml:lang="sa">कस्यचित् पादपस्य विवरणम् ।</caption>
       <caption xml:lang="sl">Podrobnosti rastline.</caption>
       <caption xml:lang="tr">Bir bitkinin ayrıntıları</caption>
       <caption xml:lang="uk">Подробиці щодо рослини.</caption>
@@ -141,8 +147,10 @@
       <caption xml:lang="fr">Liste brute des tâches.</caption>
       <caption xml:lang="gl">Lista de tarefas en cru.</caption>
       <caption xml:lang="he">רשימת משימות גולמית.</caption>
+      <caption xml:lang="ia">Lista crude de cargas</caption>
       <caption xml:lang="ka">ამოცანების დაუმუშავებელი სია.</caption>
       <caption xml:lang="nl">Ruwe lijst met taken.</caption>
+      <caption xml:lang="sa">कार्याणां कच्चा सूची।</caption>
       <caption xml:lang="sl">Surovi seznam nalog.</caption>
       <caption xml:lang="tr">Görevlerin ham listesi</caption>
       <caption xml:lang="uk">Простий список завдань.</caption>
