@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:44+0000\n"
+"POT-Creation-Date: 2024-12-20 00:44+0000\n"
 "PO-Revision-Date: 2024-03-02 12:44+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -100,6 +100,20 @@ msgstr[2] "musi być podlana za %1 dni"
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "musi być podlana jutro"
+
+#: qml/PlantDetailPage.qml:254
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgctxt "@info"
+msgid "Needs to be watered today!"
+msgstr "musi być podlana dzisiaj!"
+
+#: qml/PlantDetailPage.qml:256
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgctxt "@info"
+msgid "Should have been watered already!"
+msgstr "powinna już być podlana!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -353,12 +367,6 @@ msgstr ""
 #| msgid "in %1 days"
 msgid "In %1 days"
 msgstr "za %1 dni"
-
-#~ msgid "needs to be watered today!"
-#~ msgstr "musi być podlana dzisiaj!"
-
-#~ msgid "should have been watered already!"
-#~ msgstr "powinna już być podlana!"
 
 #, fuzzy
 #~| msgid "Water"

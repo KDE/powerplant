@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:44+0000\n"
+"POT-Creation-Date: 2024-12-20 00:44+0000\n"
 "PO-Revision-Date: 2024-12-17 12:36+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -92,6 +92,20 @@ msgstr[1] "Doit être arrosé dans %1 jours"
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "Doit être arrosé demain"
+
+#: qml/PlantDetailPage.qml:254
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgctxt "@info"
+msgid "Needs to be watered today!"
+msgstr "doit être arrosé aujourd'hui !"
+
+#: qml/PlantDetailPage.qml:256
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgctxt "@info"
+msgid "Should have been watered already!"
+msgstr "Aurais déjà dû être arrosé !"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -330,12 +344,6 @@ msgstr "Maintenant"
 #, kde-format
 msgid "In %1 days"
 msgstr "Dans %1 jours"
-
-#~ msgid "needs to be watered today!"
-#~ msgstr "doit être arrosé aujourd'hui !"
-
-#~ msgid "should have been watered already!"
-#~ msgstr "Aurais déjà dû être arrosé !"
 
 #, fuzzy
 #~| msgid "Water"

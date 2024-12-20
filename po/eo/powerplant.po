@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:44+0000\n"
+"POT-Creation-Date: 2024-12-20 00:44+0000\n"
 "PO-Revision-Date: 2024-02-26 21:16+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
@@ -100,6 +100,20 @@ msgstr[1] "devas estas akvumata post %1 tagoj"
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "devas estas akvumata morgaŭ"
+
+#: qml/PlantDetailPage.qml:254
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgctxt "@info"
+msgid "Needs to be watered today!"
+msgstr "devas estas akvumata hodiaŭ!"
+
+#: qml/PlantDetailPage.qml:256
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgctxt "@info"
+msgid "Should have been watered already!"
+msgstr "devintus jam esti akvumata!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -351,12 +365,6 @@ msgstr ""
 #| msgid "in %1 days"
 msgid "In %1 days"
 msgstr "post %1 tagoj"
-
-#~ msgid "needs to be watered today!"
-#~ msgstr "devas estas akvumata hodiaŭ!"
-
-#~ msgid "should have been watered already!"
-#~ msgstr "devintus jam esti akvumata!"
 
 #, fuzzy
 #~| msgid "Water"

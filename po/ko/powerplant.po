@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:44+0000\n"
+"POT-Creation-Date: 2024-12-20 00:44+0000\n"
 "PO-Revision-Date: 2024-08-20 00:49+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -98,6 +98,20 @@ msgstr[0] "%1일 후 물을 줘야 합니다"
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "내일 물을 줘야 합니다"
+
+#: qml/PlantDetailPage.qml:254
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgctxt "@info"
+msgid "Needs to be watered today!"
+msgstr "오늘 물을 줘야 합니다!"
+
+#: qml/PlantDetailPage.qml:256
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgctxt "@info"
+msgid "Should have been watered already!"
+msgstr "물을 줄 시간이 지났습니다!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -347,12 +361,6 @@ msgstr ""
 #| msgid "in %1 days"
 msgid "In %1 days"
 msgstr "%1일 내"
-
-#~ msgid "needs to be watered today!"
-#~ msgstr "오늘 물을 줘야 합니다!"
-
-#~ msgid "should have been watered already!"
-#~ msgstr "물을 줄 시간이 지났습니다!"
 
 #, fuzzy
 #~| msgid "Water"

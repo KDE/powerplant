@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:44+0000\n"
+"POT-Creation-Date: 2024-12-20 00:44+0000\n"
 "PO-Revision-Date: 2024-12-16 10:41+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -95,6 +95,20 @@ msgstr[3] "Jo je treba zaliti v %1 dneh"
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "Jo je treba zaliti jutri"
+
+#: qml/PlantDetailPage.qml:254
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgctxt "@info"
+msgid "Needs to be watered today!"
+msgstr "jo je treba zaliti danes!"
+
+#: qml/PlantDetailPage.qml:256
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgctxt "@info"
+msgid "Should have been watered already!"
+msgstr "bi jo bilo že treba zaliti!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -337,12 +351,6 @@ msgstr "Zdaj"
 #, kde-format
 msgid "In %1 days"
 msgstr "Čez %1 dni"
-
-#~ msgid "needs to be watered today!"
-#~ msgstr "jo je treba zaliti danes!"
-
-#~ msgid "should have been watered already!"
-#~ msgstr "bi jo bilo že treba zaliti!"
 
 #~ msgid "water"
 #~ msgstr "voda"

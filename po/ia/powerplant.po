@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the powerplant package.
 #
-# giovanni <g.sora@tiscali.it>, 2024.
+# SPDX-FileCopyrightText: 2024 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:44+0000\n"
-"PO-Revision-Date: 2024-02-27 10:26+0100\n"
+"POT-Creation-Date: 2024-12-20 00:44+0000\n"
+"PO-Revision-Date: 2024-12-19 10:43+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -39,11 +39,9 @@ msgid "A small app to track your plants"
 msgstr "Un parve appp per traciar tu Plantas"
 
 #: main.cpp:38
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Mathis Brüchert"
+#, kde-format
 msgid "© 2023-2024 Mathis Brüchert"
-msgstr "Mathis Brüchert"
+msgstr "© 2023-2024 Mathis Brüchert"
 
 #: main.cpp:39
 #, kde-format
@@ -65,7 +63,7 @@ msgstr "Plantas"
 #: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
-msgstr ""
+msgstr "Cargas"
 
 #: qml/PlantDetailPage.qml:56
 #, kde-format
@@ -85,20 +83,32 @@ msgid "Water"
 msgstr "Aqua"
 
 #: qml/PlantDetailPage.qml:250
-#, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be watered in %1 day"
 msgid_plural "Has to be watered in %1 days"
-msgstr[0] "debe esser molliate in %1 dies"
-msgstr[1] "debe esser molliate in %1 dies"
+msgstr[0] "Debe esser molliate in %1 die"
+msgstr[1] "Debe esser molliate in %1 dies"
 
 #: qml/PlantDetailPage.qml:252
-#, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
-msgstr "debe esser molliate deman"
+msgstr "Debe esser molliate deman"
+
+#: qml/PlantDetailPage.qml:254
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgctxt "@info"
+msgid "Needs to be watered today!"
+msgstr "Necessita esser molliate hodie!"
+
+#: qml/PlantDetailPage.qml:256
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgctxt "@info"
+msgid "Should have been watered already!"
+msgstr "Deberea esser ja molliate!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -108,42 +118,38 @@ msgstr "Molliate"
 #: qml/PlantDetailPage.qml:269
 #, kde-format
 msgid "Fertilizer"
-msgstr ""
+msgstr "Fertilisante"
 
 #: qml/PlantDetailPage.qml:285
-#, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
 msgid_plural "Has to be fertilized in %1 days"
-msgstr[0] "debe esser molliate in %1 dies"
-msgstr[1] "debe esser molliate in %1 dies"
+msgstr[0] "Debe esser fertilisate in %1 die"
+msgstr[1] "Debe esser fertilisate in %1 dies"
 
 #: qml/PlantDetailPage.qml:287
-#, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
-msgstr "debe esser molliate deman"
+msgstr "Debe esser fertilisate deman"
 
 #: qml/PlantDetailPage.qml:289
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
-msgstr "Necessita esser molliate hodie!"
+msgstr "Necessita esser fertilisate hodie!"
 
 #: qml/PlantDetailPage.qml:291
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
-msgstr "Deberea esser ja molliate!"
+msgstr "Deberea esser ja fertilisate!"
 
 #: qml/PlantDetailPage.qml:296
 #, kde-format
 msgid "Fertilized"
-msgstr ""
+msgstr "Fertilisate"
 
 #: qml/PlantDetailPage.qml:305
 #, kde-format
@@ -242,10 +248,9 @@ msgid "Custom:"
 msgstr "Personalisa:"
 
 #: qml/PlantEditorPage.qml:258
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgid "How often does the plant need Fertilizing?"
-msgstr "Quanto sovente le planta necessita de molliar?"
+msgstr "Quanto sovente le planta necessita de fertilisar?"
 
 #: qml/PlantEditorPage.qml:332
 #, kde-format
@@ -284,52 +289,45 @@ msgid "No plants need water right now"
 msgstr "Nulle plantas necessita aqua nunc"
 
 #: qml/PlantsPage.qml:202 qml/PlantsPage.qml:230
-#, fuzzy, kde-format
-#| msgid "in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "In %1 day"
 msgid_plural "In %1 days"
-msgstr[0] "in %1 dies"
-msgstr[1] "in %1 dies"
+msgstr[0] "In %1 die"
+msgstr[1] "In %1 dies"
 
 #: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232
-#, fuzzy, kde-format
-#| msgid "tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
-msgstr "deman"
+msgstr "Deman"
 
 #: qml/PlantsPage.qml:206
-#, fuzzy, kde-format
-#| msgid "water today!"
+#, kde-format
 msgctxt "@info"
 msgid "Water today!"
 msgstr "Aqua hodie!"
 
 #: qml/PlantsPage.qml:208
-#, fuzzy, kde-format
-#| msgid "watering overdue!"
+#, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
-msgstr "molliar in retardo!"
+msgstr "Molliar in retardo!"
 
 #: qml/PlantsPage.qml:234
-#, fuzzy, kde-format
-#| msgid "water today!"
+#, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
-msgstr "Aqua hodie!"
+msgstr "Fertilisa hodie!"
 
 #: qml/PlantsPage.qml:236
-#, fuzzy, kde-format
-#| msgid "watering overdue!"
+#, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
-msgstr "molliar in retardo!"
+msgstr "Fetilisar in retardo!"
 
 #: qml/TaskPage.qml:111
-#, fuzzy, kde-format
-#| msgid "Water"
+#, kde-format
 msgctxt "@action"
 msgid "Water"
 msgstr "Aqua"
@@ -338,24 +336,17 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "@info"
 msgid "Already watered"
-msgstr ""
+msgstr "Ja  molliate"
 
 #: qml/TaskPage.qml:123
 #, kde-format
 msgid "Now"
-msgstr ""
+msgstr "Nunc"
 
 #: qml/TaskPage.qml:123
-#, fuzzy, kde-format
-#| msgid "in %1 days"
+#, kde-format
 msgid "In %1 days"
-msgstr "in %1 dies"
-
-#~ msgid "needs to be watered today!"
-#~ msgstr "Necessita esser molliate hodie!"
-
-#~ msgid "should have been watered already!"
-#~ msgstr "Deberea esser ja molliate!"
+msgstr "In %1 dies"
 
 #, fuzzy
 #~| msgid "Water"

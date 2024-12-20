@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:44+0000\n"
+"POT-Creation-Date: 2024-12-20 00:44+0000\n"
 "PO-Revision-Date: 2024-12-16 12:46+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -98,6 +98,20 @@ msgstr[3] "Має бути полито за %1 день"
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "Має бути полито завтра"
+
+#: qml/PlantDetailPage.qml:254
+#, fuzzy, kde-format
+#| msgid "needs to be watered today!"
+msgctxt "@info"
+msgid "Needs to be watered today!"
+msgstr "має бути полито сьогодні!"
+
+#: qml/PlantDetailPage.qml:256
+#, fuzzy, kde-format
+#| msgid "should have been watered already!"
+msgctxt "@info"
+msgid "Should have been watered already!"
+msgstr "має бути вже полито!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -340,12 +354,6 @@ msgstr "Зараз"
 #, kde-format
 msgid "In %1 days"
 msgstr "За %1 днів"
-
-#~ msgid "needs to be watered today!"
-#~ msgstr "має бути полито сьогодні!"
-
-#~ msgid "should have been watered already!"
-#~ msgstr "має бути вже полито!"
 
 #~| msgid "Water"
 #~ msgid "water"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:44+0000\n"
+"POT-Creation-Date: 2024-12-20 00:44+0000\n"
 "PO-Revision-Date: 2024-12-17 19:05+0100\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -98,6 +98,22 @@ msgstr[1] "Cal regar-la d'ací a %1 dies"
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "Cal regar-la demà"
+
+#: qml/PlantDetailPage.qml:254
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Needs to be fertilized today!"
+msgctxt "@info"
+msgid "Needs to be watered today!"
+msgstr "Cal fertilitzar-la hui!"
+
+#: qml/PlantDetailPage.qml:256
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Should have been fertilized already!"
+msgctxt "@info"
+msgid "Should have been watered already!"
+msgstr "Ja s'hauria d'haver fertilitzat!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
