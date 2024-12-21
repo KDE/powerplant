@@ -13,7 +13,6 @@
 
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
 
-    <!-- %%INSERT_PERMISSIONS -->
     <!-- %%INSERT_FEATURES -->
 
     <application android:name="org.qtproject.qt.android.bindings.QtApplication" android:label="PowerPlant" android:icon="@mipmap/ic_launcher">
