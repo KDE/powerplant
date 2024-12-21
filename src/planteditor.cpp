@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "planteditor.h"
-#include "database.h"
 #include <QCoroFuture>
 #include <QCoroTask>
 #include <algorithm>

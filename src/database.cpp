@@ -4,7 +4,6 @@
 #include "database.h"
 
 #include <QCoroFuture>
-#include <QCoroTask>
 #include <QDateTime>
 #include <QDir>
 #include <QStandardPaths>
