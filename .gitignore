@@ -2,7 +2,8 @@
 // SPDX-License-Identifier: CC0-1.0
 
 bin
-build
+build*/
 CMakeLists.txt.user
 compile_commands.json
 .cache
+.clang-format
