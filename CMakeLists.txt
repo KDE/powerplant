@@ -27,6 +27,7 @@ include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMPoQmTools)
 include(ECMQmlModule)
+include(ECMDeprecationSettings)
 
 ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX POWERPLANT
@@ -43,6 +44,10 @@ find_package(QCoro6 REQUIRED COMPONENTS Core)
 if (ANDROID)
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
 endif()
+
+ecm_set_disabled_deprecation_versions(QT 6.8.1
+    KF 6.9.0
+)
 
 add_subdirectory(src)
 
