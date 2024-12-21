@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 
 add_library(powerplant_static STATIC)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config-powerplant.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-powerplant.h)
+
 ecm_add_qml_module(powerplant_static
     GENERATE_PLUGIN_SOURCE
     URI org.kde.powerplant
@@ -56,6 +58,7 @@ target_link_libraries(powerplant_static PUBLIC
     FutureSQL6::FutureSQL
     QCoro6::Core)
 
+
 if (ANDROID)
     kirigami_package_breeze_icons(ICONS
         list-add
@@ -69,5 +72,8 @@ kconfig_target_kcfg_file(powerplant_static FILE powerplantconfig.kcfg CLASS_NAME
 
 ## Excutable
 add_executable(powerplant main.cpp resources.qrc)
-target_link_libraries(powerplant PRIVATE powerplant_static powerplant_staticplugin KF6::Crash)
+target_link_libraries(powerplant PRIVATE powerplant_static powerplant_staticplugin)
+if (TARGET KF6::Crash)
+   target_link_libraries(powerplant PRIVATE KF6::Crash)
+endif()	
 install(TARGETS powerplant ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

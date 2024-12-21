@@ -8,9 +8,12 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 
+#include "config-powerplant.h"
 #include "version-powerplant.h"
 #include <KAboutData>
+#if HAVE_KCRASH
 #include <KCrash>
+#endif
 #include <KLocalizedQmlContext>
 #include <KLocalizedString>
 
@@ -38,9 +41,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
         i18n("© 2023-2024 Mathis Brüchert"));
     aboutData.addAuthor(i18nc("@info:credit", "Mathis Brüchert"), i18nc("@info:credit", "Author"), QStringLiteral("mbb@kaidan.im"));
     KAboutData::setApplicationData(aboutData);
-
+#if HAVE_KCRASH
     KCrash::initialize();
-
+#endif
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.powerplant")));
 
     QQmlApplicationEngine engine;
