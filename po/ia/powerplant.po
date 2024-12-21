@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-20 00:44+0000\n"
-"PO-Revision-Date: 2024-12-19 10:43+0100\n"
+"PO-Revision-Date: 2024-12-20 12:29+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -97,15 +97,13 @@ msgid "Has to be watered tomorrow"
 msgstr "Debe esser molliate deman"
 
 #: qml/PlantDetailPage.qml:254
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
 msgstr "Necessita esser molliate hodie!"
 
 #: qml/PlantDetailPage.qml:256
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
 msgstr "Deberea esser ja molliate!"

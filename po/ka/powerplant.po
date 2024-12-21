@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-20 00:44+0000\n"
-"PO-Revision-Date: 2024-12-16 04:44+0100\n"
+"PO-Revision-Date: 2024-12-20 05:07+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -98,15 +98,13 @@ msgid "Has to be watered tomorrow"
 msgstr "ხვალ უნდა მორწყათ"
 
 #: qml/PlantDetailPage.qml:254
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
 msgstr "წყალი დღეს უნდა დაუსხათ!"
 
 #: qml/PlantDetailPage.qml:256
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
 msgstr "წყალი უკვე უნდა დაგესხათ!"
