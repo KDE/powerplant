@@ -1,8 +1,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 
-add_library(powerplant_static STATIC
-    fertilizerhistorymodel.cpp)
+add_library(powerplant_static STATIC)
 ecm_add_qml_module(powerplant_static
     GENERATE_PLUGIN_SOURCE
     URI org.kde.powerplant
@@ -31,14 +30,14 @@ ecm_qt_declare_logging_category(powerplant_static
 )
 
 target_sources(powerplant_static PRIVATE
-    database.cpp
-    plantsmodel.cpp
-    healthhistorymodel.cpp
-    waterhistorymodel.cpp
-    fertilizerhistorymodel.cpp
-    colorgradientinterpolator.cpp
-    plantimagemodel.cpp
-    planteditor.cpp
+    database.cpp database.h
+    plantsmodel.cpp plantsmodel.h
+    healthhistorymodel.cpp healthhistorymodel.h
+    waterhistorymodel.cpp waterhistorymodel.h
+    fertilizerhistorymodel.cpp fertilizerhistorymodel.h
+    colorgradientinterpolator.cpp colorgradientinterpolator.h
+    plantimagemodel.cpp plantimagemodel.h
+    planteditor.cpp planteditor.cpp
 )
 
 target_link_libraries(powerplant_static PUBLIC
