@@ -248,9 +248,9 @@ Kirigami.ScrollablePage {
                             Layout.fillWidth: true
                             text: if (plant.wantsToBeWateredIn > 1) {
                                 return i18ncp("@info", "Has to be watered in %1 day", "Has to be watered in %1 days", plant.wantsToBeWateredIn);
-                            } else if (plant.wantsToBeWateredIn == 1) {
+                            } else if (plant.wantsToBeWateredIn === 1) {
                                 return i18nc("@info", "Has to be watered tomorrow");
-                            } else if (plant.wantsToBeWateredIn == 0) {
+                            } else if (plant.wantsToBeWateredIn === 0) {
                                 return i18nc("@info", "Needs to be watered today!");
                             } else if (plant.wantsToBeWateredIn < 0) {
                                 return i18nc("@info", "Should have been watered already!");
@@ -283,9 +283,9 @@ Kirigami.ScrollablePage {
                             Layout.fillWidth: true
                             text: if (plant.wantsToBeFertilizedIn > 1) {
                                 return i18ncp("@info", "Has to be fertilized in %1 day", "Has to be fertilized in %1 days", plant.wantsToBeFertilizedIn);
-                            } else if (plant.wantsToBeFertilizedIn == 1) {
+                            } else if (plant.wantsToBeFertilizedIn === 1) {
                                 return i18nc("@info", "Has to be fertilized tomorrow");
-                            } else if (plant.wantsToBeFertilizedIn == 0) {
+                            } else if (plant.wantsToBeFertilizedIn === 0) {
                                 return i18nc("@info", "Needs to be fertilized today!");
                             } else if (plant.wantsToBeFertilizedIn < 0) {
                                 return i18nc("@info", "Should have been fertilized already!");
