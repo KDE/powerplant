@@ -2,7 +2,31 @@
 # SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 [Desktop Entry]
 Name=Powerplant
+Name[ca]=Powerplant
+Name[ca@valencia]=Powerplant
+Name[es]=Powerplant
+Name[he]=Powerplant
+Name[ia]=Powerplant (Energia per Plantas)
+Name[ka]=Powerplant
+Name[nl]=Powerplant
+Name[sa]=विद्युत् संयंत्र
+Name[sl]=Powerplant
+Name[tr]=PowerPlant
+Name[uk]=Powerplant
+Name[x-test]=xxPowerplantxx
 Comment=Keep your plants alive
+Comment[ca]=Manté vives les vostres plantes
+Comment[ca@valencia]=Manté vives les vostres plantes
+Comment[es]=Mantenga vivas sus plantas
+Comment[he]=לשמור על הצמחים שלך בחיים
+Comment[ia]=Mantene tu plantas vive
+Comment[ka]=შეინარჩუნეთ თქვენი მცენარეები ცოცხალ მდგომარეობაში
+Comment[nl]=Houd uw planten in leven
+Comment[sa]=भवतः वनस्पतयः जीविताः कुर्वन्तु
+Comment[sl]=Ohranja vaše rastline žive
+Comment[tr]=Bitkilerinizi canlı tutar
+Comment[uk]=Підтримуйте життя у ваших рослинах
+Comment[x-test]=xxKeep your plants alivexx
 Version=1.0
 Exec=powerplant
 Icon=org.kde.powerplant
