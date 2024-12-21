@@ -28,6 +28,7 @@ include(ECMGenerateHeaders)
 include(ECMPoQmTools)
 include(ECMQmlModule)
 include(ECMDeprecationSettings)
+include(ECMAddAndroidApk)
 
 ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX POWERPLANT

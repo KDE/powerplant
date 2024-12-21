@@ -77,3 +77,5 @@ if (TARGET KF6::Crash)
    target_link_libraries(powerplant PRIVATE KF6::Crash)
 endif()	
 install(TARGETS powerplant ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+
+ecm_add_android_apk(powerplant ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
