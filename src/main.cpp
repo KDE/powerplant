@@ -3,10 +3,17 @@
     SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 */
 
+#ifdef Q_OS_ANDROID
+#include <QGuiApplication>
+#else
 #include <QApplication>
+#endif
+
+#include <QFont>
 #include <QIcon>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QQuickStyle>
 
 #include "config-powerplant.h"
 #include "version-powerplant.h"
@@ -19,11 +26,39 @@
 
 #include <QCoro/QCoroFuture>
 
+#ifdef Q_OS_WINDOWS
+#include <Windows.h>
+#endif
+
 using namespace Qt::Literals::StringLiterals;
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
+#ifdef Q_OS_ANDROID
+    QGuiApplication app(argc, argv);
+    QQuickStyle::setStyle(QStringLiteral("org.kde.breeze"));
+#else
+    QIcon::setFallbackThemeName(u"breeze"_s);
     QApplication app(argc, argv);
+    // Default to org.kde.desktop style unless the user forces another style
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+    }
+#endif
+
+#ifdef Q_OS_WINDOWS
+    if (AttachConsole(ATTACH_PARENT_PROCESS)) {
+        freopen("CONOUT$", "w", stdout);
+        freopen("CONOUT$", "w", stderr);
+    }
+
+    QApplication::setStyle(QStringLiteral("breeze"));
+    QFont font(QStringLiteral("Segoe UI Emoji"));
+    font.setPointSize(10);
+    font.setHintingPreference(QFont::PreferNoHinting);
+    app.setFont(font);
+#endif
+
     KLocalizedString::setApplicationDomain("powerplant");
 
     KAboutData aboutData(
