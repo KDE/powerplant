@@ -60,6 +60,7 @@ target_link_libraries(powerplant_static PUBLIC
 
 
 if (ANDROID)
+    get_property(additional_icons GLOBAL PROPERTY kirigami_addons_icons)
     kirigami_package_breeze_icons(ICONS
         help-about-symbolic
         view-calendar-tasks-symbolic
@@ -72,7 +73,7 @@ if (ANDROID)
         answer-correct-symbolic
         list-add-symbolic
 
-        # kirigami addons
+        # kirigami addons (TODO remove when depending on Kirigami addons 1.7 and just use additional_icons
         globe-symbolic
         tools-report-bug-symbolic
         donate-symbolic
@@ -87,6 +88,8 @@ if (ANDROID)
         go-next-view
         view-calendar
         clock
+
+        ${additional_icons}
     )
 endif()
 

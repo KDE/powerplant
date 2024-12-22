@@ -41,7 +41,13 @@ find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControl
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami CoreAddons Config I18n )
 if (NOT ANDROID)
    find_package(KF6 ${KF_MIN_VERSION} OPTIONAL_COMPONENTS Crash)
-endif()	
+endif()
+
+find_package(KF6KirigamiAddons 1.6.0)
+set_package_properties(KF6KirigamiAddons PROPERTIES
+    TYPE REQUIRED
+    PURPOSE "Required application components and runtime dependency"
+)
 
 if (TARGET KF6::Crash)
     set(HAVE_KCRASH TRUE)
