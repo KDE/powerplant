@@ -150,7 +150,8 @@ QFuture<std::optional<Plant>> Database::plant(int plant_id)
     where plants.plant_id = ?
     group by
         plants.plant_id
-    )"), plant_id);
+    )"),
+                                        plant_id);
 }
 
 QFuture<std::vector<SingleValue<int>>> Database::waterEvents(int plantId)
