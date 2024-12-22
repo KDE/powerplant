@@ -74,21 +74,7 @@ if (ANDROID)
         answer-correct-symbolic
         list-add-symbolic
 
-        # kirigami addons
-        globe-symbolic
-        tools-report-bug-symbolic
-        donate-symbolic
-        applications-development-symbolic
-        edit-copy-symbolic
-        get-hot-new-stuff
-        globe
-        mail-sent
-        license
-        go-previous-view
-        go-jump-today
-        go-next-view
-        view-calendar
-        clock
+        ${KIRIGAMI_ADDONS_ICONS}
     )
 endif()
 
