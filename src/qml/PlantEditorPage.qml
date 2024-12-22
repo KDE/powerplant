@@ -67,7 +67,7 @@ FormCard.FormCardPage {
 
                         Components.FloatingButton {
                             anchors.centerIn: parent
-                            icon.name: "list-add"
+                            icon.name: "list-add-symbolic"
                             text: i18n("Use custom image")
                             onClicked: fileDialog.open()
                         }
@@ -365,7 +365,7 @@ FormCard.FormCardPage {
 
             Controls.Button {
                 text: plantEditor.mode === PlantEditor.Editor ? i18n("Edit") : i18n("Add")
-                icon.name: plantEditor.mode === PlantEditor.Editor ? "document-edit" : "list-add"
+                icon.name: plantEditor.mode === PlantEditor.Editor ? "document-edit-symbolic" : "list-add-symbolic"
                 onClicked: {
                     plantEditor.save();
                     root.closeDialog();

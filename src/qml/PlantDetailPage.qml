@@ -52,7 +52,7 @@ Kirigami.ScrollablePage {
 
     actions: [
         Kirigami.Action {
-            icon.name: "document-edit"
+            icon.name: "document-edit-symbolic"
             text: i18nc("@action:button", "Edit")
             onTriggered: {
                 applicationWindow().pageStack.pushDialogLayer(editPlantComponent, {}, {
@@ -62,7 +62,7 @@ Kirigami.ScrollablePage {
             }
         },
         Kirigami.Action {
-            icon.name: "delete"
+            icon.name: "delete-symbolic"
             text: i18nc("@action:button", "Delete")
             onTriggered: {
                 plantsModel.deletePlant(plant.plantId);
@@ -218,7 +218,7 @@ Kirigami.ScrollablePage {
                 TextIconBox {
                     label.text: Qt.formatDate(plant.dateOfBirth)
                     visible: label.text.length > 0
-                    icon.source: "view-calendar-birthday"
+                    icon.source: "view-calendar-birthday-symbolic"
                     Layout.fillWidth: true
                 }
                 // TextIconBox {
@@ -239,7 +239,7 @@ Kirigami.ScrollablePage {
                     contentItem: RowLayout {
                         Kirigami.Icon {
                             id: icon
-                            source: "raindrop"
+                            source: "raindrop-symbolic"
                             color: "#64ace1"
                             isMask: true
                             implicitHeight: Kirigami.Units.gridUnit * 1.5
@@ -258,7 +258,7 @@ Kirigami.ScrollablePage {
                         }
                         Controls.Button {
                             text: i18n("Watered")
-                            icon.name: "answer-correct"
+                            icon.name: "answer-correct-symbolic"
                             onClicked: waterEvents.waterPlant()
                         }
                     }
@@ -274,7 +274,7 @@ Kirigami.ScrollablePage {
                     background: null
                     contentItem: RowLayout {
                         Kirigami.Icon {
-                            source: "raindrop"
+                            source: "raindrop-symbolic"
                             color: "yellow"
                             isMask: true
                             implicitHeight: Kirigami.Units.gridUnit * 1.5
@@ -294,7 +294,7 @@ Kirigami.ScrollablePage {
 
                         Controls.Button {
                             text: i18n("Fertilized")
-                            icon.name: "answer-correct"
+                            icon.name: "answer-correct-symbolic"
                             onClicked: fertilizerEvents.fertilizePlant()
                         }
                     }
@@ -333,7 +333,7 @@ Kirigami.ScrollablePage {
 
                             Controls.Button {
                                 text: i18n("Add")
-                                icon.name: "list-add"
+                                icon.name: "list-add-symbolic"
                                 onClicked: healthEvents.addHealthEvent(healthSlider.value)
                             }
                         }

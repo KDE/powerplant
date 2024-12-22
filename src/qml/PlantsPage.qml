@@ -42,7 +42,7 @@ Kirigami.ScrollablePage {
         }
 
         text: i18nc("@action:button", "Add Plant")
-        icon.name: "list-add"
+        icon.name: "list-add-symbolic"
         onClicked: applicationWindow().pageStack.pushDialogLayer(addPlantComponent, {}, {
             width: Kirigami.Units.gridUnit * 25,
             height: Kirigami.Units.gridUnit * 35
@@ -210,11 +210,11 @@ Kirigami.ScrollablePage {
                             font.bold: wantsToBeWateredIn <= 0
                         }
                         icon {
-                            source: "raindrop"
+                            source: "raindrop-symbolic"
                             color: "#64ace1"
                         }
                         action {
-                            icon.name: "answer-correct"
+                            icon.name: "answer-correct-symbolic"
                             onClicked: {
                                 console.log(plantId);
                                 waterEvents.waterPlant();
@@ -238,11 +238,11 @@ Kirigami.ScrollablePage {
                             font.bold: wantsToBeFertilizedIn <= 0
                         }
                         icon {
-                            source: "raindrop"
+                            source: "raindrop-symbolic"
                             color: "yellow"
                         }
                         action {
-                            icon.name: "answer-correct"
+                            icon.name: "answer-correct-symbolic"
                             onClicked: {
                                 console.log(plantId);
                                 waterEvents.waterPlant();

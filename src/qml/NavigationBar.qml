@@ -12,7 +12,7 @@ Kirigami.NavigationTabBar {
     actions: [
         Kirigami.Action {
             text: i18n("Plants")
-            icon.name: "battery-profile-powersave"
+            icon.name: "battery-profile-powersave-symbolic"
             onTriggered: {
                 while (pageStack.depth > 1) {
                     pageStack.pop();
@@ -23,7 +23,7 @@ Kirigami.NavigationTabBar {
         },
         Kirigami.Action {
             text: i18n("Tasks")
-            icon.name: "view-calendar-tasks"
+            icon.name: "view-calendar-tasks-symbolic"
             onTriggered: {
                 while (pageStack.depth > 1) {
                     pageStack.pop();

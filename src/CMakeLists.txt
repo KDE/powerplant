@@ -61,19 +61,16 @@ target_link_libraries(powerplant_static PUBLIC
 
 if (ANDROID)
     kirigami_package_breeze_icons(ICONS
-        list-add
-        help-about
-        application-exit
-        applications-graphics
-        view-calendar-tasks
-        battery-profile-powersave
-        document-edit
-        delete
+        help-about-symbolic
+        view-calendar-tasks-symbolic
+        battery-profile-powersave-symbolic
+        document-edit-symbolic
+        delete-symbolic
         go-home-symbolic
-        view-calendar-birthday
-        raindrop
-        answer-correct
-        list-add
+        view-calendar-birthday-symbolic
+        raindrop-symbolic
+        answer-correct-symbolic
+        list-add-symbolic
 
         # kirigami addons
         globe-symbolic
