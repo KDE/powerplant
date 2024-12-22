@@ -52,18 +52,25 @@ Kirigami.ScrollablePage {
 
             FormCard.FormCard {
                 Layout.bottomMargin: Kirigami.Units.largeSpacing
+
                 FormCard.AbstractFormDelegate {
-                    height: delegateLayout.height
-                    RowLayout {
+                    onClicked: pageStack.push(Qt.createComponent('org.kde.powerplant', 'PlantDetailPage'), {
+                        "plantId": taskDelegate.plantId,
+                        "plantsModel": plantsModel,
+                    })
+
+                    contentItem: RowLayout {
                         id: delegateLayout
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
+
+                        spacing: Kirigami.Units.largeSpacing * 2
+
                         Rectangle {
-                            Layout.margins: Kirigami.Units.largeSpacing * 2
-                            radius: height / 2
-                            width: Kirigami.Units.gridUnit * 4
-                            height: width
+                            radius: height
                             color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, healthSlider.healthColor, 0.3)
+
+                            Layout.preferredWidth: Kirigami.Units.gridUnit * 4
+                            Layout.preferredHeight: Kirigami.Units.gridUnit * 4
+
                             HealthSlider {
                                 id: healthSlider
                                 visible: false
@@ -82,6 +89,8 @@ Kirigami.ScrollablePage {
                         }
 
                         ColumnLayout {
+                            spacing: 0
+
                             Layout.fillWidth: true
                             Layout.fillHeight: true
 
@@ -89,21 +98,24 @@ Kirigami.ScrollablePage {
                                 text: taskDelegate.name
                                 type: Kirigami.Heading.Type.Primary
                                 Layout.bottomMargin: -Kirigami.Units.smallSpacing
+                                Layout.fillWidth: true
                             }
 
                             Controls.Label {
                                 text: taskDelegate.location
                                 color: Kirigami.Theme.disabledTextColor
-                                Layout.bottomMargin: Kirigami.Units.smallSpacing
                                 visible: text.length > 0
+
+                                Layout.fillWidth: true
                             }
 
                             Rectangle {
                                 color: Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.backgroundColor, "#64ace1", 0.3)
+                                radius: height
 
-                                radius: height / 2
-                                height: actionLabel.height + Kirigami.Units.smallSpacing
-                                width: actionLabel.width + Kirigami.Units.smallSpacing * 7
+                                Layout.preferredHeight: actionLabel.height + Kirigami.Units.smallSpacing
+                                Layout.preferredWidth: actionLabel.width + Kirigami.Units.smallSpacing * 7
+                                Layout.topMargin: Kirigami.Units.smallSpacing
 
                                 Controls.Label {
                                     id: actionLabel
