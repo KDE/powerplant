@@ -65,6 +65,31 @@ if (ANDROID)
         help-about
         application-exit
         applications-graphics
+        view-calendar-tasks
+        battery-profile-powersave
+        document-edit
+        delete
+        go-home-symbolic
+        view-calendar-birthday
+        raindrop
+        answer-correct
+        list-add
+
+        # kirigami addons
+        globe-symbolic
+        tools-report-bug-symbolic
+        donate-symbolic
+        applications-development-symbolic
+        edit-copy-symbolic
+        get-hot-new-stuff
+        globe
+        mail-sent
+        license
+        go-previous-view
+        go-jump-today
+        go-next-view
+        view-calendar
+        clock
     )
 endif()
 
