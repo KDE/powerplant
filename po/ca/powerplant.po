@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-22 00:43+0000\n"
+"POT-Creation-Date: 2024-12-23 00:43+0000\n"
 "PO-Revision-Date: 2024-12-20 10:31+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -30,29 +30,29 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
-#: main.cpp:33
+#: main.cpp:68
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
 msgstr "PowerPlant"
 
-#: main.cpp:37
+#: main.cpp:72
 #, kde-format
 msgid "A small app to track your plants"
 msgstr "Una aplicació petita que segueix les vostres plantes"
 
-#: main.cpp:41
+#: main.cpp:76
 #, kde-format
 msgid "© 2023-2024 Mathis Brüchert"
 msgstr "© 2023-2024 Mathis Brüchert"
 
-#: main.cpp:42
+#: main.cpp:77
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:42
+#: main.cpp:77
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
@@ -327,24 +327,24 @@ msgctxt "@info"
 msgid "Fertilizing overdue!"
 msgstr "Hi ha una fertilització endarrerida!"
 
-#: qml/TaskPage.qml:111
+#: qml/TaskPage.qml:123
 #, kde-format
 msgctxt "@action"
 msgid "Water"
 msgstr "Aigua"
 
-#: qml/TaskPage.qml:123
+#: qml/TaskPage.qml:135
 #, kde-format
 msgctxt "@info"
 msgid "Already watered"
 msgstr "Ja s'ha regat"
 
-#: qml/TaskPage.qml:123
+#: qml/TaskPage.qml:135
 #, kde-format
 msgid "Now"
 msgstr "Ara"
 
-#: qml/TaskPage.qml:123
+#: qml/TaskPage.qml:135
 #, kde-format
 msgid "In %1 days"
 msgstr "D'aquí a %1 dies"

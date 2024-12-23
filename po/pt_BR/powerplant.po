@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-22 00:43+0000\n"
+"POT-Creation-Date: 2024-12-23 00:43+0000\n"
 "PO-Revision-Date: 2024-04-04 15:12-0300\n"
 "Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -27,31 +27,31 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "geraldosimiao@fedoraproject.org"
 
-#: main.cpp:33
+#: main.cpp:68
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
 msgstr "PowerPlant"
 
-#: main.cpp:37
+#: main.cpp:72
 #, kde-format
 msgid "A small app to track your plants"
 msgstr "Um pequeno aplicativo que ajuda você a cuidar de suas plantas"
 
-#: main.cpp:41
+#: main.cpp:76
 #, fuzzy, kde-format
 #| msgctxt "@info:credit"
 #| msgid "Mathis Brüchert"
 msgid "© 2023-2024 Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:42
+#: main.cpp:77
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:42
+#: main.cpp:77
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
@@ -341,25 +341,25 @@ msgctxt "@info"
 msgid "Fertilizing overdue!"
 msgstr "esta rega está atrasada!"
 
-#: qml/TaskPage.qml:111
+#: qml/TaskPage.qml:123
 #, fuzzy, kde-format
 #| msgid "Water"
 msgctxt "@action"
 msgid "Water"
 msgstr "Água"
 
-#: qml/TaskPage.qml:123
+#: qml/TaskPage.qml:135
 #, kde-format
 msgctxt "@info"
 msgid "Already watered"
 msgstr ""
 
-#: qml/TaskPage.qml:123
+#: qml/TaskPage.qml:135
 #, kde-format
 msgid "Now"
 msgstr ""
 
-#: qml/TaskPage.qml:123
+#: qml/TaskPage.qml:135
 #, fuzzy, kde-format
 #| msgid "in %1 days"
 msgid "In %1 days"

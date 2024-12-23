@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-22 00:43+0000\n"
-"PO-Revision-Date: 2024-12-17 00:24+0100\n"
+"POT-Creation-Date: 2024-12-23 00:43+0000\n"
+"PO-Revision-Date: 2024-12-22 14:21+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -30,29 +30,29 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xalba@ni.eus"
 
-#: main.cpp:33
+#: main.cpp:68
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
 msgstr "PowerPlant"
 
-#: main.cpp:37
+#: main.cpp:72
 #, kde-format
 msgid "A small app to track your plants"
 msgstr "Zure landareen jarraipena egiteko aplikazio txiki bat"
 
-#: main.cpp:41
+#: main.cpp:76
 #, kde-format
 msgid "© 2023-2024 Mathis Brüchert"
 msgstr "© 2023-2024 Mathis Brüchert"
 
-#: main.cpp:42
+#: main.cpp:77
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:42
+#: main.cpp:77
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
@@ -100,18 +100,16 @@ msgid "Has to be watered tomorrow"
 msgstr "Bihar ureztatu egin behar da"
 
 #: qml/PlantDetailPage.qml:254
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
-msgstr "gaur ureztatu egin behar da!"
+msgstr "Gaur ureztatu egin behar da!"
 
 #: qml/PlantDetailPage.qml:256
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
-msgstr "dagoeneko ureztatuta behar zuen!"
+msgstr "Dagoeneko ureztatuta behar zuen!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -329,24 +327,24 @@ msgctxt "@info"
 msgid "Fertilizing overdue!"
 msgstr "Ongarritzea atzeratu da!"
 
-#: qml/TaskPage.qml:111
+#: qml/TaskPage.qml:123
 #, kde-format
 msgctxt "@action"
 msgid "Water"
 msgstr "Ureztatu"
 
-#: qml/TaskPage.qml:123
+#: qml/TaskPage.qml:135
 #, kde-format
 msgctxt "@info"
 msgid "Already watered"
 msgstr "Dagoeneko ureztatu da"
 
-#: qml/TaskPage.qml:123
+#: qml/TaskPage.qml:135
 #, kde-format
 msgid "Now"
 msgstr "Orain"
 
-#: qml/TaskPage.qml:123
+#: qml/TaskPage.qml:135
 #, kde-format
 msgid "In %1 days"
 msgstr "%1 egun barru"
