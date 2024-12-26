@@ -6,6 +6,7 @@ import QtQuick.Controls as Controls
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.components as Components
+import org.kde.kirigamiaddons.formcard as FormCard
 import Qt5Compat.GraphicalEffects
 import org.kde.powerplant
 
@@ -107,18 +108,28 @@ Kirigami.ScrollablePage {
 
                 RowLayout {
                     id: cardsLayout
-                    Layout.fillHeight: true
+
                     spacing: 0
 
-                    Kirigami.AbstractCard {
+                    Layout.fillHeight: true
+
+                    Controls.AbstractButton {
                         id: tasksCard
-                        Layout.alignment: Qt.AlignRight
-                        // Layout.maximumWidth: Kirigami.Units.gridUnit* 10
-                        implicitHeight: Kirigami.Units.gridUnit* 3
+
+                        leftPadding: Kirigami.Units.largeSpacing
+                        topPadding: Kirigami.Units.largeSpacing
+                        rightPadding: Kirigami.Units.largeSpacing
+                        bottomPadding: Kirigami.Units.largeSpacing
+
+                        onClicked: pageStack.push(Qt.resolvedUrl("TaskPage.qml"));
+
                         Layout.fillWidth: false
+                        Layout.fillHeight: true
                         Layout.margins: Kirigami.Units.largeSpacing
+                        Layout.alignment: Qt.AlignRight
+
                         background: Kirigami.ShadowedRectangle {
-                            radius: 5
+                            radius: Kirigami.Units.cornerRadius
                             color: Kirigami.Theme.backgroundColor
 
                             border {
@@ -132,70 +143,72 @@ Kirigami.ScrollablePage {
                                 yOffset: 5
                                 color: Qt.rgba(0, 0, 0, 0.1)
                             }
-
                         }
-                        implicitWidth: tasksCardLayout.implicitWidth
-                        onClicked: pageStack.push(Qt.resolvedUrl("TaskPage.qml"));
 
-                        RowLayout {
-                            anchors.fill: parent
+
+                        contentItem: RowLayout {
                             id: tasksCardLayout
 
+                            spacing: Kirigami.Units.largeSpacing
+
                             Rectangle {
-                                Layout.margins: Kirigami.Units.largeSpacing
-                                Layout.alignment: Qt.AlignCenter
-                                height: Kirigami.Units.gridUnit *1.5
+                                height: Kirigami.Units.gridUnit  *1.5
                                 width: height
                                 radius: height/2
                                 color: switch (plantsModel.summary) {
-                                       case PlantsModel.SomeNeedWater:
-                                           return Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, "#f16445" , 0.5);
-                                       case PlantsModel.NothingToDo:
-                                           return Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, "#b4e479" , 0.5);
-                                       }
+                                case PlantsModel.SomeNeedWater:
+                                    return Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, "#f16445" , 0.5);
+                                case PlantsModel.NothingToDo:
+                                    return Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, "#b4e479" , 0.5);
+                                }
+
+                                Layout.alignment: Qt.AlignCenter
 
                                 Kirigami.Icon {
                                     anchors.centerIn: parent
                                     source: switch (plantsModel.summary) {
-                                        case PlantsModel.SomeNeedWater:
-                                            return "folder-important-symbolic";
-                                        case PlantsModel.NothingToDo:
-                                            return "answer-correct";
+                                    case PlantsModel.SomeNeedWater:
+                                        return "folder-important-symbolic";
+                                    case PlantsModel.NothingToDo:
+                                        return "answer-correct";
                                     }
                                     height: parent.height - Kirigami.Units.largeSpacing
                                 }
                             }
 
-                            ColumnLayout {
-                                Layout.rightMargin: Kirigami.Units.largeSpacing * 2
+                            Controls.Label {
                                 Layout.alignment: Qt.AlignVCenter
                                 Layout.fillWidth: true
 
-                                Controls.Label {
-                                    Layout.fillWidth: true
-                                    text: {
-                                        switch (plantsModel.summary) {
-                                        case PlantsModel.SomeNeedWater:
-                                            return i18n("Incomplete Tasks");
-                                        case PlantsModel.NothingToDo:
-                                            return i18n("All Tasks Complete");
-                                        }
+                                text: {
+                                    switch (plantsModel.summary) {
+                                    case PlantsModel.SomeNeedWater:
+                                        return i18n("Incomplete Tasks");
+                                    case PlantsModel.NothingToDo:
+                                        return i18n("All Tasks Complete");
                                     }
                                 }
                             }
                         }
                     }
 
-                    Kirigami.AbstractCard {
+                    Controls.AbstractButton {
                         id: weatherCard
-                        onClicked: locationDialog.open()
-                        Layout.alignment: Qt.AlignRight
-                        // Layout.maximumWidth: Kirigami.Units.gridUnit* 10
-                        implicitHeight: Kirigami.Units.gridUnit* 3
+
+                        leftPadding: Kirigami.Units.largeSpacing
+                        topPadding: Kirigami.Units.largeSpacing
+                        rightPadding: Kirigami.Units.largeSpacing
+                        bottomPadding: Kirigami.Units.largeSpacing
+
                         Layout.fillWidth: false
+                        Layout.fillHeight: true
+                        Layout.alignment: Qt.AlignRight
                         Layout.margins: Kirigami.Units.largeSpacing
+
+                        onClicked: locationDialog.open()
+
                         background: Kirigami.ShadowedRectangle {
-                            radius: 5
+                            radius: Kirigami.Units.cornerRadius
                             color: Kirigami.Theme.backgroundColor
 
                             border {
@@ -210,16 +223,47 @@ Kirigami.ScrollablePage {
                                 color: Qt.rgba(0, 0, 0, 0.1)
                             }
                         }
-                        implicitWidth: weatherForecastLayout.implicitWidth
+
+                        contentItem: RowLayout {
+                            id: weatherForecastLayout
+
+                            spacing: Kirigami.Units.largeSpacing
+
+                            Kirigami.Icon {
+                                source: weatherforecast.iconName
+
+                                Layout.fillHeight: true
+                                Layout.fillWidth: true
+                            }
+
+                            ColumnLayout {
+                                Layout.fillWidth: true
+                                Layout.alignment: Qt.AlignVCenter
+                                spacing: 0
+
+                                Kirigami.Heading {
+                                    text: weatherforecast.location != ", " ? i18nc("temperature", "%1°C", weatherforecast.temperature) : "-- / --"
+                                    level: 2
+
+                                    Layout.fillWidth: true
+                                }
+
+                                Controls.Label {
+                                    text: weatherforecast.location != ", " ? weatherforecast.location : i18n("Select your Location")
+
+                                    Layout.fillWidth: true
+                                }
+                            }
+                        }
 
                         WeatherForecast {
                             id: weatherforecast
                             locationSearchTerm: Config.weatherLocation
                         }
 
-                        Kirigami.Dialog {
+                        FormCard.FormCardDialog {
                             id: locationDialog
-                            title: i18n("Enter your Location")
+                            title: i18nc("@title:dialog", "Enter your Location")
 
                             parent: root
                             modal: true
@@ -228,48 +272,17 @@ Kirigami.ScrollablePage {
                             onAccepted: locationTextField.accepted()
                             onOpened: locationTextField.forceActiveFocus()
 
-                            RowLayout {
-
-                                Controls.TextField {
-                                    id: locationTextField
-                                    Layout.margins: Kirigami.Units.largeSpacing
-                                    placeholderText: qsTr("Location name …")
-                                    onAccepted: {
-                                        Config.weatherLocation = text
-                                        Config.save()
-                                        locationDialog.close()
-                                    }
+                            FormCard.FormTextFieldDelegate {
+                                id: locationTextField
+                                label: i18n("Location name:")
+                                onAccepted: {
+                                    Config.weatherLocation = text
+                                    Config.save()
+                                    locationDialog.close()
                                 }
                             }
                         }
 
-                        RowLayout {
-                            id: weatherForecastLayout
-                            anchors.fill:parent
-
-                            Kirigami.Icon {
-                                Layout.fillHeight: true
-                                Layout.fillWidth: true
-                                source: weatherforecast.iconName
-                                Layout.margins: Kirigami.Units.largeSpacing
-                            }
-
-                            ColumnLayout {
-                                Layout.fillWidth: true
-                                Layout.rightMargin: Kirigami.Units.largeSpacing * 2
-                                Layout.alignment: Qt.AlignVCenter
-
-                                Kirigami.Heading {
-                                    Layout.fillWidth: true
-                                    text: weatherforecast.location != ", " ? weatherforecast.temperature + "°C" : "-- / --"
-                                }
-
-                                Controls.Label {
-                                    Layout.fillWidth: true
-                                    text: weatherforecast.location != ", " ? weatherforecast.location : i18n("Select your Location")
-                                }
-                            }
-                        }
                     }
                 }
             }
