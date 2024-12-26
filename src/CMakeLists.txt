@@ -39,7 +39,8 @@ target_sources(powerplant_static PRIVATE
     fertilizerhistorymodel.cpp fertilizerhistorymodel.h
     colorgradientinterpolator.cpp colorgradientinterpolator.h
     plantimagemodel.cpp plantimagemodel.h
-    planteditor.cpp planteditor.cpp
+    planteditor.cpp planteditor.h
+    weathermodel.cpp weathermodel.h
 )
 
 target_link_libraries(powerplant_static PUBLIC
@@ -55,6 +56,7 @@ target_link_libraries(powerplant_static PUBLIC
     KF6::CoreAddons
     KF6::ConfigCore
     KF6::ConfigGui
+    KWeatherCore
     FutureSQL6::FutureSQL
     QCoro6::Core)
 
@@ -94,6 +96,7 @@ kconfig_target_kcfg_file(powerplant_static FILE powerplantconfig.kcfg CLASS_NAME
 
 ## Excutable
 add_executable(powerplant main.cpp resources.qrc)
+
 target_link_libraries(powerplant PRIVATE powerplant_static powerplant_staticplugin)
 if (TARGET KF6::Crash)
    target_link_libraries(powerplant PRIVATE KF6::Crash)
@@ -101,3 +104,4 @@ endif()
 install(TARGETS powerplant ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ecm_add_android_apk(powerplant ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
+

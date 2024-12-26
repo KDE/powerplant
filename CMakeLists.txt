@@ -39,6 +39,8 @@ kde_enable_exceptions()
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg Widgets)
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami CoreAddons Config I18n )
+find_package(KWeatherCore REQUIRED)
+
 if (NOT ANDROID)
    find_package(KF6 ${KF_MIN_VERSION} OPTIONAL_COMPONENTS Crash)
 endif()	

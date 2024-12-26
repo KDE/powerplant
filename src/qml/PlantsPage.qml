@@ -15,6 +15,7 @@ Kirigami.ScrollablePage {
     //    leftPadding:0
     bottomPadding: 0
     Layout.fillWidth: true
+    property bool wideScreen: applicationWindow().width >= 800
 
     title: i18n("Plants")
     actions: Kirigami.Action {
@@ -55,40 +56,222 @@ Kirigami.ScrollablePage {
         cellWidth: applicationWindow().width < 500 ? grid.width / (Math.floor(grid.width / 160)) : grid.width / (Math.floor(grid.width / 230))
         cellHeight: 350
 
-        header: ColumnLayout {
-            spacing: 0
+        header: GridLayout {
+            flow: wideScreen ? GridLayout.LeftToRight : GridLayout.TopToBottom
             width: parent.width
+            columnSpacing: 0
 
-            Controls.Label {
-                text: i18n("Good Morning!")
-                font {
-                    bold: true
-                    pixelSize: 30
+            ColumnLayout {
+                id: welcomeTextLayout
+                Layout.fillWidth:true
+                spacing: 0
+
+                Controls.Label {
+                    text: i18n("Good Morning!")
+                    font {
+                        bold: true
+                        pixelSize: 30
+                    }
+
+                    Layout.margins: Kirigami.Units.largeSpacing * 2
+                    Layout.topMargin: Kirigami.Units.largeSpacing * 2
+                    Layout.bottomMargin: Kirigami.Units.largeSpacing
                 }
 
-                Layout.margins: Kirigami.Units.largeSpacing * 2
-                Layout.topMargin: Kirigami.Units.largeSpacing * 2
-                Layout.bottomMargin: Kirigami.Units.largeSpacing
-                Layout.fillWidth: true
+                Controls.Label {
+                    text: {
+                        switch (plantsModel.summary) {
+                        case PlantsModel.SomeNeedWater:
+                            return i18n("Some of your plants need attention");
+                        case PlantsModel.NothingToDo:
+                            return i18n("No plants need water right now");
+                        }
+                    }
+
+                    wrapMode: Text.WordWrap
+                    font.pixelSize: 20
+
+                    Layout.margins: Kirigami.Units.largeSpacing * 2
+                    Layout.topMargin: 0
+                    Layout.bottomMargin: Kirigami.Units.largeSpacing
+                }
             }
 
-            Controls.Label {
-                text: {
-                    switch (plantsModel.summary) {
-                    case PlantsModel.SomeNeedWater:
-                        return i18n("Some of your plants need attention");
-                    case PlantsModel.NothingToDo:
-                        return i18n("No plants need water right now");
+            Item { Layout.fillWidth: true }
+
+            Controls.ScrollView {
+                Layout.fillWidth: !wideScreen
+                width: wideScreen ? root.width - welcomeTextLayout.width  - effectiveScrollBarHeight : root.width  - effectiveScrollBarHeight
+                height: cardsLayout.height
+                Layout.alignment: wideScreen ? Qt.AlignRight : Qt.AlignLeft
+
+                RowLayout {
+                    id: cardsLayout
+                    Layout.fillHeight: true
+                    spacing: 0
+
+                    Kirigami.AbstractCard {
+                        id: tasksCard
+                        Layout.alignment: Qt.AlignRight
+                        // Layout.maximumWidth: Kirigami.Units.gridUnit* 10
+                        implicitHeight: Kirigami.Units.gridUnit* 3
+                        Layout.fillWidth: false
+                        Layout.margins: Kirigami.Units.largeSpacing
+                        background: Kirigami.ShadowedRectangle {
+                            radius: 5
+                            color: Kirigami.Theme.backgroundColor
+
+                            border {
+                                color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
+                                width: 1
+                            }
+
+                            shadow {
+                                size: 15
+                                xOffset: 5
+                                yOffset: 5
+                                color: Qt.rgba(0, 0, 0, 0.1)
+                            }
+
+                        }
+                        implicitWidth: tasksCardLayout.implicitWidth
+                        onClicked: pageStack.push(Qt.resolvedUrl("TaskPage.qml"));
+
+                        RowLayout {
+                            anchors.fill: parent
+                            id: tasksCardLayout
+
+                            Rectangle {
+                                Layout.margins: Kirigami.Units.largeSpacing
+                                Layout.alignment: Qt.AlignCenter
+                                height: Kirigami.Units.gridUnit *1.5
+                                width: height
+                                radius: height/2
+                                color: switch (plantsModel.summary) {
+                                       case PlantsModel.SomeNeedWater:
+                                           return Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, "#f16445" , 0.5);
+                                       case PlantsModel.NothingToDo:
+                                           return Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, "#b4e479" , 0.5);
+                                       }
+
+                                Kirigami.Icon {
+                                    anchors.centerIn: parent
+                                    source: switch (plantsModel.summary) {
+                                        case PlantsModel.SomeNeedWater:
+                                            return "folder-important-symbolic";
+                                        case PlantsModel.NothingToDo:
+                                            return "answer-correct";
+                                    }
+                                    height: parent.height - Kirigami.Units.largeSpacing
+                                }
+                            }
+
+                            ColumnLayout {
+                                Layout.rightMargin: Kirigami.Units.largeSpacing * 2
+                                Layout.alignment: Qt.AlignVCenter
+                                Layout.fillWidth: true
+
+                                Controls.Label {
+                                    Layout.fillWidth: true
+                                    text: {
+                                        switch (plantsModel.summary) {
+                                        case PlantsModel.SomeNeedWater:
+                                            return i18n("Incomplete Tasks");
+                                        case PlantsModel.NothingToDo:
+                                            return i18n("All Tasks Complete");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    Kirigami.AbstractCard {
+                        id: weatherCard
+                        onClicked: locationDialog.open()
+                        Layout.alignment: Qt.AlignRight
+                        // Layout.maximumWidth: Kirigami.Units.gridUnit* 10
+                        implicitHeight: Kirigami.Units.gridUnit* 3
+                        Layout.fillWidth: false
+                        Layout.margins: Kirigami.Units.largeSpacing
+                        background: Kirigami.ShadowedRectangle {
+                            radius: 5
+                            color: Kirigami.Theme.backgroundColor
+
+                            border {
+                                color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
+                                width: 1
+                            }
+
+                            shadow {
+                                size: 15
+                                xOffset: 5
+                                yOffset: 5
+                                color: Qt.rgba(0, 0, 0, 0.1)
+                            }
+                        }
+                        implicitWidth: weatherForecastLayout.implicitWidth
+
+                        WeatherForecast {
+                            id: weatherforecast
+                            locationSearchTerm: Config.weatherLocation
+                        }
+
+                        Kirigami.Dialog {
+                            id: locationDialog
+                            title: i18n("Enter your Location")
+
+                            parent: root
+                            modal: true
+
+                            standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
+                            onAccepted: locationTextField.accepted()
+                            onOpened: locationTextField.forceActiveFocus()
+
+                            RowLayout {
+
+                                Controls.TextField {
+                                    id: locationTextField
+                                    Layout.margins: Kirigami.Units.largeSpacing
+                                    placeholderText: qsTr("Location name …")
+                                    onAccepted: {
+                                        Config.weatherLocation = text
+                                        Config.save()
+                                        locationDialog.close()
+                                    }
+                                }
+                            }
+                        }
+
+                        RowLayout {
+                            id: weatherForecastLayout
+                            anchors.fill:parent
+
+                            Kirigami.Icon {
+                                Layout.fillHeight: true
+                                Layout.fillWidth: true
+                                source: weatherforecast.iconName
+                                Layout.margins: Kirigami.Units.largeSpacing
+                            }
+
+                            ColumnLayout {
+                                Layout.fillWidth: true
+                                Layout.rightMargin: Kirigami.Units.largeSpacing * 2
+                                Layout.alignment: Qt.AlignVCenter
+
+                                Kirigami.Heading {
+                                    Layout.fillWidth: true
+                                    text: weatherforecast.location != ", " ? weatherforecast.temperature + "°C" : "-- / --"
+                                }
+
+                                Controls.Label {
+                                    Layout.fillWidth: true
+                                    text: weatherforecast.location != ", " ? weatherforecast.location : i18n("Select your Location")
+                                }
+                            }
+                        }
                     }
                 }
-
-                wrapMode: Text.WordWrap
-                font.pixelSize: 20
-
-                Layout.margins: Kirigami.Units.largeSpacing * 2
-                Layout.topMargin: 0
-                Layout.bottomMargin: Kirigami.Units.largeSpacing
-                Layout.fillWidth: true
             }
         }
 
@@ -110,6 +293,10 @@ Kirigami.ScrollablePage {
 
             WaterHistoryModel {
                 id: waterEvents
+                plantId: plantItem.plantId
+            }
+            FertilizerHistoryModel {
+                id: fertilizerEvents
                 plantId: plantItem.plantId
             }
             width: grid.cellWidth
@@ -245,7 +432,7 @@ Kirigami.ScrollablePage {
                             icon.name: "answer-correct-symbolic"
                             onClicked: {
                                 console.log(plantId);
-                                waterEvents.waterPlant();
+                                fertilizerEvents.fertilizePlant();
                             }
                             visible: wantsToBeFertilizedIn <= 0
                         }

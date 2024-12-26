@@ -8,9 +8,7 @@ SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 SPDX-License-Identifier: LGPL-2.0-or-later
 -->
     <group name="General">
-        <entry name="someSetting" type="Bool">
-            <label>Some setting description</label>
-            <default>true</default>
+        <entry name="weatherLocation" type="String">
         </entry>
     </group>
 </kcfg>
