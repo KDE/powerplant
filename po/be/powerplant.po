@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-23 00:43+0000\n"
+"POT-Creation-Date: 2024-12-27 00:44+0000\n"
 "PO-Revision-Date: 2024-05-23 18:10\n"
 "Last-Translator: Antikruk <nashtlumach@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -62,7 +62,7 @@ msgctxt "@info:credit"
 msgid "Author"
 msgstr "Аўтар"
 
-#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:19
+#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
 #, kde-format
 msgid "Plants"
 msgstr "Расліны"
@@ -285,28 +285,48 @@ msgstr "Дата нараджэння"
 msgid "Edit"
 msgstr "Рэдагаваць"
 
-#: qml/PlantsPage.qml:44
+#: qml/PlantsPage.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "Дадаць расліну"
 
-#: qml/PlantsPage.qml:63
+#: qml/PlantsPage.qml:70
 #, kde-format
 msgid "Good Morning!"
 msgstr "Добрай раніцы!"
 
-#: qml/PlantsPage.qml:79
+#: qml/PlantsPage.qml:85
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "На некаторыя з вашых раслін трэба звярнуць увагу"
 
-#: qml/PlantsPage.qml:81
+#: qml/PlantsPage.qml:87
 #, kde-format
 msgid "No plants need water right now"
 msgstr "Зараз ніякім раслінам не патрэбна вада"
 
-#: qml/PlantsPage.qml:202 qml/PlantsPage.qml:230
+#: qml/PlantsPage.qml:179
+#, kde-format
+msgid "Incomplete Tasks"
+msgstr ""
+
+#: qml/PlantsPage.qml:181
+#, kde-format
+msgid "All Tasks Complete"
+msgstr ""
+
+#: qml/PlantsPage.qml:222
+#, kde-format
+msgid "Enter your Location"
+msgstr ""
+
+#: qml/PlantsPage.qml:269
+#, kde-format
+msgid "Select your Location"
+msgstr ""
+
+#: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
 #, fuzzy, kde-format
 #| msgid "in %1 days"
 msgctxt "@info"
@@ -317,35 +337,35 @@ msgstr[1] "праз %1 дзень(дзён)"
 msgstr[2] "праз %1 дзень(дзён)"
 msgstr[3] "праз %1 дзень(дзён)"
 
-#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232
+#: qml/PlantsPage.qml:391 qml/PlantsPage.qml:419
 #, fuzzy, kde-format
 #| msgid "tomorrow"
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "заўтра"
 
-#: qml/PlantsPage.qml:206
+#: qml/PlantsPage.qml:393
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Water today!"
 msgstr "паліў сёння!"
 
-#: qml/PlantsPage.qml:208
+#: qml/PlantsPage.qml:395
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "паліў пратэрмінаваны!"
 
-#: qml/PlantsPage.qml:234
+#: qml/PlantsPage.qml:421
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "паліў сёння!"
 
-#: qml/PlantsPage.qml:236
+#: qml/PlantsPage.qml:423
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-23 00:43+0000\n"
+"POT-Creation-Date: 2024-12-27 00:44+0000\n"
 "PO-Revision-Date: 2024-06-21 15:32+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -57,7 +57,7 @@ msgctxt "@info:credit"
 msgid "Author"
 msgstr "Upphovsman"
 
-#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:19
+#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
 #, kde-format
 msgid "Plants"
 msgstr "Plantor"
@@ -276,28 +276,48 @@ msgstr "Planteringsdag"
 msgid "Edit"
 msgstr "Redigera"
 
-#: qml/PlantsPage.qml:44
+#: qml/PlantsPage.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "Lägg till planta"
 
-#: qml/PlantsPage.qml:63
+#: qml/PlantsPage.qml:70
 #, kde-format
 msgid "Good Morning!"
 msgstr "God morgon!"
 
-#: qml/PlantsPage.qml:79
+#: qml/PlantsPage.qml:85
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "Några av dina plantor behöver uppmärksamhet"
 
-#: qml/PlantsPage.qml:81
+#: qml/PlantsPage.qml:87
 #, kde-format
 msgid "No plants need water right now"
 msgstr "Inga plantor behövs vattnas just nu"
 
-#: qml/PlantsPage.qml:202 qml/PlantsPage.qml:230
+#: qml/PlantsPage.qml:179
+#, kde-format
+msgid "Incomplete Tasks"
+msgstr ""
+
+#: qml/PlantsPage.qml:181
+#, kde-format
+msgid "All Tasks Complete"
+msgstr ""
+
+#: qml/PlantsPage.qml:222
+#, kde-format
+msgid "Enter your Location"
+msgstr ""
+
+#: qml/PlantsPage.qml:269
+#, kde-format
+msgid "Select your Location"
+msgstr ""
+
+#: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
 #, fuzzy, kde-format
 #| msgid "in %1 days"
 msgctxt "@info"
@@ -306,35 +326,35 @@ msgid_plural "In %1 days"
 msgstr[0] "om %1 dagar"
 msgstr[1] "om %1 dagar"
 
-#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232
+#: qml/PlantsPage.qml:391 qml/PlantsPage.qml:419
 #, fuzzy, kde-format
 #| msgid "tomorrow"
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "imorgon"
 
-#: qml/PlantsPage.qml:206
+#: qml/PlantsPage.qml:393
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Water today!"
 msgstr "vattna idag!"
 
-#: qml/PlantsPage.qml:208
+#: qml/PlantsPage.qml:395
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "vattning försenad!"
 
-#: qml/PlantsPage.qml:234
+#: qml/PlantsPage.qml:421
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "vattna idag!"
 
-#: qml/PlantsPage.qml:236
+#: qml/PlantsPage.qml:423
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"

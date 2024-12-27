@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-23 00:43+0000\n"
+"POT-Creation-Date: 2024-12-27 00:44+0000\n"
 "PO-Revision-Date: 2024-02-26 21:16+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
@@ -58,7 +58,7 @@ msgctxt "@info:credit"
 msgid "Author"
 msgstr "Aŭtoro"
 
-#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:19
+#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
 #, kde-format
 msgid "Plants"
 msgstr "Plantoj"
@@ -277,28 +277,48 @@ msgstr "Naskiĝtago"
 msgid "Edit"
 msgstr "Redakti"
 
-#: qml/PlantsPage.qml:44
+#: qml/PlantsPage.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "Aldon Planton"
 
-#: qml/PlantsPage.qml:63
+#: qml/PlantsPage.qml:70
 #, kde-format
 msgid "Good Morning!"
 msgstr "Bonan Matenon!"
 
-#: qml/PlantsPage.qml:79
+#: qml/PlantsPage.qml:85
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "Iuj el viaj plantoj postulas atenton"
 
-#: qml/PlantsPage.qml:81
+#: qml/PlantsPage.qml:87
 #, kde-format
 msgid "No plants need water right now"
 msgstr "Neniu lpanto bezonas akvumon ĉimomente"
 
-#: qml/PlantsPage.qml:202 qml/PlantsPage.qml:230
+#: qml/PlantsPage.qml:179
+#, kde-format
+msgid "Incomplete Tasks"
+msgstr ""
+
+#: qml/PlantsPage.qml:181
+#, kde-format
+msgid "All Tasks Complete"
+msgstr ""
+
+#: qml/PlantsPage.qml:222
+#, kde-format
+msgid "Enter your Location"
+msgstr ""
+
+#: qml/PlantsPage.qml:269
+#, kde-format
+msgid "Select your Location"
+msgstr ""
+
+#: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
 #, fuzzy, kde-format
 #| msgid "in %1 days"
 msgctxt "@info"
@@ -307,35 +327,35 @@ msgid_plural "In %1 days"
 msgstr[0] "post %1 tagoj"
 msgstr[1] "post %1 tagoj"
 
-#: qml/PlantsPage.qml:204 qml/PlantsPage.qml:232
+#: qml/PlantsPage.qml:391 qml/PlantsPage.qml:419
 #, fuzzy, kde-format
 #| msgid "tomorrow"
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "morgaŭ"
 
-#: qml/PlantsPage.qml:206
+#: qml/PlantsPage.qml:393
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Water today!"
 msgstr "akvumu hodiaŭ!"
 
-#: qml/PlantsPage.qml:208
+#: qml/PlantsPage.qml:395
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "akvumado malfrua!"
 
-#: qml/PlantsPage.qml:234
+#: qml/PlantsPage.qml:421
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "akvumu hodiaŭ!"
 
-#: qml/PlantsPage.qml:236
+#: qml/PlantsPage.qml:423
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"
