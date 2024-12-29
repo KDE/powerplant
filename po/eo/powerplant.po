@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-27 00:44+0000\n"
-"PO-Revision-Date: 2024-02-26 21:16+0100\n"
+"PO-Revision-Date: 2024-12-28 20:45+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -40,11 +40,9 @@ msgid "A small app to track your plants"
 msgstr "Eta apliko por spuri viajn plantojn"
 
 #: main.cpp:76
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Mathis Brüchert"
+#, kde-format
 msgid "© 2023-2024 Mathis Brüchert"
-msgstr "Mathis Brüchert"
+msgstr "© 2023-2024 Mathis Brüchert"
 
 #: main.cpp:77
 #, kde-format
@@ -66,7 +64,7 @@ msgstr "Plantoj"
 #: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
-msgstr ""
+msgstr "Taskoj"
 
 #: qml/PlantDetailPage.qml:56
 #, kde-format
@@ -86,34 +84,30 @@ msgid "Water"
 msgstr "Akvo"
 
 #: qml/PlantDetailPage.qml:250
-#, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be watered in %1 day"
 msgid_plural "Has to be watered in %1 days"
-msgstr[0] "devas estas akvumata post %1 tagoj"
-msgstr[1] "devas estas akvumata post %1 tagoj"
+msgstr[0] "Devas estas akvumata post %1 tago"
+msgstr[1] "Devas estas akvumata post %1 tagoj"
 
 #: qml/PlantDetailPage.qml:252
-#, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
-msgstr "devas estas akvumata morgaŭ"
+msgstr "Devas estas akvumata morgaŭ"
 
 #: qml/PlantDetailPage.qml:254
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
-msgstr "devas estas akvumata hodiaŭ!"
+msgstr "Devas estas akvumata hodiaŭ!"
 
 #: qml/PlantDetailPage.qml:256
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
-msgstr "devintus jam esti akvumata!"
+msgstr "Devintus jam esti akvumata!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -123,42 +117,38 @@ msgstr "Akvumita"
 #: qml/PlantDetailPage.qml:269
 #, kde-format
 msgid "Fertilizer"
-msgstr ""
+msgstr "Sterko"
 
 #: qml/PlantDetailPage.qml:285
-#, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
 msgid_plural "Has to be fertilized in %1 days"
-msgstr[0] "devas estas akvumata post %1 tagoj"
-msgstr[1] "devas estas akvumata post %1 tagoj"
+msgstr[0] "Devas esti fekundigita post %1 tago"
+msgstr[1] "Devas esti fekundigita post %1 tagoj"
 
 #: qml/PlantDetailPage.qml:287
-#, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
-msgstr "devas estas akvumata morgaŭ"
+msgstr "Devas esti fekundigita morgaŭ"
 
 #: qml/PlantDetailPage.qml:289
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
-msgstr "devas estas akvumata hodiaŭ!"
+msgstr "Devas esti fekundigita hodiaŭ!"
 
 #: qml/PlantDetailPage.qml:291
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
-msgstr "devintus jam esti akvumata!"
+msgstr "Devintus jam esti fekundigita!"
 
 #: qml/PlantDetailPage.qml:296
 #, kde-format
 msgid "Fertilized"
-msgstr ""
+msgstr "Fekundigita"
 
 #: qml/PlantDetailPage.qml:305
 #, kde-format
@@ -257,10 +247,9 @@ msgid "Custom:"
 msgstr "Propra:"
 
 #: qml/PlantEditorPage.qml:258
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgid "How often does the plant need Fertilizing?"
-msgstr "Kiom ofte la planto bezonas Akvumadon?"
+msgstr "Kiom ofte la planto bezonas Fekundigon?"
 
 #: qml/PlantEditorPage.qml:332
 #, kde-format
@@ -301,70 +290,63 @@ msgstr "Neniu lpanto bezonas akvumon ĉimomente"
 #: qml/PlantsPage.qml:179
 #, kde-format
 msgid "Incomplete Tasks"
-msgstr ""
+msgstr "Nekompletaj Taskoj"
 
 #: qml/PlantsPage.qml:181
 #, kde-format
 msgid "All Tasks Complete"
-msgstr ""
+msgstr "Ĉiuj Taskoj Kompletiĝis"
 
 #: qml/PlantsPage.qml:222
 #, kde-format
 msgid "Enter your Location"
-msgstr ""
+msgstr "Enigu vian Lokon"
 
 #: qml/PlantsPage.qml:269
 #, kde-format
 msgid "Select your Location"
-msgstr ""
+msgstr "Elektu vian Lokon"
 
 #: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
-#, fuzzy, kde-format
-#| msgid "in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "In %1 day"
 msgid_plural "In %1 days"
-msgstr[0] "post %1 tagoj"
-msgstr[1] "post %1 tagoj"
+msgstr[0] "Post %1 tago"
+msgstr[1] "Post %1 tagoj"
 
 #: qml/PlantsPage.qml:391 qml/PlantsPage.qml:419
-#, fuzzy, kde-format
-#| msgid "tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
-msgstr "morgaŭ"
+msgstr "Morgaŭ"
 
 #: qml/PlantsPage.qml:393
-#, fuzzy, kde-format
-#| msgid "water today!"
+#, kde-format
 msgctxt "@info"
 msgid "Water today!"
-msgstr "akvumu hodiaŭ!"
+msgstr "Akvumu hodiaŭ!"
 
 #: qml/PlantsPage.qml:395
-#, fuzzy, kde-format
-#| msgid "watering overdue!"
+#, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
-msgstr "akvumado malfrua!"
+msgstr "Akvumado malfrua!"
 
 #: qml/PlantsPage.qml:421
-#, fuzzy, kde-format
-#| msgid "water today!"
+#, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
-msgstr "akvumu hodiaŭ!"
+msgstr "Fekundigu hodiaŭ!"
 
 #: qml/PlantsPage.qml:423
-#, fuzzy, kde-format
-#| msgid "watering overdue!"
+#, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
-msgstr "akvumado malfrua!"
+msgstr "Fekundigo malfrua!"
 
 #: qml/TaskPage.qml:123
-#, fuzzy, kde-format
-#| msgid "Water"
+#, kde-format
 msgctxt "@action"
 msgid "Water"
 msgstr "Akvo"
@@ -373,26 +355,14 @@ msgstr "Akvo"
 #, kde-format
 msgctxt "@info"
 msgid "Already watered"
-msgstr ""
+msgstr "Jam akvumita"
 
 #: qml/TaskPage.qml:135
 #, kde-format
 msgid "Now"
-msgstr ""
+msgstr "Nun"
 
 #: qml/TaskPage.qml:135
-#, fuzzy, kde-format
-#| msgid "in %1 days"
+#, kde-format
 msgid "In %1 days"
-msgstr "post %1 tagoj"
-
-#, fuzzy
-#~| msgid "Water"
-#~ msgid "water"
-#~ msgstr "Akvo"
-
-#~ msgid "Parent"
-#~ msgstr "Gepatro"
-
-#~ msgid "(c) 2023"
-#~ msgstr "(k) 2023"
+msgstr "Post %1 tagoj"
