@@ -43,6 +43,7 @@
   <summary xml:lang="ca">Manté vives les vostres plantes</summary>
   <summary xml:lang="ca-valencia">Manté vives les vostres plantes</summary>
   <summary xml:lang="de">Pflanzen am Leben halten</summary>
+  <summary xml:lang="eo">Vivtenu viajn plantojn</summary>
   <summary xml:lang="es">Mantenga vivas sus plantas</summary>
   <summary xml:lang="eu">Zure landareak bizirik mantendu</summary>
   <summary xml:lang="fr">Conserver vos plantes en vie</summary>
@@ -113,6 +114,7 @@
       <caption xml:lang="ca">Vista principal amb la llista de plantes.</caption>
       <caption xml:lang="ca-valencia">Vista principal amb la llista de plantes.</caption>
       <caption xml:lang="de">Hauptansicht mit der Liste der Pflanzen.</caption>
+      <caption xml:lang="eo">Ĉefa vido kun la listo de plantoj.</caption>
       <caption xml:lang="es">Vista principal con la lista de plantas.</caption>
       <caption xml:lang="eu">Ikuspegi nagusia landareen zerrendarekin.</caption>
       <caption xml:lang="fr">Vue principale avec la liste des plantes.</caption>
@@ -135,6 +137,7 @@
       <caption xml:lang="ca">Detalls d'una planta.</caption>
       <caption xml:lang="ca-valencia">Detalls d'una planta.</caption>
       <caption xml:lang="de">Informationen einer Pflanze.</caption>
+      <caption xml:lang="eo">Detaloj de planto.</caption>
       <caption xml:lang="es">Detalles de una planta.</caption>
       <caption xml:lang="eu">Landare baten xehetasunak.</caption>
       <caption xml:lang="fr">Détails sur une plante.</caption>
@@ -157,6 +160,7 @@
       <caption xml:lang="ca">Llista en brut de les tasques.</caption>
       <caption xml:lang="ca-valencia">Llista en brut de les tasques.</caption>
       <caption xml:lang="de">Liste der Aufgaben.</caption>
+      <caption xml:lang="eo">Kruda listo de taskoj.</caption>
       <caption xml:lang="es">Lista de tareas.</caption>
       <caption xml:lang="eu">Zereginen zerrenda gordina.</caption>
       <caption xml:lang="fr">Liste brute des tâches.</caption>
