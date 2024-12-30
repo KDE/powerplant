@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-27 00:44+0000\n"
-"PO-Revision-Date: 2024-12-24 20:39+0530\n"
+"PO-Revision-Date: 2024-12-29 23:00+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
@@ -291,22 +291,22 @@ msgstr "इदानीं कस्यापि वनस्पतयः जल
 #: qml/PlantsPage.qml:179
 #, kde-format
 msgid "Incomplete Tasks"
-msgstr ""
+msgstr "अपूर्ण कार्यम्"
 
 #: qml/PlantsPage.qml:181
 #, kde-format
 msgid "All Tasks Complete"
-msgstr ""
+msgstr "सर्वाणि कार्याणि सम्पूर्णानि"
 
 #: qml/PlantsPage.qml:222
 #, kde-format
 msgid "Enter your Location"
-msgstr ""
+msgstr "भवतः स्थानं ददातु"
 
 #: qml/PlantsPage.qml:269
 #, kde-format
 msgid "Select your Location"
-msgstr ""
+msgstr "स्वस्य स्थानं चिनोतु"
 
 #: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
 #, kde-format
