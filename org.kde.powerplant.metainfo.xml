@@ -59,6 +59,7 @@
   <summary xml:lang="tr">Bitkilerinizi canlı tutun</summary>
   <summary xml:lang="uk">Підтримайте ріст ваших рослин</summary>
   <summary xml:lang="x-test">xxKeep your plants alivexx</summary>
+  <summary xml:lang="zh-TW">維持您的植哉的生命</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
   <developer id="kde.org">
@@ -130,6 +131,7 @@
       <caption xml:lang="tr">Bitki listesini gösteren ana görünüm</caption>
       <caption xml:lang="uk">Головне вікно зі списком рослин.</caption>
       <caption xml:lang="x-test">xxMain view with the list of plants.xx</caption>
+      <caption xml:lang="zh-TW">主檢視，包含植哉列表。</caption>
     </screenshot>
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/powerplant/powerplant-detail.png</image>
@@ -153,6 +155,7 @@
       <caption xml:lang="tr">Bir bitkinin ayrıntıları</caption>
       <caption xml:lang="uk">Подробиці щодо рослини.</caption>
       <caption xml:lang="x-test">xxDetails of a plant.xx</caption>
+      <caption xml:lang="zh-TW">植哉詳細資料。</caption>
     </screenshot>
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/powerplant/powerplant-task.png</image>
@@ -176,6 +179,7 @@
       <caption xml:lang="tr">Görevlerin ham listesi</caption>
       <caption xml:lang="uk">Простий список завдань.</caption>
       <caption xml:lang="x-test">xxRaw list of tasks.xx</caption>
+      <caption xml:lang="zh-TW">工作事項原始列表。</caption>
     </screenshot>
   </screenshots>
 </component>
