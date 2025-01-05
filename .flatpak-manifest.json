@@ -17,6 +17,12 @@
 
     "modules": [
         {
+            "name": "kweathercore",
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
+            "buildsystem": "cmake-ninja",
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/kweathercore.git", "branch": "master" } ]
+        },
+        {
             "name": "kirigami-addons",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
