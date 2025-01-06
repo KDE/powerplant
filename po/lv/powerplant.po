@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the powerplant package.
 #
-# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-27 00:44+0000\n"
-"PO-Revision-Date: 2024-05-29 12:20+0300\n"
+"PO-Revision-Date: 2025-01-04 17:42+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -40,11 +40,9 @@ msgid "A small app to track your plants"
 msgstr "Neliela programma augu sekošanai"
 
 #: main.cpp:76
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Mathis Brüchert"
+#, kde-format
 msgid "© 2023-2024 Mathis Brüchert"
-msgstr "Mathis Brüchert"
+msgstr "© 2023—2024 Mathis Brüchert"
 
 #: main.cpp:77
 #, kde-format
@@ -66,7 +64,7 @@ msgstr "Augi"
 #: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
-msgstr ""
+msgstr "Uzdevumi"
 
 #: qml/PlantDetailPage.qml:56
 #, kde-format
@@ -86,35 +84,31 @@ msgid "Water"
 msgstr "Ūdens"
 
 #: qml/PlantDetailPage.qml:250
-#, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be watered in %1 day"
 msgid_plural "Has to be watered in %1 days"
-msgstr[0] "jāaplaista pēc %1 dienām"
-msgstr[1] "jāaplaista pēc %1 dienām"
-msgstr[2] "jāaplaista pēc %1 dienām"
+msgstr[0] "Jāaplaista pēc %1 dienas"
+msgstr[1] "Jāaplaista pēc %1 dienām"
+msgstr[2] "Jāaplaista pēc %1 dienām"
 
 #: qml/PlantDetailPage.qml:252
-#, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
-msgstr "jāaplaista rīt"
+msgstr "Jāaplaista rīt"
 
 #: qml/PlantDetailPage.qml:254
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
-msgstr "jāaplaista šodien!"
+msgstr "Jāaplaista šodien!"
 
 #: qml/PlantDetailPage.qml:256
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
-msgstr "jau bija jāaplaista!"
+msgstr "Jau bija jāaplaista!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -124,43 +118,39 @@ msgstr "Aplaistīts"
 #: qml/PlantDetailPage.qml:269
 #, kde-format
 msgid "Fertilizer"
-msgstr ""
+msgstr "Mēslojums"
 
 #: qml/PlantDetailPage.qml:285
-#, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
 msgid_plural "Has to be fertilized in %1 days"
-msgstr[0] "jāaplaista pēc %1 dienām"
-msgstr[1] "jāaplaista pēc %1 dienām"
-msgstr[2] "jāaplaista pēc %1 dienām"
+msgstr[0] "Jāmēslo pēc %1 dienas"
+msgstr[1] "Jāmēslo pēc %1 dienām"
+msgstr[2] "Jāmēslo pēc %1 dienām"
 
 #: qml/PlantDetailPage.qml:287
-#, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
-msgstr "jāaplaista rīt"
+msgstr "Jāmēslo rīt"
 
 #: qml/PlantDetailPage.qml:289
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
-msgstr "jāaplaista šodien!"
+msgstr "Jāmēslo šodien!"
 
 #: qml/PlantDetailPage.qml:291
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
-msgstr "jau bija jāaplaista!"
+msgstr "jau bija jāmēslo!"
 
 #: qml/PlantDetailPage.qml:296
 #, kde-format
 msgid "Fertilized"
-msgstr ""
+msgstr "Mēslots"
 
 #: qml/PlantDetailPage.qml:305
 #, kde-format
@@ -259,10 +249,9 @@ msgid "Custom:"
 msgstr "Pielāgots:"
 
 #: qml/PlantEditorPage.qml:258
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgid "How often does the plant need Fertilizing?"
-msgstr "Cik bieži šis augs ir jālaista?"
+msgstr "Cik bieži šis augs ir jāmēslo?"
 
 #: qml/PlantEditorPage.qml:332
 #, kde-format
@@ -303,71 +292,64 @@ msgstr "Šobrīd neviens augs nav jālaista"
 #: qml/PlantsPage.qml:179
 #, kde-format
 msgid "Incomplete Tasks"
-msgstr ""
+msgstr "Nepabeigtie uzdevumi"
 
 #: qml/PlantsPage.qml:181
 #, kde-format
 msgid "All Tasks Complete"
-msgstr ""
+msgstr "Visi uzdevumi ir pabeigti"
 
 #: qml/PlantsPage.qml:222
 #, kde-format
 msgid "Enter your Location"
-msgstr ""
+msgstr "Ierakstiet savu atrašanās vietu"
 
 #: qml/PlantsPage.qml:269
 #, kde-format
 msgid "Select your Location"
-msgstr ""
+msgstr "Atlasiet savu atrašanās vietu"
 
 #: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
-#, fuzzy, kde-format
-#| msgid "in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "In %1 day"
 msgid_plural "In %1 days"
-msgstr[0] "pēc %1 dienām"
-msgstr[1] "pēc %1 dienām"
-msgstr[2] "pēc %1 dienām"
+msgstr[0] "Pēc %1 dienas"
+msgstr[1] "Pēc %1 dienām"
+msgstr[2] "Pēc %1 dienām"
 
 #: qml/PlantsPage.qml:391 qml/PlantsPage.qml:419
-#, fuzzy, kde-format
-#| msgid "tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
-msgstr "rīt"
+msgstr "Rīt"
 
 #: qml/PlantsPage.qml:393
-#, fuzzy, kde-format
-#| msgid "water today!"
+#, kde-format
 msgctxt "@info"
 msgid "Water today!"
-msgstr "aplaistiet šodien!"
+msgstr "Aplaistiet šodien!"
 
 #: qml/PlantsPage.qml:395
-#, fuzzy, kde-format
-#| msgid "watering overdue!"
+#, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
-msgstr "aplaistīšana ir nokavēta!"
+msgstr "Aplaistīšana ir nokavēta!"
 
 #: qml/PlantsPage.qml:421
-#, fuzzy, kde-format
-#| msgid "water today!"
+#, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
-msgstr "aplaistiet šodien!"
+msgstr "Mēslojiet šodien!"
 
 #: qml/PlantsPage.qml:423
-#, fuzzy, kde-format
-#| msgid "watering overdue!"
+#, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
-msgstr "aplaistīšana ir nokavēta!"
+msgstr "Mēslošana ir nokavēta!"
 
 #: qml/TaskPage.qml:123
-#, fuzzy, kde-format
-#| msgid "Water"
+#, kde-format
 msgctxt "@action"
 msgid "Water"
 msgstr "Ūdens"
@@ -376,18 +358,17 @@ msgstr "Ūdens"
 #, kde-format
 msgctxt "@info"
 msgid "Already watered"
-msgstr ""
+msgstr "Jau ir aplaistīts"
 
 #: qml/TaskPage.qml:135
 #, kde-format
 msgid "Now"
-msgstr ""
+msgstr "Tagad"
 
 #: qml/TaskPage.qml:135
-#, fuzzy, kde-format
-#| msgid "in %1 days"
+#, kde-format
 msgid "In %1 days"
-msgstr "pēc %1 dienām"
+msgstr "Pēc %1 dienām"
 
 #, fuzzy
 #~| msgid "Water"
