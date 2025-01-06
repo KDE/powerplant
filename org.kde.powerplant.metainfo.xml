@@ -53,6 +53,7 @@
   <summary xml:lang="it">Mantieni vive le tue piante</summary>
   <summary xml:lang="ka">დაიტოვეთ თქვენი მცენარეები ცოცხალი</summary>
   <summary xml:lang="ko">내 식물의 활기 유지하기</summary>
+  <summary xml:lang="lv">Neļauj saviem augiem nomirt</summary>
   <summary xml:lang="nl">Houd uw planten in leven</summary>
   <summary xml:lang="sa">भवतः वनस्पतयः जीविताः कुर्वन्तु</summary>
   <summary xml:lang="sl">Ohranjujte svoje rastline pri življenju</summary>
@@ -125,6 +126,7 @@
       <caption xml:lang="it">Vista principale con l'elenco delle piante.</caption>
       <caption xml:lang="ka">ძირითადი ხედი მცენარეთა ჩამონათვალით.</caption>
       <caption xml:lang="ko">식물 목록이 표시된 주 보기입니다.</caption>
+      <caption xml:lang="lv">Augu saraksta pamata skats.</caption>
       <caption xml:lang="nl">Hoofdweergave met de lijst planten.</caption>
       <caption xml:lang="sa">वनस्पतयः सूचीसहितं मुख्यदृश्यम्।</caption>
       <caption xml:lang="sl">Glavni pogled s seznamom rastlin.</caption>
@@ -149,6 +151,7 @@
       <caption xml:lang="it">Dettagli di una pianta.</caption>
       <caption xml:lang="ka">მცენარის დეტალები.</caption>
       <caption xml:lang="ko">식물의 자세한 정보입니다.</caption>
+      <caption xml:lang="lv">Informācija par augu.</caption>
       <caption xml:lang="nl">Details van een plant.</caption>
       <caption xml:lang="sa">कस्यचित् पादपस्य विवरणम् ।</caption>
       <caption xml:lang="sl">Podrobnosti rastline.</caption>
@@ -173,6 +176,7 @@
       <caption xml:lang="it">Elenco grezzo di attività.</caption>
       <caption xml:lang="ka">ამოცანების დაუმუშავებელი სია.</caption>
       <caption xml:lang="ko">할 일 목록입니다.</caption>
+      <caption xml:lang="lv">Uzdevumu saraksts.</caption>
       <caption xml:lang="nl">Ruwe lijst met taken.</caption>
       <caption xml:lang="sa">कार्याणां कच्चा सूची।</caption>
       <caption xml:lang="sl">Surovi seznam nalog.</caption>
