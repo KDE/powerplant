@@ -57,6 +57,7 @@
   <summary xml:lang="nl">Houd uw planten in leven</summary>
   <summary xml:lang="sa">भवतः वनस्पतयः जीविताः कुर्वन्तु</summary>
   <summary xml:lang="sl">Ohranjujte svoje rastline pri življenju</summary>
+  <summary xml:lang="sv">Håll dina plantor vid liv</summary>
   <summary xml:lang="tr">Bitkilerinizi canlı tutun</summary>
   <summary xml:lang="uk">Підтримайте ріст ваших рослин</summary>
   <summary xml:lang="x-test">xxKeep your plants alivexx</summary>
@@ -130,6 +131,7 @@
       <caption xml:lang="nl">Hoofdweergave met de lijst planten.</caption>
       <caption xml:lang="sa">वनस्पतयः सूचीसहितं मुख्यदृश्यम्।</caption>
       <caption xml:lang="sl">Glavni pogled s seznamom rastlin.</caption>
+      <caption xml:lang="sv">Huvudvy med listan över plantor.</caption>
       <caption xml:lang="tr">Bitki listesini gösteren ana görünüm</caption>
       <caption xml:lang="uk">Головне вікно зі списком рослин.</caption>
       <caption xml:lang="x-test">xxMain view with the list of plants.xx</caption>
@@ -155,6 +157,7 @@
       <caption xml:lang="nl">Details van een plant.</caption>
       <caption xml:lang="sa">कस्यचित् पादपस्य विवरणम् ।</caption>
       <caption xml:lang="sl">Podrobnosti rastline.</caption>
+      <caption xml:lang="sv">Detaljinformation om en planta.</caption>
       <caption xml:lang="tr">Bir bitkinin ayrıntıları</caption>
       <caption xml:lang="uk">Подробиці щодо рослини.</caption>
       <caption xml:lang="x-test">xxDetails of a plant.xx</caption>
@@ -180,6 +183,7 @@
       <caption xml:lang="nl">Ruwe lijst met taken.</caption>
       <caption xml:lang="sa">कार्याणां कच्चा सूची।</caption>
       <caption xml:lang="sl">Surovi seznam nalog.</caption>
+      <caption xml:lang="sv">Obehandlad lista över uppgifter.</caption>
       <caption xml:lang="tr">Görevlerin ham listesi</caption>
       <caption xml:lang="uk">Простий список завдань.</caption>
       <caption xml:lang="x-test">xxRaw list of tasks.xx</caption>
