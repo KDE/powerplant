@@ -144,3 +144,5 @@ void PlantEditor::save()
                                  m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch());
     }
 }
+
+#include "moc_planteditor.cpp"

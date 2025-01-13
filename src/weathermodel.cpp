@@ -109,3 +109,5 @@ void WeatherForecast::setLoading(bool loading)
     m_loading = loading;
     Q_EMIT loadingChanged();
 }
+
+#include "moc_weathermodel.cpp"

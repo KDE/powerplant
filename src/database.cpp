@@ -201,3 +201,5 @@ Database &Database::instance()
     static Database inst;
     return inst;
 }
+
+#include "moc_database.cpp"

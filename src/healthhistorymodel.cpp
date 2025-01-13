@@ -64,3 +64,5 @@ void HealthHistoryModel::addHealthEvent(const int health)
     m_data.emplace_back(now, health);
     endInsertRows();
 }
+
+#include "moc_healthhistorymodel.cpp"

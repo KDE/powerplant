@@ -58,3 +58,5 @@ void WaterHistoryModel::waterPlant()
     m_data.emplace_back(SingleValue<int>{now});
     endInsertRows();
 }
+
+#include "moc_waterhistorymodel.cpp"

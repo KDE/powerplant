@@ -200,3 +200,5 @@ PlantsModel::Summary PlantsModel::summary() const
 
     return Summary::NothingToDo;
 }
+
+#include "moc_plantsmodel.cpp"

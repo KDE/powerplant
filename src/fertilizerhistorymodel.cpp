@@ -58,3 +58,5 @@ void FertilizerHistoryModel::fertilizePlant()
     m_data.emplace_back(SingleValue<int>{now});
     endInsertRows();
 }
+
+#include "moc_fertilizerhistorymodel.cpp"

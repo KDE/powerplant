@@ -66,3 +66,5 @@ void ColorGradientInterpolator::setGradientStops(const QVariantList &gradientSto
     m_gradient.setKeyValues(keyValues);
     Q_EMIT gradientStopsChanged();
 }
+
+#include "moc_colorgradientinterpolator.cpp"
