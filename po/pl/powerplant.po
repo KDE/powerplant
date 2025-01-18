@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the powerplant package.
+# SPDX-FileCopyrightText: 2024, 2025 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 #
-# SPDX-FileCopyrightText: 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-27 00:44+0000\n"
-"PO-Revision-Date: 2024-03-02 12:44+0100\n"
+"PO-Revision-Date: 2025-01-18 12:14+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -39,11 +40,9 @@ msgid "A small app to track your plants"
 msgstr "Mała aplikacja do zarządzania twoimi roślinami"
 
 #: main.cpp:76
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Mathis Brüchert"
+#, kde-format
 msgid "© 2023-2024 Mathis Brüchert"
-msgstr "Mathis Brüchert"
+msgstr "© 2023-2024 Mathis Brüchert"
 
 #: main.cpp:77
 #, kde-format
@@ -65,7 +64,7 @@ msgstr "Rośliny"
 #: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
-msgstr ""
+msgstr "Zadania"
 
 #: qml/PlantDetailPage.qml:56
 #, kde-format
@@ -85,35 +84,31 @@ msgid "Water"
 msgstr "Woda"
 
 #: qml/PlantDetailPage.qml:250
-#, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be watered in %1 day"
 msgid_plural "Has to be watered in %1 days"
-msgstr[0] "musi być podlana za %1 dni"
-msgstr[1] "musi być podlana za %1 dni"
-msgstr[2] "musi być podlana za %1 dni"
+msgstr[0] "Trzeba podlać za %1 dzień"
+msgstr[1] "Trzeba podlać za %1 dni"
+msgstr[2] "Trzeba podlać za %1 dni"
 
 #: qml/PlantDetailPage.qml:252
-#, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
-msgstr "musi być podlana jutro"
+msgstr "Trzeba podlać jutro"
 
 #: qml/PlantDetailPage.qml:254
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
-msgstr "musi być podlana dzisiaj!"
+msgstr "Trzeba podlać dzisiaj!"
 
 #: qml/PlantDetailPage.qml:256
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
-msgstr "powinna już być podlana!"
+msgstr "Trzeba ją podlać teraz!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -123,43 +118,39 @@ msgstr "Podlana"
 #: qml/PlantDetailPage.qml:269
 #, kde-format
 msgid "Fertilizer"
-msgstr ""
+msgstr "Nawóz"
 
 #: qml/PlantDetailPage.qml:285
-#, fuzzy, kde-format
-#| msgid "has to be watered in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
 msgid_plural "Has to be fertilized in %1 days"
-msgstr[0] "musi być podlana za %1 dni"
-msgstr[1] "musi być podlana za %1 dni"
-msgstr[2] "musi być podlana za %1 dni"
+msgstr[0] "Trzeba nawieść za %1 dzień"
+msgstr[1] "Trzeba nawieść za %1 dni"
+msgstr[2] "Trzeba nawieść za %1 dni"
 
 #: qml/PlantDetailPage.qml:287
-#, fuzzy, kde-format
-#| msgid "has to be watered tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
-msgstr "musi być podlana jutro"
+msgstr "Trzeba nawieść jutro"
 
 #: qml/PlantDetailPage.qml:289
-#, fuzzy, kde-format
-#| msgid "needs to be watered today!"
+#, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
-msgstr "musi być podlana dzisiaj!"
+msgstr "Trzeba nawieść dzisiaj!"
 
 #: qml/PlantDetailPage.qml:291
-#, fuzzy, kde-format
-#| msgid "should have been watered already!"
+#, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
-msgstr "powinna już być podlana!"
+msgstr "Trzeba ją nawieść teraz!"
 
 #: qml/PlantDetailPage.qml:296
 #, kde-format
 msgid "Fertilized"
-msgstr ""
+msgstr "Nawożone"
 
 #: qml/PlantDetailPage.qml:305
 #, kde-format
@@ -230,7 +221,7 @@ msgstr "Pokój"
 #: qml/PlantEditorPage.qml:186
 #, kde-format
 msgid "How often does the plant need Watering?"
-msgstr "Jak często ta roślina powinna być podlewana?"
+msgstr "Jak często roślina wymaga podlewania?"
 
 #: qml/PlantEditorPage.qml:200 qml/PlantEditorPage.qml:272
 #, kde-format
@@ -258,10 +249,9 @@ msgid "Custom:"
 msgstr "Własna:"
 
 #: qml/PlantEditorPage.qml:258
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgid "How often does the plant need Fertilizing?"
-msgstr "Jak często ta roślina powinna być podlewana?"
+msgstr "Jak często roślina wymaga nawożenia?"
 
 #: qml/PlantEditorPage.qml:332
 #, kde-format
@@ -302,71 +292,64 @@ msgstr "Żadna z twoich roślin nie wymaga teraz uwagi"
 #: qml/PlantsPage.qml:179
 #, kde-format
 msgid "Incomplete Tasks"
-msgstr ""
+msgstr "Niezakończone zadania"
 
 #: qml/PlantsPage.qml:181
 #, kde-format
 msgid "All Tasks Complete"
-msgstr ""
+msgstr "Ukończono wszystkie zadania"
 
 #: qml/PlantsPage.qml:222
 #, kde-format
 msgid "Enter your Location"
-msgstr ""
+msgstr "Wpisz swoje położenie"
 
 #: qml/PlantsPage.qml:269
 #, kde-format
 msgid "Select your Location"
-msgstr ""
+msgstr "Wybierz swoje położenie"
 
 #: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
-#, fuzzy, kde-format
-#| msgid "in %1 days"
+#, kde-format
 msgctxt "@info"
 msgid "In %1 day"
 msgid_plural "In %1 days"
-msgstr[0] "za %1 dni"
-msgstr[1] "za %1 dni"
-msgstr[2] "za %1 dni"
+msgstr[0] "Za %1 dzień"
+msgstr[1] "Za %1 dni"
+msgstr[2] "Za %1 dni"
 
 #: qml/PlantsPage.qml:391 qml/PlantsPage.qml:419
-#, fuzzy, kde-format
-#| msgid "tomorrow"
+#, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
-msgstr "jutro"
+msgstr "Jutro"
 
 #: qml/PlantsPage.qml:393
-#, fuzzy, kde-format
-#| msgid "water today!"
+#, kde-format
 msgctxt "@info"
 msgid "Water today!"
-msgstr "podlej dzisiaj!"
+msgstr "Podlej dzisiaj!"
 
 #: qml/PlantsPage.qml:395
-#, fuzzy, kde-format
-#| msgid "watering overdue!"
+#, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
-msgstr "przegapiono podlanie!"
+msgstr "Przegapiono podlewanie!"
 
 #: qml/PlantsPage.qml:421
-#, fuzzy, kde-format
-#| msgid "water today!"
+#, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
-msgstr "podlej dzisiaj!"
+msgstr "Nawieź dzisiaj!"
 
 #: qml/PlantsPage.qml:423
-#, fuzzy, kde-format
-#| msgid "watering overdue!"
+#, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
-msgstr "przegapiono podlanie!"
+msgstr "Przegapiono nawożenie!"
 
 #: qml/TaskPage.qml:123
-#, fuzzy, kde-format
-#| msgid "Water"
+#, kde-format
 msgctxt "@action"
 msgid "Water"
 msgstr "Woda"
@@ -375,18 +358,17 @@ msgstr "Woda"
 #, kde-format
 msgctxt "@info"
 msgid "Already watered"
-msgstr ""
+msgstr "Już podlana"
 
 #: qml/TaskPage.qml:135
 #, kde-format
 msgid "Now"
-msgstr ""
+msgstr "Teraz"
 
 #: qml/TaskPage.qml:135
-#, fuzzy, kde-format
-#| msgid "in %1 days"
+#, kde-format
 msgid "In %1 days"
-msgstr "za %1 dni"
+msgstr "Za %1 dni"
 
 #, fuzzy
 #~| msgid "Water"
