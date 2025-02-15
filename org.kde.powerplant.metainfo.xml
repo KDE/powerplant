@@ -46,6 +46,7 @@
   <summary xml:lang="eo">Vivtenu viajn plantojn</summary>
   <summary xml:lang="es">Mantenga vivas sus plantas</summary>
   <summary xml:lang="eu">Zure landareak bizirik mantendu</summary>
+  <summary xml:lang="fi">Pidä kasvisi elossa</summary>
   <summary xml:lang="fr">Conserver vos plantes en vie</summary>
   <summary xml:lang="gl">Manteña con vida as súas plantas.</summary>
   <summary xml:lang="he">לשמור על הצמחים שלך בחיים</summary>
@@ -122,6 +123,7 @@
       <caption xml:lang="eo">Ĉefa vido kun la listo de plantoj.</caption>
       <caption xml:lang="es">Vista principal con la lista de plantas.</caption>
       <caption xml:lang="eu">Ikuspegi nagusia landareen zerrendarekin.</caption>
+      <caption xml:lang="fi">Päänäkymä, jossa kasviluettelo</caption>
       <caption xml:lang="fr">Vue principale avec la liste des plantes.</caption>
       <caption xml:lang="gl">Vista principal coa lista de plantas.</caption>
       <caption xml:lang="he">תצוגה ראשית עם רשימת הצמחים.</caption>
@@ -150,6 +152,7 @@
       <caption xml:lang="eo">Detaloj de planto.</caption>
       <caption xml:lang="es">Detalles de una planta.</caption>
       <caption xml:lang="eu">Landare baten xehetasunak.</caption>
+      <caption xml:lang="fi">Kasvin tiedot.</caption>
       <caption xml:lang="fr">Détails sur une plante.</caption>
       <caption xml:lang="gl">Detalles dunha planta.</caption>
       <caption xml:lang="he">פרטים של צמח.</caption>
@@ -178,6 +181,7 @@
       <caption xml:lang="eo">Kruda listo de taskoj.</caption>
       <caption xml:lang="es">Lista de tareas.</caption>
       <caption xml:lang="eu">Zereginen zerrenda gordina.</caption>
+      <caption xml:lang="fi">Tehtävien raakaluettelo.</caption>
       <caption xml:lang="fr">Liste brute des tâches.</caption>
       <caption xml:lang="gl">Lista de tarefas en cru.</caption>
       <caption xml:lang="he">רשימת משימות גולמית.</caption>
