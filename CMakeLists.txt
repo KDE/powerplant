@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(FeatureSummary)
 
 set(QT_MIN_VERSION 6.6)
-set(KF_MIN_VERSION 6.8)
+set(KF_MIN_VERSION 6.12)
 
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 
@@ -57,10 +57,6 @@ endif()
 
 find_package(FutureSQL6 REQUIRED)
 find_package(QCoro6 REQUIRED COMPONENTS Core)
-
-if (ANDROID)
-    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
-endif()
 
 ecm_set_disabled_deprecation_versions(QT 6.8.1
     KF 6.10.0
