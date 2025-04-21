@@ -58,8 +58,8 @@ endif()
 find_package(FutureSQL6 REQUIRED)
 find_package(QCoro6 REQUIRED COMPONENTS Core)
 
-ecm_set_disabled_deprecation_versions(QT 6.8.1
-    KF 6.10.0
+ecm_set_disabled_deprecation_versions(QT 6.9.0
+    KF 6.13.0
 )
 
 add_subdirectory(src)
