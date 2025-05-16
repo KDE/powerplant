@@ -6,6 +6,7 @@
 <component type="desktop-application">
   <id>org.kde.powerplant</id>
   <name>PowerPlant</name>
+  <name xml:lang="ar">زرع</name>
   <name xml:lang="ast">PowerPlant</name>
   <name xml:lang="be">PowerPlant</name>
   <name xml:lang="ca">PowerPlant</name>
@@ -40,6 +41,7 @@
   <name xml:lang="x-test">xxPowerPlantxx</name>
   <name xml:lang="zh-TW">PowerPlant 植哉追蹤</name>
   <summary>Keep your plants alive</summary>
+  <summary xml:lang="ar">اعتنِ بنباتاتك</summary>
   <summary xml:lang="ca">Manté vives les vostres plantes</summary>
   <summary xml:lang="ca-valencia">Manté vives les vostres plantes</summary>
   <summary xml:lang="de">Pflanzen am Leben halten</summary>
@@ -73,6 +75,7 @@
   <launchable type="desktop-id">org.kde.powerplant.desktop</launchable>
   <description>
     <p>PowerPlant lets you track when your plants have to be watered and how their health develops over time.</p>
+    <p xml:lang="ar">يتيح لك زرع تتبع مواعيد سقي نباتاتك وكيفية تطور صحتها بمرور الوقت.</p>
     <p xml:lang="be">PowerPlant дае магчымасць сачыць за часам паліву вашых раслін і іх здароўем.</p>
     <p xml:lang="ca">PowerPlant permet fer un seguiment de quan cal regar les plantes i com es desenvolupa la seva salut amb el temps.</p>
     <p xml:lang="ca-valencia">PowerPlant permet fer un seguiment de quan cal regar les plantes i com es desenvolupa la seua salut amb el temps.</p>
@@ -117,6 +120,7 @@
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/powerplant/powerplant.png</image>
       <caption>Main view with the list of plants.</caption>
+      <caption xml:lang="ar">المنظر الرئيسي مع قائمة النباتات.</caption>
       <caption xml:lang="ca">Vista principal amb la llista de plantes.</caption>
       <caption xml:lang="ca-valencia">Vista principal amb la llista de plantes.</caption>
       <caption xml:lang="de">Hauptansicht mit der Liste der Pflanzen.</caption>
@@ -146,6 +150,7 @@
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/powerplant/powerplant-detail.png</image>
       <caption>Details of a plant.</caption>
+      <caption xml:lang="ar">تفاصيل النبتة</caption>
       <caption xml:lang="ca">Detalls d'una planta.</caption>
       <caption xml:lang="ca-valencia">Detalls d'una planta.</caption>
       <caption xml:lang="de">Informationen einer Pflanze.</caption>
@@ -175,6 +180,7 @@
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/powerplant/powerplant-task.png</image>
       <caption>Raw list of tasks.</caption>
+      <caption xml:lang="ar">قائمة المهام</caption>
       <caption xml:lang="ca">Llista en brut de les tasques.</caption>
       <caption xml:lang="ca-valencia">Llista en brut de les tasques.</caption>
       <caption xml:lang="de">Liste der Aufgaben.</caption>
