@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 [Desktop Entry]
 Name=Powerplant
+Name[ar]=زرع
 Name[ca]=Powerplant
 Name[ca@valencia]=Powerplant
 Name[de]=PowerPlant
@@ -27,6 +28,7 @@ Name[uk]=Powerplant
 Name[x-test]=xxPowerplantxx
 Name[zh_TW]=PowerPlant 植哉追蹤
 Comment=Keep your plants alive
+Comment[ar]=اعتنِ بنباتاتك
 Comment[ca]=Manté vives les vostres plantes
 Comment[ca@valencia]=Manté vives les vostres plantes
 Comment[de]=Pflanzen am Leben halten
