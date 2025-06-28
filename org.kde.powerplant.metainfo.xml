@@ -39,6 +39,7 @@
   <name xml:lang="tr">PowerPlant</name>
   <name xml:lang="uk">PowerPlant</name>
   <name xml:lang="x-test">xxPowerPlantxx</name>
+  <name xml:lang="zh-CN">PowerPlant</name>
   <name xml:lang="zh-TW">PowerPlant 植哉追蹤</name>
   <summary>Keep your plants alive</summary>
   <summary xml:lang="ar">اعتنِ بنباتاتك</summary>
@@ -66,6 +67,7 @@
   <summary xml:lang="tr">Bitkilerinizi canlı tutun</summary>
   <summary xml:lang="uk">Підтримайте ріст ваших рослин</summary>
   <summary xml:lang="x-test">xxKeep your plants alivexx</summary>
+  <summary xml:lang="zh-CN">保持你的植物生命力</summary>
   <summary xml:lang="zh-TW">維持您的植哉的生命</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
@@ -105,6 +107,7 @@
     <p xml:lang="tr">PowerPlant, bitkilerinizin ne zaman sulanması gerektiğini ve onların sağlık durumunu izler.</p>
     <p xml:lang="uk">PowerPlant допоможе вам стежити за вчасним поливанням ваших рослин та їхнім розвитком.</p>
     <p xml:lang="x-test">xxPowerPlant lets you track when your plants have to be watered and how their health develops over time.xx</p>
+    <p xml:lang="zh-CN">PowerPlant 让你可以追踪你的植物何时需要浇水，以及随着时间的推移它们的健康状况如何。</p>
     <p xml:lang="zh-TW">《PowerPlant 植哉追蹤》讓您追蹤您的植哉什麼時候需要澆水，以及它們的健康狀況如何發展。</p>
   </description>
   <content_rating type="oars-1.1"/>
@@ -145,6 +148,7 @@
       <caption xml:lang="tr">Bitki listesini gösteren ana görünüm</caption>
       <caption xml:lang="uk">Головне вікно зі списком рослин.</caption>
       <caption xml:lang="x-test">xxMain view with the list of plants.xx</caption>
+      <caption xml:lang="zh-CN">以列表展示植物的主视图。</caption>
       <caption xml:lang="zh-TW">主檢視，包含植哉列表。</caption>
     </screenshot>
     <screenshot type="default">
@@ -175,6 +179,7 @@
       <caption xml:lang="tr">Bir bitkinin ayrıntıları</caption>
       <caption xml:lang="uk">Подробиці щодо рослини.</caption>
       <caption xml:lang="x-test">xxDetails of a plant.xx</caption>
+      <caption xml:lang="zh-CN">植物详情。</caption>
       <caption xml:lang="zh-TW">植哉詳細資料。</caption>
     </screenshot>
     <screenshot type="default">
@@ -205,6 +210,7 @@
       <caption xml:lang="tr">Görevlerin ham listesi</caption>
       <caption xml:lang="uk">Простий список завдань.</caption>
       <caption xml:lang="x-test">xxRaw list of tasks.xx</caption>
+      <caption xml:lang="zh-CN">任务列表。</caption>
       <caption xml:lang="zh-TW">工作事項原始列表。</caption>
     </screenshot>
   </screenshots>
