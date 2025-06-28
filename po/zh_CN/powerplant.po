@@ -63,7 +63,7 @@ msgstr "植物"
 #: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: qml/PlantDetailPage.qml:56
 #, kde-format
@@ -87,25 +87,25 @@ msgstr "浇水"
 msgctxt "@info"
 msgid "Has to be watered in %1 day"
 msgid_plural "Has to be watered in %1 days"
-msgstr[0] ""
+msgstr[0] "%1 天后需要浇水"
 
 #: qml/PlantDetailPage.qml:252
 #, kde-format
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
-msgstr ""
+msgstr "明天需要浇水"
 
 #: qml/PlantDetailPage.qml:254
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
-msgstr ""
+msgstr "今天需要浇水！"
 
 #: qml/PlantDetailPage.qml:256
 #, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
-msgstr ""
+msgstr "已浇水！"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
@@ -115,37 +115,37 @@ msgstr "已浇水"
 #: qml/PlantDetailPage.qml:269
 #, kde-format
 msgid "Fertilizer"
-msgstr ""
+msgstr "施肥"
 
 #: qml/PlantDetailPage.qml:285
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
 msgid_plural "Has to be fertilized in %1 days"
-msgstr[0] ""
+msgstr[0] "%1 天后需要施肥"
 
 #: qml/PlantDetailPage.qml:287
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
-msgstr ""
+msgstr "明天需要施肥"
 
 #: qml/PlantDetailPage.qml:289
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
-msgstr ""
+msgstr "今天需要施肥！"
 
 #: qml/PlantDetailPage.qml:291
 #, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
-msgstr ""
+msgstr "已施肥！"
 
 #: qml/PlantDetailPage.qml:296
 #, kde-format
 msgid "Fertilized"
-msgstr ""
+msgstr "已施肥"
 
 #: qml/PlantDetailPage.qml:305
 #, kde-format
@@ -246,7 +246,7 @@ msgstr "自定义："
 #: qml/PlantEditorPage.qml:258
 #, kde-format
 msgid "How often does the plant need Fertilizing?"
-msgstr ""
+msgstr "植物需要施肥的频率如何？"
 
 #: qml/PlantEditorPage.qml:332
 #, kde-format
@@ -287,78 +287,78 @@ msgstr "目前没有植物需要浇水"
 #: qml/PlantsPage.qml:179
 #, kde-format
 msgid "Incomplete Tasks"
-msgstr ""
+msgstr "未完成的任务"
 
 #: qml/PlantsPage.qml:181
 #, kde-format
 msgid "All Tasks Complete"
-msgstr ""
+msgstr "已完成全部任务"
 
 #: qml/PlantsPage.qml:222
 #, kde-format
 msgid "Enter your Location"
-msgstr ""
+msgstr "请输入您的位置"
 
 #: qml/PlantsPage.qml:269
 #, kde-format
 msgid "Select your Location"
-msgstr ""
+msgstr "选择您的位置"
 
 #: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
 #, kde-format
 msgctxt "@info"
 msgid "In %1 day"
 msgid_plural "In %1 days"
-msgstr[0] ""
+msgstr[0] "%1 天内"
 
 #: qml/PlantsPage.qml:391 qml/PlantsPage.qml:419
 #, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
-msgstr ""
+msgstr "明天"
 
 #: qml/PlantsPage.qml:393
 #, kde-format
 msgctxt "@info"
 msgid "Water today!"
-msgstr ""
+msgstr "今天浇水！"
 
 #: qml/PlantsPage.qml:395
 #, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
-msgstr ""
+msgstr "浇水超期！"
 
 #: qml/PlantsPage.qml:421
 #, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
-msgstr ""
+msgstr "今天施肥！"
 
 #: qml/PlantsPage.qml:423
 #, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
-msgstr ""
+msgstr "施肥超期！"
 
 #: qml/TaskPage.qml:123
 #, kde-format
 msgctxt "@action"
 msgid "Water"
-msgstr ""
+msgstr "浇水"
 
 #: qml/TaskPage.qml:135
 #, kde-format
 msgctxt "@info"
 msgid "Already watered"
-msgstr ""
+msgstr "已浇水"
 
 #: qml/TaskPage.qml:135
 #, kde-format
 msgid "Now"
-msgstr ""
+msgstr "现在"
 
 #: qml/TaskPage.qml:135
 #, kde-format
 msgid "In %1 days"
-msgstr ""
+msgstr "%1 天内"
