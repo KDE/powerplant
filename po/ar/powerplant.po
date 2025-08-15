@@ -111,7 +111,7 @@ msgstr "تحتاج إلى السقي اليوم!"
 #, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
-msgstr "يجب أن تكون قد سقيت بالفعل!"
+msgstr "يجب أن تكون قد سقيت فعلًا!"
 
 #: qml/PlantDetailPage.qml:260
 #, kde-format
