@@ -29,10 +29,10 @@ class Plant : public QObject
     /// This property holds the img url of the plant
     Q_PROPERTY(QUrl imgUrl MEMBER m_imgUrl NOTIFY imgUrlChanged)
 
-    /// This property holds the intervall in which this plant should be watered
+    /// This property holds the interval in which this plant should be watered
     Q_PROPERTY(int waterInterval MEMBER m_waterInterval NOTIFY waterIntervalChanged)
 
-    /// This property holds the intervall in which this plant should be fertilized
+    /// This property holds the interval in which this plant should be fertilized
     Q_PROPERTY(int fertilizerInterval MEMBER m_fertilizerInterval NOTIFY fertilizerIntervalChanged)
 
     /// This property holds the interval in which this plant should be watered

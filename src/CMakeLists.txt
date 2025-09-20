@@ -80,7 +80,7 @@ endif()
 
 kconfig_target_kcfg_file(powerplant_static FILE powerplantconfig.kcfg CLASS_NAME Config MUTATORS GENERATE_PROPERTIES GENERATE_MOC DEFAULT_VALUE_GETTERS PARENT_IN_CONSTRUCTOR QML_REGISTRATION SINGLETON)
 
-## Excutable
+## Executable
 add_executable(powerplant main.cpp resources.qrc)
 
 target_link_libraries(powerplant PRIVATE powerplant_static powerplant_staticplugin)
