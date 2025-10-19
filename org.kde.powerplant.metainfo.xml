@@ -44,6 +44,7 @@
   <summary xml:lang="ar">اعتنِ بنباتاتك</summary>
   <summary xml:lang="ca">Manté vives les vostres plantes</summary>
   <summary xml:lang="ca-valencia">Manté vives les vostres plantes</summary>
+  <summary xml:lang="cs">Udržujte své rostliny naživu</summary>
   <summary xml:lang="de">Pflanzen am Leben halten</summary>
   <summary xml:lang="eo">Vivtenu viajn plantojn</summary>
   <summary xml:lang="es">Mantenga vivas sus plantas</summary>
@@ -123,6 +124,7 @@
       <caption xml:lang="ar">المنظر الرئيسي مع قائمة النباتات.</caption>
       <caption xml:lang="ca">Vista principal amb la llista de plantes.</caption>
       <caption xml:lang="ca-valencia">Vista principal amb la llista de plantes.</caption>
+      <caption xml:lang="cs">Hlavní pohled se seznamem rostlin.</caption>
       <caption xml:lang="de">Hauptansicht mit der Liste der Pflanzen.</caption>
       <caption xml:lang="eo">Ĉefa vido kun la listo de plantoj.</caption>
       <caption xml:lang="es">Vista principal con la lista de plantas.</caption>
@@ -153,6 +155,7 @@
       <caption xml:lang="ar">تفاصيل النبتة</caption>
       <caption xml:lang="ca">Detalls d'una planta.</caption>
       <caption xml:lang="ca-valencia">Detalls d'una planta.</caption>
+      <caption xml:lang="cs">Podrobnosti rozstliny.</caption>
       <caption xml:lang="de">Informationen einer Pflanze.</caption>
       <caption xml:lang="eo">Detaloj de planto.</caption>
       <caption xml:lang="es">Detalles de una planta.</caption>
@@ -183,6 +186,7 @@
       <caption xml:lang="ar">قائمة المهام</caption>
       <caption xml:lang="ca">Llista en brut de les tasques.</caption>
       <caption xml:lang="ca-valencia">Llista en brut de les tasques.</caption>
+      <caption xml:lang="cs">Hrubý seznam úkolů.</caption>
       <caption xml:lang="de">Liste der Aufgaben.</caption>
       <caption xml:lang="eo">Kruda listo de taskoj.</caption>
       <caption xml:lang="es">Lista de tareas.</caption>
