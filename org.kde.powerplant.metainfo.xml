@@ -61,6 +61,7 @@
   <summary xml:lang="nl">Houd uw planten in leven</summary>
   <summary xml:lang="pl">Utrzymuj swoje rośliny przy życiu</summary>
   <summary xml:lang="pt-BR">Mantenha suas plantas vivas</summary>
+  <summary xml:lang="ro">Vă ține plantele în viață</summary>
   <summary xml:lang="sa">भवतः वनस्पतयः जीविताः कुर्वन्तु</summary>
   <summary xml:lang="sl">Ohranjujte svoje rastline pri življenju</summary>
   <summary xml:lang="sv">Håll dina plantor vid liv</summary>
@@ -141,6 +142,7 @@
       <caption xml:lang="nl">Hoofdweergave met de lijst planten.</caption>
       <caption xml:lang="pl">Widok główny z listą roślin.</caption>
       <caption xml:lang="pt-BR">Visualização principal contendo a lista de plantas.</caption>
+      <caption xml:lang="ro">Vederea principală cu lista de plante.</caption>
       <caption xml:lang="sa">वनस्पतयः सूचीसहितं मुख्यदृश्यम्।</caption>
       <caption xml:lang="sl">Glavni pogled s seznamom rastlin.</caption>
       <caption xml:lang="sv">Huvudvy med listan över plantor.</caption>
@@ -172,6 +174,7 @@
       <caption xml:lang="nl">Details van een plant.</caption>
       <caption xml:lang="pl">Szczegóły rośliny.</caption>
       <caption xml:lang="pt-BR">Detalhes de uma planta.</caption>
+      <caption xml:lang="ro">Detaliile unei plante.</caption>
       <caption xml:lang="sa">कस्यचित् पादपस्य विवरणम् ।</caption>
       <caption xml:lang="sl">Podrobnosti rastline.</caption>
       <caption xml:lang="sv">Detaljinformation om en planta.</caption>
@@ -203,6 +206,7 @@
       <caption xml:lang="nl">Ruwe lijst met taken.</caption>
       <caption xml:lang="pl">Niesformatowana lista zadań.</caption>
       <caption xml:lang="pt-BR">Lista de tarefas.</caption>
+      <caption xml:lang="ro">Lista brută de sarcini.</caption>
       <caption xml:lang="sa">कार्याणां कच्चा सूची।</caption>
       <caption xml:lang="sl">Surovi seznam nalog.</caption>
       <caption xml:lang="sv">Obehandlad lista över uppgifter.</caption>
