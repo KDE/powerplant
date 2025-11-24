@@ -75,6 +75,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
         // Copyright Statement.
         i18n("© 2023-2024 Mathis Brüchert"));
     aboutData.addAuthor(i18nc("@info:credit", "Mathis Brüchert"), i18nc("@info:credit", "Author"), QStringLiteral("mbb@kaidan.im"));
+    aboutData.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
     KAboutData::setApplicationData(aboutData);
 #if HAVE_KCRASH
     KCrash::initialize();
