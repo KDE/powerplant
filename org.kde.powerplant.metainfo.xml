@@ -63,6 +63,7 @@
   <summary xml:lang="pt-BR">Mantenha suas plantas vivas</summary>
   <summary xml:lang="ro">Vă ține plantele în viață</summary>
   <summary xml:lang="sa">भवतः वनस्पतयः जीविताः कुर्वन्तु</summary>
+  <summary xml:lang="sk">Udržte vaše rastliny nažive</summary>
   <summary xml:lang="sl">Ohranjujte svoje rastline pri življenju</summary>
   <summary xml:lang="sv">Håll dina plantor vid liv</summary>
   <summary xml:lang="tr">Bitkilerinizi canlı tutun</summary>
@@ -103,6 +104,7 @@
     <p xml:lang="pt-BR">O PowerPlant permite monitorar quando suas plantas precisam ser regadas e como a saúde delas se desenvolve ao longo do tempo.</p>
     <p xml:lang="ro">PowerPlant vă permite să înregistrați când trebuiesc udate plantele și dezvoltarea acestora în timp.</p>
     <p xml:lang="sa">PowerPlant इत्यनेन भवन्तः कदा भवतः वनस्पतयः जलं दातव्याः, कालान्तरे तेषां स्वास्थ्यस्य विकासः कथं भवति इति निरीक्षणं कर्तुं शक्नोति।</p>
+    <p xml:lang="sk">PowerPlant vám umožňuje sledovať, kedy musia byť vaše rastliny zaliate a ako sa ich zdravie vyvíja v priebehu času.</p>
     <p xml:lang="sl">PowerPlant vam omogoča spremljati, kdaj je treba vaše rastline zaliti in kako se njihovo zdravje sčasoma razvija.</p>
     <p xml:lang="sv">Planteffekt låter dig hålla reda på när plantor måste vattnas och hur deras hälsa utvecklas med tiden.</p>
     <p xml:lang="tr">PowerPlant, bitkilerinizin ne zaman sulanması gerektiğini ve onların sağlık durumunu izler.</p>
@@ -145,6 +147,7 @@
       <caption xml:lang="pt-BR">Visualização principal contendo a lista de plantas.</caption>
       <caption xml:lang="ro">Vederea principală cu lista de plante.</caption>
       <caption xml:lang="sa">वनस्पतयः सूचीसहितं मुख्यदृश्यम्।</caption>
+      <caption xml:lang="sk">Hlavné zobrazenie so zoznamom rastlín.</caption>
       <caption xml:lang="sl">Glavni pogled s seznamom rastlin.</caption>
       <caption xml:lang="sv">Huvudvy med listan över plantor.</caption>
       <caption xml:lang="tr">Bitki listesini gösteren ana görünüm</caption>
@@ -177,6 +180,7 @@
       <caption xml:lang="pt-BR">Detalhes de uma planta.</caption>
       <caption xml:lang="ro">Detaliile unei plante.</caption>
       <caption xml:lang="sa">कस्यचित् पादपस्य विवरणम् ।</caption>
+      <caption xml:lang="sk">Podrobnosti o rastline.</caption>
       <caption xml:lang="sl">Podrobnosti rastline.</caption>
       <caption xml:lang="sv">Detaljinformation om en planta.</caption>
       <caption xml:lang="tr">Bir bitkinin ayrıntıları</caption>
@@ -209,6 +213,7 @@
       <caption xml:lang="pt-BR">Lista de tarefas.</caption>
       <caption xml:lang="ro">Lista brută de sarcini.</caption>
       <caption xml:lang="sa">कार्याणां कच्चा सूची।</caption>
+      <caption xml:lang="sk">Surový zoznam úloh.</caption>
       <caption xml:lang="sl">Surovi seznam nalog.</caption>
       <caption xml:lang="sv">Obehandlad lista över uppgifter.</caption>
       <caption xml:lang="tr">Görevlerin ham listesi</caption>
