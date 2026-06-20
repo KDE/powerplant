@@ -27,6 +27,7 @@
   <name xml:lang="it">PowerPlant</name>
   <name xml:lang="ka">PowerPlant</name>
   <name xml:lang="ko">PowerPlant</name>
+  <name xml:lang="lt">PowerPlant</name>
   <name xml:lang="lv">PowerPlant</name>
   <name xml:lang="nl">PowerPlant</name>
   <name xml:lang="pl">PowerPlant</name>
@@ -58,6 +59,7 @@
   <summary xml:lang="it">Mantieni vive le tue piante</summary>
   <summary xml:lang="ka">დაიტოვეთ თქვენი მცენარეები ცოცხალი</summary>
   <summary xml:lang="ko">내 식물의 활기 유지하기</summary>
+  <summary xml:lang="lt">Palaikykite augalus gyvybingus</summary>
   <summary xml:lang="lv">Neļauj saviem augiem nomirt</summary>
   <summary xml:lang="nl">Houd uw planten in leven</summary>
   <summary xml:lang="pl">Utrzymuj swoje rośliny przy życiu</summary>
@@ -100,6 +102,7 @@
     <p xml:lang="it">PowerPlant ti permette di tener traccia di quando devono essere innaffiate le tue piante, e della loro salute nel tempo.</p>
     <p xml:lang="ka">PowerPlant საშუალებას გაძლევთ, თვალყური ადევნოთ, როდის დაუსხით წყალი თქვენს მცენარეებს და როგორ ვითარდებიან დროის განმავლობაში.</p>
     <p xml:lang="ko">PowerPlant는 식물에 물을 줄 시간을 추적하고 식물의 상태를 점검할 수 있습니다.</p>
+    <p xml:lang="lt">PowerPlant jums leidžia sekti, kada augalai turi būti palaistyti ir kaip, bėgant laikui, keičiasi jų būsena.</p>
     <p xml:lang="lv">„PowerPlant“ ļauj sekot, kad augi ir jālaista un kā mainās to veselība.</p>
     <p xml:lang="nl">PowerPlant laat u volgen wanneer uw planten water moeten hebben en hoe hun gezondheid zich in de tijd ontwikkelt.</p>
     <p xml:lang="pl">PowerPlant przypomina o tym kiedy twoje rośliny potrzebują podlania i jak zdrowo rozwijają się na przestrzeni czasu.</p>
@@ -143,6 +146,7 @@
       <caption xml:lang="it">Vista principale con l'elenco delle piante.</caption>
       <caption xml:lang="ka">ძირითადი ხედი მცენარეთა ჩამონათვალით.</caption>
       <caption xml:lang="ko">식물 목록이 표시된 주 보기입니다.</caption>
+      <caption xml:lang="lt">Pagrindinis rodinys, atvaizduojantis augalų sąrašą.</caption>
       <caption xml:lang="lv">Augu saraksta pamata skats.</caption>
       <caption xml:lang="nl">Hoofdweergave met de lijst planten.</caption>
       <caption xml:lang="pl">Widok główny z listą roślin.</caption>
@@ -176,6 +180,7 @@
       <caption xml:lang="it">Dettagli di una pianta.</caption>
       <caption xml:lang="ka">მცენარის დეტალები.</caption>
       <caption xml:lang="ko">식물의 자세한 정보입니다.</caption>
+      <caption xml:lang="lt">Išsamesnė informacija apie augalą.</caption>
       <caption xml:lang="lv">Informācija par augu.</caption>
       <caption xml:lang="nl">Details van een plant.</caption>
       <caption xml:lang="pl">Szczegóły rośliny.</caption>
@@ -209,6 +214,7 @@
       <caption xml:lang="it">Elenco grezzo di attività.</caption>
       <caption xml:lang="ka">ამოცანების დაუმუშავებელი სია.</caption>
       <caption xml:lang="ko">할 일 목록입니다.</caption>
+      <caption xml:lang="lt">Neapdorotas užduočių sąrašas.</caption>
       <caption xml:lang="lv">Uzdevumu saraksts.</caption>
       <caption xml:lang="nl">Ruwe lijst met taken.</caption>
       <caption xml:lang="pl">Niesformatowana lista zadań.</caption>
