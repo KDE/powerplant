@@ -28,7 +28,7 @@ FormCard.FormCardPage {
         plantsModel: root.plantsModel
     }
 
-    title: mode === PlantEditor.Creator ? i18n("Add Plant") : i18n("Edit %1", plantEditor.plant.name)
+    title: mode === PlantEditor.Creator ? i18nc("@title:window","Add Plant") : i18nc("@title:window %1 is the plant name", "Edit %1", plantEditor.plant.name)
 
     FormCard.FormCard {
         Layout.topMargin: Kirigami.Units.gridUnit
@@ -38,7 +38,7 @@ FormCard.FormCardPage {
             contentItem: ColumnLayout {
                 clip: true
                 Controls.Label {
-                    text: i18n("Image:")
+                    text: i18nc("@title:row","Image:")
                 }
 
                 ListView {
@@ -59,22 +59,23 @@ FormCard.FormCardPage {
                         }
                     }
 
+                    Controls.ScrollBar.horizontal: Controls.ScrollBar { }
                     orientation: ListView.Horizontal
 
                     header: Item {
                         width: 120
                         height: ListView.view.height
 
-                        Components.FloatingButton {
+                        Components.FloatingButton{
                             anchors.centerIn: parent
                             icon.name: "list-add-symbolic"
-                            text: i18n("Use custom image")
+                            text: i18nc("@action:button","Use custom image")
                             onClicked: fileDialog.open()
                         }
 
                         FileDialog {
                             id: fileDialog
-                            title: i18n("Please choose a file")
+                            title: i18nc("@title:window","Please choose a file")
                             folder: StandardPaths.writableLocation(StandardPaths.PicturesLocation)
                             onAccepted: {
                                 plantImageModel.customImage = file;
@@ -155,7 +156,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.FormTextFieldDelegate {
-            label: i18n("Name")
+            label: i18nc("@title:row","Name")
             text: plantEditor.plant.name
             onTextChanged: plantEditor.plant.name = text
         }
@@ -163,7 +164,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.FormTextFieldDelegate {
-            label: i18n("Species")
+            label: i18nc("@title:row","Species")
             text: plantEditor.plant.species
             onTextChanged: plantEditor.plant.species = text
         }
@@ -171,7 +172,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.FormTextFieldDelegate {
-            label: i18n("Room")
+            label: i18nc("@title:row","Room")
             text: plantEditor.plant.location
             onTextChanged: plantEditor.plant.location = text
         }
@@ -183,7 +184,7 @@ FormCard.FormCardPage {
             background: null
             contentItem: ColumnLayout {
                 Controls.Label {
-                    text: i18n("How often does the plant need Watering?")
+                    text: i18nc("@title:row","How often does the plant need Watering?")
                 }
                 Controls.ButtonGroup {
                     id: buttonGroup
@@ -197,7 +198,7 @@ FormCard.FormCardPage {
                     spacing: Kirigami.Units.smallSpacing
 
                     Controls.Button {
-                        text: i18n("2 days")
+                        text: i18nc("@action:button button to select preset time","2 days")
                         checkable: true
                         Controls.ButtonGroup.group: buttonGroup
                         Layout.fillWidth: true
@@ -205,7 +206,7 @@ FormCard.FormCardPage {
                     }
 
                     Controls.Button {
-                        text: i18n("5 days")
+                        text: i18nc("@action:button button to select preset time","5 days")
                         checkable: true
                         Controls.ButtonGroup.group: buttonGroup
                         Layout.fillWidth: true
@@ -213,7 +214,7 @@ FormCard.FormCardPage {
                     }
 
                     Controls.Button {
-                        text: i18n("weekly")
+                        text: i18nc("@action:button button to select preset time","weekly")
                         checkable: true
                         Controls.ButtonGroup.group: buttonGroup
                         Layout.fillWidth: true
@@ -222,7 +223,7 @@ FormCard.FormCardPage {
 
                     Controls.Button {
                         id: buttonWeeks
-                        text: i18n("2 weeks")
+                        text: i18nc("@action:button button to select preset time","2 weeks")
                         checkable: true
                         Controls.ButtonGroup.group: buttonGroup
                         Layout.fillWidth: true
@@ -235,7 +236,7 @@ FormCard.FormCardPage {
                     Layout.fillHeight: true
 
                     Controls.Label {
-                        text: i18n("Custom:")
+                        text: i18nc("@title:row","Custom (days):")
                     }
 
                     Controls.SpinBox {
@@ -255,7 +256,7 @@ FormCard.FormCardPage {
             background: null
             contentItem: ColumnLayout {
                 Controls.Label {
-                    text: i18n("How often does the plant need Fertilizing?")
+                    text: i18nc("@title:row", "How often does the plant need Fertilizing?")
                 }
                 Controls.ButtonGroup {
                     id: fertilizerButtonGroup
@@ -269,7 +270,7 @@ FormCard.FormCardPage {
                     spacing: Kirigami.Units.smallSpacing
 
                     Controls.Button {
-                        text: i18n("2 days")
+                        text: i18nc("@action:button button to select preset time","2 days")
                         checkable: true
                         Controls.ButtonGroup.group: fertilizerButtonGroup
                         Layout.fillWidth: true
@@ -277,7 +278,7 @@ FormCard.FormCardPage {
                     }
 
                     Controls.Button {
-                        text: i18n("5 days")
+                        text: i18nc("@action:button button to select preset time","5 days")
                         checkable: true
                         Controls.ButtonGroup.group: fertilizerButtonGroup
                         Layout.fillWidth: true
@@ -285,7 +286,7 @@ FormCard.FormCardPage {
                     }
 
                     Controls.Button {
-                        text: i18n("weekly")
+                        text: i18nc("@action:button button to select preset time","weekly")
                         checkable: true
                         Controls.ButtonGroup.group: fertilizerButtonGroup
                         Layout.fillWidth: true
@@ -294,7 +295,7 @@ FormCard.FormCardPage {
 
                     Controls.Button {
                         id: fertilizerButtonWeeks
-                        text: i18n("2 weeks")
+                        text: i18nc("@action:button button to select preset time","2 weeks")
                         checkable: true
                         Controls.ButtonGroup.group: fertilizerButtonGroup
                         Layout.fillWidth: true
@@ -307,7 +308,7 @@ FormCard.FormCardPage {
                     Layout.fillHeight: true
 
                     Controls.Label {
-                        text: i18n("Custom:")
+                        text: i18nc("@title:row","Custom (days):")
                     }
 
                     Controls.SpinBox {
@@ -329,7 +330,7 @@ FormCard.FormCardPage {
             background: null
             contentItem: ColumnLayout {
                 Controls.Label {
-                    text: i18n("How healthy is your plant at the moment?")
+                    text: i18nc("@title:row","How healthy is your plant at the moment?")
                 }
 
                 HealthSlider {
@@ -346,7 +347,7 @@ FormCard.FormCardPage {
     }
 
     FormCard.FormHeader {
-        title: i18n("Birthday")
+        title: i18nc("@title:row","Birthday")
     }
 
     FormCard.FormCard {
@@ -364,10 +365,17 @@ FormCard.FormCardPage {
             }
 
             Controls.Button {
-                text: plantEditor.mode === PlantEditor.Editor ? i18n("Edit") : i18n("Add")
-                icon.name: plantEditor.mode === PlantEditor.Editor ? "document-edit-symbolic" : "list-add-symbolic"
+                text: plantEditor.mode === PlantEditor.Editor ? i18nc("@action:button","Save") : i18nc("@action:button","Add")
+                icon.name: plantEditor.mode === PlantEditor.Editor ? "checkmark" : "list-add-symbolic"
                 onClicked: {
                     plantEditor.save();
+                    root.closeDialog();
+                }
+            }
+            Controls.Button {
+                text: i18nc("@action:button", "Cancel")
+                icon.name: "dialog-cancel"
+                onClicked: {
                     root.closeDialog();
                 }
             }
