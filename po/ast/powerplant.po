@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-25 00:46+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: 2024-03-27 23:08+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -161,7 +161,7 @@ msgstr ""
 msgid "How healthy is your plant today?"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:367
+#: qml/PlantDetailPage.qml:335
 #, kde-format
 msgid "Add"
 msgstr ""
@@ -173,98 +173,128 @@ msgstr ""
 
 #: qml/PlantEditorPage.qml:31
 #, kde-format
+msgctxt "@title:window"
 msgid "Add Plant"
 msgstr ""
 
 #: qml/PlantEditorPage.qml:31
 #, kde-format
+msgctxt "@title:window %1 is the plant name"
 msgid "Edit %1"
 msgstr ""
 
 #: qml/PlantEditorPage.qml:41
 #, kde-format
+msgctxt "@title:row"
 msgid "Image:"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:71
+#: qml/PlantEditorPage.qml:72
 #, kde-format
+msgctxt "@action:button"
 msgid "Use custom image"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:77
+#: qml/PlantEditorPage.qml:78
 #, kde-format
+msgctxt "@title:window"
 msgid "Please choose a file"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:87
+#: qml/PlantEditorPage.qml:88
 #, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:158
+#: qml/PlantEditorPage.qml:159
 #, kde-format
+msgctxt "@title:row"
 msgid "Name"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:166
+#: qml/PlantEditorPage.qml:167
 #, kde-format
+msgctxt "@title:row"
 msgid "Species"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:174
+#: qml/PlantEditorPage.qml:175
 #, kde-format
+msgctxt "@title:row"
 msgid "Room"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:186
+#: qml/PlantEditorPage.qml:187
 #, kde-format
+msgctxt "@title:row"
 msgid "How often does the plant need Watering?"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:200 qml/PlantEditorPage.qml:272
+#: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:273
 #, kde-format
+msgctxt "@action:button button to select preset time"
 msgid "2 days"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:208 qml/PlantEditorPage.qml:280
+#: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:281
 #, kde-format
+msgctxt "@action:button button to select preset time"
 msgid "5 days"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:216 qml/PlantEditorPage.qml:288
+#: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:289
 #, kde-format
+msgctxt "@action:button button to select preset time"
 msgid "weekly"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:225 qml/PlantEditorPage.qml:297
+#: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:298
 #, kde-format
+msgctxt "@action:button button to select preset time"
 msgid "2 weeks"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:238 qml/PlantEditorPage.qml:310
+#: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:311
 #, kde-format
-msgid "Custom:"
+msgctxt "@title:row"
+msgid "Custom (days):"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:258
+#: qml/PlantEditorPage.qml:259
 #, kde-format
+msgctxt "@title:row"
 msgid "How often does the plant need Fertilizing?"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:332
+#: qml/PlantEditorPage.qml:333
 #, kde-format
+msgctxt "@title:row"
 msgid "How healthy is your plant at the moment?"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:349
+#: qml/PlantEditorPage.qml:350
 #, kde-format
+msgctxt "@title:row"
 msgid "Birthday"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:367
+#: qml/PlantEditorPage.qml:368
 #, kde-format
-msgid "Edit"
+msgctxt "@action:button"
+msgid "Save"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:368
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:376
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
 msgstr ""
 
 #: qml/PlantsPage.qml:45

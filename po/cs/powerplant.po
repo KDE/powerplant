@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-25 00:46+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: 2025-12-02 11:40+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -163,7 +163,7 @@ msgstr "Zdraví"
 msgid "How healthy is your plant today?"
 msgstr "Jak zdravá je dnes vaše rostlina?"
 
-#: qml/PlantDetailPage.qml:335 qml/PlantEditorPage.qml:367
+#: qml/PlantDetailPage.qml:335
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
@@ -174,100 +174,148 @@ msgid "Health History"
 msgstr "Historie zdraví"
 
 #: qml/PlantEditorPage.qml:31
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add Plant"
+msgctxt "@title:window"
 msgid "Add Plant"
 msgstr "Přidat rostlinu"
 
 #: qml/PlantEditorPage.qml:31
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Edit %1"
+msgctxt "@title:window %1 is the plant name"
 msgid "Edit %1"
 msgstr "Upravit %1"
 
 #: qml/PlantEditorPage.qml:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Image:"
+msgctxt "@title:row"
 msgid "Image:"
 msgstr "Obrázek:"
 
-#: qml/PlantEditorPage.qml:71
-#, kde-format
+#: qml/PlantEditorPage.qml:72
+#, fuzzy, kde-format
+#| msgid "Use custom image"
+msgctxt "@action:button"
 msgid "Use custom image"
 msgstr "Použít vlastní obrázek"
 
-#: qml/PlantEditorPage.qml:77
-#, kde-format
+#: qml/PlantEditorPage.qml:78
+#, fuzzy, kde-format
+#| msgid "Please choose a file"
+msgctxt "@title:window"
 msgid "Please choose a file"
 msgstr "Prosím, vyberte soubor"
 
-#: qml/PlantEditorPage.qml:87
+#: qml/PlantEditorPage.qml:88
 #, kde-format
 msgctxt "Name filter for image files"
 msgid "Image files (*.png *.jpg *.webp)"
 msgstr "Soubory obrázků (*.png *.jpg *.webp)"
 
-#: qml/PlantEditorPage.qml:158
-#, kde-format
+#: qml/PlantEditorPage.qml:159
+#, fuzzy, kde-format
+#| msgid "Name"
+msgctxt "@title:row"
 msgid "Name"
 msgstr "Název"
 
-#: qml/PlantEditorPage.qml:166
-#, kde-format
+#: qml/PlantEditorPage.qml:167
+#, fuzzy, kde-format
+#| msgid "Species"
+msgctxt "@title:row"
 msgid "Species"
 msgstr "Druh"
 
-#: qml/PlantEditorPage.qml:174
-#, kde-format
+#: qml/PlantEditorPage.qml:175
+#, fuzzy, kde-format
+#| msgid "Room"
+msgctxt "@title:row"
 msgid "Room"
 msgstr "Místnost"
 
-#: qml/PlantEditorPage.qml:186
-#, kde-format
+#: qml/PlantEditorPage.qml:187
+#, fuzzy, kde-format
+#| msgid "How often does the plant need Watering?"
+msgctxt "@title:row"
 msgid "How often does the plant need Watering?"
 msgstr "Jak často je potřeba rostlinu zalít?"
 
-#: qml/PlantEditorPage.qml:200 qml/PlantEditorPage.qml:272
-#, kde-format
+#: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:273
+#, fuzzy, kde-format
+#| msgid "2 days"
+msgctxt "@action:button button to select preset time"
 msgid "2 days"
 msgstr "2 dny"
 
-#: qml/PlantEditorPage.qml:208 qml/PlantEditorPage.qml:280
-#, kde-format
+#: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:281
+#, fuzzy, kde-format
+#| msgid "5 days"
+msgctxt "@action:button button to select preset time"
 msgid "5 days"
 msgstr "5 dnů"
 
-#: qml/PlantEditorPage.qml:216 qml/PlantEditorPage.qml:288
-#, kde-format
+#: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:289
+#, fuzzy, kde-format
+#| msgid "weekly"
+msgctxt "@action:button button to select preset time"
 msgid "weekly"
 msgstr "každý týden"
 
-#: qml/PlantEditorPage.qml:225 qml/PlantEditorPage.qml:297
-#, kde-format
+#: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:298
+#, fuzzy, kde-format
+#| msgid "2 weeks"
+msgctxt "@action:button button to select preset time"
 msgid "2 weeks"
 msgstr "2 týdny"
 
-#: qml/PlantEditorPage.qml:238 qml/PlantEditorPage.qml:310
-#, kde-format
-msgid "Custom:"
+#: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:311
+#, fuzzy, kde-format
+#| msgid "Custom:"
+msgctxt "@title:row"
+msgid "Custom (days):"
 msgstr "Vlastní:"
 
-#: qml/PlantEditorPage.qml:258
-#, kde-format
+#: qml/PlantEditorPage.qml:259
+#, fuzzy, kde-format
+#| msgid "How often does the plant need Fertilizing?"
+msgctxt "@title:row"
 msgid "How often does the plant need Fertilizing?"
 msgstr "Jak často je potřeba rostlinu pohnojit?"
 
-#: qml/PlantEditorPage.qml:332
-#, kde-format
+#: qml/PlantEditorPage.qml:333
+#, fuzzy, kde-format
+#| msgid "How healthy is your plant at the moment?"
+msgctxt "@title:row"
 msgid "How healthy is your plant at the moment?"
 msgstr "Jak zdravá je teď vaše rostlina?"
 
-#: qml/PlantEditorPage.qml:349
-#, kde-format
+#: qml/PlantEditorPage.qml:350
+#, fuzzy, kde-format
+#| msgid "Birthday"
+msgctxt "@title:row"
 msgid "Birthday"
 msgstr "Narozeniny"
 
-#: qml/PlantEditorPage.qml:367
+#: qml/PlantEditorPage.qml:368
 #, kde-format
-msgid "Edit"
-msgstr "Upravit"
+msgctxt "@action:button"
+msgid "Save"
+msgstr ""
+
+#: qml/PlantEditorPage.qml:368
+#, fuzzy, kde-format
+#| msgid "Add"
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Přidat"
+
+#: qml/PlantEditorPage.qml:376
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr ""
 
 #: qml/PlantsPage.qml:45
 #, kde-format
@@ -370,3 +418,6 @@ msgstr "Nyní"
 #, kde-format
 msgid "In %1 days"
 msgstr "Za %1 dny"
+
+#~ msgid "Edit"
+#~ msgstr "Upravit"
