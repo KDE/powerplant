@@ -13,7 +13,7 @@ An app to keep track of your plant's needs
 
 ### Flatpak Builder (with KDE Sdk)
 ```
-flatpak-builder tmp --force-clean --ccache --install --user org.kde.powerplant.json
+flatpak-builder tmp --force-clean --ccache --install --user .flatpak-manifest.json
 ```
 ### CMake
 ```

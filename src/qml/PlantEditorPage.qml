@@ -248,9 +248,7 @@ FormCard.FormCardPage {
             }
         }
 
-        FormCard.FormDelegateSeparator {
-            visible: root.mode === PlantEditor.Creator
-        }
+        FormCard.FormDelegateSeparator {}
         FormCard.AbstractFormDelegate {
             id: fertilizerIntervalDelegate
             background: null
