@@ -20,6 +20,17 @@ Kirigami.ScrollablePage {
     required property int plantId
     property bool wideScreen: applicationWindow().width >= 800
 
+    Kirigami.PromptDialog {
+        id: confirmDeleteDialog
+        title: i18nc("@title:window %1 is plantName", "Delete %1?", plant.name)
+        subtitle: i18nc("@info", "Are you sure you want to delete this plant?")
+        standardButtons: Kirigami.Dialog.Yes | Kirigami.Dialog.No
+        onAccepted: {
+            root.plantsModel.deletePlant(plant.plantId);
+            applicationWindow().pageStack.pop();
+        }
+    }
+
     Plant {
         id: plant
         plantId: root.plantId
@@ -64,10 +75,7 @@ Kirigami.ScrollablePage {
         Kirigami.Action {
             icon.name: "delete-symbolic"
             text: i18nc("@action:button", "Delete")
-            onTriggered: {
-                plantsModel.deletePlant(plant.plantId);
-                applicationWindow().pageStack.pop();
-            }
+            onTriggered: confirmDeleteDialog.open()
         }
     ]
 

@@ -49,6 +49,19 @@ Kirigami.ScrollablePage {
             height: Kirigami.Units.gridUnit * 35
         })
     }
+    property date currentDate: new Date()
+
+    function greetingForHour(hour) {
+        if (hour >= 5 && hour < 12) {
+            return i18nc("@title", "Good morning!");
+        } else if (hour < 17) {
+            return i18nc("@title", "Good afternoon!");
+        } else if (hour < 21) {
+            return i18nc("@title", "Good evening!");
+        } else {
+            return i18nc("@title", "Good night!");
+        }
+    }
 
     GridView {
         id: grid
@@ -67,7 +80,7 @@ Kirigami.ScrollablePage {
                 spacing: 0
 
                 Controls.Label {
-                    text: i18n("Good Morning!")
+                    text: greetingForHour(root.currentDate.getHours())
                     font {
                         bold: true
                         pixelSize: 30
