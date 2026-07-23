@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-22 00:49+0000\n"
+"POT-Creation-Date: 2026-07-23 00:48+0000\n"
 "PO-Revision-Date: 2025-07-23 23:31+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -32,29 +32,30 @@ msgid "A small app to track your plants"
 msgstr "Una aplicació xicoteta que seguix les vostres plantes"
 
 #: main.cpp:76
-#, kde-format
-msgid "© 2023-2024 Mathis Brüchert"
+#, fuzzy, kde-format
+#| msgid "© 2023-2024 Mathis Brüchert"
+msgid "© 2023-2025 Mathis Brüchert, © 2025-2026 KDE Community"
 msgstr "© 2023-2024 Mathis Brüchert"
 
-#: main.cpp:77
+#: main.cpp:82
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:77
+#: main.cpp:82
 #, kde-format
 msgctxt "@info:credit"
-msgid "Author"
-msgstr "Autoria"
+msgid "Author, 2023-2025"
+msgstr ""
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Josep M. Ferrer"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
@@ -70,24 +71,38 @@ msgstr "Plantes"
 msgid "Tasks"
 msgstr "Tasques"
 
-#: qml/PlantDetailPage.qml:56
+#: qml/PlantDetailPage.qml:25
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Delete"
+msgctxt "@title:window %1 is plantName"
+msgid "Delete %1?"
+msgstr "Suprimix"
+
+#: qml/PlantDetailPage.qml:26
+#, kde-format
+msgctxt "@info"
+msgid "Are you sure you want to delete this plant?"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Edit"
 msgstr "Edita"
 
-#: qml/PlantDetailPage.qml:66
+#: qml/PlantDetailPage.qml:77
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Suprimix"
 
-#: qml/PlantDetailPage.qml:232
+#: qml/PlantDetailPage.qml:240
 #, kde-format
 msgid "Water"
 msgstr "Aigua"
 
-#: qml/PlantDetailPage.qml:250
+#: qml/PlantDetailPage.qml:258
 #, kde-format
 msgctxt "@info"
 msgid "Has to be watered in %1 day"
@@ -95,35 +110,35 @@ msgid_plural "Has to be watered in %1 days"
 msgstr[0] "Cal regar-la d'ací a %1 dia"
 msgstr[1] "Cal regar-la d'ací a %1 dies"
 
-#: qml/PlantDetailPage.qml:252
+#: qml/PlantDetailPage.qml:260
 #, kde-format
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "Cal regar-la demà"
 
-#: qml/PlantDetailPage.qml:254
+#: qml/PlantDetailPage.qml:262
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
 msgstr "Cal regar-la hui!"
 
-#: qml/PlantDetailPage.qml:256
+#: qml/PlantDetailPage.qml:264
 #, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
 msgstr "Ja s'hauria d'haver regat!"
 
-#: qml/PlantDetailPage.qml:260
+#: qml/PlantDetailPage.qml:268
 #, kde-format
 msgid "Watered"
 msgstr "Regada"
 
-#: qml/PlantDetailPage.qml:269
+#: qml/PlantDetailPage.qml:277
 #, kde-format
 msgid "Fertilizer"
 msgstr "Fertilitzant"
 
-#: qml/PlantDetailPage.qml:285
+#: qml/PlantDetailPage.qml:293
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
@@ -131,45 +146,45 @@ msgid_plural "Has to be fertilized in %1 days"
 msgstr[0] "Cal fertilitzar-la d'ací a %1 dia"
 msgstr[1] "Cal fertilitzar-la d'ací a %1 dies"
 
-#: qml/PlantDetailPage.qml:287
+#: qml/PlantDetailPage.qml:295
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
 msgstr "Cal fertilitzar-la demà"
 
-#: qml/PlantDetailPage.qml:289
+#: qml/PlantDetailPage.qml:297
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
 msgstr "Cal fertilitzar-la hui!"
 
-#: qml/PlantDetailPage.qml:291
+#: qml/PlantDetailPage.qml:299
 #, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
 msgstr "Ja s'hauria d'haver fertilitzat!"
 
-#: qml/PlantDetailPage.qml:296
+#: qml/PlantDetailPage.qml:304
 #, kde-format
 msgid "Fertilized"
 msgstr "Fertilitzada"
 
-#: qml/PlantDetailPage.qml:305
+#: qml/PlantDetailPage.qml:313
 #, kde-format
 msgid "Health"
 msgstr "Estat"
 
-#: qml/PlantDetailPage.qml:313
+#: qml/PlantDetailPage.qml:321
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "Com està hui la planta?"
 
-#: qml/PlantDetailPage.qml:335
+#: qml/PlantDetailPage.qml:343
 #, kde-format
 msgid "Add"
 msgstr "Afig"
 
-#: qml/PlantDetailPage.qml:348
+#: qml/PlantDetailPage.qml:356
 #, kde-format
 msgid "Health History"
 msgstr "Historial de l'estat"
@@ -243,76 +258,76 @@ msgctxt "@title:row"
 msgid "How often does the plant need Watering?"
 msgstr "Amb quina freqüència cal regar la planta?"
 
-#: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:273
+#: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:271
 #, fuzzy, kde-format
 #| msgid "2 days"
 msgctxt "@action:button button to select preset time"
 msgid "2 days"
 msgstr "2 dies"
 
-#: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:281
+#: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:279
 #, fuzzy, kde-format
 #| msgid "5 days"
 msgctxt "@action:button button to select preset time"
 msgid "5 days"
 msgstr "5 dies"
 
-#: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:289
+#: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:287
 #, fuzzy, kde-format
 #| msgid "weekly"
 msgctxt "@action:button button to select preset time"
 msgid "weekly"
 msgstr "setmanalment"
 
-#: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:298
+#: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:296
 #, fuzzy, kde-format
 #| msgid "2 weeks"
 msgctxt "@action:button button to select preset time"
 msgid "2 weeks"
 msgstr "2 setmanes"
 
-#: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:311
+#: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:309
 #, fuzzy, kde-format
 #| msgid "Custom:"
 msgctxt "@title:row"
 msgid "Custom (days):"
 msgstr "Personalitzada:"
 
-#: qml/PlantEditorPage.qml:259
+#: qml/PlantEditorPage.qml:257
 #, fuzzy, kde-format
 #| msgid "How often does the plant need Fertilizing?"
 msgctxt "@title:row"
 msgid "How often does the plant need Fertilizing?"
 msgstr "Amb quina freqüència cal fertilitzar la planta?"
 
-#: qml/PlantEditorPage.qml:333
+#: qml/PlantEditorPage.qml:331
 #, fuzzy, kde-format
 #| msgid "How healthy is your plant at the moment?"
 msgctxt "@title:row"
 msgid "How healthy is your plant at the moment?"
 msgstr "Com està la planta en este moment?"
 
-#: qml/PlantEditorPage.qml:350
+#: qml/PlantEditorPage.qml:348
 #, fuzzy, kde-format
 #| msgid "Birthday"
 msgctxt "@title:row"
 msgid "Birthday"
 msgstr "Aniversari"
 
-#: qml/PlantEditorPage.qml:368
+#: qml/PlantEditorPage.qml:366
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
 msgstr ""
 
-#: qml/PlantEditorPage.qml:368
+#: qml/PlantEditorPage.qml:366
 #, fuzzy, kde-format
 #| msgid "Add"
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Afig"
 
-#: qml/PlantEditorPage.qml:376
+#: qml/PlantEditorPage.qml:374
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
@@ -324,42 +339,65 @@ msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "Afig una planta"
 
-#: qml/PlantsPage.qml:70
-#, kde-format
-msgid "Good Morning!"
+#: qml/PlantsPage.qml:56
+#, fuzzy, kde-format
+#| msgid "Good Morning!"
+msgctxt "@title"
+msgid "Good morning!"
 msgstr "Bon dia!"
 
-#: qml/PlantsPage.qml:85
+#: qml/PlantsPage.qml:58
+#, fuzzy, kde-format
+#| msgid "Good Morning!"
+msgctxt "@title"
+msgid "Good afternoon!"
+msgstr "Bon dia!"
+
+#: qml/PlantsPage.qml:60
+#, fuzzy, kde-format
+#| msgid "Good Morning!"
+msgctxt "@title"
+msgid "Good evening!"
+msgstr "Bon dia!"
+
+#: qml/PlantsPage.qml:62
+#, fuzzy, kde-format
+#| msgid "Good Morning!"
+msgctxt "@title"
+msgid "Good night!"
+msgstr "Bon dia!"
+
+#: qml/PlantsPage.qml:98
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "Alguna de les plantes requerix atenció"
 
-#: qml/PlantsPage.qml:87
+#: qml/PlantsPage.qml:100
 #, kde-format
 msgid "No plants need water right now"
 msgstr "Cap planta necessita aigua ara mateix"
 
-#: qml/PlantsPage.qml:179
+#: qml/PlantsPage.qml:192
 #, kde-format
 msgid "Incomplete Tasks"
 msgstr "Tasques incompletes"
 
-#: qml/PlantsPage.qml:181
+#: qml/PlantsPage.qml:194
 #, kde-format
 msgid "All Tasks Complete"
 msgstr "Totes les tasques completes"
 
-#: qml/PlantsPage.qml:222
+#: qml/PlantsPage.qml:235
 #, kde-format
 msgid "Enter your Location"
 msgstr "Introduïu la ubicació"
 
-#: qml/PlantsPage.qml:269
+#: qml/PlantsPage.qml:282
 #, kde-format
 msgid "Select your Location"
 msgstr "Trieu la ubicació"
 
-#: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
+#: qml/PlantsPage.qml:402 qml/PlantsPage.qml:430
 #, kde-format
 msgctxt "@info"
 msgid "In %1 day"
@@ -367,31 +405,31 @@ msgid_plural "In %1 days"
 msgstr[0] "D'ací a %1 dia"
 msgstr[1] "D'ací a %1 dies"
 
-#: qml/PlantsPage.qml:391 qml/PlantsPage.qml:419
+#: qml/PlantsPage.qml:404 qml/PlantsPage.qml:432
 #, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "Demà"
 
-#: qml/PlantsPage.qml:393
+#: qml/PlantsPage.qml:406
 #, kde-format
 msgctxt "@info"
 msgid "Water today!"
 msgstr "Aigua hui!"
 
-#: qml/PlantsPage.qml:395
+#: qml/PlantsPage.qml:408
 #, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "Hi ha un reg endarrerit!"
 
-#: qml/PlantsPage.qml:421
+#: qml/PlantsPage.qml:434
 #, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "Fertilitzeu hui!"
 
-#: qml/PlantsPage.qml:423
+#: qml/PlantsPage.qml:436
 #, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
@@ -418,6 +456,10 @@ msgstr "Ara"
 #, kde-format
 msgid "In %1 days"
 msgstr "D'ací a %1 dies"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Author"
+#~ msgstr "Autoria"
 
 #~ msgid "Edit"
 #~ msgstr "Edita"

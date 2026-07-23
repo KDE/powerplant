@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the powerplant package.
 #
-# SPDX-FileCopyrightText: 2024 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2024, 2026 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-22 00:49+0000\n"
-"PO-Revision-Date: 2024-12-27 11:08+0100\n"
+"POT-Creation-Date: 2026-07-23 00:48+0000\n"
+"PO-Revision-Date: 2026-07-22 11:01+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #: main.cpp:68
 #, kde-format
@@ -29,29 +29,30 @@ msgid "A small app to track your plants"
 msgstr "Een kleine toepassing om u uw planten te volgen"
 
 #: main.cpp:76
-#, kde-format
-msgid "© 2023-2024 Mathis Brüchert"
+#, fuzzy, kde-format
+#| msgid "© 2023-2024 Mathis Brüchert"
+msgid "© 2023-2025 Mathis Brüchert, © 2025-2026 KDE Community"
 msgstr "© 2023-2024 Mathis Brüchert"
 
-#: main.cpp:77
+#: main.cpp:82
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mathis Brüchert"
 msgstr "Mathis Brüchert"
 
-#: main.cpp:77
+#: main.cpp:82
 #, kde-format
 msgctxt "@info:credit"
-msgid "Author"
-msgstr "Auteur"
+msgid "Author, 2023-2025"
+msgstr ""
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Freek de Kruijf - 2024"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
@@ -67,24 +68,38 @@ msgstr "Planten"
 msgid "Tasks"
 msgstr "Taken"
 
-#: qml/PlantDetailPage.qml:56
+#: qml/PlantDetailPage.qml:25
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Delete"
+msgctxt "@title:window %1 is plantName"
+msgid "Delete %1?"
+msgstr "Verwijderen"
+
+#: qml/PlantDetailPage.qml:26
+#, kde-format
+msgctxt "@info"
+msgid "Are you sure you want to delete this plant?"
+msgstr ""
+
+#: qml/PlantDetailPage.qml:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Edit"
 msgstr "Bewerken"
 
-#: qml/PlantDetailPage.qml:66
+#: qml/PlantDetailPage.qml:77
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Verwijderen"
 
-#: qml/PlantDetailPage.qml:232
+#: qml/PlantDetailPage.qml:240
 #, kde-format
 msgid "Water"
 msgstr "Water"
 
-#: qml/PlantDetailPage.qml:250
+#: qml/PlantDetailPage.qml:258
 #, kde-format
 msgctxt "@info"
 msgid "Has to be watered in %1 day"
@@ -92,35 +107,35 @@ msgid_plural "Has to be watered in %1 days"
 msgstr[0] "Moet water krijgen binnen %1 dag"
 msgstr[1] "Moet water krijgen binnen %1 dagen"
 
-#: qml/PlantDetailPage.qml:252
+#: qml/PlantDetailPage.qml:260
 #, kde-format
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "Moet morgen water krijgen"
 
-#: qml/PlantDetailPage.qml:254
+#: qml/PlantDetailPage.qml:262
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
 msgstr "Heeft vandaag water nodig!"
 
-#: qml/PlantDetailPage.qml:256
+#: qml/PlantDetailPage.qml:264
 #, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
 msgstr "Zou al water hebben moeten krijgen!"
 
-#: qml/PlantDetailPage.qml:260
+#: qml/PlantDetailPage.qml:268
 #, kde-format
 msgid "Watered"
 msgstr "Bewaterd"
 
-#: qml/PlantDetailPage.qml:269
+#: qml/PlantDetailPage.qml:277
 #, kde-format
 msgid "Fertilizer"
 msgstr "Meststof"
 
-#: qml/PlantDetailPage.qml:285
+#: qml/PlantDetailPage.qml:293
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
@@ -128,80 +143,75 @@ msgid_plural "Has to be fertilized in %1 days"
 msgstr[0] "Moet binnen %1 dag bemest worden"
 msgstr[1] "Moet binnen %1 dagen bemest worden"
 
-#: qml/PlantDetailPage.qml:287
+#: qml/PlantDetailPage.qml:295
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
 msgstr "Moet morgen bemest worden"
 
-#: qml/PlantDetailPage.qml:289
+#: qml/PlantDetailPage.qml:297
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
 msgstr "Moet vandaag bemest worden!"
 
-#: qml/PlantDetailPage.qml:291
+#: qml/PlantDetailPage.qml:299
 #, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
 msgstr "Zou al bemest moeten zijn!"
 
-#: qml/PlantDetailPage.qml:296
+#: qml/PlantDetailPage.qml:304
 #, kde-format
 msgid "Fertilized"
 msgstr "Bemest"
 
-#: qml/PlantDetailPage.qml:305
+#: qml/PlantDetailPage.qml:313
 #, kde-format
 msgid "Health"
 msgstr "Gezondheid"
 
-#: qml/PlantDetailPage.qml:313
+#: qml/PlantDetailPage.qml:321
 #, kde-format
 msgid "How healthy is your plant today?"
 msgstr "Hoe gezond is uw plant vandaag?"
 
-#: qml/PlantDetailPage.qml:335
+#: qml/PlantDetailPage.qml:343
 #, kde-format
 msgid "Add"
 msgstr "Toevoegen"
 
-#: qml/PlantDetailPage.qml:348
+#: qml/PlantDetailPage.qml:356
 #, kde-format
 msgid "Health History"
 msgstr "Geschiedenis van het welzijn"
 
 #: qml/PlantEditorPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Add Plant"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Plant"
 msgstr "Plant toevoegen"
 
 #: qml/PlantEditorPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Edit %1"
+#, kde-format
 msgctxt "@title:window %1 is the plant name"
 msgid "Edit %1"
 msgstr "%1 bewerken"
 
 #: qml/PlantEditorPage.qml:41
-#, fuzzy, kde-format
-#| msgid "Image:"
+#, kde-format
 msgctxt "@title:row"
 msgid "Image:"
 msgstr "Afbeelding:"
 
 #: qml/PlantEditorPage.qml:72
-#, fuzzy, kde-format
-#| msgid "Use custom image"
+#, kde-format
 msgctxt "@action:button"
 msgid "Use custom image"
 msgstr "Eigen afbeelding gebruiken"
 
 #: qml/PlantEditorPage.qml:78
-#, fuzzy, kde-format
-#| msgid "Please choose a file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Please choose a file"
 msgstr "Kies een bestand"
@@ -213,107 +223,94 @@ msgid "Image files (*.png *.jpg *.webp)"
 msgstr "Afbeeldingsbestanden (*.png *.jpg *.webp)"
 
 #: qml/PlantEditorPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@title:row"
 msgid "Name"
 msgstr "Naam"
 
 #: qml/PlantEditorPage.qml:167
-#, fuzzy, kde-format
-#| msgid "Species"
+#, kde-format
 msgctxt "@title:row"
 msgid "Species"
 msgstr "Soort"
 
 #: qml/PlantEditorPage.qml:175
-#, fuzzy, kde-format
-#| msgid "Room"
+#, kde-format
 msgctxt "@title:row"
 msgid "Room"
-msgstr "Kamer"
+msgstr "Room"
 
 #: qml/PlantEditorPage.qml:187
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How often does the plant need Watering?"
 msgstr "Hoe vaak heeft de plant water nodig?"
 
-#: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:273
-#, fuzzy, kde-format
-#| msgid "2 days"
+#: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:271
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "2 days"
 msgstr "2 dagen"
 
-#: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:281
-#, fuzzy, kde-format
-#| msgid "5 days"
+#: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:279
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "5 days"
 msgstr "5 dagen"
 
-#: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:289
-#, fuzzy, kde-format
-#| msgid "weekly"
+#: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:287
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "weekly"
 msgstr "wekelijks"
 
-#: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:298
-#, fuzzy, kde-format
-#| msgid "2 weeks"
+#: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:296
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "2 weeks"
 msgstr "2 weken"
 
-#: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:311
-#, fuzzy, kde-format
-#| msgid "Custom:"
+#: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:309
+#, kde-format
 msgctxt "@title:row"
 msgid "Custom (days):"
-msgstr "Aangepast:"
+msgstr "Aangepast (dagen):"
 
-#: qml/PlantEditorPage.qml:259
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Fertilizing?"
+#: qml/PlantEditorPage.qml:257
+#, kde-format
 msgctxt "@title:row"
 msgid "How often does the plant need Fertilizing?"
 msgstr "Hoe vaak heeft de plant bemesting nodig?"
 
-#: qml/PlantEditorPage.qml:333
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant at the moment?"
+#: qml/PlantEditorPage.qml:331
+#, kde-format
 msgctxt "@title:row"
 msgid "How healthy is your plant at the moment?"
 msgstr "Hoe gezond is uw plant op dit moment?"
 
-#: qml/PlantEditorPage.qml:350
-#, fuzzy, kde-format
-#| msgid "Birthday"
+#: qml/PlantEditorPage.qml:348
+#, kde-format
 msgctxt "@title:row"
 msgid "Birthday"
 msgstr "Verjaardag"
 
-#: qml/PlantEditorPage.qml:368
+#: qml/PlantEditorPage.qml:366
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr ""
+msgstr "Opslaan"
 
-#: qml/PlantEditorPage.qml:368
-#, fuzzy, kde-format
-#| msgid "Add"
+#: qml/PlantEditorPage.qml:366
+#, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Toevoegen"
 
-#: qml/PlantEditorPage.qml:376
+#: qml/PlantEditorPage.qml:374
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: qml/PlantsPage.qml:45
 #, kde-format
@@ -321,42 +318,65 @@ msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "Plant toevoegen"
 
-#: qml/PlantsPage.qml:70
-#, kde-format
-msgid "Good Morning!"
+#: qml/PlantsPage.qml:56
+#, fuzzy, kde-format
+#| msgid "Good Morning!"
+msgctxt "@title"
+msgid "Good morning!"
 msgstr "Goede morgen!"
 
-#: qml/PlantsPage.qml:85
+#: qml/PlantsPage.qml:58
+#, fuzzy, kde-format
+#| msgid "Good Morning!"
+msgctxt "@title"
+msgid "Good afternoon!"
+msgstr "Goede morgen!"
+
+#: qml/PlantsPage.qml:60
+#, fuzzy, kde-format
+#| msgid "Good Morning!"
+msgctxt "@title"
+msgid "Good evening!"
+msgstr "Goede morgen!"
+
+#: qml/PlantsPage.qml:62
+#, fuzzy, kde-format
+#| msgid "Good Morning!"
+msgctxt "@title"
+msgid "Good night!"
+msgstr "Goede morgen!"
+
+#: qml/PlantsPage.qml:98
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "Sommige van uw planten hebben aandacht nodig"
 
-#: qml/PlantsPage.qml:87
+#: qml/PlantsPage.qml:100
 #, kde-format
 msgid "No plants need water right now"
 msgstr "Er zijn geen planten die nu water nodig hebben"
 
-#: qml/PlantsPage.qml:179
+#: qml/PlantsPage.qml:192
 #, kde-format
 msgid "Incomplete Tasks"
 msgstr "Onafgemaakte taken"
 
-#: qml/PlantsPage.qml:181
+#: qml/PlantsPage.qml:194
 #, kde-format
 msgid "All Tasks Complete"
 msgstr "Alle taken voltooid"
 
-#: qml/PlantsPage.qml:222
+#: qml/PlantsPage.qml:235
 #, kde-format
 msgid "Enter your Location"
 msgstr "Uw locatie invoeren"
 
-#: qml/PlantsPage.qml:269
+#: qml/PlantsPage.qml:282
 #, kde-format
 msgid "Select your Location"
 msgstr "Uw locatie selecteren"
 
-#: qml/PlantsPage.qml:389 qml/PlantsPage.qml:417
+#: qml/PlantsPage.qml:402 qml/PlantsPage.qml:430
 #, kde-format
 msgctxt "@info"
 msgid "In %1 day"
@@ -364,31 +384,31 @@ msgid_plural "In %1 days"
 msgstr[0] "Binnen %1 dag"
 msgstr[1] "Binnen %1 dagen"
 
-#: qml/PlantsPage.qml:391 qml/PlantsPage.qml:419
+#: qml/PlantsPage.qml:404 qml/PlantsPage.qml:432
 #, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "Morgen"
 
-#: qml/PlantsPage.qml:393
+#: qml/PlantsPage.qml:406
 #, kde-format
 msgctxt "@info"
 msgid "Water today!"
 msgstr "Vandaag water geven!"
 
-#: qml/PlantsPage.qml:395
+#: qml/PlantsPage.qml:408
 #, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "Vergeten water te geven!"
 
-#: qml/PlantsPage.qml:421
+#: qml/PlantsPage.qml:434
 #, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "Vandaag bemesten!"
 
-#: qml/PlantsPage.qml:423
+#: qml/PlantsPage.qml:436
 #, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
@@ -415,6 +435,10 @@ msgstr "Nu"
 #, kde-format
 msgid "In %1 days"
 msgstr "Binnen %1 dagen"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Author"
+#~ msgstr "Auteur"
 
 #~ msgid "Edit"
 #~ msgstr "Bewerken"
