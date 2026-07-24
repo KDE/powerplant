@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-23 00:48+0000\n"
-"PO-Revision-Date: 2026-07-22 15:19+0300\n"
+"PO-Revision-Date: 2026-07-23 12:12+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -30,10 +30,9 @@ msgid "A small app to track your plants"
 msgstr "Невеличка програма для стеження за вашими рослинами"
 
 #: main.cpp:76
-#, fuzzy, kde-format
-#| msgid "© 2023-2024 Mathis Brüchert"
+#, kde-format
 msgid "© 2023-2025 Mathis Brüchert, © 2025-2026 KDE Community"
-msgstr "© Mathis Brüchert, 2023–2024"
+msgstr "© Mathis Brüchert, 2023–2024, © Спільнота KDE, 2025–2026"
 
 #: main.cpp:82
 #, kde-format
@@ -45,7 +44,7 @@ msgstr "Mathis Brüchert"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author, 2023-2025"
-msgstr ""
+msgstr "Автор, 2023-2025"
 
 #: main.cpp:84
 #, kde-format
@@ -70,18 +69,16 @@ msgid "Tasks"
 msgstr "Завдання"
 
 #: qml/PlantDetailPage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Delete"
+#, kde-format
 msgctxt "@title:window %1 is plantName"
 msgid "Delete %1?"
-msgstr "Вилучити"
+msgstr "Вилучити %1?"
 
 #: qml/PlantDetailPage.qml:26
 #, kde-format
 msgctxt "@info"
 msgid "Are you sure you want to delete this plant?"
-msgstr ""
+msgstr "Ви справді хочете вилучити цю рослину?"
 
 #: qml/PlantDetailPage.qml:67
 #, kde-format
@@ -324,32 +321,28 @@ msgid "Add Plant"
 msgstr "Додати рослину"
 
 #: qml/PlantsPage.qml:56
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good morning!"
 msgstr "Доброго ранку!"
 
 #: qml/PlantsPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good afternoon!"
-msgstr "Доброго ранку!"
+msgstr "Доброго дня!"
 
 #: qml/PlantsPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good evening!"
-msgstr "Доброго ранку!"
+msgstr "Доброї вечора!"
 
 #: qml/PlantsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good night!"
-msgstr "Доброго ранку!"
+msgstr "Доброї ночі!"
 
 #: qml/PlantsPage.qml:98
 #, kde-format

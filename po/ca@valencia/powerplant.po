@@ -1,16 +1,16 @@
 # Translation of powerplant.po to Catalan (Valencian)
-# Copyright (C) 2024-2025 This_file_is_part_of_KDE
+# Copyright (C) 2024-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2024-2026 Josep M. Ferrer <txemaq@gmail.com>
 # SPDX-FileCopyrightText: 2024 Antoni Bella Pérez <antonibella5@yahoo.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-23 00:48+0000\n"
-"PO-Revision-Date: 2025-07-23 23:31+0200\n"
+"PO-Revision-Date: 2026-07-22 13:10+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.04.3\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #: main.cpp:68
 #, kde-format
@@ -190,36 +190,31 @@ msgid "Health History"
 msgstr "Historial de l'estat"
 
 #: qml/PlantEditorPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Add Plant"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Plant"
 msgstr "Afig una planta"
 
 #: qml/PlantEditorPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Edit %1"
+#, kde-format
 msgctxt "@title:window %1 is the plant name"
 msgid "Edit %1"
 msgstr "Edita %1"
 
 #: qml/PlantEditorPage.qml:41
-#, fuzzy, kde-format
-#| msgid "Image:"
+#, kde-format
 msgctxt "@title:row"
 msgid "Image:"
 msgstr "Imatge:"
 
 #: qml/PlantEditorPage.qml:72
-#, fuzzy, kde-format
-#| msgid "Use custom image"
+#, kde-format
 msgctxt "@action:button"
 msgid "Use custom image"
 msgstr "Utilitza una imatge personalitzada"
 
 #: qml/PlantEditorPage.qml:78
-#, fuzzy, kde-format
-#| msgid "Please choose a file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Please choose a file"
 msgstr "Trieu un fitxer"
@@ -231,85 +226,73 @@ msgid "Image files (*.png *.jpg *.webp)"
 msgstr "Fitxers d'imatge (*.png *.jpg *.webp)"
 
 #: qml/PlantEditorPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@title:row"
 msgid "Name"
 msgstr "Nom"
 
 #: qml/PlantEditorPage.qml:167
-#, fuzzy, kde-format
-#| msgid "Species"
+#, kde-format
 msgctxt "@title:row"
 msgid "Species"
 msgstr "Espècies"
 
 #: qml/PlantEditorPage.qml:175
-#, fuzzy, kde-format
-#| msgid "Room"
+#, kde-format
 msgctxt "@title:row"
 msgid "Room"
 msgstr "Sala"
 
 #: qml/PlantEditorPage.qml:187
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How often does the plant need Watering?"
 msgstr "Amb quina freqüència cal regar la planta?"
 
 #: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:271
-#, fuzzy, kde-format
-#| msgid "2 days"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "2 days"
 msgstr "2 dies"
 
 #: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:279
-#, fuzzy, kde-format
-#| msgid "5 days"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "5 days"
 msgstr "5 dies"
 
 #: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:287
-#, fuzzy, kde-format
-#| msgid "weekly"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "weekly"
 msgstr "setmanalment"
 
 #: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:296
-#, fuzzy, kde-format
-#| msgid "2 weeks"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "2 weeks"
 msgstr "2 setmanes"
 
 #: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:309
-#, fuzzy, kde-format
-#| msgid "Custom:"
+#, kde-format
 msgctxt "@title:row"
 msgid "Custom (days):"
-msgstr "Personalitzada:"
+msgstr "Personalitzada (dies):"
 
 #: qml/PlantEditorPage.qml:257
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Fertilizing?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How often does the plant need Fertilizing?"
 msgstr "Amb quina freqüència cal fertilitzar la planta?"
 
 #: qml/PlantEditorPage.qml:331
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant at the moment?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How healthy is your plant at the moment?"
 msgstr "Com està la planta en este moment?"
 
 #: qml/PlantEditorPage.qml:348
-#, fuzzy, kde-format
-#| msgid "Birthday"
+#, kde-format
 msgctxt "@title:row"
 msgid "Birthday"
 msgstr "Aniversari"
@@ -318,11 +301,10 @@ msgstr "Aniversari"
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr ""
+msgstr "Guarda"
 
 #: qml/PlantEditorPage.qml:366
-#, fuzzy, kde-format
-#| msgid "Add"
+#, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Afig"
@@ -331,7 +313,7 @@ msgstr "Afig"
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #: qml/PlantsPage.qml:45
 #, kde-format
@@ -456,10 +438,3 @@ msgstr "Ara"
 #, kde-format
 msgid "In %1 days"
 msgstr "D'ací a %1 dies"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Author"
-#~ msgstr "Autoria"
-
-#~ msgid "Edit"
-#~ msgstr "Edita"
