@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-23 00:48+0000\n"
-"PO-Revision-Date: 2026-06-19 00:35+0300\n"
+"PO-Revision-Date: 2026-07-24 11:54+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -31,10 +31,9 @@ msgid "A small app to track your plants"
 msgstr "Maža programėlė, skirta sekti augalų būseną"
 
 #: main.cpp:76
-#, fuzzy, kde-format
-#| msgid "© 2023-2024 Mathis Brüchert"
+#, kde-format
 msgid "© 2023-2025 Mathis Brüchert, © 2025-2026 KDE Community"
-msgstr "© 2023–2024 Mathis Brüchert"
+msgstr "© 2023–2025 Mathis Brüchert, © 2025–2026 KDE bendruomenė"
 
 #: main.cpp:82
 #, kde-format
@@ -46,7 +45,7 @@ msgstr "Mathis Brüchert"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author, 2023-2025"
-msgstr ""
+msgstr "Autorius, 2023–2025"
 
 #: main.cpp:84
 #, kde-format
@@ -71,18 +70,16 @@ msgid "Tasks"
 msgstr "Užduotys"
 
 #: qml/PlantDetailPage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Delete"
+#, kde-format
 msgctxt "@title:window %1 is plantName"
 msgid "Delete %1?"
-msgstr "Ištrinti"
+msgstr "Ištrinti %1?"
 
 #: qml/PlantDetailPage.qml:26
 #, kde-format
 msgctxt "@info"
 msgid "Are you sure you want to delete this plant?"
-msgstr ""
+msgstr "Ar tikrai norite ištrinti šį augalą?"
 
 #: qml/PlantDetailPage.qml:67
 #, kde-format
@@ -193,36 +190,31 @@ msgid "Health History"
 msgstr "Būsenos istorija"
 
 #: qml/PlantEditorPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Add Plant"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Plant"
 msgstr "Pridėti augalą"
 
 #: qml/PlantEditorPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Edit %1"
+#, kde-format
 msgctxt "@title:window %1 is the plant name"
 msgid "Edit %1"
 msgstr "Taisyti %1"
 
 #: qml/PlantEditorPage.qml:41
-#, fuzzy, kde-format
-#| msgid "Image:"
+#, kde-format
 msgctxt "@title:row"
 msgid "Image:"
 msgstr "Paveikslas:"
 
 #: qml/PlantEditorPage.qml:72
-#, fuzzy, kde-format
-#| msgid "Use custom image"
+#, kde-format
 msgctxt "@action:button"
 msgid "Use custom image"
 msgstr "Naudoti tinkintą paveikslą"
 
 #: qml/PlantEditorPage.qml:78
-#, fuzzy, kde-format
-#| msgid "Please choose a file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Please choose a file"
 msgstr "Pasirinkite failą"
@@ -234,85 +226,73 @@ msgid "Image files (*.png *.jpg *.webp)"
 msgstr "Paveikslo failai (*.png *.jpg *.webp)"
 
 #: qml/PlantEditorPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@title:row"
 msgid "Name"
 msgstr "Pavadinimas"
 
 #: qml/PlantEditorPage.qml:167
-#, fuzzy, kde-format
-#| msgid "Species"
+#, kde-format
 msgctxt "@title:row"
 msgid "Species"
 msgstr "Rūšis"
 
 #: qml/PlantEditorPage.qml:175
-#, fuzzy, kde-format
-#| msgid "Room"
+#, kde-format
 msgctxt "@title:row"
 msgid "Room"
 msgstr "Kambarys"
 
 #: qml/PlantEditorPage.qml:187
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How often does the plant need Watering?"
 msgstr "Kaip dažnai reikia laistyti augalą?"
 
 #: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:271
-#, fuzzy, kde-format
-#| msgid "2 days"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "2 days"
 msgstr "2 dienos"
 
 #: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:279
-#, fuzzy, kde-format
-#| msgid "5 days"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "5 days"
 msgstr "5 dienos"
 
 #: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:287
-#, fuzzy, kde-format
-#| msgid "weekly"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "weekly"
 msgstr "kas savaitę"
 
 #: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:296
-#, fuzzy, kde-format
-#| msgid "2 weeks"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "2 weeks"
 msgstr "2 savaitės"
 
 #: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:309
-#, fuzzy, kde-format
-#| msgid "Custom:"
+#, kde-format
 msgctxt "@title:row"
 msgid "Custom (days):"
-msgstr "Tinkinta:"
+msgstr "Pasirinktinai (dienos):"
 
 #: qml/PlantEditorPage.qml:257
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Fertilizing?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How often does the plant need Fertilizing?"
 msgstr "Kaip dažnai reikia tręšti augalą?"
 
 #: qml/PlantEditorPage.qml:331
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant at the moment?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How healthy is your plant at the moment?"
 msgstr "Kokios būsenos šiuo metu yra jūsų augalas?"
 
 #: qml/PlantEditorPage.qml:348
-#, fuzzy, kde-format
-#| msgid "Birthday"
+#, kde-format
 msgctxt "@title:row"
 msgid "Birthday"
 msgstr "Gimimo diena"
@@ -321,11 +301,10 @@ msgstr "Gimimo diena"
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr ""
+msgstr "Įrašyti"
 
 #: qml/PlantEditorPage.qml:366
-#, fuzzy, kde-format
-#| msgid "Add"
+#, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Pridėti"
@@ -334,7 +313,7 @@ msgstr "Pridėti"
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "Atsisakyti"
 
 #: qml/PlantsPage.qml:45
 #, kde-format
@@ -343,32 +322,28 @@ msgid "Add Plant"
 msgstr "Pridėti augalą"
 
 #: qml/PlantsPage.qml:56
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good morning!"
 msgstr "Labas rytas!"
 
 #: qml/PlantsPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good afternoon!"
-msgstr "Labas rytas!"
+msgstr "Labas diena!"
 
 #: qml/PlantsPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good evening!"
-msgstr "Labas rytas!"
+msgstr "Labas vakaras!"
 
 #: qml/PlantsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good night!"
-msgstr "Labas rytas!"
+msgstr "Labas vakaras!"
 
 #: qml/PlantsPage.qml:98
 #, kde-format
