@@ -29,10 +29,9 @@ msgid "A small app to track your plants"
 msgstr "一个追踪你的植物状态的小应用"
 
 #: main.cpp:76
-#, fuzzy, kde-format
-#| msgid "© 2023-2024 Mathis Brüchert"
+#, kde-format
 msgid "© 2023-2025 Mathis Brüchert, © 2025-2026 KDE Community"
-msgstr "© 2023-2024 Mathis Brüchert"
+msgstr ""
 
 #: main.cpp:82
 #, kde-format
@@ -69,12 +68,10 @@ msgid "Tasks"
 msgstr "任务"
 
 #: qml/PlantDetailPage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Delete"
+#, kde-format
 msgctxt "@title:window %1 is plantName"
 msgid "Delete %1?"
-msgstr "删除"
+msgstr ""
 
 #: qml/PlantDetailPage.qml:26
 #, kde-format
@@ -185,39 +182,34 @@ msgid "Health History"
 msgstr "健康历史"
 
 #: qml/PlantEditorPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Add Plant"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Plant"
-msgstr "增加植物"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Edit %1"
+#, kde-format
 msgctxt "@title:window %1 is the plant name"
 msgid "Edit %1"
-msgstr "编辑 %1"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:41
-#, fuzzy, kde-format
-#| msgid "Image:"
+#, kde-format
 msgctxt "@title:row"
 msgid "Image:"
-msgstr "图像："
+msgstr ""
 
 #: qml/PlantEditorPage.qml:72
-#, fuzzy, kde-format
-#| msgid "Use custom image"
+#, kde-format
 msgctxt "@action:button"
 msgid "Use custom image"
-msgstr "使用自定义图像"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:78
-#, fuzzy, kde-format
-#| msgid "Please choose a file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Please choose a file"
-msgstr "请选择一个文件"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:88
 #, kde-format
@@ -226,88 +218,76 @@ msgid "Image files (*.png *.jpg *.webp)"
 msgstr "图像文件 (*.png *.jpg *.bmp)"
 
 #: qml/PlantEditorPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@title:row"
 msgid "Name"
-msgstr "名称"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:167
-#, fuzzy, kde-format
-#| msgid "Species"
+#, kde-format
 msgctxt "@title:row"
 msgid "Species"
-msgstr "种属"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:175
-#, fuzzy, kde-format
-#| msgid "Room"
+#, kde-format
 msgctxt "@title:row"
 msgid "Room"
-msgstr "房间"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:187
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Watering?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How often does the plant need Watering?"
-msgstr "植物需要浇水的频率如何？"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:271
-#, fuzzy, kde-format
-#| msgid "2 days"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "2 days"
-msgstr "2 天"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:279
-#, fuzzy, kde-format
-#| msgid "5 days"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "5 days"
-msgstr "5 天"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:287
-#, fuzzy, kde-format
-#| msgid "weekly"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "weekly"
-msgstr "每周"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:296
-#, fuzzy, kde-format
-#| msgid "2 weeks"
+#, kde-format
 msgctxt "@action:button button to select preset time"
 msgid "2 weeks"
-msgstr "2 周"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:309
-#, fuzzy, kde-format
-#| msgid "Custom:"
+#, kde-format
 msgctxt "@title:row"
 msgid "Custom (days):"
-msgstr "自定义："
+msgstr ""
 
 #: qml/PlantEditorPage.qml:257
-#, fuzzy, kde-format
-#| msgid "How often does the plant need Fertilizing?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How often does the plant need Fertilizing?"
-msgstr "植物需要施肥的频率如何？"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:331
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant at the moment?"
+#, kde-format
 msgctxt "@title:row"
 msgid "How healthy is your plant at the moment?"
-msgstr "您的植物现在有多健康？"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:348
-#, fuzzy, kde-format
-#| msgid "Birthday"
+#, kde-format
 msgctxt "@title:row"
 msgid "Birthday"
-msgstr "生日"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:366
 #, kde-format
@@ -316,11 +296,10 @@ msgid "Save"
 msgstr ""
 
 #: qml/PlantEditorPage.qml:366
-#, fuzzy, kde-format
-#| msgid "Add"
+#, kde-format
 msgctxt "@action:button"
 msgid "Add"
-msgstr "添加"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:374
 #, kde-format
@@ -335,32 +314,28 @@ msgid "Add Plant"
 msgstr "添加植物"
 
 #: qml/PlantsPage.qml:56
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good morning!"
-msgstr "早上好！"
+msgstr ""
 
 #: qml/PlantsPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good afternoon!"
-msgstr "早上好！"
+msgstr ""
 
 #: qml/PlantsPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good evening!"
-msgstr "早上好！"
+msgstr ""
 
 #: qml/PlantsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Good Morning!"
+#, kde-format
 msgctxt "@title"
 msgid "Good night!"
-msgstr "早上好！"
+msgstr ""
 
 #: qml/PlantsPage.qml:98
 #, kde-format
@@ -450,10 +425,3 @@ msgstr "现在"
 #, kde-format
 msgid "In %1 days"
 msgstr "%1 天内"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Author"
-#~ msgstr "作者"
-
-#~ msgid "Edit"
-#~ msgstr "编辑"
