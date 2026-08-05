@@ -267,7 +267,10 @@ Kirigami.ScrollablePage {
                         Controls.Button {
                             text: i18n("Watered")
                             icon.name: "answer-correct-symbolic"
-                            onClicked: waterEvents.waterPlant()
+                            onClicked: {
+                                applicationWindow().showPassiveNotification("Plant Watered", "short");
+                                waterEvents.waterPlant();
+                            }
                         }
                     }
                 }
@@ -303,22 +306,23 @@ Kirigami.ScrollablePage {
                         Controls.Button {
                             text: i18n("Fertilized")
                             icon.name: "answer-correct-symbolic"
-                            onClicked: fertilizerEvents.fertilizePlant()
+                            onClicked: {
+                                applicationWindow().showPassiveNotification("Plant Fertilized", "short");
+                                fertilizerEvents.fertilizePlant();
+                            }
                         }
                     }
                 }
             }
 
             FormCard.FormHeader {
-                title: i18n("Health")
+                title: i18nc("@title:row", "Health")
             }
 
             FormCard.FormCard {
                 FormCard.AbstractFormDelegate {
                     id: health
-
-                    background: null
-                    text: i18n("How healthy is your plant today?")
+                    text: i18nc("@label:slider","How healthy is your plant today?")
 
                     contentItem: ColumnLayout {
                         Controls.Label {
@@ -334,15 +338,17 @@ Kirigami.ScrollablePage {
                                 from: 0
                                 to: 100
                             }
-
                             Item {
                                 Layout.fillWidth: true
                             }
 
                             Controls.Button {
-                                text: i18n("Add")
+                                text: i18nc("@action:button","Record")
                                 icon.name: "list-add-symbolic"
-                                onClicked: healthEvents.addHealthEvent(healthSlider.value)
+                                onClicked: {
+                                    applicationWindow().showPassiveNotification("Added Health Entry", "short");
+                                    healthEvents.addHealthEvent(healthSlider.value);
+                                }
                             }
                         }
                     }

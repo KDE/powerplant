@@ -2,8 +2,6 @@
 // SPDX-FileCopyrightText: 2023 Mathis Brüchert <mbb@kaidan.im>
 
 import QtQuick
-import QtQuick.Controls as Controls
-import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.config as KConfig
 import org.kde.powerplant
@@ -21,16 +19,15 @@ Kirigami.ApplicationWindow {
         globalToolBar {
             style: Kirigami.ApplicationHeaderStyle.ToolBar
             showNavigationButtons: {
-                if (applicationWindow().pageStack.currentIndex > 0 || applicationWindow().pageStack.currentIndex > 0) {
+                if (pageStack.currentIndex > 0) {
                     Kirigami.ApplicationHeaderStyle.ShowBackButton;
-                } else {
-                    0;
                 }
             }
         }
     }
     footer: NavigationBar {
-        id: navigationbar
+        id: navigationBar
+        pageStack: root.pageStack
     }
 
     KConfig.WindowStateSaver {

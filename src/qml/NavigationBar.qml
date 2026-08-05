@@ -6,18 +6,21 @@ import org.kde.kirigami as Kirigami
 import org.kde.powerplant
 
 Kirigami.NavigationTabBar {
-    id: root
+    id: navigationBar
+
+    property var pageStack
 
     visible: pageStack.layers.depth < 2
+
     actions: [
         Kirigami.Action {
-            text: i18n("Plants")
+            text: i18nc("@action Navigation bar element", "Plants")
             icon.name: "battery-profile-powersave-symbolic"
             onTriggered: {
-                while (pageStack.depth > 1) {
-                    pageStack.pop();
+                while (navigationBar.pageStack.depth > 1) {
+                    navigationBar.pageStack.pop();
                 }
-                pageStack.replace(Qt.resolvedUrl("PlantsPage.qml"));
+                navigationBar.pageStack.replace(Qt.resolvedUrl("PlantsPage.qml"));
             }
             Component.onCompleted: trigger()
         },
@@ -25,10 +28,10 @@ Kirigami.NavigationTabBar {
             text: i18n("Tasks")
             icon.name: "view-calendar-tasks-symbolic"
             onTriggered: {
-                while (pageStack.depth > 1) {
-                    pageStack.pop();
+                while (navigationBar.pageStack.depth > 1) {
+                    navigationBar.pageStack.pop();
                 }
-                pageStack.replace(Qt.resolvedUrl("TaskPage.qml"));
+                navigationBar.pageStack.replace(Qt.resolvedUrl("TaskPage.qml"));
             }
         }
     ]

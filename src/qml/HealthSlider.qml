@@ -45,7 +45,7 @@ Controls.Slider {
     background: Rectangle {
         id: background
         x: root.leftPadding
-        y: root.topPadding + weirdNumber - height / 2
+        y: root.topPadding + root.weirdNumber - height / 2
         implicitWidth: 200
         implicitHeight: 15
         width: root.availableWidth
@@ -76,7 +76,7 @@ Controls.Slider {
                 GradientStop {
                     id: gradientStop3
 
-                    position: root.gradient[1].position
+                    position: root.gradient[2].position
                     color: root.gradient[2].color
                 }
             }
@@ -98,14 +98,14 @@ Controls.Slider {
             height: 10
             width: 10
             radius: 5
-            color: healthColor
+            color: root.healthColor
             border.color: root.hovered || root.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, 0.3)
             border.width: 1
             x: -4.5
             y: -5
         }
         x: root.leftPadding + root.visualPosition * (root.availableWidth)
-        y: root.topPadding + weirdNumber - height / 2
+        y: root.topPadding + root.weirdNumber - height / 2
         implicitWidth: 26
         implicitHeight: 26
         antialiasing: true
