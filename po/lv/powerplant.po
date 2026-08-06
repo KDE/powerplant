@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-23 00:48+0000\n"
+"POT-Creation-Date: 2026-08-06 00:49+0000\n"
 "PO-Revision-Date: 2025-01-04 17:42+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -59,12 +59,14 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "toms.trasuns@posteo.net"
 
-#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
-#, kde-format
+#: qml/NavigationBar.qml:17
+#, fuzzy, kde-format
+#| msgid "Plants"
+msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr "Augi"
 
-#: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
+#: qml/NavigationBar.qml:28 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
 msgstr "Uzdevumi"
@@ -132,12 +134,12 @@ msgstr "Jau bija jāaplaista!"
 msgid "Watered"
 msgstr "Aplaistīts"
 
-#: qml/PlantDetailPage.qml:277
+#: qml/PlantDetailPage.qml:280
 #, kde-format
 msgid "Fertilizer"
 msgstr "Mēslojums"
 
-#: qml/PlantDetailPage.qml:293
+#: qml/PlantDetailPage.qml:296
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
@@ -146,45 +148,50 @@ msgstr[0] "Jāmēslo pēc %1 dienas"
 msgstr[1] "Jāmēslo pēc %1 dienām"
 msgstr[2] "Jāmēslo pēc %1 dienām"
 
-#: qml/PlantDetailPage.qml:295
+#: qml/PlantDetailPage.qml:298
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
 msgstr "Jāmēslo rīt"
 
-#: qml/PlantDetailPage.qml:297
+#: qml/PlantDetailPage.qml:300
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
 msgstr "Jāmēslo šodien!"
 
-#: qml/PlantDetailPage.qml:299
+#: qml/PlantDetailPage.qml:302
 #, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
 msgstr "jau bija jāmēslo!"
 
-#: qml/PlantDetailPage.qml:304
+#: qml/PlantDetailPage.qml:307
 #, kde-format
 msgid "Fertilized"
 msgstr "Mēslots"
 
-#: qml/PlantDetailPage.qml:313
-#, kde-format
+#: qml/PlantDetailPage.qml:319
+#, fuzzy, kde-format
+#| msgid "Health"
+msgctxt "@title:row"
 msgid "Health"
 msgstr "Veselība"
 
-#: qml/PlantDetailPage.qml:321
-#, kde-format
+#: qml/PlantDetailPage.qml:325
+#, fuzzy, kde-format
+#| msgid "How healthy is your plant today?"
+msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "Cik veseli šodien ir jūsu augi?"
 
-#: qml/PlantDetailPage.qml:343
+#: qml/PlantDetailPage.qml:346
 #, kde-format
-msgid "Add"
-msgstr "Pievienot"
+msgctxt "@action:button"
+msgid "Record"
+msgstr ""
 
-#: qml/PlantDetailPage.qml:356
+#: qml/PlantDetailPage.qml:362
 #, kde-format
 msgid "Health History"
 msgstr "Veselības vēsture"
@@ -333,6 +340,11 @@ msgctxt "@action:button"
 msgid "Cancel"
 msgstr ""
 
+#: qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Augi"
+
 #: qml/PlantsPage.qml:45
 #, kde-format
 msgctxt "@action:button"
@@ -457,6 +469,9 @@ msgstr "Tagad"
 #, kde-format
 msgid "In %1 days"
 msgstr "Pēc %1 dienām"
+
+#~ msgid "Add"
+#~ msgstr "Pievienot"
 
 #~ msgctxt "@info:credit"
 #~ msgid "Author"

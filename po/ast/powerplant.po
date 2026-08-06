@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-23 00:48+0000\n"
+"POT-Creation-Date: 2026-08-06 00:49+0000\n"
 "PO-Revision-Date: 2024-03-27 23:08+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -57,12 +57,13 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "alministradores@softastur.org"
 
-#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
+#: qml/NavigationBar.qml:17
 #, kde-format
+msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr ""
 
-#: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
+#: qml/NavigationBar.qml:28 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
 msgstr ""
@@ -127,12 +128,12 @@ msgstr ""
 msgid "Watered"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:277
+#: qml/PlantDetailPage.qml:280
 #, kde-format
 msgid "Fertilizer"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:293
+#: qml/PlantDetailPage.qml:296
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
@@ -140,45 +141,48 @@ msgid_plural "Has to be fertilized in %1 days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: qml/PlantDetailPage.qml:295
+#: qml/PlantDetailPage.qml:298
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:297
+#: qml/PlantDetailPage.qml:300
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:299
+#: qml/PlantDetailPage.qml:302
 #, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:304
+#: qml/PlantDetailPage.qml:307
 #, kde-format
 msgid "Fertilized"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:313
+#: qml/PlantDetailPage.qml:319
 #, kde-format
+msgctxt "@title:row"
 msgid "Health"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:321
+#: qml/PlantDetailPage.qml:325
 #, kde-format
+msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:343
+#: qml/PlantDetailPage.qml:346
 #, kde-format
-msgid "Add"
+msgctxt "@action:button"
+msgid "Record"
 msgstr ""
 
-#: qml/PlantDetailPage.qml:356
+#: qml/PlantDetailPage.qml:362
 #, kde-format
 msgid "Health History"
 msgstr ""
@@ -307,6 +311,11 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
+msgstr ""
+
+#: qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
 msgstr ""
 
 #: qml/PlantsPage.qml:45

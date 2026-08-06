@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-23 00:48+0000\n"
+"POT-Creation-Date: 2026-08-06 00:49+0000\n"
 "PO-Revision-Date: 2024-12-28 08:39+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -61,12 +61,14 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xalba@ni.eus"
 
-#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
-#, kde-format
+#: qml/NavigationBar.qml:17
+#, fuzzy, kde-format
+#| msgid "Plants"
+msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr "Landareak"
 
-#: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
+#: qml/NavigationBar.qml:28 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
 msgstr "Zereginak"
@@ -133,12 +135,12 @@ msgstr "Dagoeneko ureztatuta behar zuen!"
 msgid "Watered"
 msgstr "Ureztatuta"
 
-#: qml/PlantDetailPage.qml:277
+#: qml/PlantDetailPage.qml:280
 #, kde-format
 msgid "Fertilizer"
 msgstr "Ongarria"
 
-#: qml/PlantDetailPage.qml:293
+#: qml/PlantDetailPage.qml:296
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
@@ -146,45 +148,50 @@ msgid_plural "Has to be fertilized in %1 days"
 msgstr[0] "Egun %1 barru ongarritu egin behar da"
 msgstr[1] "%1 egun barru ongarritu egin behar da"
 
-#: qml/PlantDetailPage.qml:295
+#: qml/PlantDetailPage.qml:298
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
 msgstr "Bihar ongarritu egin behar da"
 
-#: qml/PlantDetailPage.qml:297
+#: qml/PlantDetailPage.qml:300
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
 msgstr "Gaur ongarritu egin behar da!"
 
-#: qml/PlantDetailPage.qml:299
+#: qml/PlantDetailPage.qml:302
 #, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
 msgstr "Dagoeneko ongarrituta behar zuen!"
 
-#: qml/PlantDetailPage.qml:304
+#: qml/PlantDetailPage.qml:307
 #, kde-format
 msgid "Fertilized"
 msgstr "Ongarrituta"
 
-#: qml/PlantDetailPage.qml:313
-#, kde-format
+#: qml/PlantDetailPage.qml:319
+#, fuzzy, kde-format
+#| msgid "Health"
+msgctxt "@title:row"
 msgid "Health"
 msgstr "Osasuna"
 
-#: qml/PlantDetailPage.qml:321
-#, kde-format
+#: qml/PlantDetailPage.qml:325
+#, fuzzy, kde-format
+#| msgid "How healthy is your plant today?"
+msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "Nolako osasuntsu dago gaur zure landarea?"
 
-#: qml/PlantDetailPage.qml:343
+#: qml/PlantDetailPage.qml:346
 #, kde-format
-msgid "Add"
-msgstr "Gehitu"
+msgctxt "@action:button"
+msgid "Record"
+msgstr ""
 
-#: qml/PlantDetailPage.qml:356
+#: qml/PlantDetailPage.qml:362
 #, kde-format
 msgid "Health History"
 msgstr "Osasun-historia"
@@ -333,6 +340,11 @@ msgctxt "@action:button"
 msgid "Cancel"
 msgstr ""
 
+#: qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Landareak"
+
 #: qml/PlantsPage.qml:45
 #, kde-format
 msgctxt "@action:button"
@@ -456,6 +468,9 @@ msgstr "Orain"
 #, kde-format
 msgid "In %1 days"
 msgstr "%1 egun barru"
+
+#~ msgid "Add"
+#~ msgstr "Gehitu"
 
 #~ msgctxt "@info:credit"
 #~ msgid "Author"

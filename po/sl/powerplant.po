@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-23 00:48+0000\n"
+"POT-Creation-Date: 2026-08-06 00:49+0000\n"
 "PO-Revision-Date: 2026-07-23 06:29+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -55,12 +55,14 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
 
-#: qml/NavigationBar.qml:14 qml/PlantsPage.qml:20
-#, kde-format
+#: qml/NavigationBar.qml:17
+#, fuzzy, kde-format
+#| msgid "Plants"
+msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr "Rastline"
 
-#: qml/NavigationBar.qml:25 qml/TaskPage.qml:14
+#: qml/NavigationBar.qml:28 qml/TaskPage.qml:14
 #, kde-format
 msgid "Tasks"
 msgstr "Naloge"
@@ -127,12 +129,12 @@ msgstr "Bi jo bilo že treba zaliti!"
 msgid "Watered"
 msgstr "Zalita"
 
-#: qml/PlantDetailPage.qml:277
+#: qml/PlantDetailPage.qml:280
 #, kde-format
 msgid "Fertilizer"
 msgstr "Gnojilo"
 
-#: qml/PlantDetailPage.qml:293
+#: qml/PlantDetailPage.qml:296
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
@@ -142,45 +144,50 @@ msgstr[1] "Jo je treba pognojiti v %1 dneh"
 msgstr[2] "Jo je treba pognojiti v %1 dneh"
 msgstr[3] "Jo je treba pognojiti v %1 dneh"
 
-#: qml/PlantDetailPage.qml:295
+#: qml/PlantDetailPage.qml:298
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
 msgstr "Jo je treba pognojiti jutri"
 
-#: qml/PlantDetailPage.qml:297
+#: qml/PlantDetailPage.qml:300
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
 msgstr "Jo je treba pognojiti danes!"
 
-#: qml/PlantDetailPage.qml:299
+#: qml/PlantDetailPage.qml:302
 #, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
 msgstr "Bi jo bilo že treba pognojiti!"
 
-#: qml/PlantDetailPage.qml:304
+#: qml/PlantDetailPage.qml:307
 #, kde-format
 msgid "Fertilized"
 msgstr "Pognojena"
 
-#: qml/PlantDetailPage.qml:313
-#, kde-format
+#: qml/PlantDetailPage.qml:319
+#, fuzzy, kde-format
+#| msgid "Health"
+msgctxt "@title:row"
 msgid "Health"
 msgstr "Zdravje"
 
-#: qml/PlantDetailPage.qml:321
-#, kde-format
+#: qml/PlantDetailPage.qml:325
+#, fuzzy, kde-format
+#| msgid "How healthy is your plant today?"
+msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "Kako zdrava je vaša rastlina danes?"
 
-#: qml/PlantDetailPage.qml:343
+#: qml/PlantDetailPage.qml:346
 #, kde-format
-msgid "Add"
-msgstr "Dodaj"
+msgctxt "@action:button"
+msgid "Record"
+msgstr ""
 
-#: qml/PlantDetailPage.qml:356
+#: qml/PlantDetailPage.qml:362
 #, kde-format
 msgid "Health History"
 msgstr "Zdravstvena zgodovina"
@@ -311,6 +318,11 @@ msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Prekliči"
 
+#: qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Rastline"
+
 #: qml/PlantsPage.qml:45
 #, kde-format
 msgctxt "@action:button"
@@ -432,6 +444,9 @@ msgstr "Zdaj"
 #, kde-format
 msgid "In %1 days"
 msgstr "Čez %1 dni"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"
 
 #~ msgctxt "@info:credit"
 #~ msgid "Author"
