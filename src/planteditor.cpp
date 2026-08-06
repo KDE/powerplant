@@ -70,7 +70,7 @@ void Plant::refresh()
         m_location = plant->location;
         Q_EMIT locationChanged();
 
-        m_dateOfBirth = QDateTime::fromSecsSinceEpoch(plant->date_of_birth).date();
+        m_dateOfBirth = QDateTime::fromSecsSinceEpoch(plant->date_of_birth);
         Q_EMIT dateOfBirthChanged();
 
         m_lastWatered = QDateTime::fromSecsSinceEpoch(plant->last_watered).date();
@@ -131,7 +131,7 @@ void PlantEditor::save()
                                 m_plant->m_waterInterval,
                                 m_plant->m_fertilizerInterval,
                                 m_plant->m_location,
-                                m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch(),
+                                m_plant->m_dateOfBirth.date().startOfDay().toSecsSinceEpoch(),
                                 m_plant->m_currentHealth);
     } else {
         m_plantsModel->editPlant(m_plant->m_plantId,
@@ -141,7 +141,7 @@ void PlantEditor::save()
                                  m_plant->m_waterInterval,
                                  m_plant->m_fertilizerInterval,
                                  m_plant->m_location,
-                                 m_plant->m_dateOfBirth.startOfDay().toSecsSinceEpoch());
+                                 m_plant->m_dateOfBirth.date().startOfDay().toSecsSinceEpoch());
     }
 }
 

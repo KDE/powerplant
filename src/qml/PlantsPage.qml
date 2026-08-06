@@ -377,7 +377,10 @@ Kirigami.ScrollablePage {
                 implicitHeight: grid.cellHeight - 2 * Layout.margins
                 contentItem: ColumnLayout {
                     spacing: Kirigami.Units.smallSpacing
-
+                    Kirigami.Icon {
+                        source: "food-cake"
+                        visible: root.currentDate.getDate() === dateOfBirth.getDate() && root.currentDate.getMonth() === dateOfBirth.getMonth()
+                    }
                     Item {
                         Layout.fillHeight: true
                     }

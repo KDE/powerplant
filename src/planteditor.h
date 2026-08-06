@@ -39,7 +39,7 @@ class Plant : public QObject
     Q_PROPERTY(QString location MEMBER m_location NOTIFY locationChanged)
 
     /// This property holds the date of birth of this plant
-    Q_PROPERTY(QDate dateOfBirth MEMBER m_dateOfBirth NOTIFY dateOfBirthChanged)
+    Q_PROPERTY(QDateTime dateOfBirth MEMBER m_dateOfBirth NOTIFY dateOfBirthChanged)
 
     /// This property holds the time when this plant was last watered
     Q_PROPERTY(QDate lastWatered MEMBER m_lastWatered NOTIFY lastWateredChanged)
@@ -86,7 +86,7 @@ private:
     QString m_species;
     QUrl m_imgUrl;
     QString m_location;
-    QDate m_dateOfBirth;
+    QDateTime m_dateOfBirth;
     QDate m_lastWatered;
     QDate m_lastFertilized;
     int m_waterInterval = 2;

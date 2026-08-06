@@ -351,7 +351,7 @@ FormCard.FormCardPage {
     FormCard.FormCard {
         FormCard.FormDateTimeDelegate {
             dateTimeDisplay: FormCard.FormDateTimeDelegate.DateTimeDisplay.Date
-            initialValue: plantEditor.plant.dateOfBirth
+            value: plantEditor.plant.dateOfBirth
             onValueChanged: plantEditor.plant.dateOfBirth = value
         }
     }
