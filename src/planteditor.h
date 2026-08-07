@@ -86,7 +86,7 @@ private:
     QString m_species;
     QUrl m_imgUrl;
     QString m_location;
-    QDateTime m_dateOfBirth;
+    QDateTime m_dateOfBirth = QDateTime::currentDateTime();
     QDate m_lastWatered;
     QDate m_lastFertilized;
     int m_waterInterval = 2;
