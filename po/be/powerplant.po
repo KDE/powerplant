@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-06 00:49+0000\n"
+"POT-Creation-Date: 2026-08-07 00:50+0000\n"
 "PO-Revision-Date: 2024-05-23 18:10\n"
 "Last-Translator: Antikruk <nashtlumach@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -424,7 +424,7 @@ msgstr ""
 msgid "Select your Location"
 msgstr ""
 
-#: qml/PlantsPage.qml:402 qml/PlantsPage.qml:430
+#: qml/PlantsPage.qml:405 qml/PlantsPage.qml:433
 #, fuzzy, kde-format
 #| msgid "in %1 days"
 msgctxt "@info"
@@ -435,35 +435,35 @@ msgstr[1] "праз %1 дзень(дзён)"
 msgstr[2] "праз %1 дзень(дзён)"
 msgstr[3] "праз %1 дзень(дзён)"
 
-#: qml/PlantsPage.qml:404 qml/PlantsPage.qml:432
+#: qml/PlantsPage.qml:407 qml/PlantsPage.qml:435
 #, fuzzy, kde-format
 #| msgid "tomorrow"
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "заўтра"
 
-#: qml/PlantsPage.qml:406
+#: qml/PlantsPage.qml:409
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Water today!"
 msgstr "паліў сёння!"
 
-#: qml/PlantsPage.qml:408
+#: qml/PlantsPage.qml:411
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "паліў пратэрмінаваны!"
 
-#: qml/PlantsPage.qml:434
+#: qml/PlantsPage.qml:437
 #, fuzzy, kde-format
 #| msgid "water today!"
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "паліў сёння!"
 
-#: qml/PlantsPage.qml:436
+#: qml/PlantsPage.qml:439
 #, fuzzy, kde-format
 #| msgid "watering overdue!"
 msgctxt "@info"

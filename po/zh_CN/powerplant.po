@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-06 00:49+0000\n"
+"POT-Creation-Date: 2026-08-07 00:50+0000\n"
 "PO-Revision-Date: 2024-04-22 15:59\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -379,38 +379,38 @@ msgstr "请输入您的位置"
 msgid "Select your Location"
 msgstr "选择您的位置"
 
-#: qml/PlantsPage.qml:402 qml/PlantsPage.qml:430
+#: qml/PlantsPage.qml:405 qml/PlantsPage.qml:433
 #, kde-format
 msgctxt "@info"
 msgid "In %1 day"
 msgid_plural "In %1 days"
 msgstr[0] "%1 天内"
 
-#: qml/PlantsPage.qml:404 qml/PlantsPage.qml:432
+#: qml/PlantsPage.qml:407 qml/PlantsPage.qml:435
 #, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "明天"
 
-#: qml/PlantsPage.qml:406
+#: qml/PlantsPage.qml:409
 #, kde-format
 msgctxt "@info"
 msgid "Water today!"
 msgstr "今天浇水！"
 
-#: qml/PlantsPage.qml:408
+#: qml/PlantsPage.qml:411
 #, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "浇水超期！"
 
-#: qml/PlantsPage.qml:434
+#: qml/PlantsPage.qml:437
 #, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "今天施肥！"
 
-#: qml/PlantsPage.qml:436
+#: qml/PlantsPage.qml:439
 #, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"

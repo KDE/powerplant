@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-06 00:49+0000\n"
-"PO-Revision-Date: 2026-07-23 12:12+0300\n"
+"POT-Creation-Date: 2026-08-07 00:50+0000\n"
+"PO-Revision-Date: 2026-08-06 08:34+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -59,8 +59,7 @@ msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
 #: qml/NavigationBar.qml:17
-#, fuzzy, kde-format
-#| msgid "Plants"
+#, kde-format
 msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr "Рослини"
@@ -171,15 +170,13 @@ msgid "Fertilized"
 msgstr "Удобрено"
 
 #: qml/PlantDetailPage.qml:319
-#, fuzzy, kde-format
-#| msgid "Health"
+#, kde-format
 msgctxt "@title:row"
 msgid "Health"
 msgstr "Здоров'я"
 
 #: qml/PlantDetailPage.qml:325
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant today?"
+#, kde-format
 msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "Наскільки здоровою є ваша рослина сьогодні?"
@@ -188,7 +185,7 @@ msgstr "Наскільки здоровою є ваша рослина сьог�
 #, kde-format
 msgctxt "@action:button"
 msgid "Record"
-msgstr ""
+msgstr "Записати"
 
 #: qml/PlantDetailPage.qml:362
 #, kde-format
@@ -386,7 +383,7 @@ msgstr "Введіть місце"
 msgid "Select your Location"
 msgstr "Виберіть місце"
 
-#: qml/PlantsPage.qml:402 qml/PlantsPage.qml:430
+#: qml/PlantsPage.qml:405 qml/PlantsPage.qml:433
 #, kde-format
 msgctxt "@info"
 msgid "In %1 day"
@@ -396,31 +393,31 @@ msgstr[1] "За %1 дні"
 msgstr[2] "За %1 днів"
 msgstr[3] "За %1 день"
 
-#: qml/PlantsPage.qml:404 qml/PlantsPage.qml:432
+#: qml/PlantsPage.qml:407 qml/PlantsPage.qml:435
 #, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "Завтра"
 
-#: qml/PlantsPage.qml:406
+#: qml/PlantsPage.qml:409
 #, kde-format
 msgctxt "@info"
 msgid "Water today!"
 msgstr "Полийте сьогодні!"
 
-#: qml/PlantsPage.qml:408
+#: qml/PlantsPage.qml:411
 #, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "Прострочено поливання!"
 
-#: qml/PlantsPage.qml:434
+#: qml/PlantsPage.qml:437
 #, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "Удобріть сьогодні!"
 
-#: qml/PlantsPage.qml:436
+#: qml/PlantsPage.qml:439
 #, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"

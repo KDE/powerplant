@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-06 00:49+0000\n"
+"POT-Creation-Date: 2026-08-07 00:50+0000\n"
 "PO-Revision-Date: 2026-08-03 20:05+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
@@ -382,7 +382,7 @@ msgstr ""
 msgid "Select your Location"
 msgstr ""
 
-#: qml/PlantsPage.qml:402 qml/PlantsPage.qml:430
+#: qml/PlantsPage.qml:405 qml/PlantsPage.qml:433
 #, kde-format
 msgctxt "@info"
 msgid "In %1 day"
@@ -390,31 +390,31 @@ msgid_plural "In %1 days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: qml/PlantsPage.qml:404 qml/PlantsPage.qml:432
+#: qml/PlantsPage.qml:407 qml/PlantsPage.qml:435
 #, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr ""
 
-#: qml/PlantsPage.qml:406
+#: qml/PlantsPage.qml:409
 #, kde-format
 msgctxt "@info"
 msgid "Water today!"
 msgstr ""
 
-#: qml/PlantsPage.qml:408
+#: qml/PlantsPage.qml:411
 #, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr ""
 
-#: qml/PlantsPage.qml:434
+#: qml/PlantsPage.qml:437
 #, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr ""
 
-#: qml/PlantsPage.qml:436
+#: qml/PlantsPage.qml:439
 #, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
@@ -441,6 +441,3 @@ msgstr ""
 #, kde-format
 msgid "In %1 days"
 msgstr ""
-
-#~ msgid "Add"
-#~ msgstr "Legg til"

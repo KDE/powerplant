@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-06 00:49+0000\n"
-"PO-Revision-Date: 2026-07-23 15:58+0200\n"
+"POT-Creation-Date: 2026-08-07 00:50+0000\n"
+"PO-Revision-Date: 2026-08-06 10:13+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -61,8 +61,7 @@ msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
 #: qml/NavigationBar.qml:17
-#, fuzzy, kde-format
-#| msgid "Plants"
+#, kde-format
 msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr "Plantes"
@@ -169,15 +168,13 @@ msgid "Fertilized"
 msgstr "Fertilitzada"
 
 #: qml/PlantDetailPage.qml:319
-#, fuzzy, kde-format
-#| msgid "Health"
+#, kde-format
 msgctxt "@title:row"
 msgid "Health"
 msgstr "Estat"
 
 #: qml/PlantDetailPage.qml:325
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant today?"
+#, kde-format
 msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "Com està hui la planta?"
@@ -186,7 +183,7 @@ msgstr "Com està hui la planta?"
 #, kde-format
 msgctxt "@action:button"
 msgid "Record"
-msgstr ""
+msgstr "Grava"
 
 #: qml/PlantDetailPage.qml:362
 #, kde-format
@@ -384,7 +381,7 @@ msgstr "Introduïu la ubicació"
 msgid "Select your Location"
 msgstr "Trieu la ubicació"
 
-#: qml/PlantsPage.qml:402 qml/PlantsPage.qml:430
+#: qml/PlantsPage.qml:405 qml/PlantsPage.qml:433
 #, kde-format
 msgctxt "@info"
 msgid "In %1 day"
@@ -392,31 +389,31 @@ msgid_plural "In %1 days"
 msgstr[0] "D'ací a %1 dia"
 msgstr[1] "D'ací a %1 dies"
 
-#: qml/PlantsPage.qml:404 qml/PlantsPage.qml:432
+#: qml/PlantsPage.qml:407 qml/PlantsPage.qml:435
 #, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "Demà"
 
-#: qml/PlantsPage.qml:406
+#: qml/PlantsPage.qml:409
 #, kde-format
 msgctxt "@info"
 msgid "Water today!"
 msgstr "Aigua hui!"
 
-#: qml/PlantsPage.qml:408
+#: qml/PlantsPage.qml:411
 #, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "Hi ha un reg endarrerit!"
 
-#: qml/PlantsPage.qml:434
+#: qml/PlantsPage.qml:437
 #, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "Fertilitzeu hui!"
 
-#: qml/PlantsPage.qml:436
+#: qml/PlantsPage.qml:439
 #, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
@@ -443,6 +440,3 @@ msgstr "Ara"
 #, kde-format
 msgid "In %1 days"
 msgstr "D'ací a %1 dies"
-
-#~ msgid "Add"
-#~ msgstr "Afig"
