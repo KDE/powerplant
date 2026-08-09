@@ -1,14 +1,15 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the powerplant package.
 # SPDX-FileCopyrightText: 2024-2026 Vit Pelcak <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2026 Libor Filípek <libor.filipek@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-07 00:50+0000\n"
-"PO-Revision-Date: 2026-07-29 11:45+0200\n"
-"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
+"PO-Revision-Date: 2026-08-08 23:46+0200\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -58,8 +59,7 @@ msgid "Your emails"
 msgstr "vit@pelcak.org"
 
 #: qml/NavigationBar.qml:17
-#, fuzzy, kde-format
-#| msgid "Plants"
+#, kde-format
 msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr "Rostliny"
@@ -168,15 +168,13 @@ msgid "Fertilized"
 msgstr "Pohnojena"
 
 #: qml/PlantDetailPage.qml:319
-#, fuzzy, kde-format
-#| msgid "Health"
+#, kde-format
 msgctxt "@title:row"
 msgid "Health"
 msgstr "Zdraví"
 
 #: qml/PlantDetailPage.qml:325
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant today?"
+#, kde-format
 msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "Jak zdravá je dnes vaše rostlina?"
