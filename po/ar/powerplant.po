@@ -154,7 +154,7 @@ msgstr[5] "يجب تسميدها في %1 يوم"
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
-msgstr "يجب تسميدها غداً"
+msgstr "يجب تسميدها غدًا"
 
 #: qml/PlantDetailPage.qml:300
 #, kde-format

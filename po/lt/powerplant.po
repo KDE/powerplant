@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-07 00:50+0000\n"
-"PO-Revision-Date: 2026-07-24 11:54+0300\n"
+"PO-Revision-Date: 2026-08-11 17:33+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -60,8 +60,7 @@ msgid "Your emails"
 msgstr "<>"
 
 #: qml/NavigationBar.qml:17
-#, fuzzy, kde-format
-#| msgid "Plants"
+#, kde-format
 msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr "Augalai"
@@ -172,15 +171,13 @@ msgid "Fertilized"
 msgstr "Patręštas"
 
 #: qml/PlantDetailPage.qml:319
-#, fuzzy, kde-format
-#| msgid "Health"
+#, kde-format
 msgctxt "@title:row"
 msgid "Health"
 msgstr "Būsena"
 
 #: qml/PlantDetailPage.qml:325
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant today?"
+#, kde-format
 msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "Kokios būsenos šiandien yra jūsų augalas?"
@@ -189,7 +186,7 @@ msgstr "Kokios būsenos šiandien yra jūsų augalas?"
 #, kde-format
 msgctxt "@action:button"
 msgid "Record"
-msgstr ""
+msgstr "Įrašinėti"
 
 #: qml/PlantDetailPage.qml:362
 #, kde-format

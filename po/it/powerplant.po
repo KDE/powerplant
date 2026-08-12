@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-07 00:50+0000\n"
-"PO-Revision-Date: 2026-07-23 14:58+0200\n"
+"PO-Revision-Date: 2026-08-07 09:20+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -58,8 +58,7 @@ msgid "Your emails"
 msgstr "feus73@gmail.com"
 
 #: qml/NavigationBar.qml:17
-#, fuzzy, kde-format
-#| msgid "Plants"
+#, kde-format
 msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr "Piante"
@@ -166,15 +165,13 @@ msgid "Fertilized"
 msgstr "Fertilizzata"
 
 #: qml/PlantDetailPage.qml:319
-#, fuzzy, kde-format
-#| msgid "Health"
+#, kde-format
 msgctxt "@title:row"
 msgid "Health"
 msgstr "Salute"
 
 #: qml/PlantDetailPage.qml:325
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant today?"
+#, kde-format
 msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "Quanto è in salute la tua pianta oggi?"
@@ -183,12 +180,12 @@ msgstr "Quanto è in salute la tua pianta oggi?"
 #, kde-format
 msgctxt "@action:button"
 msgid "Record"
-msgstr ""
+msgstr "Registra"
 
 #: qml/PlantDetailPage.qml:362
 #, kde-format
 msgid "Health History"
-msgstr "Storia della salute"
+msgstr "Cronologia della salute"
 
 #: qml/PlantEditorPage.qml:31
 #, kde-format
