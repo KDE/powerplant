@@ -58,11 +58,10 @@ msgid "Your emails"
 msgstr "kde-china@kde.org, ihchiz@outlook.com"
 
 #: qml/NavigationBar.qml:17
-#, fuzzy, kde-format
-#| msgid "Plants"
+#, kde-format
 msgctxt "@action Navigation bar element"
 msgid "Plants"
-msgstr "植物"
+msgstr ""
 
 #: qml/NavigationBar.qml:28 qml/TaskPage.qml:14
 #, kde-format
@@ -164,18 +163,16 @@ msgid "Fertilized"
 msgstr "已施肥"
 
 #: qml/PlantDetailPage.qml:319
-#, fuzzy, kde-format
-#| msgid "Health"
+#, kde-format
 msgctxt "@title:row"
 msgid "Health"
-msgstr "健康"
+msgstr ""
 
 #: qml/PlantDetailPage.qml:325
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant today?"
+#, kde-format
 msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
-msgstr "您的植物今天有多健康？"
+msgstr ""
 
 #: qml/PlantDetailPage.qml:346
 #, kde-format
@@ -437,6 +434,3 @@ msgstr "现在"
 #, kde-format
 msgid "In %1 days"
 msgstr "%1 天内"
-
-#~ msgid "Add"
-#~ msgstr "添加"
