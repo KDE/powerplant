@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-07 00:50+0000\n"
-"PO-Revision-Date: 2026-08-04 07:32+0900\n"
+"PO-Revision-Date: 2026-09-15 14:31+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -58,8 +58,7 @@ msgid "Your emails"
 msgstr "mail@kisaragi-hiu.com"
 
 #: qml/NavigationBar.qml:17
-#, fuzzy, kde-format
-#| msgid "Plants"
+#, kde-format
 msgctxt "@action Navigation bar element"
 msgid "Plants"
 msgstr "植哉"
@@ -164,15 +163,13 @@ msgid "Fertilized"
 msgstr "已施肥"
 
 #: qml/PlantDetailPage.qml:319
-#, fuzzy, kde-format
-#| msgid "Health"
+#, kde-format
 msgctxt "@title:row"
 msgid "Health"
 msgstr "健康狀況"
 
 #: qml/PlantDetailPage.qml:325
-#, fuzzy, kde-format
-#| msgid "How healthy is your plant today?"
+#, kde-format
 msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "您的植哉今天的健康狀況如何？"
@@ -181,7 +178,7 @@ msgstr "您的植哉今天的健康狀況如何？"
 #, kde-format
 msgctxt "@action:button"
 msgid "Record"
-msgstr ""
+msgstr "紀錄"
 
 #: qml/PlantDetailPage.qml:362
 #, kde-format
