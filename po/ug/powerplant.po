@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-07 00:50+0000\n"
-"PO-Revision-Date: 2026-06-01 18:33-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -22,7 +22,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title"
 msgid "PowerPlant"
-msgstr "PowerPlant"
+msgstr ""
 
 #: main.cpp:72
 #, kde-format
@@ -59,12 +59,10 @@ msgid "Your emails"
 msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 
 #: qml/NavigationBar.qml:17
-#, fuzzy, kde-format
-#| msgctxt "@title"
-#| msgid "PowerPlant"
+#, kde-format
 msgctxt "@action Navigation bar element"
 msgid "Plants"
-msgstr "PowerPlant"
+msgstr ""
 
 #: qml/NavigationBar.qml:28 qml/TaskPage.qml:14
 #, kde-format
@@ -72,12 +70,10 @@ msgid "Tasks"
 msgstr "ۋەزىپە"
 
 #: qml/PlantDetailPage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Delete"
+#, kde-format
 msgctxt "@title:window %1 is plantName"
 msgid "Delete %1?"
-msgstr "ئۆچۈر"
+msgstr ""
 
 #: qml/PlantDetailPage.qml:26
 #, kde-format
@@ -168,8 +164,7 @@ msgid "Fertilized"
 msgstr ""
 
 #: qml/PlantDetailPage.qml:319
-#, fuzzy, kde-format
-#| msgid "Health"
+#, kde-format
 msgctxt "@title:row"
 msgid "Health"
 msgstr "ساغلاملىق"
@@ -184,7 +179,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Record"
-msgstr ""
+msgstr "خاتىرە"
 
 #: qml/PlantDetailPage.qml:362
 #, kde-format
@@ -198,15 +193,13 @@ msgid "Add Plant"
 msgstr ""
 
 #: qml/PlantEditorPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Edit %1"
+#, kde-format
 msgctxt "@title:window %1 is the plant name"
 msgid "Edit %1"
 msgstr "%1 نى تەھرىرلەش"
 
 #: qml/PlantEditorPage.qml:41
-#, fuzzy, kde-format
-#| msgid "Image:"
+#, kde-format
 msgctxt "@title:row"
 msgid "Image:"
 msgstr "سۈرەت:"
@@ -218,8 +211,7 @@ msgid "Use custom image"
 msgstr ""
 
 #: qml/PlantEditorPage.qml:78
-#, fuzzy, kde-format
-#| msgid "Please choose a file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Please choose a file"
 msgstr "بىر ھۆججەت تاللاڭ"
@@ -231,8 +223,7 @@ msgid "Image files (*.png *.jpg *.webp)"
 msgstr ""
 
 #: qml/PlantEditorPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@title:row"
 msgid "Name"
 msgstr "ئاتى"
@@ -280,11 +271,10 @@ msgid "2 weeks"
 msgstr ""
 
 #: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:309
-#, fuzzy, kde-format
-#| msgid "Custom:"
+#, kde-format
 msgctxt "@title:row"
 msgid "Custom (days):"
-msgstr "ئىختىيارى:"
+msgstr ""
 
 #: qml/PlantEditorPage.qml:257
 #, kde-format
@@ -299,8 +289,7 @@ msgid "How healthy is your plant at the moment?"
 msgstr ""
 
 #: qml/PlantEditorPage.qml:348
-#, fuzzy, kde-format
-#| msgid "Birthday"
+#, kde-format
 msgctxt "@title:row"
 msgid "Birthday"
 msgstr "تۇغۇلغان كۈن"
@@ -309,11 +298,10 @@ msgstr "تۇغۇلغان كۈن"
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr ""
+msgstr "ساقلا"
 
 #: qml/PlantEditorPage.qml:366
-#, fuzzy, kde-format
-#| msgid "Add"
+#, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "قوش"
@@ -322,7 +310,7 @@ msgstr "قوش"
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "ۋاز كەچ"
 
 #: qml/PlantsPage.qml:20
 #, kde-format
