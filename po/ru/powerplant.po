@@ -1,0 +1,445 @@
+# Translation of powerplant into Russian.
+# This file is distributed under the same license as the powerplant package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: powerplant\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-08-07 00:50+0000\n"
+"PO-Revision-Date: 2026-10-10 12:53+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: main.cpp:68
+#, kde-format
+msgctxt "@title"
+msgid "PowerPlant"
+msgstr "PowerPlant"
+
+#: main.cpp:72
+#, kde-format
+msgid "A small app to track your plants"
+msgstr "Небольшое приложение для отслеживания растений"
+
+#: main.cpp:76
+#, kde-format
+msgid "© 2023-2025 Mathis Brüchert, © 2025-2026 KDE Community"
+msgstr "© Mathis Brüchert, 2023–2025, © Сообщество KDE, 2025–2026"
+
+#: main.cpp:82
+#, kde-format
+msgctxt "@info:credit"
+msgid "Mathis Brüchert"
+msgstr "Mathis Brüchert"
+
+#: main.cpp:82
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author, 2023-2025"
+msgstr "Автор, 2023–2025"
+
+#: main.cpp:84
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Александр Яворский"
+
+#: main.cpp:84
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kekcuha@gmail.com"
+
+#: qml/NavigationBar.qml:17
+#, kde-format
+msgctxt "@action Navigation bar element"
+msgid "Plants"
+msgstr "Растения"
+
+#: qml/NavigationBar.qml:28 qml/TaskPage.qml:14
+#, kde-format
+msgid "Tasks"
+msgstr "Задачи"
+
+#: qml/PlantDetailPage.qml:25
+#, kde-format
+msgctxt "@title:window %1 is plantName"
+msgid "Delete %1?"
+msgstr "Удаление растения %1"
+
+#: qml/PlantDetailPage.qml:26
+#, kde-format
+msgctxt "@info"
+msgid "Are you sure you want to delete this plant?"
+msgstr "Удалить это растение?"
+
+#: qml/PlantDetailPage.qml:67
+#, kde-format
+msgctxt "@action:button"
+msgid "Edit"
+msgstr "Изменить"
+
+#: qml/PlantDetailPage.qml:77
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Удалить"
+
+#: qml/PlantDetailPage.qml:240
+#, kde-format
+msgid "Water"
+msgstr "Полив"
+
+#: qml/PlantDetailPage.qml:258
+#, kde-format
+msgctxt "@info"
+msgid "Has to be watered in %1 day"
+msgid_plural "Has to be watered in %1 days"
+msgstr[0] "Нужно полить через %1 день"
+msgstr[1] "Нужно полить через %1 дня"
+msgstr[2] "Нужно полить через %1 дней"
+msgstr[3] "Нужно полить через %1 день"
+
+#: qml/PlantDetailPage.qml:260
+#, kde-format
+msgctxt "@info"
+msgid "Has to be watered tomorrow"
+msgstr "Нужно полить завтра"
+
+#: qml/PlantDetailPage.qml:262
+#, kde-format
+msgctxt "@info"
+msgid "Needs to be watered today!"
+msgstr "Нужно полить сегодня"
+
+#: qml/PlantDetailPage.qml:264
+#, kde-format
+msgctxt "@info"
+msgid "Should have been watered already!"
+msgstr "Уже пора было полить"
+
+#: qml/PlantDetailPage.qml:268
+#, kde-format
+msgid "Watered"
+msgstr "Полито"
+
+#: qml/PlantDetailPage.qml:280
+#, kde-format
+msgid "Fertilizer"
+msgstr "Подкормка"
+
+#: qml/PlantDetailPage.qml:296
+#, kde-format
+msgctxt "@info"
+msgid "Has to be fertilized in %1 day"
+msgid_plural "Has to be fertilized in %1 days"
+msgstr[0] "Нужно подкормить через %1 день"
+msgstr[1] "Нужно подкормить через %1 дня"
+msgstr[2] "Нужно подкормить через %1 дней"
+msgstr[3] "Нужно подкормить через %1 день"
+
+#: qml/PlantDetailPage.qml:298
+#, kde-format
+msgctxt "@info"
+msgid "Has to be fertilized tomorrow"
+msgstr "Нужно подкормить завтра"
+
+#: qml/PlantDetailPage.qml:300
+#, kde-format
+msgctxt "@info"
+msgid "Needs to be fertilized today!"
+msgstr "Нужно подкормить сегодня"
+
+#: qml/PlantDetailPage.qml:302
+#, kde-format
+msgctxt "@info"
+msgid "Should have been fertilized already!"
+msgstr "Уже пора было подкормить"
+
+#: qml/PlantDetailPage.qml:307
+#, kde-format
+msgid "Fertilized"
+msgstr "Подкормлено"
+
+#: qml/PlantDetailPage.qml:319
+#, kde-format
+msgctxt "@title:row"
+msgid "Health"
+msgstr "Состояние"
+
+#: qml/PlantDetailPage.qml:325
+#, kde-format
+msgctxt "@label:slider"
+msgid "How healthy is your plant today?"
+msgstr "Насколько здорово ваше растение сегодня?"
+
+#: qml/PlantDetailPage.qml:346
+#, kde-format
+msgctxt "@action:button"
+msgid "Record"
+msgstr "Записать"
+
+#: qml/PlantDetailPage.qml:362
+#, kde-format
+msgid "Health History"
+msgstr "История состояния"
+
+#: qml/PlantEditorPage.qml:31
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Plant"
+msgstr "Добавление растения"
+
+#: qml/PlantEditorPage.qml:31
+#, kde-format
+msgctxt "@title:window %1 is the plant name"
+msgid "Edit %1"
+msgstr "Изменение: %1"
+
+#: qml/PlantEditorPage.qml:41
+#, kde-format
+msgctxt "@title:row"
+msgid "Image:"
+msgstr "Изображение:"
+
+#: qml/PlantEditorPage.qml:72
+#, kde-format
+msgctxt "@action:button"
+msgid "Use custom image"
+msgstr "Использовать своё изображение"
+
+#: qml/PlantEditorPage.qml:78
+#, kde-format
+msgctxt "@title:window"
+msgid "Please choose a file"
+msgstr "Выбор файла"
+
+#: qml/PlantEditorPage.qml:88
+#, kde-format
+msgctxt "Name filter for image files"
+msgid "Image files (*.png *.jpg *.webp)"
+msgstr "Файлы изображений (*.png *.jpg *.webp)"
+
+#: qml/PlantEditorPage.qml:159
+#, kde-format
+msgctxt "@title:row"
+msgid "Name"
+msgstr "Название"
+
+#: qml/PlantEditorPage.qml:167
+#, kde-format
+msgctxt "@title:row"
+msgid "Species"
+msgstr "Вид"
+
+#: qml/PlantEditorPage.qml:175
+#, kde-format
+msgctxt "@title:row"
+msgid "Room"
+msgstr "Помещение"
+
+#: qml/PlantEditorPage.qml:187
+#, kde-format
+msgctxt "@title:row"
+msgid "How often does the plant need Watering?"
+msgstr "Как часто нужно поливать растение?"
+
+#: qml/PlantEditorPage.qml:201 qml/PlantEditorPage.qml:271
+#, kde-format
+msgctxt "@action:button button to select preset time"
+msgid "2 days"
+msgstr "2 дня"
+
+#: qml/PlantEditorPage.qml:209 qml/PlantEditorPage.qml:279
+#, kde-format
+msgctxt "@action:button button to select preset time"
+msgid "5 days"
+msgstr "5 дней"
+
+#: qml/PlantEditorPage.qml:217 qml/PlantEditorPage.qml:287
+#, kde-format
+msgctxt "@action:button button to select preset time"
+msgid "weekly"
+msgstr "Раз в неделю"
+
+#: qml/PlantEditorPage.qml:226 qml/PlantEditorPage.qml:296
+#, kde-format
+msgctxt "@action:button button to select preset time"
+msgid "2 weeks"
+msgstr "2 недели"
+
+#: qml/PlantEditorPage.qml:239 qml/PlantEditorPage.qml:309
+#, kde-format
+msgctxt "@title:row"
+msgid "Custom (days):"
+msgstr "Свой период (дни):"
+
+#: qml/PlantEditorPage.qml:257
+#, kde-format
+msgctxt "@title:row"
+msgid "How often does the plant need Fertilizing?"
+msgstr "Как часто нужно подкармливать растение?"
+
+#: qml/PlantEditorPage.qml:331
+#, kde-format
+msgctxt "@title:row"
+msgid "How healthy is your plant at the moment?"
+msgstr "Каково состояние растения сейчас?"
+
+#: qml/PlantEditorPage.qml:348
+#, kde-format
+msgctxt "@title:row"
+msgid "Birthday"
+msgstr "День рождения"
+
+#: qml/PlantEditorPage.qml:366
+#, kde-format
+msgctxt "@action:button"
+msgid "Save"
+msgstr "Сохранить"
+
+#: qml/PlantEditorPage.qml:366
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Добавить"
+
+#: qml/PlantEditorPage.qml:374
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Отмена"
+
+#: qml/PlantsPage.qml:20
+#, kde-format
+msgid "Plants"
+msgstr "Растения"
+
+#: qml/PlantsPage.qml:45
+#, kde-format
+msgctxt "@action:button"
+msgid "Add Plant"
+msgstr "Добавить растение"
+
+#: qml/PlantsPage.qml:56
+#, kde-format
+msgctxt "@title"
+msgid "Good morning!"
+msgstr "Доброе утро"
+
+#: qml/PlantsPage.qml:58
+#, kde-format
+msgctxt "@title"
+msgid "Good afternoon!"
+msgstr "Добрый день"
+
+#: qml/PlantsPage.qml:60
+#, kde-format
+msgctxt "@title"
+msgid "Good evening!"
+msgstr "Добрый вечер"
+
+#: qml/PlantsPage.qml:62
+#, kde-format
+msgctxt "@title"
+msgid "Good night!"
+msgstr "Доброй ночи"
+
+#: qml/PlantsPage.qml:98
+#, kde-format
+msgid "Some of your plants need attention"
+msgstr "Некоторые растения требуют внимания"
+
+#: qml/PlantsPage.qml:100
+#, kde-format
+msgid "No plants need water right now"
+msgstr "Сейчас ни одному растению не требуется полив"
+
+#: qml/PlantsPage.qml:192
+#, kde-format
+msgid "Incomplete Tasks"
+msgstr "Незавершённые задачи"
+
+#: qml/PlantsPage.qml:194
+#, kde-format
+msgid "All Tasks Complete"
+msgstr "Все задачи выполнены"
+
+#: qml/PlantsPage.qml:235
+#, kde-format
+msgid "Enter your Location"
+msgstr "Укажите местоположение"
+
+#: qml/PlantsPage.qml:282
+#, kde-format
+msgid "Select your Location"
+msgstr "Выбор местоположения"
+
+#: qml/PlantsPage.qml:405 qml/PlantsPage.qml:433
+#, kde-format
+msgctxt "@info"
+msgid "In %1 day"
+msgid_plural "In %1 days"
+msgstr[0] "Через %1 день"
+msgstr[1] "Через %1 дня"
+msgstr[2] "Через %1 дней"
+msgstr[3] "Через %1 день"
+
+#: qml/PlantsPage.qml:407 qml/PlantsPage.qml:435
+#, kde-format
+msgctxt "@info"
+msgid "Tomorrow"
+msgstr "Завтра"
+
+#: qml/PlantsPage.qml:409
+#, kde-format
+msgctxt "@info"
+msgid "Water today!"
+msgstr "Полить сегодня"
+
+#: qml/PlantsPage.qml:411
+#, kde-format
+msgctxt "@info"
+msgid "Watering overdue!"
+msgstr "Полив просрочен"
+
+#: qml/PlantsPage.qml:437
+#, kde-format
+msgctxt "@info"
+msgid "Fertilize today!"
+msgstr "Подкормить сегодня"
+
+#: qml/PlantsPage.qml:439
+#, kde-format
+msgctxt "@info"
+msgid "Fertilizing overdue!"
+msgstr "Подкормка просрочена"
+
+#: qml/TaskPage.qml:123
+#, kde-format
+msgctxt "@action"
+msgid "Water"
+msgstr "Полить"
+
+#: qml/TaskPage.qml:135
+#, kde-format
+msgctxt "@info"
+msgid "Already watered"
+msgstr "Уже полито"
+
+#: qml/TaskPage.qml:135
+#, kde-format
+msgid "Now"
+msgstr "Сейчас"
+
+#: qml/TaskPage.qml:135
+#, kde-format
+msgid "In %1 days"
+msgstr "Через %1 дн."
