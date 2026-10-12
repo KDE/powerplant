@@ -33,6 +33,7 @@
   <name xml:lang="pl">PowerPlant</name>
   <name xml:lang="pt-BR">PowerPlant</name>
   <name xml:lang="ro">PowerPlant</name>
+  <name xml:lang="ru">PowerPlant</name>
   <name xml:lang="sa">पावरप्लांट</name>
   <name xml:lang="sk">PowerPlant</name>
   <name xml:lang="sl">PowerPlant</name>
@@ -64,6 +65,7 @@
   <summary xml:lang="pl">Utrzymuj swoje rośliny przy życiu</summary>
   <summary xml:lang="pt-BR">Mantenha suas plantas vivas</summary>
   <summary xml:lang="ro">Vă ține plantele în viață</summary>
+  <summary xml:lang="ru">Заботьтесь о своих растениях</summary>
   <summary xml:lang="sa">भवतः वनस्पतयः जीविताः कुर्वन्तु</summary>
   <summary xml:lang="sk">Udržte vaše rastliny nažive</summary>
   <summary xml:lang="sl">Ohranjujte svoje rastline pri življenju</summary>
@@ -107,6 +109,7 @@
     <p xml:lang="pl">PowerPlant przypomina o tym kiedy twoje rośliny potrzebują podlania i jak zdrowo rozwijają się na przestrzeni czasu.</p>
     <p xml:lang="pt-BR">O PowerPlant permite monitorar quando suas plantas precisam ser regadas e como a saúde delas se desenvolve ao longo do tempo.</p>
     <p xml:lang="ro">PowerPlant vă permite să înregistrați când trebuiesc udate plantele și dezvoltarea acestora în timp.</p>
+    <p xml:lang="ru">PowerPlant позволяет отслеживать, когда растения нужно поливать и как со временем меняется их состояние.</p>
     <p xml:lang="sa">PowerPlant इत्यनेन भवन्तः कदा भवतः वनस्पतयः जलं दातव्याः, कालान्तरे तेषां स्वास्थ्यस्य विकासः कथं भवति इति निरीक्षणं कर्तुं शक्नोति।</p>
     <p xml:lang="sk">PowerPlant vám umožňuje sledovať, kedy musia byť vaše rastliny zaliate a ako sa ich zdravie vyvíja v priebehu času.</p>
     <p xml:lang="sl">PowerPlant vam omogoča spremljati, kdaj je treba vaše rastline zaliti in kako se njihovo zdravje sčasoma razvija.</p>
@@ -151,6 +154,7 @@
       <caption xml:lang="pl">Widok główny z listą roślin.</caption>
       <caption xml:lang="pt-BR">Visualização principal contendo a lista de plantas.</caption>
       <caption xml:lang="ro">Vederea principală cu lista de plante.</caption>
+      <caption xml:lang="ru">Главное окно со списком растений.</caption>
       <caption xml:lang="sa">वनस्पतयः सूचीसहितं मुख्यदृश्यम्।</caption>
       <caption xml:lang="sk">Hlavné zobrazenie so zoznamom rastlín.</caption>
       <caption xml:lang="sl">Glavni pogled s seznamom rastlin.</caption>
@@ -185,6 +189,7 @@
       <caption xml:lang="pl">Szczegóły rośliny.</caption>
       <caption xml:lang="pt-BR">Detalhes de uma planta.</caption>
       <caption xml:lang="ro">Detaliile unei plante.</caption>
+      <caption xml:lang="ru">Сведения о растении.</caption>
       <caption xml:lang="sa">कस्यचित् पादपस्य विवरणम् ।</caption>
       <caption xml:lang="sk">Podrobnosti o rastline.</caption>
       <caption xml:lang="sl">Podrobnosti rastline.</caption>
@@ -219,6 +224,7 @@
       <caption xml:lang="pl">Niesformatowana lista zadań.</caption>
       <caption xml:lang="pt-BR">Lista de tarefas.</caption>
       <caption xml:lang="ro">Lista brută de sarcini.</caption>
+      <caption xml:lang="ru">Простой список задач.</caption>
       <caption xml:lang="sa">कार्याणां कच्चा सूची।</caption>
       <caption xml:lang="sk">Surový zoznam úloh.</caption>
       <caption xml:lang="sl">Surovi seznam nalog.</caption>
