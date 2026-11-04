@@ -211,29 +211,24 @@ Kirigami.ScrollablePage {
 
             Layout.maximumWidth: applicationWindow().width / (wideScreen ? 2 : 1)
 
-            RowLayout {
-                spacing: Kirigami.Units.largeSpacing
+            FormCard.FormGridContainer {
+                id: container
 
-                Layout.topMargin: Kirigami.Units.gridUnit
-                Layout.alignment: Qt.AlignHCenter
-                Layout.maximumWidth: Kirigami.Units.gridUnit * 30
-                TextIconBox {
-                    label.text: plant.location
-                    icon.source: "go-home-symbolic"
-                    Layout.fillWidth: true
-                    visible: label.text.length > 0
+                Layout.topMargin: Kirigami.Units.largeSpacing
+                Layout.fillWidth: true
+
+                FormCard.FormTextDelegate {
+                    text: "Location"
+                    description: plant.location
+                    icon.name: "go-home-symbolic"
+                    visible: description.length > 0
                 }
-                TextIconBox {
-                    label.text: Qt.formatDate(plant.dateOfBirth)
-                    visible: label.text.length > 0
-                    icon.source: "view-calendar-birthday-symbolic"
-                    Layout.fillWidth: true
+                FormCard.FormTextDelegate {
+                    text: "Birthday"
+                    description: Qt.formatDate(plant.dateOfBirth)
+                    icon.name: "view-calendar-birthday-symbolic"
+                    visible: description.length > 0
                 }
-                // TextIconBox {
-                //     label.text: i18n("Parent")
-                //     icon.source: "view-list-tree"
-                //     Layout.fillWidth: true
-                // }
             }
 
             FormCard.FormHeader {
