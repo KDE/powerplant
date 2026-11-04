@@ -218,13 +218,13 @@ Kirigami.ScrollablePage {
                 Layout.fillWidth: true
 
                 FormCard.FormTextDelegate {
-                    text: "Location"
+                    text: i18n("Room")
                     description: plant.location
                     icon.name: "go-home-symbolic"
                     visible: description.length > 0
                 }
                 FormCard.FormTextDelegate {
-                    text: "Birthday"
+                    text: i18n("Birthday")
                     description: Qt.formatDate(plant.dateOfBirth)
                     icon.name: "view-calendar-birthday-symbolic"
                     visible: description.length > 0
