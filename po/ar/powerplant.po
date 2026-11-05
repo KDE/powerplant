@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-07 00:50+0000\n"
+"POT-Creation-Date: 2026-11-05 01:01+0000\n"
 "PO-Revision-Date: 2026-08-10 15:28+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -93,12 +93,26 @@ msgctxt "@action:button"
 msgid "Delete"
 msgstr "احذف"
 
-#: qml/PlantDetailPage.qml:240
+#: qml/PlantDetailPage.qml:221
+#, fuzzy, kde-format
+#| msgctxt "@title:row"
+#| msgid "Room"
+msgid "Room"
+msgstr "الغرفة"
+
+#: qml/PlantDetailPage.qml:227
+#, fuzzy, kde-format
+#| msgctxt "@title:row"
+#| msgid "Birthday"
+msgid "Birthday"
+msgstr "يوم الميلاد"
+
+#: qml/PlantDetailPage.qml:235
 #, kde-format
 msgid "Water"
 msgstr "الماء"
 
-#: qml/PlantDetailPage.qml:258
+#: qml/PlantDetailPage.qml:253
 #, kde-format
 msgctxt "@info"
 msgid "Has to be watered in %1 day"
@@ -110,35 +124,35 @@ msgstr[3] "يجب أن تسقى في %1 أيام"
 msgstr[4] "يجب أن تسقى في %1 يومًا"
 msgstr[5] "يجب أن تسقى في %1 يوم"
 
-#: qml/PlantDetailPage.qml:260
+#: qml/PlantDetailPage.qml:255
 #, kde-format
 msgctxt "@info"
 msgid "Has to be watered tomorrow"
 msgstr "يجب أن تسقى غدًا"
 
-#: qml/PlantDetailPage.qml:262
+#: qml/PlantDetailPage.qml:257
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be watered today!"
 msgstr "تحتاج إلى السقي اليوم!"
 
-#: qml/PlantDetailPage.qml:264
+#: qml/PlantDetailPage.qml:259
 #, kde-format
 msgctxt "@info"
 msgid "Should have been watered already!"
 msgstr "يجب أن تكون قد سقيت فعلًا!"
 
-#: qml/PlantDetailPage.qml:268
+#: qml/PlantDetailPage.qml:263
 #, kde-format
 msgid "Watered"
 msgstr "مسقية"
 
-#: qml/PlantDetailPage.qml:280
+#: qml/PlantDetailPage.qml:275
 #, kde-format
 msgid "Fertilizer"
 msgstr "سماد"
 
-#: qml/PlantDetailPage.qml:296
+#: qml/PlantDetailPage.qml:291
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized in %1 day"
@@ -150,48 +164,48 @@ msgstr[3] "يجب تسميدها في %1 أيام"
 msgstr[4] "يجب تسميدها في %1 يومًا"
 msgstr[5] "يجب تسميدها في %1 يوم"
 
-#: qml/PlantDetailPage.qml:298
+#: qml/PlantDetailPage.qml:293
 #, kde-format
 msgctxt "@info"
 msgid "Has to be fertilized tomorrow"
 msgstr "يجب تسميدها غدًا"
 
-#: qml/PlantDetailPage.qml:300
+#: qml/PlantDetailPage.qml:295
 #, kde-format
 msgctxt "@info"
 msgid "Needs to be fertilized today!"
 msgstr "يحتاج إلى التسميد اليوم!"
 
-#: qml/PlantDetailPage.qml:302
+#: qml/PlantDetailPage.qml:297
 #, kde-format
 msgctxt "@info"
 msgid "Should have been fertilized already!"
 msgstr "يجب أن يكون مُخصبة فعلًا!"
 
-#: qml/PlantDetailPage.qml:307
+#: qml/PlantDetailPage.qml:302
 #, kde-format
 msgid "Fertilized"
 msgstr "مسمد"
 
-#: qml/PlantDetailPage.qml:319
+#: qml/PlantDetailPage.qml:314
 #, kde-format
 msgctxt "@title:row"
 msgid "Health"
 msgstr "الصحة"
 
-#: qml/PlantDetailPage.qml:325
+#: qml/PlantDetailPage.qml:320
 #, kde-format
 msgctxt "@label:slider"
 msgid "How healthy is your plant today?"
 msgstr "ما صحة نباتك اليوم؟"
 
-#: qml/PlantDetailPage.qml:346
+#: qml/PlantDetailPage.qml:341
 #, kde-format
 msgctxt "@action:button"
 msgid "Record"
 msgstr "سجّل"
 
-#: qml/PlantDetailPage.qml:362
+#: qml/PlantDetailPage.qml:357
 #, kde-format
 msgid "Health History"
 msgstr "تاريخ الصحة"
@@ -322,72 +336,85 @@ msgctxt "@action:button"
 msgid "Cancel"
 msgstr "ألغ"
 
-#: qml/PlantsPage.qml:20
+#: qml/PlantsPage.qml:21
 #, kde-format
 msgid "Plants"
 msgstr "النباتات"
 
-#: qml/PlantsPage.qml:45
+#: qml/PlantsPage.qml:46
 #, kde-format
 msgctxt "@action:button"
 msgid "Add Plant"
 msgstr "أضف نبتة"
 
-#: qml/PlantsPage.qml:56
+#: qml/PlantsPage.qml:57
 #, kde-format
 msgctxt "@title"
 msgid "Good morning!"
 msgstr "صباح الخير!"
 
-#: qml/PlantsPage.qml:58
+#: qml/PlantsPage.qml:59
 #, kde-format
 msgctxt "@title"
 msgid "Good afternoon!"
 msgstr "ظهيرة طيبة!"
 
-#: qml/PlantsPage.qml:60
+#: qml/PlantsPage.qml:61
 #, kde-format
 msgctxt "@title"
 msgid "Good evening!"
 msgstr "مساء الخير!"
 
-#: qml/PlantsPage.qml:62
+#: qml/PlantsPage.qml:63
 #, kde-format
 msgctxt "@title"
 msgid "Good night!"
 msgstr "ليلة سعيدة!"
 
-#: qml/PlantsPage.qml:98
+#: qml/PlantsPage.qml:99
 #, kde-format
 msgid "Some of your plants need attention"
 msgstr "تحتاج بعض نباتاتك إلى عناية"
 
-#: qml/PlantsPage.qml:100
+#: qml/PlantsPage.qml:101
 #, kde-format
 msgid "No plants need water right now"
 msgstr "لا توجد نباتات تحتاج إلى الماء الآن"
 
-#: qml/PlantsPage.qml:192
+#: qml/PlantsPage.qml:199
 #, kde-format
 msgid "Incomplete Tasks"
 msgstr "مهام غير مكتملة"
 
-#: qml/PlantsPage.qml:194
+#: qml/PlantsPage.qml:201
 #, kde-format
 msgid "All Tasks Complete"
 msgstr "جميع المهام مكتملة"
 
-#: qml/PlantsPage.qml:235
+#: qml/PlantsPage.qml:258
 #, kde-format
-msgid "Enter your Location"
-msgstr "أدخل موقعك"
+msgctxt "temperature"
+msgid "%1°C"
+msgstr ""
 
-#: qml/PlantsPage.qml:282
+#: qml/PlantsPage.qml:265
 #, kde-format
 msgid "Select your Location"
 msgstr "حدد موقعا"
 
-#: qml/PlantsPage.qml:405 qml/PlantsPage.qml:433
+#: qml/PlantsPage.qml:279
+#, fuzzy, kde-format
+#| msgid "Enter your Location"
+msgctxt "@title:dialog"
+msgid "Enter your Location"
+msgstr "أدخل موقعك"
+
+#: qml/PlantsPage.qml:290
+#, kde-format
+msgid "Location name:"
+msgstr ""
+
+#: qml/PlantsPage.qml:418 qml/PlantsPage.qml:446
 #, kde-format
 msgctxt "@info"
 msgid "In %1 day"
@@ -399,31 +426,31 @@ msgstr[3] "في %1 أيام"
 msgstr[4] "في %1 يومًا"
 msgstr[5] "في %1 يوم"
 
-#: qml/PlantsPage.qml:407 qml/PlantsPage.qml:435
+#: qml/PlantsPage.qml:420 qml/PlantsPage.qml:448
 #, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
 msgstr "الغد"
 
-#: qml/PlantsPage.qml:409
+#: qml/PlantsPage.qml:422
 #, kde-format
 msgctxt "@info"
 msgid "Water today!"
 msgstr "إسقِ الماء اليوم!"
 
-#: qml/PlantsPage.qml:411
+#: qml/PlantsPage.qml:424
 #, kde-format
 msgctxt "@info"
 msgid "Watering overdue!"
 msgstr "سقي متأخر عن موعده!"
 
-#: qml/PlantsPage.qml:437
+#: qml/PlantsPage.qml:450
 #, kde-format
 msgctxt "@info"
 msgid "Fertilize today!"
 msgstr "التسميد اليوم!"
 
-#: qml/PlantsPage.qml:439
+#: qml/PlantsPage.qml:452
 #, kde-format
 msgctxt "@info"
 msgid "Fertilizing overdue!"
