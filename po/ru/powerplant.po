@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 01:01+0000\n"
-"PO-Revision-Date: 2026-10-10 12:53+0200\n"
+"PO-Revision-Date: 2026-11-05 07:47+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -93,16 +93,12 @@ msgid "Delete"
 msgstr "Удалить"
 
 #: qml/PlantDetailPage.qml:221
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Room"
+#, kde-format
 msgid "Room"
 msgstr "Помещение"
 
 #: qml/PlantDetailPage.qml:227
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Birthday"
+#, kde-format
 msgid "Birthday"
 msgstr "День рождения"
 
@@ -390,7 +386,7 @@ msgstr "Все задачи выполнены"
 #, kde-format
 msgctxt "temperature"
 msgid "%1°C"
-msgstr ""
+msgstr "%1 °C"
 
 #: qml/PlantsPage.qml:265
 #, kde-format
@@ -398,8 +394,7 @@ msgid "Select your Location"
 msgstr "Выбор местоположения"
 
 #: qml/PlantsPage.qml:279
-#, fuzzy, kde-format
-#| msgid "Enter your Location"
+#, kde-format
 msgctxt "@title:dialog"
 msgid "Enter your Location"
 msgstr "Укажите местоположение"
@@ -407,7 +402,7 @@ msgstr "Укажите местоположение"
 #: qml/PlantsPage.qml:290
 #, kde-format
 msgid "Location name:"
-msgstr ""
+msgstr "Название местоположения:"
 
 #: qml/PlantsPage.qml:418 qml/PlantsPage.qml:446
 #, kde-format

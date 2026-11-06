@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 01:01+0000\n"
-"PO-Revision-Date: 2026-08-06 07:21+0200\n"
+"PO-Revision-Date: 2026-11-05 11:05+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
 #: main.cpp:68
 #, kde-format
@@ -91,16 +91,12 @@ msgid "Delete"
 msgstr "Izbriši"
 
 #: qml/PlantDetailPage.qml:221
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Room"
+#, kde-format
 msgid "Room"
 msgstr "Soba"
 
 #: qml/PlantDetailPage.qml:227
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Birthday"
+#, kde-format
 msgid "Birthday"
 msgstr "Rojstni dan"
 
@@ -388,7 +384,7 @@ msgstr "Vse naloge dokončane"
 #, kde-format
 msgctxt "temperature"
 msgid "%1°C"
-msgstr ""
+msgstr "%1°C"
 
 #: qml/PlantsPage.qml:265
 #, kde-format
@@ -396,8 +392,7 @@ msgid "Select your Location"
 msgstr "Izberite vašo lokacijo"
 
 #: qml/PlantsPage.qml:279
-#, fuzzy, kde-format
-#| msgid "Enter your Location"
+#, kde-format
 msgctxt "@title:dialog"
 msgid "Enter your Location"
 msgstr "Vnesite vašo lokacijo"
@@ -405,7 +400,7 @@ msgstr "Vnesite vašo lokacijo"
 #: qml/PlantsPage.qml:290
 #, kde-format
 msgid "Location name:"
-msgstr ""
+msgstr "Ime lokacije:"
 
 #: qml/PlantsPage.qml:418 qml/PlantsPage.qml:446
 #, kde-format

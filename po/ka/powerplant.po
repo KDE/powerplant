@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 01:01+0000\n"
-"PO-Revision-Date: 2026-08-06 05:23+0200\n"
+"PO-Revision-Date: 2026-11-05 05:22+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
 #: main.cpp:68
 #, kde-format
@@ -94,16 +94,12 @@ msgid "Delete"
 msgstr "წაშლა"
 
 #: qml/PlantDetailPage.qml:221
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Room"
+#, kde-format
 msgid "Room"
 msgstr "ოთახი"
 
 #: qml/PlantDetailPage.qml:227
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Birthday"
+#, kde-format
 msgid "Birthday"
 msgstr "დაბადების დღე"
 
@@ -387,7 +383,7 @@ msgstr "ყველა ამოცანა დასრულებული�
 #, kde-format
 msgctxt "temperature"
 msgid "%1°C"
-msgstr ""
+msgstr "%1°C"
 
 #: qml/PlantsPage.qml:265
 #, kde-format
@@ -395,16 +391,15 @@ msgid "Select your Location"
 msgstr "აირჩიეთ თქვენი მდებარეობა"
 
 #: qml/PlantsPage.qml:279
-#, fuzzy, kde-format
-#| msgid "Enter your Location"
+#, kde-format
 msgctxt "@title:dialog"
 msgid "Enter your Location"
-msgstr "შეიყვანეთ მდებარეობა"
+msgstr "შეიყვანეთ თქვენი მდებარეობა"
 
 #: qml/PlantsPage.qml:290
 #, kde-format
 msgid "Location name:"
-msgstr ""
+msgstr "მდებარეობის სახელი:"
 
 #: qml/PlantsPage.qml:418 qml/PlantsPage.qml:446
 #, kde-format
