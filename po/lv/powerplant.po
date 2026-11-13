@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 01:01+0000\n"
-"PO-Revision-Date: 2026-10-15 13:43+0300\n"
+"PO-Revision-Date: 2026-11-11 14:54+0200\n"
 "Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 26.08.1\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #: main.cpp:68
 #, kde-format
@@ -94,16 +94,12 @@ msgid "Delete"
 msgstr "Dzēst"
 
 #: qml/PlantDetailPage.qml:221
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Room"
+#, kde-format
 msgid "Room"
 msgstr "Istaba"
 
 #: qml/PlantDetailPage.qml:227
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Birthday"
+#, kde-format
 msgid "Birthday"
 msgstr "Dzimšanas diena"
 
@@ -389,7 +385,7 @@ msgstr "Visi uzdevumi ir pabeigti"
 #, kde-format
 msgctxt "temperature"
 msgid "%1°C"
-msgstr ""
+msgstr "%1°C"
 
 #: qml/PlantsPage.qml:265
 #, kde-format
@@ -397,8 +393,7 @@ msgid "Select your Location"
 msgstr "Atlasi savu atrašanās vietu"
 
 #: qml/PlantsPage.qml:279
-#, fuzzy, kde-format
-#| msgid "Enter your Location"
+#, kde-format
 msgctxt "@title:dialog"
 msgid "Enter your Location"
 msgstr "Norādi savu atrašanās vietu"
@@ -406,7 +401,7 @@ msgstr "Norādi savu atrašanās vietu"
 #: qml/PlantsPage.qml:290
 #, kde-format
 msgid "Location name:"
-msgstr ""
+msgstr "Atrašanās vietas nosaukums:"
 
 #: qml/PlantsPage.qml:418 qml/PlantsPage.qml:446
 #, kde-format
