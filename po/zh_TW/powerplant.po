@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: powerplant\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 01:01+0000\n"
-"PO-Revision-Date: 2026-09-15 14:31+0900\n"
+"PO-Revision-Date: 2026-11-19 22:38+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 26.11.70\n"
+"X-Generator: Lokalize 27.03.70\n"
 
 #: main.cpp:68
 #, kde-format
@@ -93,16 +93,12 @@ msgid "Delete"
 msgstr "刪除"
 
 #: qml/PlantDetailPage.qml:221
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Room"
+#, kde-format
 msgid "Room"
 msgstr "房間"
 
 #: qml/PlantDetailPage.qml:227
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Birthday"
+#, kde-format
 msgid "Birthday"
 msgstr "生日"
 
@@ -384,7 +380,7 @@ msgstr "所有工作皆已完成"
 #, kde-format
 msgctxt "temperature"
 msgid "%1°C"
-msgstr ""
+msgstr "%1°C"
 
 #: qml/PlantsPage.qml:265
 #, kde-format
@@ -392,8 +388,7 @@ msgid "Select your Location"
 msgstr "選擇您的位置"
 
 #: qml/PlantsPage.qml:279
-#, fuzzy, kde-format
-#| msgid "Enter your Location"
+#, kde-format
 msgctxt "@title:dialog"
 msgid "Enter your Location"
 msgstr "輸入您的位置"
@@ -401,7 +396,7 @@ msgstr "輸入您的位置"
 #: qml/PlantsPage.qml:290
 #, kde-format
 msgid "Location name:"
-msgstr ""
+msgstr "位置名稱："
 
 #: qml/PlantsPage.qml:418 qml/PlantsPage.qml:446
 #, kde-format
