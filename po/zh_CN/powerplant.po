@@ -388,11 +388,10 @@ msgid "Select your Location"
 msgstr "选择您的位置"
 
 #: qml/PlantsPage.qml:279
-#, fuzzy, kde-format
-#| msgid "Enter your Location"
+#, kde-format
 msgctxt "@title:dialog"
 msgid "Enter your Location"
-msgstr "请输入您的位置"
+msgstr ""
 
 #: qml/PlantsPage.qml:290
 #, kde-format
